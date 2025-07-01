@@ -38,7 +38,7 @@ export default function Home() {
       </div>
       <hr />
 
-     <div className="container-fluid px-5 py-5 bg-dark text-white">
+     <div className="container-fluid ps-5 pe-5 px-5 py-5 bg-dark text-white">
   <div className="row align-items-center">
     {/* Left Image */}
     <div className="col-sm-12 col-md-6 mb-4 mb-md-0 text-center">
@@ -54,7 +54,7 @@ export default function Home() {
       <div className="icon d-flex align-items-center justify-content-center mb-3">
         <img src={Image.icon1} alt="icon" />
       </div>
-      <h1 className="mb-3">Streamline Your Coaching with Zim Sports</h1>
+      <h1 className="color-white mb-3 ">Streamline Your Coaching with Zim Sports</h1>
       <p className="color-white">
         Zim Sports empowers coaches with advanced tools for video analysis,
         practice planning, and player development. From real-time stat tracking

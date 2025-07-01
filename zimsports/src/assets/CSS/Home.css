@@ -36,15 +36,16 @@ input {
 }
 .icon {
   background-color: white;
-
   height: 60px;
   width: 60px;
+  border-radius: 20px;
 }
+
 .icon img {
-  height: 50px;
-  width: 50px;
-  margin-left: 10px;
+  height: 40px;
+  width: 40px;
 }
+
 .color-white {
   color: white;
 }
