@@ -53,105 +53,179 @@ export default function Home() {
 
       <div className="container-fluid ps-5 pe-5 px-5 py-5  text-white">
         <div className="background-color mb-5 ">
-        <div className="row align-items-center">
-          {/* Left Image */}
-          <div className="col-sm-12 col-md-6 mb-4 mb-md-0 text-center">
-            <img
-              src={Image.image1}
-              alt="image1"
-              className="img-fluid rounded shadow"
-            />
-          </div>
-
-          {/* Right Content */}
-          <div className="col-sm-12 col-md-6">
-            <div className="icon d-flex align-items-center justify-content-center mb-3">
-              <img src={Image.icon1} alt="icon" />
+          <div className="row align-items-center">
+            {/* Left Image */}
+            <div className="col-sm-12 col-md-6 mb-4 mb-md-0 text-center">
+              <img
+                src={Image.image1}
+                alt="image1"
+                className="img-fluid rounded shadow"
+              />
             </div>
-            <h1 className="color-white mb-3 ">
-              Streamline Your Coaching with Zim Sports
-            </h1>
-            <p className="color-white">
-              Zim Sports empowers coaches with advanced tools for video
-              analysis, practice planning, and player development. From
-              real-time stat tracking to intuitive communication features,
-              manage your team effortlessly and focus on winning. Track player
-              progress, assign drills, and share insights to elevate
-              performance.
-            </p>
+
+            {/* Right Content */}
+            <div className="col-sm-12 col-md-6">
+              <div className="icon d-flex align-items-center justify-content-center mb-3">
+                <img src={Image.icon1} alt="icon" />
+              </div>
+              <h1 className="color-white mb-3 ">
+                Streamline Your Coaching with Zim Sports
+              </h1>
+              <p className="color-white">
+                Zim Sports empowers coaches with advanced tools for video
+                analysis, practice planning, and player development. From
+                real-time stat tracking to intuitive communication features,
+                manage your team effortlessly and focus on winning. Track player
+                progress, assign drills, and share insights to elevate
+                performance.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="background-color mb-5">
+          <div className="row align-items-center">
+            {/* Left Image */}
+            <div className="col-sm-12 col-md-6 mb-4 mb-md-0 text-center">
+              <img
+                src={Image.image2}
+                alt="image2"
+                className="img-fluid rounded shadow"
+              />
+            </div>
+
+            {/* Right Content */}
+            <div className="col-sm-12 col-md-6">
+              <div className="icon d-flex align-items-center justify-content-center mb-3">
+                <img src={Image.icon2} alt="icon" />
+              </div>
+              <h1 className="color-white mb-3 ">
+                United & Organized: Your Team's Hub
+              </h1>
+              <p className="color-white">
+                Foster seamless collaboration and organization within your team.
+                Zim Sports offers comprehensive features for scheduling games
+                and practices, managing rosters, sharing updates, and handling
+                team payments. Keep everyone on the same page, from players to
+                coaching staff, ensuring smooth operations on and off the field.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="background-color mb-5">
+          <div className="row align-items-center">
+            {/* Left Image */}
+            <div className="col-sm-12 col-md-6 mb-4 mb-md-0 text-center">
+              <img
+                src={Image.image3}
+                alt="image3"
+                className="img-fluid rounded shadow"
+              />
+            </div>
+
+            {/* Right Content */}
+            <div className="col-sm-12 col-md-6 ">
+              <div className="icon d-flex align-items-center justify-content-center mb-3">
+                <img src={Image.icon3} alt="icon" />
+              </div>
+              <h1 className="color-white mb-3 ">
+                Stay Connected, Never Miss a Moment
+              </h1>
+              <p className="color-white">
+                For sports families and devoted fans, Zim Sports provides live
+                game updates, score tracking, and easy access to team schedules
+                and communication. Receive instant notifications, view player
+                statistics, and share in the excitement, ensuring you're always
+                connected to the action, even when you can't be there in person.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
-       <div className="background-color mb-5">
-        <div className="row align-items-center">
-          {/* Left Image */}
-          <div className="col-sm-12 col-md-6 mb-4 mb-md-0 text-center">
-            <img
-              src={Image.image2}
-              alt="image2"
-              className="img-fluid rounded shadow"
-            />
-          </div>
-
-          {/* Right Content */}
-          <div className="col-sm-12 col-md-6">
-            <div className="icon d-flex align-items-center justify-content-center mb-3">
-              <img src={Image.icon2} alt="icon" />
-            </div>
-            <h1 className="color-white mb-3 ">
-             United & Organized: Your Team's Hub
-            </h1>
-            <p className="color-white">
-              Foster seamless collaboration and organization within your team. Zim Sports offers comprehensive features for scheduling games and practices, managing rosters, sharing updates, and handling team payments. Keep everyone on the same page, from players to coaching staff, ensuring smooth operations on and off the field.
-            </p>
-          </div>
-        </div>
+      <div class="text-center my-4">
+        <button type="button" class="btn secondary-btn">
+          About Zim Sports
+        </button>
       </div>
-
-       <div className="background-color mb-5">
-        <div className="row align-items-center">
-          {/* Left Image */}
-          <div className="col-sm-12 col-md-6 mb-4 mb-md-0 text-center">
-            <img
-              src={Image.image3}
-              alt="image3"
-              className="img-fluid rounded shadow"
-            />
-          </div>
-
-          {/* Right Content */}
-          <div className="col-sm-12 col-md-6 ">
-            <div className="icon d-flex align-items-center justify-content-center mb-3">
-              <img src={Image.icon3} alt="icon" />
-            </div>
-            <h1 className="color-white mb-3 ">
-              Stay Connected, Never Miss a Moment
-            </h1>
-            <p className="color-white">
-              For sports families and devoted fans, Zim Sports provides live game updates, score tracking, and easy access to team schedules and communication. Receive instant notifications, view player statistics, and share in the excitement, ensuring you're always connected to the action, even when you can't be there in person.
-            </p>
-          </div>
-        </div>
-      </div>
-      </div>
-     
-
-
-
-
-
-     
-<div class="text-center my-4">
-  <button type="button" class="btn secondary-btn">About Zim Sports</button>
-</div>
       <div className="container">
         <div className="row">
-            <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <h1 className="custom-para"> Your comprehensive sports ecosystem <br/> designed to<br/>
-transform how you experience <span>sports</span> and <br/>empower <span>your community</span></h1>
-               
-            </div>
+          <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <h1 className="custom-para">
+              {" "}
+              Your comprehensive sports ecosystem <br /> designed to
+              <br />
+              transform how you experience <span>sports</span> and <br />
+              empower <span>your community</span>
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center my-4">
+        <button type="button" class="btn secondary-btn">
+          Core Services
+        </button>
+      </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+            <h1 className="custom-para">
+              {" "}
+              Unlock the full potential of
+              <br />
+              Your sports journey with Zim Sports <span>services</span>
+            </h1>
+          </div>
+
+          <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
+            <h2>
+              <span>Effortless organization</span> for Coaches & Admins
+            </h2>
+            <p>
+              Streamline rosters, track attendance, manage team finances, and
+              organize all player information in one secure location. Zim Sports
+              simplifies administrative tasks, allowing you to focus on the
+              game.
+            </p>
+            <ul>
+                 <ls>
+                <h5>Automated Rosters & Scheduling</h5>
+                <p>Quickly set up teams, create schedules, and manage player availability with automated tools.</p>
+            </ls>
+            <ls>
+                <h5>Integrated Communication Hub</h5>
+                <p>Facilitate seamless communication with instant messaging, announcements, and direct chats.</p>
+            </ls>
+            </ul>
+           
+          </div>
+          <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+            <h2>
+              {" "}
+              <span>Unleash potential </span>with deep insights & video tools
+            </h2>
+            <p>
+              Harness the power of data and video to elevate player performance.
+              Analyze game footage, track key metrics, and provide targeted
+              feedback to help athletes improve and teams strategize
+              effectively.
+            </p>
+          </div>
+          <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+            <h2>
+              {" "}
+              <span>Keep everyone connected </span>
+              and part of the action
+            </h2>
+            <p>
+              Engage your community with real-time updates, live scoring, and
+              secure communication channels. Zim Sports ensures families and
+              fans are always in the loop, celebrating every victory and
+              supporting their team.
+            </p>
+          </div>
         </div>
       </div>
     </>
