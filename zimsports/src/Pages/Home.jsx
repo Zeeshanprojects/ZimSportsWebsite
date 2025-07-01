@@ -36,26 +36,36 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <hr/>
-     
-             <div className="background bg-dark">
-         <div className="container">
-            <div className="row">
-                <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+      <hr />
 
-            <h1>Hello World</h1>
-                </div>
-                 <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+     <div className="container-fluid px-5 py-5 bg-dark text-white">
+  <div className="row align-items-center">
+    {/* Left Image */}
+    <div className="col-sm-12 col-md-6 mb-4 mb-md-0 text-center">
+      <img
+        src={Image.image1}
+        alt="image1"
+        className="img-fluid rounded shadow"
+      />
+    </div>
 
-           <h1>Streamline Your Coaching with Zim Sports</h1>
-           <p>Zim Sports empowers coaches with advanced tools for video analysis, practice planning, and player development. From real-time stat tracking to intuitive communication features, manage your team effortlessly and focus on winning. Track player progress, assign drills, and share insights to elevate performance.</p>
-                </div>
-            </div>
-         </div>
-                   
-                
-            </div>
-       
+    {/* Right Content */}
+    <div className="col-sm-12 col-md-6">
+      <div className="icon d-flex align-items-center justify-content-center mb-3">
+        <img src={Image.icon1} alt="icon" />
+      </div>
+      <h1 className="mb-3">Streamline Your Coaching with Zim Sports</h1>
+      <p className="color-white">
+        Zim Sports empowers coaches with advanced tools for video analysis,
+        practice planning, and player development. From real-time stat tracking
+        to intuitive communication features, manage your team effortlessly and
+        focus on winning. Track player progress, assign drills, and share
+        insights to elevate performance.
+      </p>
+    </div>
+  </div>
+</div>
+
     </>
   );
 }
