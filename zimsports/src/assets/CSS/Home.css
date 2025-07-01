@@ -17,7 +17,16 @@ input {
   color: white !important;
   padding: 10px;
 }
-.backgroundimagebanner{
-    background-color: #157347 !important;
-    height: 500px !important;
+.image-wrapper {
+  background-color: #157347 !important;
+  height: 400px !important;
+  width: 400px;
+  /* position: relative !important; */
+}
+.banner-right {
+  height: 300px;
+  margin: 40px;
+}
+.background{
+    background-color: #181A22;
 }
