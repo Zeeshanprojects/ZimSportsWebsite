@@ -27,6 +27,6 @@ input {
   height: 300px;
   margin: 40px;
 }
-.background{
-    background-color: #181A22;
+.background h1{
+    color: white !important;
 }

@@ -37,21 +37,25 @@ export default function Home() {
         </div>
       </div>
       <hr/>
-      <div className="container">
-        <div className="row">
-            <div className="col-sm-12 col-md-12 col-md-12 col-lg-12 col-xl-12">
-                <div className="background">
-                    <div className="col-sm-12 col=md-12 col-lg-6 col-xl-6">
+     
+             <div className="background bg-dark">
+         <div className="container">
+            <div className="row">
+                <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
 
-                    </div>
-                    <div className="col-sm-12 col=md-12 col-lg-6 col-xl-6">
-                        <h1>Streamline Your Coaching with Zim Sports</h1>
-                        <p>Zim Sports empowers coaches with advanced tools for video analysis, practice planning, and player development. From real-time stat tracking to intuitive communication features, manage your team effortlessly and focus on winning. Track player progress, assign drills, and share insights to elevate performance.</p>
-                    </div>
+            <h1>Hello World</h1>
+                </div>
+                 <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+
+           <h1>Streamline Your Coaching with Zim Sports</h1>
+           <p>Zim Sports empowers coaches with advanced tools for video analysis, practice planning, and player development. From real-time stat tracking to intuitive communication features, manage your team effortlessly and focus on winning. Track player progress, assign drills, and share insights to elevate performance.</p>
                 </div>
             </div>
-        </div>
-      </div>
+         </div>
+                   
+                
+            </div>
+       
     </>
   );
 }
