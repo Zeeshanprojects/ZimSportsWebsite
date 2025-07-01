@@ -25,14 +25,13 @@ export default function Home() {
           </div>
 
           <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-            <div className="image-wrapper">
-              <img
+           <img
                 src={Image.bannerright}
                 alt="banner-right"
                 className="banner-right"
               />
               <div className="play-button">&#9658;</div>
-            </div>
+            
           </div>
         </div>
       </div>
