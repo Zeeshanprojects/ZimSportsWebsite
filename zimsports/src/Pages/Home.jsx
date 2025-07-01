@@ -29,6 +29,11 @@ export default function Home() {
                 >
                   Start Now
                 </button>
+<div className="d-flex gap-4"> 
+     <p>Free for no</p>
+                   <p>No credit card required</p>
+</div>
+               
               </div>
             </div>
           </div>
