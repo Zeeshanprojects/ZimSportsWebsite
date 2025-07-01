@@ -29,11 +29,10 @@ export default function Home() {
                 >
                   Start Now
                 </button>
-<div className="d-flex gap-4"> 
-     <p>Free for no</p>
-                   <p>No credit card required</p>
-</div>
-               
+                <div className="d-flex gap-4 ms-2">
+                  <p>Free for no</p>
+                  <p>No credit card required</p>
+                </div>
               </div>
             </div>
           </div>
@@ -52,7 +51,8 @@ export default function Home() {
 
       <hr />
 
-      <div className="container-fluid ps-5 pe-5 px-5 py-5 bg-dark text-white">
+      <div className="container-fluid ps-5 pe-5 px-5 py-5  text-white">
+        <div className="background-color ">
         <div className="row align-items-center">
           {/* Left Image */}
           <div className="col-sm-12 col-md-6 mb-4 mb-md-0 text-center">
@@ -82,64 +82,24 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="container-fluid ps-5 pe-5 px-5 py-5 bg-dark text-white">
-        <div className="row align-items-center">
-          {/* Left Image */}
-          <div className="col-sm-12 col-md-6 mb-4 mb-md-0 text-center">
-            <img
-              src={Image.image2}
-              alt="image1"
-              className="img-fluid rounded shadow"
-            />
-          </div>
-
-          {/* Right Content */}
-          <div className="col-sm-12 col-md-6">
-            <div className="icon d-flex align-items-center justify-content-center mb-3">
-              <img src={Image.icon2} alt="icon" />
-            </div>
-            <h1 className="color-white mb-3 ">
-              Streamline Your Coaching with Zim Sports
-            </h1>
-            <p className="color-white">
-              Zim Sports empowers coaches with advanced tools for video
-              analysis, practice planning, and player development. From
-              real-time stat tracking to intuitive communication features,
-              manage your team effortlessly and focus on winning. Track player
-              progress, assign drills, and share insights to elevate
-              performance.
-            </p>
-          </div>
-        </div>
       </div>
-      <div className="container-fluid ps-5 pe-5 px-5 py-5 bg-dark text-white">
-        <div className="row align-items-center">
-          {/* Left Image */}
-          <div className="col-sm-12 col-md-6 mb-4 mb-md-0 text-center">
-            <img
-              src={Image.image3}
-              alt="image1"
-              className="img-fluid rounded shadow"
-            />
-          </div>
+     
 
-          {/* Right Content */}
-          <div className="col-sm-12 col-md-6">
-            <div className="icon d-flex align-items-center justify-content-center mb-3">
-              <img src={Image.icon3} alt="icon" />
+
+
+
+
+     
+<div class="text-center my-4">
+  <button type="button" class="btn secondary-btn">About Zim Sports</button>
+</div>
+      <div className="container">
+        <div className="row">
+            <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <h1 className="custom-para"> Your comprehensive sports ecosystem <br/> designed to<br/>
+transform how you experience <span>sports</span> and <br/>empower <span>your community</span></h1>
+               
             </div>
-            <h1 className="color-white mb-3 ">
-              Streamline Your Coaching with Zim Sports
-            </h1>
-            <p className="color-white">
-              Zim Sports empowers coaches with advanced tools for video
-              analysis, practice planning, and player development. From
-              real-time stat tracking to intuitive communication features,
-              manage your team effortlessly and focus on winning. Track player
-              progress, assign drills, and share insights to elevate
-              performance.
-            </p>
-          </div>
         </div>
       </div>
     </>

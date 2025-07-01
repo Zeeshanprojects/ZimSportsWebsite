@@ -82,3 +82,23 @@ input {
 .color-white {
   color: white;
 }
+.custom-para {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+
+  color: black !important;
+}
+.secondary-btn {
+  background-color: #1f8e4b !important;
+  color: white !important;
+  border-radius: 20px !important;
+  padding: 10px 30px !important;
+}
+.background-color{
+    background-color: #181A22 !important;
+    padding: 50px;
+    border-radius: 50px;
+}
