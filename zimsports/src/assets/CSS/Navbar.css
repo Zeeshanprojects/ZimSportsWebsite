@@ -9,10 +9,21 @@ line-height: 27.2px;
 color: rgb(27, 122, 65);
 }
 .nav-link{
-    margin: 15px;
+    margin: 10px;
 }
 .navbar-btn{
-    border-radius: 20px;
+    border-radius: 20px !important;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+@media (min-width:577px) and (max-width:767px) {
+    .nav-link{
+    margin: 4px;
+}
+}
+@media (max-width:576px) {
+    
+    .nav-link{
+    margin: 4px;
+}
 }
