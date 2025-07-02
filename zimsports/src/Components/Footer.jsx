@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="col-md-6 mb-4 mb-md-0">
             <img src={Image.logo} alt="zim sports logo" style={{ width: '120px' }} className="mb-3" />
             <h4 className="fw-bold">Subscribe newsletter</h4>
-            <p>Be the first to receive all latest post in your inbox</p>
+            <p className='color-white'>Be the first to receive all latest post in your inbox</p>
 
             {/* Email Input */}
             <div className="input-group mb-2 mt-3">
