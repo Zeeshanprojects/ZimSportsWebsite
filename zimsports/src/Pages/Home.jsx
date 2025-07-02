@@ -185,6 +185,10 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="container-fluid"></div>
+ <div className="background-color">
+<h1 className="color-white">Hello World</h1>
+ </div>
 
       <div class="text-center my-4">
         <button type="button" class="btn secondary-btn">
@@ -345,44 +349,102 @@ export default function Home() {
                 Quick & Easy Setup
               </button>
             </div>
-            <h1 className="color-white text-center">
+            <h1 className="color-white text-center fw-bold">
               Get Started with Zim Sports in 3 Simple Steps
             </h1>
+            <br />
             <div className="container ">
               <div className="row">
-                <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 color-white text-center">
-                    <div className="icon d-flex align-items-center justify-content-center mb-3 ">
-                <img src={Image.icon3} alt="icon"  />
-              </div>
-                  
-                  <h2>Download app</h2>
-                  <div className="d-flex text-center">
-                      <img src={Image.github} alt="github" className="smallicon"/>
-                       
+                <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center text-white">
+                  <div className="icon d-flex align-items-center justify-content-center mb-3 mx-auto">
+                    <img src={Image.icon4} alt="icon" />
                   </div>
-                
+
+                  <h5>Download App</h5>
+
+                  <div className="d-flex justify-content-center mb-2">
+                    <img
+                      src={Image.github}
+                      alt="github"
+                      className="smallicon"
+                    />
+                  </div>
+
                   <p className="color-white">
-                    Download App. It will work for<br/> Android, Mac & Web
+                    Download App. It will work for <br />
+                    Android, Mac & Web
+                  </p>
+                </div>
+
+                <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 color-white text-center ">
+                  <div className="icon d-flex align-items-center justify-content-center mb-3 mx-auto">
+                    <img src={Image.icon5} alt="icon" />
+                  </div>
+
+                  <h5>Create Account</h5>
+                  <p className="color-white">Free for now</p>
+                  <p className="color-white">
+                    Our app is free for now,
+                    <br />
+                    Sign up and get started
                   </p>
                 </div>
                 <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 color-white text-center">
-                  <img src={Image.icon1} alt="icon1" className="icons" />
-                  <h2>Create Account</h2>
-                  <p className="color-white">Free for now</p>
-                  <p className="color-white">Our app is free for now,<br/>Sign up and get started</p>
-                </div>
-                <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 color-white text-center">
-                  <img src={Image.icon1} alt="icon1" className="icons" />
-                  <h2 className="color-white">Enjoy the app</h2>
+                  <div className="icon d-flex align-items-center justify-content-center mb-3 text-center mx-auto">
+                    <img src={Image.icon6} alt="icon" />
+                  </div>
+
+                  <h5 className="color-white">Enjoy the app</h5>
                   <p className="color-white">Read FAQs for any query</p>
 
-                  <p className="color-white">Enjoy our app & share<br/> most amazing app experience</p>
+                  <p className="color-white">
+                    Enjoy our app & share
+                    <br /> most amazing app experience
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="container my-5 ">
+              <div className="row">
+                <div className="col-12">
+                  <div className="d-flex justify-content-between align-items-center">
+                    <div className="step-item">
+                      <div className="step-circle">01</div>
+                    </div>
+
+                    <div className="step-line"></div>
+
+                    <div className="step-item">
+                      <div className="step-circle">02</div>
+                    </div>
+
+                    <div className="step-line"></div>
+
+                    <div className="step-item">
+                      <div className="step-circle">03</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <br />
+
+      <div className="container text-center">
+        <button type="button" class="btn secondary-btn mb-5 ">
+          Our Growing Community
+        </button>
+
+        <h1 className="main-heading">
+          <span>All-in-one solution</span>
+          <br />
+          for your Club Sports
+        </h1>
+      </div>
+      <br />
+      <b />
     </>
   );
 }
