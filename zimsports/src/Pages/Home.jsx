@@ -304,16 +304,14 @@ export default function Home() {
               fans are always in the loop, celebrating every victory and
               supporting their team.
             </p>
-              <ul className="list-unstyled ">
+            <ul className="list-unstyled ">
               <div className="d-flex align-items-center gap-2 pb-2">
                 <img
                   src={Image.greenchecked}
                   alt="greenchecked"
                   className="checked-icon"
                 />
-                <li>
-                 Real-time game updates and live scoreboards
-                </li>
+                <li>Real-time game updates and live scoreboards</li>
               </div>
               <div className="d-flex align-items-center gap-2 pb-2">
                 <img
@@ -321,9 +319,7 @@ export default function Home() {
                   alt="greenchecked"
                   className="checked-icon"
                 />
-                <li>
-                Secure team messaging and announcement features
-                </li>
+                <li>Secure team messaging and announcement features</li>
               </div>
 
               <div className="d-flex align-items-center gap-2 pb-2">
@@ -333,10 +329,57 @@ export default function Home() {
                   className="checked-icon"
                 />
                 <li>
-                Event reminders and calendar synchronization for families
+                  Event reminders and calendar synchronization for families
                 </li>
               </div>
             </ul>
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="row">
+          {" "}
+          <div className="background-color">
+            <div class="text-center my-4">
+              <button type="button" class="btn secondary-btn">
+                Quick & Easy Setup
+              </button>
+            </div>
+            <h1 className="color-white text-center">
+              Get Started with Zim Sports in 3 Simple Steps
+            </h1>
+            <div className="container ">
+              <div className="row">
+                <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 color-white text-center">
+                    <div className="icon d-flex align-items-center justify-content-center mb-3 ">
+                <img src={Image.icon3} alt="icon"  />
+              </div>
+                  
+                  <h2>Download app</h2>
+                  <div className="d-flex text-center">
+                      <img src={Image.github} alt="github" className="smallicon"/>
+                       
+                  </div>
+                
+                  <p className="color-white">
+                    Download App. It will work for<br/> Android, Mac & Web
+                  </p>
+                </div>
+                <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 color-white text-center">
+                  <img src={Image.icon1} alt="icon1" className="icons" />
+                  <h2>Create Account</h2>
+                  <p className="color-white">Free for now</p>
+                  <p className="color-white">Our app is free for now,<br/>Sign up and get started</p>
+                </div>
+                <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 color-white text-center">
+                  <img src={Image.icon1} alt="icon1" className="icons" />
+                  <h2 className="color-white">Enjoy the app</h2>
+                  <p className="color-white">Read FAQs for any query</p>
+
+                  <p className="color-white">Enjoy our app & share<br/> most amazing app experience</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
