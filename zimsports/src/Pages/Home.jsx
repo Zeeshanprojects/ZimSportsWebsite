@@ -185,10 +185,17 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="container-fluid"></div>
- <div className="background-color">
-<h1 className="color-white">Hello World</h1>
- </div>
+     <div className="container-fluid py-4">
+  <div className="marquee-container">
+    <div className="marquee-content">
+      <span>Hello World.</span>
+      <span>Welcome to Zim Sports!</span>
+      <span>Explore Our Latest Features.</span>
+      <span>Download the App Today!</span>
+    </div>
+  </div>
+</div>
+
 
       <div class="text-center my-4">
         <button type="button" class="btn secondary-btn">
