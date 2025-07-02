@@ -180,8 +180,8 @@ export default function Home() {
               {" "}
               Your comprehensive sports ecosystem <br /> designed to
               <br />
-              transform how you experience <img src={Image.usericon} alt="icon" className="usericon"/><span>sports</span> and <br />
-              empower<img src={Image.magnent} alt="magnet" className="icon"/> <span>your community</span>
+              transform how you experience <img src={Image.usericon} alt="icon" className="usericon"/> {" "}<span>sports</span> and <br />
+              empower{" "}<img src={Image.magnent} alt="magnet" className="icon"/> <span>your community</span>
             </h1>
           </div>
         </div>
@@ -371,7 +371,7 @@ export default function Home() {
                 Quick & Easy Setup
               </button>
             </div>
-            <h1 className="color-white text-center fw-bold">
+            <h1 className="color-white text-center fw-bold mb-5">
               Get Started with Zim Sports in 3 Simple Steps
             </h1>
             <br />

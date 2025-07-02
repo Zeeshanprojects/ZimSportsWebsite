@@ -16,6 +16,8 @@ const Image = {
     usericon:new URL("usericon.webp",import.meta.url).href,
     magnent:new URL("magnet.webp",import.meta.url).href,
     dot:new URL("dot.webp",import.meta.url).href,
+    googleplay:new URL("googleplay.webp",import.meta.url).href,
+    appstore:new URL("appstorebtn.webp",import.meta.url).href,
  
 };
 export default Image;

@@ -1,112 +1,59 @@
 import React from 'react'
-
+import Image from '../assets/Images/image'
+import '../assets/CSS/Footer.css'
 export default function Footer() {
   return (
 <>
-<>
-  {/* Remove the container if you want to extend the Footer to full width. */}
-  <div className="container-fluid ">
-    {/* Footer */}
-    <footer
-      className="text-center text-lg-start text-white"
-      style={{ backgroundColor: "#1c2331" }}
-    >
-      {/* Section: Social media */}
-      <section
-        className="d-flex justify-content-between p-4"
-        style={{ backgroundColor: "#6351ce" }}
-      >
-        {/* Left */}
-        <div className="me-5">
-          <span>Get connected with us on social networks:</span>
-        </div>
-        {/* Left */}
-        {/* Right */}
-        <div>
-          <a href="" className="text-white me-4">
-            <i className="fab fa-facebook-f" />
-          </a>
-          <a href="" className="text-white me-4">
-            <i className="fab fa-twitter" />
-          </a>
-          <a href="" className="text-white me-4">
-            <i className="fab fa-google" />
-          </a>
-          <a href="" className="text-white me-4">
-            <i className="fab fa-instagram" />
-          </a>
-          <a href="" className="text-white me-4">
-            <i className="fab fa-linkedin" />
-          </a>
-          <a href="" className="text-white me-4">
-            <i className="fab fa-github" />
-          </a>
-        </div>
-        {/* Right */}
-      </section>
-      {/* Section: Social media */}
-      {/* Section: Links  */}
-      <section className="">
-        <div className="container text-center text-md-start mt-5">
-          {/* Grid row */}
-          <div className="row mt-3">
-            {/* Grid column */}
-            <div className="col-md-3 col-lg-6 col-xl-6 mx-auto mb-4">
-              {/* Content */}
-              <h6 className="text-uppercase fw-bold">Company name</h6>
-              <hr
-                className="mb-4 mt-0 d-inline-block mx-auto"
-                style={{ width: 60, backgroundColor: "#7c4dff", height: 2 }}
+ <footer className="footer-section bg-dark text-white py-5">
+      <div className="container">
+        <div className="row align-items-center">
+
+          {/* Left Side */}
+          <div className="col-md-6 mb-4 mb-md-0">
+            <img src={Image.logo} alt="zim sports logo" style={{ width: '120px' }} className="mb-3" />
+            <h4 className="fw-bold">Subscribe newsletter</h4>
+            <p>Be the first to receive all latest post in your inbox</p>
+
+            {/* Email Input */}
+            <div className="input-group mb-2 mt-3">
+              <input
+                type="email"
+                className="form-control bg-dark text-white border border-secondary"
+                placeholder="Enter your email"
               />
-              <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
-              </p>
+              <button className="btn btn-success">
+                {/* <img src={sendIcon} alt="send" style={{ width: '20px' }} /> */}
+              </button>
             </div>
-   
-            <div className="col-md-4 col-lg-6 col-xl-6 mx-auto mb-md-0 mb-4">
-              {/* Links */}
-              <h6 className="text-uppercase fw-bold">Contact</h6>
-              <hr
-                className="mb-4 mt-0 d-inline-block mx-auto"
-                style={{ width: 60, backgroundColor: "#7c4dff", height: 2 }}
-              />
-              <p>
-                <i className="fas fa-home mr-3" /> New York, NY 10012, US
-              </p>
-              <p>
-                <i className="fas fa-envelope mr-3" /> info@example.com
-              </p>
-              <p>
-                <i className="fas fa-phone mr-3" /> + 01 234 567 88
-              </p>
-              <p>
-                <i className="fas fa-print mr-3" /> + 01 234 567 89
-              </p>
+
+            <small className="text-muted">By clicking send link you agree to receive message.</small>
+
+            <div className="mt-3">
+              <a href="mailto:support@zimsports.com" className="text-white me-3">support@zimsports.com</a> |
+              <a href="mailto:sales@zimsports.com" className="text-white ms-3">sales@zimsports.com</a>
             </div>
-            {/* Grid column */}
           </div>
-          {/* Grid row */}
-        </div>
-      </section>
-      {/* Section: Links  */}
-      {/* Copyright */}
-      <div
-        className="text-center p-3"
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
-      >
-        © 2020 Copyright:
-        <a className="text-white" href="https://mdbootstrap.com/">
-          MDBootstrap.com
-        </a>
-      </div>
-      {/* Copyright */}
-    </footer>
-    {/* Footer */}
+
+          {/* Right Side */}
+         <div className="col-md-6 text-md-end text-center">
+  <h5 className="fw-bold mb-4">Download app</h5>
+  <div className="d-flex justify-content-md-end justify-content-center gap-3 flex-wrap">
+    <a href="#" className="store-btn google-play-btn">
+      <i className="fab fa-google-play me-2"></i>
+      Get it on <strong className="ms-1">Google Play</strong>
+    </a>
+
+    <a href="#" className="store-btn app-store-btn">
+      <i className="fab fa-apple me-2"></i>
+      Download on <strong className="ms-1">App Store</strong>
+    </a>
   </div>
-  {/* End of .container */}
-</>
+</div>
+
+
+        </div>
+      </div>
+    </footer>
 
 </>
   )
