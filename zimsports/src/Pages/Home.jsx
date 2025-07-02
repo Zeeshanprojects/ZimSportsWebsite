@@ -113,7 +113,7 @@ export default function Home() {
 
             {/* Right Content */}
             <div className="col-sm-12 col-md-6">
-               <button type="button" class="btn secondary-btn mb-5 ">
+              <button type="button" class="btn secondary-btn mb-5 ">
                 For Teams
               </button>
               <div className="icon d-flex align-items-center justify-content-center mb-3">
@@ -146,7 +146,7 @@ export default function Home() {
 
             {/* Right Content */}
             <div className="col-sm-12 col-md-6 ">
-               <button type="button" class="btn secondary-btn mb-5 ">
+              <button type="button" class="btn secondary-btn mb-5 ">
                 For Families & Fans
               </button>
               <div className="icon d-flex align-items-center justify-content-center mb-3">
@@ -191,7 +191,7 @@ export default function Home() {
           Core Services
         </button>
       </div>
-      <div className="container">
+      <div className="container ps-5 pe-5">
         <div className="row">
           <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
             <h1 className="custom-para">
@@ -202,7 +202,7 @@ export default function Home() {
             </h1>
           </div>
 
-          <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
+          <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-5  ">
             <h2>
               <span>Effortless organization</span> for Coaches & Admins
             </h2>
@@ -212,21 +212,36 @@ export default function Home() {
               simplifies administrative tasks, allowing you to focus on the
               game.
             </p>
-            <ul>
-              <ls>
-                <h5>Automated Rosters & Scheduling</h5>
-                <p>
+            <ul className="list-unstyled ">
+              <li>
+                <div className="d-flex align-items-center gap-2">
+                  <img
+                    src={Image.checked}
+                    alt="checked-icon"
+                    className="checked-icon"
+                  />
+                  <h5 className="mb-0">Automated Rosters & Scheduling</h5>
+                </div>
+                <p className="ms-4">
                   Quickly set up teams, create schedules, and manage player
                   availability with automated tools.
                 </p>
-              </ls>
-              <ls>
-                <h5>Integrated Communication Hub</h5>
-                <p>
+              </li>
+
+              <li>
+                <div className="d-flex align-items-center gap-2">
+                  <img
+                    src={Image.checked}
+                    alt="checked-icon"
+                    className="checked-icon"
+                  />
+                  <h5 className="mb-0">Integrated Communication Hub</h5>
+                </div>
+                <p className="ms-4">
                   Facilitate seamless communication with instant messaging,
                   announcements, and direct chats.
                 </p>
-              </ls>
+              </li>
             </ul>
           </div>
           <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
@@ -240,6 +255,47 @@ export default function Home() {
               feedback to help athletes improve and teams strategize
               effectively.
             </p>
+            <ul className="list-unstyled ">
+              <div className="d-flex align-items-center gap-2">
+                <img
+                  src={Image.greenchecked}
+                  alt="greenchecked"
+                  className="checked-icon"
+                />
+                <li>
+                  Advanced statistical tracking for individual and team
+                  performance
+                </li>
+              </div>
+              <div className="d-flex align-items-center gap-2">
+                <img
+                  src={Image.greenchecked}
+                  alt="greenchecked"
+                  className="checked-icon"
+                />
+                <li>
+                  
+                     Intuitive video analysis tools for breakdown and highlight
+                  creation 
+                
+                 
+                </li>
+              </div>
+
+              <div className="d-flex align-items-center gap-2">
+                <img
+                  src={Image.greenchecked}
+                  alt="greenchecked"
+                  className="checked-icon"
+                />
+                <li>
+                  
+                    Customizable reports to identify strengths and areas for
+                    improvement
+                  
+                </li>
+              </div>
+            </ul>
           </div>
           <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
             <h2>

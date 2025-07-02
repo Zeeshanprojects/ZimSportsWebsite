@@ -8,5 +8,6 @@ const Image = {
   icon2: new URL("icon1.webp", import.meta.url).href,
   icon3: new URL("icon1.webp", import.meta.url).href,
   checked:new URL("checked.svg",import.meta.url).href,
+  greenchecked:new URL("accept.svg",import.meta.url).href,
 };
 export default Image;
