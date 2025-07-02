@@ -4,10 +4,11 @@
   justify-content: center;
   height: 100%;
   min-height: 100%;
+  font-weight: bold !important;
 }
 
-h1 {
-  font-size: 42px;
+.text-content h1 {
+  font-size: 50px !important;
   line-height: 56px;
   color: rgb(24, 26, 34);
 }
@@ -30,9 +31,9 @@ input {
 
 .primary-btn {
   background-color: #1f8e4b !important;
-  border-radius: 20px;
+  border-radius: 50px !important;
   color: white !important;
-  padding: 10px 20px;
+  padding: 12px 20px !important;
 }
 
 .banner-right {
@@ -59,29 +60,36 @@ input {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
+.checked-icon{
+  height: 20px;
+  width: 20px;
+}
 
 .background {
   padding: 30px !important;
   border-radius: 20px;
 }
+
 .background h1 {
   color: white !important;
 }
+
 .icon {
   background-color: white;
-  height: 60px;
-  width: 60px;
+  height: 80px;
+  width: 80px;
   border-radius: 20px;
 }
 
 .icon img {
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
 }
 
 .color-white {
   color: white;
 }
+
 .custom-para {
   margin-top: 0px;
   margin-bottom: 50px;
@@ -91,14 +99,16 @@ input {
 
   color: black !important;
 }
+
 .secondary-btn {
   background-color: #1f8e4b !important;
   color: white !important;
   border-radius: 20px !important;
-  padding: 10px 30px !important;
+  padding: 5px 30px !important;
 }
-.background-color{
-    background-color: #181A22 !important;
-    padding: 50px;
-    border-radius: 50px;
+
+.background-color {
+  background-color: #181a22 !important;
+  padding: 50px;
+  border-radius: 50px;
 }

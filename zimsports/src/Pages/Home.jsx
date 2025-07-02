@@ -14,8 +14,10 @@ export default function Home() {
           <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-4 mb-lg-0">
             <div className="text-content">
               <h1>
-                Zim Sports: Experience Every Game,
-                <span> Anywhere, Anytime</span>
+                <strong>
+                  Zim Sports: Experience Every Single Game,
+                  <span> Anywhere, Anytime</span>
+                </strong>
               </h1>
               <p>
                 Live-stream, capture, and relive every moment of your clubʼs
@@ -29,8 +31,19 @@ export default function Home() {
                 >
                   Start Now
                 </button>
-                <div className="d-flex gap-4 ms-2">
+
+                <div className="d-flex gap-4 ms-2 mt-2">
+                  <img
+                    src={Image.checked}
+                    alt="checked-icon"
+                    className="checked-icon"
+                  />
                   <p>Free for no</p>
+                  <img
+                    src={Image.checked}
+                    alt="checked-icon"
+                    className="checked-icon"
+                  />
                   <p>No credit card required</p>
                 </div>
               </div>
@@ -65,9 +78,13 @@ export default function Home() {
 
             {/* Right Content */}
             <div className="col-sm-12 col-md-6">
+              <button type="button" class="btn secondary-btn mb-5 ">
+                For Coaches
+              </button>
               <div className="icon d-flex align-items-center justify-content-center mb-3">
                 <img src={Image.icon1} alt="icon" />
               </div>
+
               <h1 className="color-white mb-3 ">
                 Streamline Your Coaching with Zim Sports
               </h1>
@@ -96,6 +113,9 @@ export default function Home() {
 
             {/* Right Content */}
             <div className="col-sm-12 col-md-6">
+               <button type="button" class="btn secondary-btn mb-5 ">
+                For Teams
+              </button>
               <div className="icon d-flex align-items-center justify-content-center mb-3">
                 <img src={Image.icon2} alt="icon" />
               </div>
@@ -126,6 +146,9 @@ export default function Home() {
 
             {/* Right Content */}
             <div className="col-sm-12 col-md-6 ">
+               <button type="button" class="btn secondary-btn mb-5 ">
+                For Families & Fans
+              </button>
               <div className="icon d-flex align-items-center justify-content-center mb-3">
                 <img src={Image.icon3} alt="icon" />
               </div>
@@ -190,16 +213,21 @@ export default function Home() {
               game.
             </p>
             <ul>
-                 <ls>
+              <ls>
                 <h5>Automated Rosters & Scheduling</h5>
-                <p>Quickly set up teams, create schedules, and manage player availability with automated tools.</p>
-            </ls>
-            <ls>
+                <p>
+                  Quickly set up teams, create schedules, and manage player
+                  availability with automated tools.
+                </p>
+              </ls>
+              <ls>
                 <h5>Integrated Communication Hub</h5>
-                <p>Facilitate seamless communication with instant messaging, announcements, and direct chats.</p>
-            </ls>
+                <p>
+                  Facilitate seamless communication with instant messaging,
+                  announcements, and direct chats.
+                </p>
+              </ls>
             </ul>
-           
           </div>
           <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
             <h2>
