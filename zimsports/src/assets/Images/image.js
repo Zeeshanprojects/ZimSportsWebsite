@@ -13,6 +13,9 @@ const Image = {
   checked:new URL("checked.svg",import.meta.url).href,
   greenchecked:new URL("accept.svg",import.meta.url).href,
     github:new URL("github.svg",import.meta.url).href,
+    usericon:new URL("usericon.webp",import.meta.url).href,
+    magnent:new URL("magnet.webp",import.meta.url).href,
+    dot:new URL("dot.webp",import.meta.url).href,
  
 };
 export default Image;

@@ -8,7 +8,8 @@ export default function Home() {
   });
   return (
     <>
-      <div className="container py-5">
+    <br/>
+      <div className="container py-5 mt-5">
         <div className="row align-items-center">
           {/* Text Section */}
           <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-4 mb-lg-0">
@@ -179,8 +180,8 @@ export default function Home() {
               {" "}
               Your comprehensive sports ecosystem <br /> designed to
               <br />
-              transform how you experience <span>sports</span> and <br />
-              empower <span>your community</span>
+              transform how you experience <img src={Image.usericon} alt="icon" className="usericon"/><span>sports</span> and <br />
+              empower<img src={Image.magnent} alt="magnet" className="icon"/> <span>your community</span>
             </h1>
           </div>
         </div>
@@ -188,10 +189,14 @@ export default function Home() {
      <div className="container-fluid py-4">
   <div className="marquee-container">
     <div className="marquee-content">
-      <span>Hello World.</span>
-      <span>Welcome to Zim Sports!</span>
-      <span>Explore Our Latest Features.</span>
-      <span>Download the App Today!</span>
+      <span> <img src={Image.dot} alt="dot" className="dot"/> {" "}Live Score Tracking <img src={Image.dot} alt="dot" className="dot"/> </span>
+      <span> <img src={Image.dot} alt="dot" className="dot"/> Player Development  <img src={Image.dot} alt="dot" className="dot"/></span>
+      <span>  <img src={Image.dot} alt="dot" className="dot"/> Fan Engagement  <img src={Image.dot} alt="dot" className="dot"/></span>
+      <span>  <img src={Image.dot} alt="dot" className="dot"/>Comprehensive Management  <img src={Image.dot} alt="dot" className="dot"/></span>
+      <span> <img src={Image.dot} alt="dot" className="dot"/> Intuitive Interface  <img src={Image.dot} alt="dot" className="dot"/></span>
+      <span> <img src={Image.dot} alt="dot" className="dot"/> Advanced Analytics  <img src={Image.dot} alt="dot" className="dot"/></span>
+      <span>  <img src={Image.dot} alt="dot" className="dot"/>Team Communication  <img src={Image.dot} alt="dot" className="dot"/></span>
+      <span> <img src={Image.dot} alt="dot" className="dot"/> Event Scheduling  <img src={Image.dot} alt="dot" className="dot"/></span>
     </div>
   </div>
 </div>
@@ -254,6 +259,9 @@ export default function Home() {
                 </p>
               </li>
             </ul>
+             <button className="btn btn-success navbar-btn ps-5 pe-5 pt-2 pb-2" type="submit">
+          Discover Management Feature
+        </button>
           </div>
           <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5 offset-2">
             <h2>
@@ -302,6 +310,9 @@ export default function Home() {
                 </li>
               </div>
             </ul>
+              <button className="btn btn-success navbar-btn ps-5 pe-5 pt-2 pb-2" type="submit">
+      Explore Analytics
+        </button>
           </div>
           <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5">
             <h2>
@@ -344,9 +355,13 @@ export default function Home() {
                 </li>
               </div>
             </ul>
+              <button className="btn btn-success navbar-btn ps-5 pe-5 pt-2 pb-2" type="submit">
+     See Fan Features
+        </button>
           </div>
         </div>
       </div>
+      <br/>
       <div className="container">
         <div className="row">
           {" "}
@@ -451,7 +466,21 @@ export default function Home() {
         </h1>
       </div>
       <br />
-      <b />
+    <div className="container-fluid py-4 p-0">
+  <div className="marquee-container">
+    <div className="marquee-content">
+      <span> <img src={Image.dot} alt="dot" className="dot"/> {" "}Download <img src={Image.dot} alt="dot" className="dot"/> </span>
+      <span> <img src={Image.dot} alt="dot" className="dot"/> Download  <img src={Image.dot} alt="dot" className="dot"/></span>
+      <span>  <img src={Image.dot} alt="dot" className="dot"/>Download  <img src={Image.dot} alt="dot" className="dot"/></span>
+      <span>  <img src={Image.dot} alt="dot" className="dot"/>Download  <img src={Image.dot} alt="dot" className="dot"/></span>
+      <span> <img src={Image.dot} alt="dot" className="dot"/> Download  <img src={Image.dot} alt="dot" className="dot"/></span>
+      <span> <img src={Image.dot} alt="dot" className="dot"/> Download  <img src={Image.dot} alt="dot" className="dot"/></span>
+      <span>  <img src={Image.dot} alt="dot" className="dot"/>Download <img src={Image.dot} alt="dot" className="dot"/></span>
+      <span> <img src={Image.dot} alt="dot" className="dot"/> Download  <img src={Image.dot} alt="dot" className="dot"/></span>
+    </div>
+  </div>
+</div>
+
     </>
   );
 }
