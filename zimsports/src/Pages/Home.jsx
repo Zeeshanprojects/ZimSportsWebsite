@@ -202,7 +202,7 @@ export default function Home() {
             </h1>
           </div>
 
-          <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-5  ">
+          <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5 mb-5  ">
             <h2>
               <span>Effortless organization</span> for Coaches & Admins
             </h2>
@@ -244,7 +244,7 @@ export default function Home() {
               </li>
             </ul>
           </div>
-          <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+          <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5 offset-2">
             <h2>
               {" "}
               <span>Unleash potential </span>with deep insights & video tools
@@ -256,48 +256,43 @@ export default function Home() {
               effectively.
             </p>
             <ul className="list-unstyled ">
-              <div className="d-flex align-items-center gap-2">
+              <div className="d-flex align-items-center gap-2 pb-2">
                 <img
                   src={Image.greenchecked}
                   alt="greenchecked"
-                  className="checked-icon"
+                  className="checked-icon mb-3"
                 />
                 <li>
                   Advanced statistical tracking for individual and team
                   performance
                 </li>
               </div>
-              <div className="d-flex align-items-center gap-2">
+              <div className="d-flex align-items-center gap-2 pb-2">
                 <img
                   src={Image.greenchecked}
                   alt="greenchecked"
-                  className="checked-icon"
+                  className="checked-icon mb-3"
                 />
                 <li>
-                  
-                     Intuitive video analysis tools for breakdown and highlight
-                  creation 
-                
-                 
+                  Intuitive video analysis tools for breakdown and highlight
+                  creation
                 </li>
               </div>
 
-              <div className="d-flex align-items-center gap-2">
+              <div className="d-flex align-items-center gap-2 pb-2">
                 <img
                   src={Image.greenchecked}
                   alt="greenchecked"
-                  className="checked-icon"
+                  className="checked-icon mb-3"
                 />
                 <li>
-                  
-                    Customizable reports to identify strengths and areas for
-                    improvement
-                  
+                  Customizable reports to identify strengths and areas for
+                  improvement
                 </li>
               </div>
             </ul>
           </div>
-          <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+          <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5">
             <h2>
               {" "}
               <span>Keep everyone connected </span>
@@ -309,6 +304,39 @@ export default function Home() {
               fans are always in the loop, celebrating every victory and
               supporting their team.
             </p>
+              <ul className="list-unstyled ">
+              <div className="d-flex align-items-center gap-2 pb-2">
+                <img
+                  src={Image.greenchecked}
+                  alt="greenchecked"
+                  className="checked-icon"
+                />
+                <li>
+                 Real-time game updates and live scoreboards
+                </li>
+              </div>
+              <div className="d-flex align-items-center gap-2 pb-2">
+                <img
+                  src={Image.greenchecked}
+                  alt="greenchecked"
+                  className="checked-icon"
+                />
+                <li>
+                Secure team messaging and announcement features
+                </li>
+              </div>
+
+              <div className="d-flex align-items-center gap-2 pb-2">
+                <img
+                  src={Image.greenchecked}
+                  alt="greenchecked"
+                  className="checked-icon"
+                />
+                <li>
+                Event reminders and calendar synchronization for families
+                </li>
+              </div>
+            </ul>
           </div>
         </div>
       </div>
