@@ -251,7 +251,7 @@ input {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
   color: white;
-  background: linear-gradient(120deg, #1f8e4b 30%, #2ea862 50%, #1f8e4b 70%);
+  background: linear-gradient(120deg,#0FB57F 30%, #0FB57F 50%,  70%);
   background-size: 200% 100%;
   position: relative;
   overflow: hidden;
@@ -264,9 +264,11 @@ input {
   animation: shimmer 1.2s linear forwards;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-form input::placeholder {
-  color: yellow !important;
+.form-color::placeholder {
+  color: black !important;
+  opacity: 1;
 }
+
 
 @keyframes shimmer {
   0% {
@@ -277,11 +279,4 @@ form input::placeholder {
   }
 }
 
-/* @keyframes scrollText {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-} */
+

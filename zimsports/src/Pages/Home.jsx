@@ -3,17 +3,12 @@ import "../assets/CSS/Home.css";
 import Image from "../assets/Images/image";
 
 export default function Home() {
-
-
-
-
   useEffect(() => {
     document.title = "Home | Zim Sports";
   });
   return (
     <>
- 
-    <div className="space"></div>
+      <div className="space"></div>
       <div className="container py-5 mt-5">
         <div className="row align-items-center">
           {/* Text Section */}
@@ -30,7 +25,7 @@ export default function Home() {
                 journey—powered by Zim Sports Technologies.
               </p>
               <div className="d-flex flex-wrap align-items-center mt-3">
-                <input type="email" placeholder="Enter Your Email" />
+                <input type="email" className="form-color" placeholder="Enter Your Email" />
                 <button
                   type="button"
                   className="btn primary-btn ps-5 pe-5 ms-3 mt-2 mt-sm-0"
@@ -57,72 +52,74 @@ export default function Home() {
           </div>
 
           {/* Image Section */}
-        <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 position-relative text-center">
-  {/* Banner Image */}
-  <img
-    src={Image.bannerright}
-    alt="banner-right"
-    className="banner-right img-fluid rounded"
-  />
+          <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 position-relative text-center">
+            {/* Banner Image */}
+            <img
+              src={Image.bannerright}
+              alt="banner-right"
+              className="banner-right img-fluid rounded"
+            />
 
-  {/* Play Button */}
-  <div
-    className="play-button"
-    data-bs-toggle="modal"
-    data-bs-target="#videoModal"
-    onClick={() => {
-      const iframe = document.getElementById("youtubePlayer");
-      iframe.src = "https://www.youtube.com/embed/L_Z2721wfEU?autoplay=1";
-    }}
-  >
-    &#9658;
-  </div>
+            {/* Play Button */}
+            <div
+              className="play-button"
+              data-bs-toggle="modal"
+              data-bs-target="#videoModal"
+              onClick={() => {
+                const iframe = document.getElementById("youtubePlayer");
+                iframe.src =
+                  "https://www.youtube.com/embed/L_Z2721wfEU?autoplay=1";
+              }}
+            >
+              &#9658;
+            </div>
 
-  {/* Modal */}
-  <div
-    className="modal fade"
-    id="videoModal"
-    tabIndex="-1"
-    aria-labelledby="videoModalLabel"
-    aria-hidden="true"
-  >
-    <div className="modal-dialog modal-dialog-centered modal-lg">
-      <div className="modal-content bg-dark">
-        <div className="modal-header border-0">
-          <h5 className="modal-title text-white" id="videoModalLabel">Watch Match</h5>
-          <button
-            type="button"
-            className="btn-close btn-close-white"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div className="modal-body p-0">
-          <div className="ratio ratio-16x9">
-            <iframe
-              id="youtubePlayer"
-              src=""
-              title="YouTube video"
-              frameBorder="0"
-              allow="autoplay; encrypted-media"
-              allowFullScreen
-            ></iframe>
+            {/* Modal */}
+            <div
+              className="modal fade"
+              id="videoModal"
+              tabIndex="-1"
+              aria-labelledby="videoModalLabel"
+              aria-hidden="true"
+            >
+              <div className="modal-dialog modal-dialog-centered modal-lg">
+                <div className="modal-content bg-dark">
+                  <div className="modal-header border-0">
+                    {/* <h5 className="modal-title text-white" id="videoModalLabel">
+                      Watch Match
+                    </h5> */}
+                    <button
+                      type="button"
+                      className="btn-close btn-close-white"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div className="modal-body p-0">
+                    <div className="ratio ratio-16x9">
+                      <iframe
+                        id="youtubePlayer"
+                        src=""
+                        title="YouTube video"
+                        frameBorder="0"
+                        allow="autoplay; encrypted-media"
+                        allowFullScreen
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
         </div>
       </div>
 
       <hr />
       <div className="watch-live-btn text-center">
-  <button type="button" className="btn btn-success btn-lg fw-bold">
-    🎥 Watch Match Live
-  </button>
-</div>  
+        <button type="button" className="btn btn-success btn-lg fw-bold">
+          🎥 Watch Match Live
+        </button>
+      </div>
 
       <div className="container-fluid ps-5 pe-5 px-5 py-5  text-white">
         <div className="background-color mb-5 ">
@@ -239,40 +236,91 @@ export default function Home() {
               {" "}
               Your comprehensive sports ecosystem <br /> designed to
               <br />
-              transform how you experience <img src={Image.usericon} alt="icon" className="usericon"/> {" "}<span>sports</span> and <br />
-              empower{" "}<img src={Image.magnent} alt="magnet" className="usericon"/> <span>your community</span>
+              transform how you experience{" "}
+              <img src={Image.usericon} alt="icon" className="usericon" />{" "}
+              <span>sports</span> and <br />
+              empower{" "}
+              <img src={Image.magnent} alt="magnet" className="usericon" />{" "}
+              <span>your community</span>
             </h1>
           </div>
         </div>
       </div>
-    <div className="container-fluid py-4 p-0">
-  <div className="marquee-container">
-    <div className="marquee-track">
-      <div className="marquee-content">
-        <span><img src={Image.dot} alt="dot" className="dot" /> Live Score Tracking <img src={Image.dot} alt="dot" className="dot" /></span>
-        <span><img src={Image.dot} alt="dot" className="dot" /> Player Development <img src={Image.dot} alt="dot" className="dot" /></span>
-        <span><img src={Image.dot} alt="dot" className="dot" /> Fan Engagement <img src={Image.dot} alt="dot" className="dot" /></span>
-        <span><img src={Image.dot} alt="dot" className="dot" /> Comprehensive Management <img src={Image.dot} alt="dot" className="dot" /></span>
-        <span><img src={Image.dot} alt="dot" className="dot" /> Intuitive Interface <img src={Image.dot} alt="dot" className="dot" /></span>
-        <span><img src={Image.dot} alt="dot" className="dot" /> Advanced Analytics <img src={Image.dot} alt="dot" className="dot" /></span>
-        <span><img src={Image.dot} alt="dot" className="dot" /> Team Communication <img src={Image.dot} alt="dot" className="dot" /></span>
-        <span><img src={Image.dot} alt="dot" className="dot" /> Event Scheduling <img src={Image.dot} alt="dot" className="dot" /></span>
+      <div className="container-fluid py-4 p-0">
+        <div className="marquee-container">
+          <div className="marquee-track">
+            <div className="marquee-content">
+              <span>
+                <img src={Image.dot} alt="dot" className="dot" /> Live Score
+                Tracking <img src={Image.dot} alt="dot" className="dot" />
+              </span>
+              <span>
+                <img src={Image.dot} alt="dot" className="dot" /> Player
+                Development <img src={Image.dot} alt="dot" className="dot" />
+              </span>
+              <span>
+                <img src={Image.dot} alt="dot" className="dot" /> Fan Engagement{" "}
+                <img src={Image.dot} alt="dot" className="dot" />
+              </span>
+              <span>
+                <img src={Image.dot} alt="dot" className="dot" /> Comprehensive
+                Management <img src={Image.dot} alt="dot" className="dot" />
+              </span>
+              <span>
+                <img src={Image.dot} alt="dot" className="dot" /> Intuitive
+                Interface <img src={Image.dot} alt="dot" className="dot" />
+              </span>
+              <span>
+                <img src={Image.dot} alt="dot" className="dot" /> Advanced
+                Analytics <img src={Image.dot} alt="dot" className="dot" />
+              </span>
+              <span>
+                <img src={Image.dot} alt="dot" className="dot" /> Team
+                Communication <img src={Image.dot} alt="dot" className="dot" />
+              </span>
+              <span>
+                <img src={Image.dot} alt="dot" className="dot" /> Event
+                Scheduling <img src={Image.dot} alt="dot" className="dot" />
+              </span>
+            </div>
+            <div className="marquee-content">
+              {/* Duplicate for seamless scroll */}
+              <span>
+                <img src={Image.dot} alt="dot" className="dot" /> Live Score
+                Tracking <img src={Image.dot} alt="dot" className="dot" />
+              </span>
+              <span>
+                <img src={Image.dot} alt="dot" className="dot" /> Player
+                Development <img src={Image.dot} alt="dot" className="dot" />
+              </span>
+              <span>
+                <img src={Image.dot} alt="dot" className="dot" /> Fan Engagement{" "}
+                <img src={Image.dot} alt="dot" className="dot" />
+              </span>
+              <span>
+                <img src={Image.dot} alt="dot" className="dot" /> Comprehensive
+                Management <img src={Image.dot} alt="dot" className="dot" />
+              </span>
+              <span>
+                <img src={Image.dot} alt="dot" className="dot" /> Intuitive
+                Interface <img src={Image.dot} alt="dot" className="dot" />
+              </span>
+              <span>
+                <img src={Image.dot} alt="dot" className="dot" /> Advanced
+                Analytics <img src={Image.dot} alt="dot" className="dot" />
+              </span>
+              <span>
+                <img src={Image.dot} alt="dot" className="dot" /> Team
+                Communication <img src={Image.dot} alt="dot" className="dot" />
+              </span>
+              <span>
+                <img src={Image.dot} alt="dot" className="dot" /> Event
+                Scheduling <img src={Image.dot} alt="dot" className="dot" />
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="marquee-content">
-        {/* Duplicate for seamless scroll */}
-        <span><img src={Image.dot} alt="dot" className="dot" /> Live Score Tracking <img src={Image.dot} alt="dot" className="dot" /></span>
-        <span><img src={Image.dot} alt="dot" className="dot" /> Player Development <img src={Image.dot} alt="dot" className="dot" /></span>
-        <span><img src={Image.dot} alt="dot" className="dot" /> Fan Engagement <img src={Image.dot} alt="dot" className="dot" /></span>
-        <span><img src={Image.dot} alt="dot" className="dot" /> Comprehensive Management <img src={Image.dot} alt="dot" className="dot" /></span>
-        <span><img src={Image.dot} alt="dot" className="dot" /> Intuitive Interface <img src={Image.dot} alt="dot" className="dot" /></span>
-        <span><img src={Image.dot} alt="dot" className="dot" /> Advanced Analytics <img src={Image.dot} alt="dot" className="dot" /></span>
-        <span><img src={Image.dot} alt="dot" className="dot" /> Team Communication <img src={Image.dot} alt="dot" className="dot" /></span>
-        <span><img src={Image.dot} alt="dot" className="dot" /> Event Scheduling <img src={Image.dot} alt="dot" className="dot" /></span>
-      </div>
-    </div>
-  </div>
-</div>
-
 
       <div class="text-center my-4">
         <button type="button" class="btn secondary-btn">
@@ -291,7 +339,7 @@ export default function Home() {
           </div>
 
           <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5 mb-5  ">
-            <p className="subparagraph">  Team & Player Management</p>
+            <p className="subparagraph"> Team & Player Management</p>
             <h2>
               <span>Effortless organization</span> for Coaches & Admins
             </h2>
@@ -332,9 +380,12 @@ export default function Home() {
                 </p>
               </li>
             </ul>
-             <button className="btn btn-success navbar-btn ps-5 pe-5 pt-2 pb-2" type="submit">
-          Discover Management Feature
-        </button>
+            <button
+              className="btn btn-success navbar-btn ps-5 pe-5 pt-2 pb-2"
+              type="submit"
+            >
+              Discover Management Feature
+            </button>
           </div>
           <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5 offset-2">
             <h2>
@@ -383,9 +434,12 @@ export default function Home() {
                 </li>
               </div>
             </ul>
-              <button className="btn btn-success navbar-btn ps-5 pe-5 pt-2 pb-2" type="submit">
-      Explore Analytics
-        </button>
+            <button
+              className="btn btn-success navbar-btn ps-5 pe-5 pt-2 pb-2"
+              type="submit"
+            >
+              Explore Analytics
+            </button>
           </div>
           <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5">
             <h2>
@@ -428,13 +482,16 @@ export default function Home() {
                 </li>
               </div>
             </ul>
-              <button className="btn btn-success navbar-btn ps-5 pe-5 pt-2 pb-2" type="submit">
-     See Fan Features
-        </button>
+            <button
+              className="btn btn-success navbar-btn ps-5 pe-5 pt-2 pb-2"
+              type="submit"
+            >
+              See Fan Features
+            </button>
           </div>
         </div>
       </div>
-      <br/>
+      <br />
       <div className="container">
         <div className="row">
           {" "}
@@ -539,90 +596,127 @@ export default function Home() {
         </h1>
       </div>
       <br />
-    <div className="container-fluid py-4 p-0">
-<div className="marquee-wrapper">
-  <div className="marquee-container">
-    <div className="marquee-track">
-      {/* Duplicate Content */}
-      <div className="marquee-content">
-        <span><img src={Image.dot} alt="dot" className="dot" /> Download <img src={Image.dot} alt="dot" className="dot" /></span>
-        <span><img src={Image.dot} alt="dot" className="dot" /> Download <img src={Image.dot} alt="dot" className="dot" /></span>
-        <span><img src={Image.dot} alt="dot" className="dot" /> Download <img src={Image.dot} alt="dot" className="dot" /></span>
-        <span><img src={Image.dot} alt="dot" className="dot" /> Download <img src={Image.dot} alt="dot" className="dot" /></span>
-      </div>
-      <div className="marquee-content">
-        <span><img src={Image.dot} alt="dot" className="dot" /> Download <img src={Image.dot} alt="dot" className="dot" /></span>
-        <span><img src={Image.dot} alt="dot" className="dot" /> Download <img src={Image.dot} alt="dot" className="dot" /></span>
-        <span><img src={Image.dot} alt="dot" className="dot" /> Download <img src={Image.dot} alt="dot" className="dot" /></span>
-        <span><img src={Image.dot} alt="dot" className="dot" /> Download <img src={Image.dot} alt="dot" className="dot" /></span>
-      </div>
-    </div>
-  </div>
-</div>
-
-</div>
-<div className="container py-5">
-  <div className="row align-items-center">
-    
-    {/* Left Column - Text */}
-    <div className="col-lg-6 mb-4 mb-lg-0">
-      <h1 className="fw-bold mb-3">Let's <span>Talk</span></h1>
-      <p className="text-muted">
-        Feel free to reach out to us with any questions, feedback, or suggestions.
-        We’re here to help and look forward to hearing from you.
-      </p>
-      <ul className="list-unstyled mt-4">
-        <li><strong>Email:</strong> support@zimsports.com</li>
-        <li><strong>Phone:</strong> +1 213 555 1234 </li>
-        <li><strong>Location:</strong> Laguna Beach, California</li>
-      </ul>
-    </div>
-
-    {/* Right Column - Form */}
-    <div className="col-lg-6">
-      <div className="p-4 border border-dark rounded-4 shadow-sm bg-light">
-        <form>
-          <div className="mb-3">
-            <label htmlFor="email" className="form-label fw-semibold">Email address</label>
-            <input
-              type="email"
-              id="email"
-              className="form-control border-dark rounded-3"
-              // placeholder="Enter your email"
-              required
-            />
+      <div className="container-fluid py-4 p-0">
+        <div className="marquee-wrapper">
+          <div className="marquee-container">
+            <div className="marquee-track">
+              {/* Duplicate Content */}
+              <div className="marquee-content">
+                <span>
+                  <img src={Image.dot} alt="dot" className="dot" /> Download{" "}
+                  <img src={Image.dot} alt="dot" className="dot" />
+                </span>
+                <span>
+                  <img src={Image.dot} alt="dot" className="dot" /> Download{" "}
+                  <img src={Image.dot} alt="dot" className="dot" />
+                </span>
+                <span>
+                  <img src={Image.dot} alt="dot" className="dot" /> Download{" "}
+                  <img src={Image.dot} alt="dot" className="dot" />
+                </span>
+                <span>
+                  <img src={Image.dot} alt="dot" className="dot" /> Download{" "}
+                  <img src={Image.dot} alt="dot" className="dot" />
+                </span>
+              </div>
+              <div className="marquee-content">
+                <span>
+                  <img src={Image.dot} alt="dot" className="dot" /> Download{" "}
+                  <img src={Image.dot} alt="dot" className="dot" />
+                </span>
+                <span>
+                  <img src={Image.dot} alt="dot" className="dot" /> Download{" "}
+                  <img src={Image.dot} alt="dot" className="dot" />
+                </span>
+                <span>
+                  <img src={Image.dot} alt="dot" className="dot" /> Download{" "}
+                  <img src={Image.dot} alt="dot" className="dot" />
+                </span>
+                <span>
+                  <img src={Image.dot} alt="dot" className="dot" /> Download{" "}
+                  <img src={Image.dot} alt="dot" className="dot" />
+                </span>
+              </div>
+            </div>
           </div>
-          <div className="mb-3">
-            <label htmlFor="password" className="form-label fw-semibold">Password</label>
-            <input
-              type="password"
-              id="password"
-              className="form-control border-dark rounded-3"
-              
-              // placeholder="Enter your password"
-              required
-               
-            />
-          </div>
-          <div className="mb-3">
-            <label htmlFor="message" className="form-label fw-semibold">Message</label>
-            <textarea
-              id="message"
-              className="form-control border-dark rounded-3"
-              rows="5"
-              // placeholder="Type your message..."
-              required
-            ></textarea>
-          </div>
-          <button type="submit" className="btn btn-success w-100 py-2 rounded-3 fw-bold">
-            Send Message
-          </button>
-        </form>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
+      <div className="container py-5">
+        <div className="row align-items-center">
+          {/* Left Column - Text */}
+          <div className="col-lg-6 mb-4 mb-lg-0">
+            <h1 className="fw-bold mb-3">
+              Let's <span>Talk</span>
+            </h1>
+            <p className="text-muted">
+              Feel free to reach out to us with any questions, feedback, or
+              suggestions. We’re here to help and look forward to hearing from
+              you.
+            </p>
+            <ul className="list-unstyled mt-4">
+              <li>
+                <strong>Email:</strong> support@zimsports.com
+              </li>
+              <li>
+                <strong>Phone:</strong> +1 213 555 1234{" "}
+              </li>
+              <li>
+                <strong>Location:</strong> Laguna Beach, California
+              </li>
+            </ul>
+          </div>
 
+          {/* Right Column - Form */}
+          <div className="col-lg-6">
+            <div className="p-4 border border-dark rounded-4 shadow-sm bg-light">
+              <form>
+                <div className="mb-3">
+                  <label htmlFor="email" className="form-label fw-semibold">
+                    Email address
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    className="form-control border-dark rounded-3"
+                    // placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="password" className="form-label fw-semibold">
+                    Password
+                  </label>
+                  <input
+                    type="password"
+                    id="password"
+                    className="form-control border-dark rounded-3"
+                    // placeholder="Enter your password"
+                    required
+                  />
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="message" className="form-label fw-semibold">
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    className="form-control border-dark rounded-3"
+                    rows="5"
+                    // placeholder="Type your message..."
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  className="btn btn-success w-100 py-2 rounded-3 fw-bold"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
