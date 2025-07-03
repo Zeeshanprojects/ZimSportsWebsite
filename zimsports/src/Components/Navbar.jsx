@@ -34,18 +34,18 @@ export default function Navbar() {
                 </Link>
               </Link>
               <li className="nav-item">
-                <Link className="nav-link active" href="#">
+                <Link className="nav-link active" to="#">
                   About us
                 </Link>
               </li>
              
               <li className="nav-item ">
-                <Link className="nav-link active" href="#">
+                <Link className="nav-link active" to="#">
                   Services
                 </Link>
               </li>
               <li className="nav-item ">
-                <Link className="nav-link active" href="#">
+                <Link className="nav-link active" to="#">
                   Contact
                 </Link>
               </li>
