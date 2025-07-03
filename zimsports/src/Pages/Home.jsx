@@ -219,6 +219,7 @@ export default function Home() {
           </div>
 
           <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5 mb-5  ">
+            <p className="subparagraph">  Team & Player Management</p>
             <h2>
               <span>Effortless organization</span> for Coaches & Admins
             </h2>
@@ -265,7 +266,7 @@ export default function Home() {
           </div>
           <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5 offset-2">
             <h2>
-              {" "}
+              <p className="subparagraph"> Performance Analytics & Video</p>
               <span>Unleash potential </span>with deep insights & video tools
             </h2>
             <p>
@@ -316,7 +317,7 @@ export default function Home() {
           </div>
           <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5">
             <h2>
-              {" "}
+              <p className="subparagraph"> Live Tracking & Fan Engagement</p>
               <span>Keep everyone connected </span>
               and part of the action
             </h2>
@@ -477,6 +478,67 @@ export default function Home() {
       <span> <img src={Image.dot} alt="dot" className="dot"/> Download  <img src={Image.dot} alt="dot" className="dot"/></span>
       <span>  <img src={Image.dot} alt="dot" className="dot"/>Download <img src={Image.dot} alt="dot" className="dot"/></span>
       <span> <img src={Image.dot} alt="dot" className="dot"/> Download  <img src={Image.dot} alt="dot" className="dot"/></span>
+    </div>
+  </div>
+</div>
+<div className="container py-5">
+  <div className="row align-items-center">
+    
+    {/* Left Column - Text */}
+    <div className="col-lg-6 mb-4 mb-lg-0">
+      <h1 className="fw-bold mb-3">Let's <span>Talk</span></h1>
+      <p className="text-muted">
+        Feel free to reach out to us with any questions, feedback, or suggestions.
+        We’re here to help and look forward to hearing from you.
+      </p>
+      <ul className="list-unstyled mt-4">
+        <li><strong>Email:</strong> support@zimsports.com</li>
+        <li><strong>Phone:</strong> +1 213 555 1234 </li>
+        <li><strong>Location:</strong> Laguna Beach, California</li>
+      </ul>
+    </div>
+
+    {/* Right Column - Form */}
+    <div className="col-lg-6">
+      <div className="p-4 border border-dark rounded-4 shadow-sm bg-light">
+        <form>
+          <div className="mb-3">
+            <label htmlFor="email" className="form-label fw-semibold">Email address</label>
+            <input
+              type="email"
+              id="email"
+              className="form-control border-dark rounded-3"
+              // placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="password" className="form-label fw-semibold">Password</label>
+            <input
+              type="password"
+              id="password"
+              className="form-control border-dark rounded-3"
+              
+              // placeholder="Enter your password"
+              required
+               
+            />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="message" className="form-label fw-semibold">Message</label>
+            <textarea
+              id="message"
+              className="form-control border-dark rounded-3"
+              rows="5"
+              // placeholder="Type your message..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" className="btn btn-success w-100 py-2 rounded-3 fw-bold">
+            Send Message
+          </button>
+        </form>
+      </div>
     </div>
   </div>
 </div>
