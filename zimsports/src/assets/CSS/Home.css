@@ -1,3 +1,4 @@
+
 .text-content {
   display: flex;
   flex-direction: column;
@@ -48,18 +49,29 @@ input {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 40px;
+
+  font-size: 48px; /* Increased icon size */
   background-color: white;
   color: #1f8e4b;
+
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 80px; /* Increased width */
+  height: 80px; /* Increased height */
+
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  transition: all 0.3s ease;
 }
+
+.play-button:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
 .checked-icon {
   height: 20px;
   width: 20px;
@@ -158,7 +170,7 @@ input {
   height: 12px;
   margin: 0 10px; /* left and right spacing */
 }
-.marquee-container {
+/* .marquee-container {
   overflow: hidden;
   white-space: nowrap;
   padding-top: 50px;
@@ -180,7 +192,47 @@ input {
   color: white !important;
   font-size: 50px;
   font-weight: bold;
+} */
+.marquee-container {
+  overflow: hidden;
+  transform: skewY(-2deg);
+  white-space: nowrap;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: black; /* optional */
 }
+
+.marquee-track {
+  display: flex;
+  width: fit-content;
+  animation: scroll-left 25s linear infinite;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 60px;
+  padding-right: 60px;
+}
+
+.marquee-content span {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 500;
+  font-weight: bold;
+  color: white !important;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .subparagraph {
   color: #1f8e4b;
 }
@@ -191,7 +243,6 @@ input {
   transform: translateX(-50%);
   z-index: 9999;
 }
-/*     */
 
 .watch-live-btn button {
   padding: 15px 30px;
@@ -199,23 +250,38 @@ input {
   border-radius: 50px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
-
   color: white;
+  background: linear-gradient(120deg, #1f8e4b 30%, #2ea862 50%, #1f8e4b 70%);
+  background-size: 200% 100%;
+  position: relative;
+  overflow: hidden;
+  border: none;
 }
 
 .watch-live-btn button:hover {
   transform: scale(1.05);
+  background-position: -100% 0;
+  animation: shimmer 1.2s linear forwards;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-
-input::placeholder {
-  color: gray !important ;
+form input::placeholder {
+  color: yellow !important;
 }
-@keyframes scrollText {
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* @keyframes scrollText {
   from {
     transform: translateX(0%);
   }
   to {
     transform: translateX(-100%);
   }
-}
+} */

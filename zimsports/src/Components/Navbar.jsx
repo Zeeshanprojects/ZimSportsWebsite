@@ -61,6 +61,7 @@ export default function Navbar() {
             <hr />
           </div>
         </div>
+        <div className="navbar-underline"></div>
       </nav>
     </>
   );

@@ -3,12 +3,17 @@ import "../assets/CSS/Home.css";
 import Image from "../assets/Images/image";
 
 export default function Home() {
+
+
+
+
   useEffect(() => {
     document.title = "Home | Zim Sports";
   });
   return (
     <>
-    <br/>
+ 
+    <div className="space"></div>
       <div className="container py-5 mt-5">
         <div className="row align-items-center">
           {/* Text Section */}
@@ -52,14 +57,63 @@ export default function Home() {
           </div>
 
           {/* Image Section */}
-          <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 position-relative text-center">
-            <img
-              src={Image.bannerright}
-              alt="banner-right"
-              className="banner-right img-fluid rounded"
-            />
-            <div className="play-button">&#9658;</div>
+        <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 position-relative text-center">
+  {/* Banner Image */}
+  <img
+    src={Image.bannerright}
+    alt="banner-right"
+    className="banner-right img-fluid rounded"
+  />
+
+  {/* Play Button */}
+  <div
+    className="play-button"
+    data-bs-toggle="modal"
+    data-bs-target="#videoModal"
+    onClick={() => {
+      const iframe = document.getElementById("youtubePlayer");
+      iframe.src = "https://www.youtube.com/embed/L_Z2721wfEU?autoplay=1";
+    }}
+  >
+    &#9658;
+  </div>
+
+  {/* Modal */}
+  <div
+    className="modal fade"
+    id="videoModal"
+    tabIndex="-1"
+    aria-labelledby="videoModalLabel"
+    aria-hidden="true"
+  >
+    <div className="modal-dialog modal-dialog-centered modal-lg">
+      <div className="modal-content bg-dark">
+        <div className="modal-header border-0">
+          <h5 className="modal-title text-white" id="videoModalLabel">Watch Match</h5>
+          <button
+            type="button"
+            className="btn-close btn-close-white"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div className="modal-body p-0">
+          <div className="ratio ratio-16x9">
+            <iframe
+              id="youtubePlayer"
+              src=""
+              title="YouTube video"
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+            ></iframe>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
         </div>
       </div>
 
@@ -191,17 +245,30 @@ export default function Home() {
           </div>
         </div>
       </div>
-     <div className="container-fluid py-4">
+    <div className="container-fluid py-4 p-0">
   <div className="marquee-container">
-    <div className="marquee-content">
-      <span> <img src={Image.dot} alt="dot" className="dot"/> {" "}Live Score Tracking <img src={Image.dot} alt="dot" className="dot"/> </span>
-      <span> <img src={Image.dot} alt="dot" className="dot"/> Player Development  <img src={Image.dot} alt="dot" className="dot"/></span>
-      <span>  <img src={Image.dot} alt="dot" className="dot"/> Fan Engagement  <img src={Image.dot} alt="dot" className="dot"/></span>
-      <span>  <img src={Image.dot} alt="dot" className="dot"/>Comprehensive Management  <img src={Image.dot} alt="dot" className="dot"/></span>
-      <span> <img src={Image.dot} alt="dot" className="dot"/> Intuitive Interface  <img src={Image.dot} alt="dot" className="dot"/></span>
-      <span> <img src={Image.dot} alt="dot" className="dot"/> Advanced Analytics  <img src={Image.dot} alt="dot" className="dot"/></span>
-      <span>  <img src={Image.dot} alt="dot" className="dot"/>Team Communication  <img src={Image.dot} alt="dot" className="dot"/></span>
-      <span> <img src={Image.dot} alt="dot" className="dot"/> Event Scheduling  <img src={Image.dot} alt="dot" className="dot"/></span>
+    <div className="marquee-track">
+      <div className="marquee-content">
+        <span><img src={Image.dot} alt="dot" className="dot" /> Live Score Tracking <img src={Image.dot} alt="dot" className="dot" /></span>
+        <span><img src={Image.dot} alt="dot" className="dot" /> Player Development <img src={Image.dot} alt="dot" className="dot" /></span>
+        <span><img src={Image.dot} alt="dot" className="dot" /> Fan Engagement <img src={Image.dot} alt="dot" className="dot" /></span>
+        <span><img src={Image.dot} alt="dot" className="dot" /> Comprehensive Management <img src={Image.dot} alt="dot" className="dot" /></span>
+        <span><img src={Image.dot} alt="dot" className="dot" /> Intuitive Interface <img src={Image.dot} alt="dot" className="dot" /></span>
+        <span><img src={Image.dot} alt="dot" className="dot" /> Advanced Analytics <img src={Image.dot} alt="dot" className="dot" /></span>
+        <span><img src={Image.dot} alt="dot" className="dot" /> Team Communication <img src={Image.dot} alt="dot" className="dot" /></span>
+        <span><img src={Image.dot} alt="dot" className="dot" /> Event Scheduling <img src={Image.dot} alt="dot" className="dot" /></span>
+      </div>
+      <div className="marquee-content">
+        {/* Duplicate for seamless scroll */}
+        <span><img src={Image.dot} alt="dot" className="dot" /> Live Score Tracking <img src={Image.dot} alt="dot" className="dot" /></span>
+        <span><img src={Image.dot} alt="dot" className="dot" /> Player Development <img src={Image.dot} alt="dot" className="dot" /></span>
+        <span><img src={Image.dot} alt="dot" className="dot" /> Fan Engagement <img src={Image.dot} alt="dot" className="dot" /></span>
+        <span><img src={Image.dot} alt="dot" className="dot" /> Comprehensive Management <img src={Image.dot} alt="dot" className="dot" /></span>
+        <span><img src={Image.dot} alt="dot" className="dot" /> Intuitive Interface <img src={Image.dot} alt="dot" className="dot" /></span>
+        <span><img src={Image.dot} alt="dot" className="dot" /> Advanced Analytics <img src={Image.dot} alt="dot" className="dot" /></span>
+        <span><img src={Image.dot} alt="dot" className="dot" /> Team Communication <img src={Image.dot} alt="dot" className="dot" /></span>
+        <span><img src={Image.dot} alt="dot" className="dot" /> Event Scheduling <img src={Image.dot} alt="dot" className="dot" /></span>
+      </div>
     </div>
   </div>
 </div>
@@ -473,18 +540,26 @@ export default function Home() {
       </div>
       <br />
     <div className="container-fluid py-4 p-0">
+<div className="marquee-wrapper">
   <div className="marquee-container">
-    <div className="marquee-content">
-      <span> <img src={Image.dot} alt="dot" className="dot"/> {" "}Download <img src={Image.dot} alt="dot" className="dot"/> </span>
-      <span> <img src={Image.dot} alt="dot" className="dot"/> Download  <img src={Image.dot} alt="dot" className="dot"/></span>
-      <span>  <img src={Image.dot} alt="dot" className="dot"/>Download  <img src={Image.dot} alt="dot" className="dot"/></span>
-      <span>  <img src={Image.dot} alt="dot" className="dot"/>Download  <img src={Image.dot} alt="dot" className="dot"/></span>
-      <span> <img src={Image.dot} alt="dot" className="dot"/> Download  <img src={Image.dot} alt="dot" className="dot"/></span>
-      <span> <img src={Image.dot} alt="dot" className="dot"/> Download  <img src={Image.dot} alt="dot" className="dot"/></span>
-      <span>  <img src={Image.dot} alt="dot" className="dot"/>Download <img src={Image.dot} alt="dot" className="dot"/></span>
-      <span> <img src={Image.dot} alt="dot" className="dot"/> Download  <img src={Image.dot} alt="dot" className="dot"/></span>
+    <div className="marquee-track">
+      {/* Duplicate Content */}
+      <div className="marquee-content">
+        <span><img src={Image.dot} alt="dot" className="dot" /> Download <img src={Image.dot} alt="dot" className="dot" /></span>
+        <span><img src={Image.dot} alt="dot" className="dot" /> Download <img src={Image.dot} alt="dot" className="dot" /></span>
+        <span><img src={Image.dot} alt="dot" className="dot" /> Download <img src={Image.dot} alt="dot" className="dot" /></span>
+        <span><img src={Image.dot} alt="dot" className="dot" /> Download <img src={Image.dot} alt="dot" className="dot" /></span>
+      </div>
+      <div className="marquee-content">
+        <span><img src={Image.dot} alt="dot" className="dot" /> Download <img src={Image.dot} alt="dot" className="dot" /></span>
+        <span><img src={Image.dot} alt="dot" className="dot" /> Download <img src={Image.dot} alt="dot" className="dot" /></span>
+        <span><img src={Image.dot} alt="dot" className="dot" /> Download <img src={Image.dot} alt="dot" className="dot" /></span>
+        <span><img src={Image.dot} alt="dot" className="dot" /> Download <img src={Image.dot} alt="dot" className="dot" /></span>
+      </div>
     </div>
   </div>
+</div>
+
 </div>
 <div className="container py-5">
   <div className="row align-items-center">
