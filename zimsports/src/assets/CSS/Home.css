@@ -257,6 +257,9 @@ input {
   overflow: hidden;
   border: none;
 }
+body.modal-open .watch-live-btn {
+  transform: translateX(calc(-50% - 7.5px));
+}
 
 .watch-live-btn button:hover {
   transform: scale(1.05);

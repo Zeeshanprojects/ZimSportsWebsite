@@ -85,9 +85,9 @@ export default function Home() {
               <div className="modal-dialog modal-dialog-centered modal-lg">
                 <div className="modal-content bg-dark">
                   <div className="modal-header border-0">
-                    {/* <h5 className="modal-title text-white" id="videoModalLabel">
-                      Watch Match
-                    </h5> */}
+                    <h5 className="modal-title text-white" id="videoModalLabel">
+                      Watch Match Live
+                    </h5>
                     <button
                       type="button"
                       className="btn-close btn-close-white"
