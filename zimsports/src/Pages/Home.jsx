@@ -64,6 +64,11 @@ export default function Home() {
       </div>
 
       <hr />
+      <div className="watch-live-btn text-center">
+  <button type="button" className="btn btn-success btn-lg fw-bold">
+    🎥 Watch Match Live
+  </button>
+</div>  
 
       <div className="container-fluid ps-5 pe-5 px-5 py-5  text-white">
         <div className="background-color mb-5 ">
@@ -181,7 +186,7 @@ export default function Home() {
               Your comprehensive sports ecosystem <br /> designed to
               <br />
               transform how you experience <img src={Image.usericon} alt="icon" className="usericon"/> {" "}<span>sports</span> and <br />
-              empower{" "}<img src={Image.magnent} alt="magnet" className="icon"/> <span>your community</span>
+              empower{" "}<img src={Image.magnent} alt="magnet" className="usericon"/> <span>your community</span>
             </h1>
           </div>
         </div>
