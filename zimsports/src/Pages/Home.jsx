@@ -9,7 +9,8 @@ export default function Home() {
   return (
     <>
       <div className="space"></div>
-      <div className="container py-5 mt-5">
+      <div id="Home">
+         <div className="container py-5 mt-5">
         <div className="row align-items-center">
           {/* Text Section */}
           <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-4 mb-lg-0">
@@ -118,6 +119,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+      </div>
+     
 
       <hr />
       <div className="watch-live-btn text-center">
@@ -126,7 +129,8 @@ export default function Home() {
         </button>
       </div>
 
-      <div className="container-fluid ps-5 pe-5 px-5 py-5  text-white">
+<div id="Features">
+   <div className="container-fluid ps-5 pe-5 px-5 py-5  text-white">
         <div className="background-color mb-5 ">
           <div className="row align-items-center">
             {/* Left Image */}
@@ -234,7 +238,10 @@ export default function Home() {
           About Zim Sports
         </button>
       </div>
-      <div className="container">
+</div>
+     
+     <div id="About">
+       <div className="container">
         <div className="row">
           <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
             <h1 className="custom-para">
@@ -251,7 +258,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="container-fluid py-4 p-0">
+     </div>
+
+    
+       <div className="container-fluid py-4 p-0">
         <div className="marquee-container">
           <div className="marquee-track">
             <div className="marquee-content">
@@ -326,8 +336,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <div class="text-center my-4">
+    
+<div id="Services">
+   <div class="text-center my-4">
         <button type="button" class="btn secondary-btn">
           Core Services
         </button>
@@ -496,6 +507,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+</div>
+     
       <br />
       <div className="container">
         <div className="row">

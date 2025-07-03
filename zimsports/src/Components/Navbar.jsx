@@ -28,25 +28,26 @@ export default function Navbar() {
                   Home
                 </Link>
               </li>
-              <li className="nav-item">
-                <a className="nav-link active" href="#">
-                  About us
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" href="#">
+               <Link className="nav-item">
+                <a className="nav-link active" to="#">
                   Features
                 </a>
+              </Link>
+              <li className="nav-item">
+                <Link className="nav-link active" href="#">
+                  About us
+                </Link>
               </li>
+             
               <li className="nav-item ">
-                <a className="nav-link active" href="#">
+                <Link className="nav-link active" href="#">
                   Services
-                </a>
+                </Link>
               </li>
               <li className="nav-item ">
-                <a className="nav-link active" href="#">
+                <Link className="nav-link active" href="#">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
             <form className="d-flex">
