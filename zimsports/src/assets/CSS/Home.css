@@ -43,33 +43,30 @@ input {
   height: auto;
   border-radius: 20px;
 }
-
-.play-button {
+.play-button-wrapper {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 5;
+}
 
-  font-size: 48px; /* Increased icon size */
+.play-button-bg {
   background-color: white;
-  color: #1f8e4b;
-
   border-radius: 50%;
-  width: 80px; /* Increased width */
-  height: 80px; /* Increased height */
-
+  width: 100px; /* adjust background size */
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-.play-button:hover {
-  transform: translate(-50%, -50%) scale(1.1);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+.play-icon {
+  color: #1f8e4b;
+  font-size: 50px; /* adjust icon size */
+  margin-left: 3px; /* optional: center triangle better */
 }
 
 .checked-icon {
@@ -116,7 +113,7 @@ input {
   margin-top: 0px;
   margin-bottom: 50px;
   text-align: center;
-  font-size: 50px;
+  font-size: 43px;
   font-weight: bold;
 
   color: black !important;

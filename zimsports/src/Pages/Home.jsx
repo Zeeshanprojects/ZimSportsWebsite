@@ -25,7 +25,11 @@ export default function Home() {
                 journey—powered by Zim Sports Technologies.
               </p>
               <div className="d-flex flex-wrap align-items-center mt-3">
-                <input type="email" className="form-color" placeholder="Enter Your Email" />
+                <input
+                  type="email"
+                  className="form-color"
+                  placeholder="Enter Your Email"
+                />
                 <button
                   type="button"
                   className="btn primary-btn ps-5 pe-5 ms-3 mt-2 mt-sm-0"
@@ -60,9 +64,8 @@ export default function Home() {
               className="banner-right img-fluid rounded"
             />
 
-            {/* Play Button */}
             <div
-              className="play-button"
+              className="play-button-wrapper"
               data-bs-toggle="modal"
               data-bs-target="#videoModal"
               onClick={() => {
@@ -71,7 +74,9 @@ export default function Home() {
                   "https://www.youtube.com/embed/L_Z2721wfEU?autoplay=1";
               }}
             >
-              &#9658;
+              <div className="play-button-bg">
+                <div className="play-icon">&#9658;</div>
+              </div>
             </div>
 
             {/* Modal */}
@@ -653,7 +658,7 @@ export default function Home() {
               suggestions. We’re here to help and look forward to hearing from
               you.
             </p>
-            <ul className="list-unstyled mt-4">
+            <ul className="list-unstyled mt-4 ">
               <li>
                 <strong>Email:</strong> support@zimsports.com
               </li>

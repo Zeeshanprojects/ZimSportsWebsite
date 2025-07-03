@@ -36,10 +36,11 @@ export default function Footer() {
                 By clicking send link you agree to receive message.
               </small>
 
-              <div className="mt-3">
+              <div className="mt-3 ">
                 <a
-                  href="mailto:support@zimsports.com"
+                  href="mailto:support@zimsports.com "
                   className="text-white me-3"
+                  style={{ textDecoration: "none" }}
                 >
                   support@zimsports.com
                 </a>{" "}
@@ -47,6 +48,7 @@ export default function Footer() {
                 <a
                   href="mailto:sales@zimsports.com"
                   className="text-white ms-3"
+                  style={{ textDecoration: "none" }} 
                 >
                   sales@zimsports.com
                 </a>
