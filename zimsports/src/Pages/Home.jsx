@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <div className="space"></div>
-      <div id="Home">
+      <div id="Home" className="section">
         <div className="container py-5 mt-5">
           <div className="row align-items-center">
             {/* Text Section */}
@@ -131,7 +131,7 @@ export default function Home() {
         </button>
       </div>
 
-      <div id="Features">
+      <div id="Features" className="section">
         <div className="container-fluid ps-5 pe-5 px-5 py-5  text-white">
           <div className="background-color mb-5 ">
             <div className="row align-items-center">
@@ -237,14 +237,17 @@ export default function Home() {
           </div>
         </div>
 
-        <div class="text-center my-4">
+       
+      </div>
+
+      <div id="About" className="section">
+
+         <div class="text-center ">
           <button type="button" class="btn secondary-btn">
             About Zim Sports
           </button>
         </div>
-      </div>
-
-      <div id="About">
+        
         <div className="container">
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
@@ -351,7 +354,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="Services">
+      <div id="Services" className="section">
         <div class="text-center my-4">
           <button type="button" class="btn secondary-btn">
             Core Services
@@ -673,7 +676,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="Contact">
+      <div id="Contact" className="section">
         <div className="container py-5">
           <div className="row align-items-center">
             {/* Left Column - Text */}
