@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <div className="space"></div>
       <div id="Home" className="section">
-        <div className="container py-5 mt-5">
+        <div className="container py-lg-5 mt-lg-5">
           <div className="row align-items-center">
             {/* Text Section */}
             <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-4 mb-lg-0">

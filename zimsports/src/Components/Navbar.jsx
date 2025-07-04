@@ -3,15 +3,18 @@ import Image from "../assets/Images/image";
 import "../assets/CSS/Navbar.css";
 
 export default function Navbar() {
-  const closeNavbar = () => {
-    const navbarCollapse = document.getElementById("navbarSupportedContent");
-    if (navbarCollapse && navbarCollapse.classList.contains("show")) {
-      const bsCollapse = new window.bootstrap.Collapse(navbarCollapse, {
-        toggle: true,
-      });
-      bsCollapse.hide();
-    }
-  };
+ const closeNavbar = () => {
+  const toggler = document.querySelector(".navbar-toggler");
+  const navbarCollapse = document.getElementById("navbarSupportedContent");
+
+  // If the toggler is visible (menu is open on small screen), and menu is shown
+  if (
+    window.getComputedStyle(toggler).display !== "none" &&
+    navbarCollapse.classList.contains("show")
+  ) {
+    toggler.click(); // This will automatically trigger collapse
+  }
+};
 
   return (
     <>
@@ -70,7 +73,7 @@ export default function Navbar() {
             <hr />
           </div>
         </div>
-        <div className="navbar-underline"></div>
+        {/* <div className="navbar-underline"></div> */}
       </nav>
     </>
   );
