@@ -57,7 +57,7 @@ export default function Home() {
             </div>
 
             {/* Image Section */}
-            <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 position-relative text-center">
+            <div className=" col-sm-12 col-md-12 col-lg-6 col-xl-6 position-relative text-center">
               {/* Banner Image */}
               <img
                 src={Image.bannerright}
@@ -132,7 +132,7 @@ export default function Home() {
       </div>
 
       <div id="Features" className="section">
-        <div className="container-fluid ps-5 pe-5 px-5 py-5  text-white">
+        <div className="container-fluid  ps-3 pe-3 ps-lg-5 pe-lg-5  py-5  text-white">
           <div className="background-color mb-5 ">
             <div className="row align-items-center">
               {/* Left Image */}
@@ -149,11 +149,11 @@ export default function Home() {
                 <button type="button" class="btn secondary-btn mb-5 ">
                   For Coaches
                 </button>
-                <div className="icon d-flex align-items-center justify-content-center mb-3">
+                <div className="icon d-flex flex-direction-column align-items-center justify-content-center mb-3">
                   <img src={Image.icon1} alt="icon" />
                 </div>
 
-                <h1 className="color-white mb-3 ">
+                <h1 className="color-white mb-3">
                   Streamline Your Coaching with Zim Sports
                 </h1>
                 <p className="color-white">
@@ -420,7 +420,7 @@ export default function Home() {
                 Discover Management Feature
               </button>
             </div>
-            <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5 offset-2">
+            <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5 offset-lg-2 mb-5">
               <h2>
                 <p className="subparagraph"> Performance Analytics & Video</p>
                 <span>Unleash potential </span>with deep insights & video tools
