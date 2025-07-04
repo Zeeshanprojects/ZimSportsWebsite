@@ -28,11 +28,12 @@ export default function Navbar() {
                   Home
                 </Link>
               </li>
-               <Link className="nav-item">
+              <li className="nav-item">
                 <Link className="nav-link active" to="#">
                   Features
                 </Link>
-              </Link>
+              </li>
+              
               <li className="nav-item">
                 <Link className="nav-link active" to="#">
                   About us
