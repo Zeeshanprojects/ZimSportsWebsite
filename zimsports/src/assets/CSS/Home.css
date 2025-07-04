@@ -1,4 +1,6 @@
- 
+ .section {
+  scroll-margin-top: 100px; /* adjust to your navbar height */
+}
 .text-content {
   display: flex;
   flex-direction: column;
@@ -167,29 +169,7 @@ input {
   height: 12px;
   margin: 0 10px; /* left and right spacing */
 }
-/* .marquee-container {
-  overflow: hidden;
-  white-space: nowrap;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: #16181d;
-}
 
-.marquee-content {
-  display: inline-block;
-  padding-left: 100%;
-  animation: scrollText 40s linear infinite;
-
-  font-size: 1.5rem;
-}
-
-.marquee-content span {
-  margin-right: 100px;
-  display: inline-block;
-  color: white !important;
-  font-size: 50px;
-  font-weight: bold;
-} */
 .marquee-container {
   overflow: hidden;
   transform: skewY(-2deg);

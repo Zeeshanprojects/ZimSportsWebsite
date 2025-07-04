@@ -124,7 +124,6 @@ export default function Home() {
         </div>
       </div>
 
-      <hr />
       <div className="watch-live-btn text-center">
         <button type="button" className="btn btn-success btn-lg fw-bold">
           🎥 Watch Match Live
