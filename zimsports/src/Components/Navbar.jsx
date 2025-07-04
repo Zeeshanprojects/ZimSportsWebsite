@@ -3,6 +3,16 @@ import Image from "../assets/Images/image";
 import "../assets/CSS/Navbar.css";
 
 export default function Navbar() {
+  const closeNavbar = () => {
+    const navbarCollapse = document.getElementById("navbarSupportedContent");
+    if (navbarCollapse && navbarCollapse.classList.contains("show")) {
+      const bsCollapse = new window.bootstrap.Collapse(navbarCollapse, {
+        toggle: true,
+      });
+      bsCollapse.hide();
+    }
+  };
+
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-white pt-3 fixed-top mb-5">
@@ -24,27 +34,27 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item active">
-                <a className="nav-link active" aria-current="page" href="#Home">
+                <a className="nav-link active" href="#Home" onClick={closeNavbar}>
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="#Features">
+                <a className="nav-link active" href="#Features" onClick={closeNavbar}>
                   Features
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="#About">
+                <a className="nav-link active" href="#About" onClick={closeNavbar}>
                   About us
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="#Services">
+                <a className="nav-link active" href="#Services" onClick={closeNavbar}>
                   Services
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="#Contact">
+                <a className="nav-link active" href="#Contact" onClick={closeNavbar}>
                   Contact
                 </a>
               </li>
