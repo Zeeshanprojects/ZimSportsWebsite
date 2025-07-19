@@ -4,7 +4,7 @@ import Image from "../assets/Images/image";
 
 export default function Home() {
   useEffect(() => {
-    document.title = "Home | Zim Sports";
+    document.title = "Zim Sports -  Experience Every Game, Anywhere, Anytime";
   });
   return (
     <>
