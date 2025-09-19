@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "../assets/CSS/Home.css";
 import Image from "../assets/Images/image";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   useEffect(() => {
@@ -91,6 +92,7 @@ export default function Home() {
                 <div className="modal-dialog modal-dialog-centered modal-lg">
                   <div className="modal-content bg-dark">
                     <div className="modal-header border-0">
+                      
                       <h5
                         className="modal-title text-white"
                         id="videoModalLabel"
@@ -125,9 +127,11 @@ export default function Home() {
       </div>
 
       <div className="watch-live-btn text-center">
-        <button type="button" className="btn btn-success btn-lg fw-bold">
+        <Link to="/zimlive">
+         <button type="button" className="btn btn-success btn-lg fw-bold">
           🎥 GO TO ZIM TV
-        </button>
+        </button></Link>
+       
       </div>
 
       <div id="Features" className="section">
