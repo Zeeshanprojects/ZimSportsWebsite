@@ -1,26 +1,24 @@
-/* Full orange background */
 .login-container {
-  height: 100vh;
-  width: 100vw;           /* use full screen width */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background: orange;     /* or gradient / image */
-  margin: 0;
-  padding: 0;
-  overflow: hidden;       /* remove scroll */
+  justify-content: center;   /* vertical center */
+  align-items: center;       /* horizontal center */
+ height: 100vh !important;       /* remove scroll */
 }
 
-/* White login card */
 .login-box {
   width: 100%;
   max-width: 400px;
   background: #fff;
   border-radius: 12px;
+  padding: 20px;
 }
+
 
 .loginpage-logo-container {
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
+}
+form input::placeholder{
+  color: gray !important;
 }
