@@ -8,19 +8,22 @@ export default function Login() {
     <div className="login-container">
       <div className="row w-100 align-items-center justify-content-center">
         {/* Left Side */}
-        
 
         {/* Right Side */}
-        <div className="col-lg-6 d-flex justify-content-center">
+        <div className="col-lg-12 d-flex justify-content-center">
           <div className="login-box shadow p-4 rounded-4 bg-white">
             <div className="loginpage-logo-container">
-  <img src={Image.loginpagelogo} alt="logo" className="loginpage-logo" height={60}/>
-</div>
-<h3 className="fw-bold text-center mb-2">Sign In</h3>
-<p className="text-muted text-center mb-4">
-  Access your Zim Sports account
-</p>
-
+              <img
+                src={Image.loginpagelogo}
+                alt="logo"
+                className="loginpage-logo"
+                height={60}
+              />
+            </div>
+            <h3 className="fw-bold text-center mb-2">Sign In</h3>
+            <p className="text-muted text-center mb-4">
+              Access your Zim Sports account
+            </p>
 
             <form>
               <input
