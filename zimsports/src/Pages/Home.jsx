@@ -710,7 +710,7 @@ export default function Home() {
 
             {/* Right Column - Form */}
             <div className="col-lg-6">
-              <div className="p-4 border border-dark rounded-4 shadow-sm bg-light">
+              <div className="p-4 border border-dark rounded-4 shadow-sm p-5">
                 <form>
                   <div className="mb-3">
                     <label htmlFor="email" className="form-label fw-semibold">
@@ -720,7 +720,7 @@ export default function Home() {
                       type="email"
                       id="email"
                       className="form-control border-dark rounded-3"
-                      // placeholder="Enter your email"
+                    
                       required
                     />
                   </div>
@@ -735,7 +735,7 @@ export default function Home() {
                       type="password"
                       id="password"
                       className="form-control border-dark rounded-3"
-                      // placeholder="Enter your password"
+                     
                       required
                     />
                   </div>
@@ -743,13 +743,13 @@ export default function Home() {
                     <label htmlFor="message" className="form-label fw-semibold">
                       Message
                     </label>
-                    <textarea
-                      id="message"
-                      className="form-control border-dark rounded-3"
-                      rows="5"
-                      // placeholder="Type your message..."
-                      required
-                    ></textarea>
+                  <textarea
+  id="message"
+  className="form-control border-dark rounded-3"
+  style={{ minHeight: "150px" }}   // ✅ controls height
+  required
+></textarea>
+
                   </div>
                   <button
                     type="submit"
