@@ -32,12 +32,12 @@ export default function Home() {
                 <div className="d-flex flex-wrap align-items-center mt-3">
                   <input
                     type="email"
-                    className="form-color"
+                    className="form-color "
                     placeholder="Enter Your Email"
                   />
                   <button
                     type="button"
-                    className="btn primary-btn ps-5 pe-5 ms-3 mt-2 mt-sm-0"
+                    className="btn primary-btn ps-5 pe-5 ms-3 mt-2 mt-sm-0 start-btn"
                   >
                     Start Now
                   </button>
@@ -48,13 +48,13 @@ export default function Home() {
                       alt="checked-icon"
                       className="checked-icon"
                     />
-                    <p>Free for no</p>
+                    <p className="text">Free for no</p>
                     <img
                       src={Image.checked}
                       alt="checked-icon"
                       className="checked-icon"
                     />
-                    <p>No credit card required</p>
+                    <p className="text">No credit card required</p>
                   </div>
                 </div>
               </div>

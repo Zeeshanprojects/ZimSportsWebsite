@@ -40,19 +40,9 @@ export default function Login() {
                   required
                 />
 
-                <div className="d-flex justify-content-between align-items-center mb-4">
-                  <div>
-                    <input type="checkbox" id="remember" />
-                    <label htmlFor="remember" className="ms-2 text-muted">
-                      Remember me
-                    </label>
-                  </div>
-                  <a href="#" className="text-success fw-semibold small">
-                    Forgot Password ?
-                  </a>
-                </div>
+              
 
-                <button type="submit" className="btn w-100 rounded-pill py-2 fw-bold">
+                <button type="submit" className="btn w-100 rounded-pill py-2 fw-bold ">
                   Sign In
                 </button>
 
@@ -64,27 +54,7 @@ export default function Login() {
                 </p>
               </form>
 
-              <div className="d-flex justify-content-between align-items-center mt-4 small">
-                <div className="d-flex align-items-center">
-                  <img
-                    src="https://flagcdn.com/us.svg"
-                    alt="US Flag"
-                    className="flag-icon me-2"
-                  />
-                  English
-                </div>
-                <div>
-                  <a href="#" className="me-3 text-success">
-                    Terms
-                  </a>
-                  <a href="#" className="me-3 text-success">
-                    Privacy
-                  </a>
-                  <a href="#" className="text-success">
-                    Contact Us
-                  </a>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>

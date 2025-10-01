@@ -272,13 +272,23 @@ body.modal-open .watch-live-btn {
   }
 }
 @media (max-width: 576px) {
-  .form-color {
-    width: 50%;
+  .text {
+    font-size: 12px;
   }
+  .start-btn {
+    width: 100%;
+    margin: 0px !important; /* button full width */
+  }
+  .form-color {
+    width: 100%; /* input full width */
+  }
+  .checked-icon {
+    width: 18px; /* keep icons small */
+  }
+
   .background-color {
     padding: 50px;
   }
-
   .secondary-btn {
     display: flex !important;
     justify-content: center !important;

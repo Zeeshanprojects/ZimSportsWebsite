@@ -20,7 +20,7 @@
 }
 .form-control {
   height: 50px;
-  border-radius: 25px;
+  border-radius: 20px !important;
   padding-left: 15px;
 }
 
@@ -39,4 +39,7 @@
   width: 24px;
   height: 18px;
   border-radius: 3px;
+}
+a{
+  text-decoration: none !important;
 }
