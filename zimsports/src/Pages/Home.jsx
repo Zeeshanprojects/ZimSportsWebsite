@@ -131,7 +131,7 @@ export default function Home() {
 
       <div className="watch-live-btn text-center">
         <Link to="/zimlive">
-         <button type="button" className="btn btn-success btn-lg fw-bold">
+         <button type="button" className="btn  btn-lg fw-bold">
           🎥 GO TO ZIM TV
         </button></Link>
        
@@ -420,7 +420,7 @@ export default function Home() {
                 </li>
               </ul>
               <button
-                className="btn btn-success navbar-btn ps-5 pe-5 pt-2 pb-2"
+                className="btn  navbar-btn ps-5 pe-5 pt-2 pb-2"
                 type="submit"
               >
                 Discover Management Feature
@@ -474,7 +474,7 @@ export default function Home() {
                 </div>
               </ul>
               <button
-                className="btn btn-success navbar-btn ps-5 pe-5 pt-2 pb-2"
+                className="btn  navbar-btn ps-5 pe-5 pt-2 pb-2"
                 type="submit"
               >
                 Explore Analytics
@@ -522,7 +522,7 @@ export default function Home() {
                 </div>
               </ul>
               <button
-                className="btn btn-success navbar-btn ps-5 pe-5 pt-2 pb-2"
+                className="btn  navbar-btn ps-5 pe-5 pt-2 pb-2"
                 type="submit"
               >
                 See Fan Features
@@ -753,7 +753,7 @@ export default function Home() {
                   </div>
                   <button
                     type="submit"
-                    className="btn btn-success w-100 py-2 rounded-3 fw-bold"
+                    className="btn  w-100 py-2 rounded-3 fw-bold"
                   >
                     Send Message
                   </button>

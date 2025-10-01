@@ -52,7 +52,7 @@ export default function Login() {
                   </a>
                 </div>
 
-                <button type="submit" className="btn btn-success w-100 rounded-pill py-2 fw-bold">
+                <button type="submit" className="btn w-100 rounded-pill py-2 fw-bold">
                   Sign In
                 </button>
 
