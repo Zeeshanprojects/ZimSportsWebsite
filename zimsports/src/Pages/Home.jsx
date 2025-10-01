@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import "../assets/CSS/Home.css";
 import Image from "../assets/Images/image";
 import { Link } from "react-router-dom";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 
 export default function Home() {
   useEffect(() => {
@@ -9,6 +11,7 @@ export default function Home() {
   });
   return (
     <>
+    <Navbar/>
       <div className="space"></div>
       <div id="Home" className="section">
         <div className="container py-lg-5 mt-lg-5">
@@ -760,6 +763,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }

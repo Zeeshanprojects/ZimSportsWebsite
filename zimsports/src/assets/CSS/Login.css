@@ -1,0 +1,42 @@
+.bg {
+  background-color: #f9f9fc;
+}
+.left-side .logo {
+  margin-top:0 auto ;
+  max-width: 250px;
+}
+.login-box {
+  width: 100%;
+  max-width: 520px;
+  margin-top: 0 auto;
+}
+.login-box form input::placeholder {
+  color: black !important;
+}
+.login-box form input:focus {
+  outline: none !important; /* removes default outline */
+  box-shadow: none !important; /* removes Bootstrap shadow */
+  border-color: #00c853 !important; /* optional: set green border */
+}
+.form-control {
+  height: 50px;
+  border-radius: 25px;
+  padding-left: 15px;
+}
+
+.form-control:focus {
+  border-color: #00c853;
+  box-shadow: 0 0 5px rgba(0, 200, 83, 0.4);
+}
+
+.btn-success {
+  background-color: #00c853 !important;
+  border: none;
+  font-size: 16px;
+}
+
+.flag-icon {
+  width: 24px;
+  height: 18px;
+  border-radius: 3px;
+}

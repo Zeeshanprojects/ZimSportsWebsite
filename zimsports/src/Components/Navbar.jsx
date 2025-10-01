@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "../assets/Images/image";
+import { Link } from "react-router-dom";
 import "../assets/CSS/Navbar.css";
 
 export default function Navbar() {
@@ -62,13 +63,16 @@ export default function Navbar() {
                 </a>
               </li>
             </ul>
+
             <form className="d-flex">
+              <Link to="/login">
               <button
                 className="btn btn-success navbar-btn ps-5 pe-5 pt-2 pb-2"
                 type="submit"
               >
                 Login
-              </button>
+              </button></Link>
+              
             </form>
             <hr />
           </div>

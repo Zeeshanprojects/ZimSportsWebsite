@@ -10,7 +10,7 @@ export default function Footer() {
             {/* Left Side */}
             <div className="col-md-6 mb-4 mb-md-0">
               <img
-                src={Image.footelogo}
+                src={Image.footerlogo}
                 alt="zim sports logo"
                 style={{ width: "120px" }}
                 className="mb-3"
