@@ -146,7 +146,7 @@ export default function Home() {
                 <img
                   src={Image.image1}
                   alt="image1"
-                  className="img-fluid rounded shadow"
+                  className="img-fluid rounded shadow image-size"
                 />
               </div>
 
@@ -181,7 +181,7 @@ export default function Home() {
                 <img
                   src={Image.image2}
                   alt="image2"
-                  className="img-fluid rounded shadow"
+                  className="img-fluid rounded shadow image-size"
                 />
               </div>
 
@@ -215,7 +215,7 @@ export default function Home() {
                 <img
                   src={Image.image3}
                   alt="image3"
-                  className="img-fluid rounded shadow"
+                  className="img-fluid rounded shadow image-size"
                 />
               </div>
 

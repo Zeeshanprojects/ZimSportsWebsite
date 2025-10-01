@@ -7,6 +7,7 @@ import Footer from './Components/Footer'
 import ScrollToTopButton from './Components/ScrollToTopButton'
 import Zimlive from './Pages/Zimlive'
 import Login from './Pages/Login'
+import Signup from './Pages/Signup'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/zimlive' element={<Zimlive/>}/>
         <Route path='/login' element={<Login/>}/>
+        <Route path='/Signup' element={<Signup/>}/>
       </Routes>
    
       <ScrollToTopButton/>

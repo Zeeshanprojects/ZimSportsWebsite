@@ -11,7 +11,8 @@
   margin-top: 0 auto;
 }
 .login-box form input::placeholder {
-  color: black !important;
+  color: gray !important;
+
 }
 .login-box form input:focus {
   outline: none !important; /* removes default outline */
@@ -42,4 +43,22 @@
 }
 a{
   text-decoration: none !important;
+}
+@media (max-width:576px) {
+  .left-side .logo {
+  margin-top:30px ;
+  max-width: 150px;
+}
+  .login-box {
+    max-width: 100% !important;   /* ✅ allow full width on mobile */
+    padding: 20px;               /* ✅ add spacing so it doesn’t touch edges */
+  }
+
+  .login-box form input {
+    width: 100% !important;      /* ✅ make inputs full width */
+  }
+
+  .btn-success {
+    width: 100% !important;      /* ✅ button full width too */
+  }
 }
