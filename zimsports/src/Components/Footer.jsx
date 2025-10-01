@@ -4,6 +4,7 @@ import "../assets/CSS/Footer.css";
 export default function Footer() {
   return (
     <>
+    <div className="container-fluid"></div>
       <footer className="footer-section bg-dark text-white py-5">
         <div className="container">
           <div className="row align-items-center">
@@ -27,7 +28,7 @@ export default function Footer() {
                   className="form-control bg-dark text-white border border-secondary"
                   placeholder="Enter your email"
                 />
-                <button className="btn btn-success">
+                <button className="btn btn-success ms-3">
                   <img src={Image.sendemailicon} alt="send" style={{ width: '20px' , filter: 'invert(1'}} />
                 </button>
               </div>

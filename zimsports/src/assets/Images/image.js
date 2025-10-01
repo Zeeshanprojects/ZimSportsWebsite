@@ -3,7 +3,7 @@ const Image = {
   bannerright: new URL("banner-right.webp", import.meta.url).href,
   image1: new URL("Welcomeimage.webp", import.meta.url).href,
   image2: new URL("ZimSportsmobile1.webp", import.meta.url).href,
-  image3: new URL("image3.webp", import.meta.url).href,
+  image3: new URL("LiveMatch.webp", import.meta.url).href,
   icon1: new URL("icon1.webp", import.meta.url).href,
   icon2: new URL("icon2.webp", import.meta.url).href,
   icon3: new URL("icon3.webp", import.meta.url).href,
@@ -21,5 +21,6 @@ const Image = {
   sendemailicon: new URL("send.svg", import.meta.url).href,
   googleplay: new URL("play-button.svg", import.meta.url).href,
   appstorebtn: new URL("apple-logo.svg", import.meta.url).href,
+  accountpage:new URL("./Accountimage.png",import.meta.url).href,
 };
 export default Image;

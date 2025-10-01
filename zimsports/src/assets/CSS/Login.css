@@ -1,64 +1,83 @@
-.bg {
-  background-color: #f9f9fc;
-}
-.left-side .logo {
-  margin-top:0 auto ;
-  max-width: 250px;
-}
-.login-box {
+/* Main container - full screen & center */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh !important;  /* center vertically */
   width: 100%;
-  max-width: 520px;
-  margin-top: 0 auto;
-}
-.login-box form input::placeholder {
-  color: gray !important;
+  background: #fff; 
 
 }
-.login-box form input:focus {
-  outline: none !important; /* removes default outline */
-  box-shadow: none !important; /* removes Bootstrap shadow */
-  border-color: #00c853 !important; /* optional: set green border */
+.loginpage-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px; /* spacing before heading */
 }
+
+.loginpage-logo {
+  height: 60px; /* adjust size */
+}
+
+/* Left side */
+.left-side .logo {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.left-side h4 {
+  color: #333;
+}
+
+.left-side p {
+  color: #555;
+  font-size: 15px;
+}
+
+/* Right side form */
+.login-box {
+  width: 100%;
+  padding: 20px !important;
+  max-width: 500px;
+  background: #fff; /* clean white */
+  border-radius: 10px;
+}
+
+/* Form controls */
 .form-control {
-  height: 50px;
-  border-radius: 20px !important;
+  height: 48px;
+  border-radius: 25px !important;
   padding-left: 15px;
 }
 
 .form-control:focus {
-  border-color: #00c853;
-  box-shadow: 0 0 5px rgba(0, 200, 83, 0.4);
+  border: 1px solid #00c853;
+  box-shadow: none;
 }
 
 .btn-success {
   background-color: #00c853 !important;
   border: none;
+  border-radius: 25px !important;
   font-size: 16px;
+  padding: 10px;
 }
-
-.flag-icon {
-  width: 24px;
-  height: 18px;
-  border-radius: 3px;
+.login-box form input::placeholder{
+  color: GRAY !important
+  ;
 }
-a{
+a {
   text-decoration: none !important;
 }
-@media (max-width:576px) {
-  .left-side .logo {
-  margin-top:30px ;
-  max-width: 150px;
-}
+
+@media (max-width: 768px) {
+  .left-side {
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+
   .login-box {
-    max-width: 100% !important;   /* ✅ allow full width on mobile */
-    padding: 20px;               /* ✅ add spacing so it doesn’t touch edges */
-  }
-
-  .login-box form input {
-    width: 100% !important;      /* ✅ make inputs full width */
-  }
-
-  .btn-success {
-    width: 100% !important;      /* ✅ button full width too */
+    max-width: 100%;
+    padding: 20px;
   }
 }
