@@ -1,5 +1,39 @@
-.banner{
-    height: 400px;
-    width: 100% !important;
-    background-color: green;
+/* Full container with two columns */
+.signup-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Left side */
+.signup-left {
+  flex: 1;
+  background-color: #1F8E4B;
+}
+
+.logo-size {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+/* Right side */
+.signup-right {
+  flex: 1;
+  padding: 40px;
+  background-color: #f8f9fa; /* light gray */
+  overflow-y: auto;
+}
+
+.card {
+  border-radius: 12px;
+}
+
+.nav-pills .nav-link {
+  border-radius: 30px;
+  font-weight: 500;
+  padding: 10px 20px;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #1F8E4B !important;
 }
