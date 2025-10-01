@@ -1,85 +1,26 @@
-/* Main container - full screen & center */
+/* Full orange background */
 .login-container {
+  height: 100vh;
+  width: 100vw;           /* use full screen width */
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh !important;  /* center vertically */
-  width: 100%;
-  padding: 0px !important;
-  margin: 0 !important;
-  background: orange; 
-
+  background: orange;     /* or gradient / image */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;       /* remove scroll */
 }
+
+/* White login card */
+.login-box {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 12px;
+}
+
 .loginpage-logo-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 15px; /* spacing before heading */
-}
-
-.loginpage-logo {
-  height: 60px; /* adjust size */
-}
-
-/* Left side */
-.left-side .logo {
-  max-width: 200px;
-  margin-bottom: 20px;
-}
-
-.left-side h4 {
-  color: #333;
-}
-
-.left-side p {
-  color: #555;
-  font-size: 15px;
-}
-
-/* Right side form */
-.login-box {
-  width: 100%;
-  padding: 20px !important;
-  max-width: 500px;
-  background: #fff; /* clean white */
-  border-radius: 10px;
-}
-
-/* Form controls */
-.form-control {
-  height: 48px;
-  border-radius: 25px !important;
-  padding-left: 15px;
-}
-
-.form-control:focus {
-  border: 1px solid #00c853;
-  box-shadow: none;
-}
-
-.btn-success {
-  background-color: #00c853 !important;
-  border: none;
-  border-radius: 25px !important;
-  font-size: 16px;
-  padding: 10px;
-}
-.login-box form input::placeholder{
-  color: GRAY !important
-  ;
-}
-a {
-  text-decoration: none !important;
-}
-
-@media (max-width: 768px) {
-  .left-side {
-    margin-bottom: 30px;
-    padding: 0 20px;
-  }
-
-  .login-box {
-    max-width: 100%;
-    padding: 20px;
-  }
+  margin-bottom: 1rem;
 }
