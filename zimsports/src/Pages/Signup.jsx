@@ -10,14 +10,14 @@ export default function Signup() {
     <div className="container-fluid signup-container">
       <div className="row h-100">
 
-     <div className="col-lg-6 col-md-5 col-sm-12 signup-left d-flex flex-column align-items-center justify-content-center text-center">
+     <div className="col-lg-6 col-md-12 col-sm-12 signup-left d-flex flex-column align-items-center justify-content-center text-center">
 
-  <img src={Image.accountpage} alt="image" className=" img-fluid" />
+  <img src={Image.accountpage} alt="image" className="imf-fluid position" />
 </div>
 
 
         {/* Right Side */}
-        <div className="col-lg-6 col-md-7 col-sm-12 signup-right d-flex flex-column  ">
+        <div className="col-lg-6 col-md-12 col-sm-12 signup-right d-flex flex-column  ">
            <div className="loginpage-logo-container">
           <Link to="/">
            <img
@@ -138,12 +138,7 @@ export default function Signup() {
                   Register as Player
                   
                 </button>
-                  <p className="text-center mt-4">
-                                Already have account?{" "}
-                                <Link to="/signin" className="text-success fw-semibold">
-                                  Sign in
-                                </Link>
-                              </p>
+               
               </form>
             )}
           </div>

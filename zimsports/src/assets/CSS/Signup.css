@@ -6,7 +6,13 @@
   background-color: black !important;
   
 }
+.position{
+margin-right: 80px !important;
 
+height:700px !important;
+width: 700px !important;
+
+}
 .signup-right {
   padding: 40px;
   background-color: #f8f9fa;
@@ -51,3 +57,15 @@
   text-decoration: none !important; 
 }
 
+@media (min-width:1024px) and (max-width:1299px) {
+  .position{
+    margin-right: 50px !important;
+  }
+}
+@media (min-width:375px) and (max-width:576px) {
+  .position{
+    height: 500px !important;
+    width: 500px !important;
+        margin-right: 30px !important;
+  }
+}

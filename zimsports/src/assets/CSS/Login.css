@@ -40,3 +40,15 @@ a{
 form input::placeholder {
   color: gray !important;
 }
+@media (min-width:1024px) and (max-width:1299px) {
+  .position{
+    margin-right: 50px !important;
+  }
+}
+@media (min-width:375px) and (max-width:576px) {
+  .position{
+    height: 500px !important;
+    width: 500px !important;
+        margin-right: 30px !important;
+  }
+}

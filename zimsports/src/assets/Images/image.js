@@ -21,6 +21,6 @@ const Image = {
   sendemailicon: new URL("send.svg", import.meta.url).href,
   googleplay: new URL("play-button.svg", import.meta.url).href,
   appstorebtn: new URL("apple-logo.svg", import.meta.url).href,
-  accountpage:new URL("./bg-image.jpg",import.meta.url).href,
+  accountpage:new URL("./bg-image-pica-Photoroom.webp",import.meta.url).href,
 };
 export default Image;
