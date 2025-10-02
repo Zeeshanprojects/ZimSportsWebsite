@@ -8,12 +8,14 @@ export default function Login() {
     <div className="login-container">
       <div className="login-box shadow p-4 rounded-4 bg-white">
         <div className="loginpage-logo-container">
-          <img
+          <Link to="/">
+           <img
             src={Image.loginpagelogo}
             alt="logo"
             className="loginpage-logo"
             height={60}
-          />
+          /></Link>
+         
         </div>
         <h3 className="fw-bold text-center mb-2">Sign In</h3>
         <p className="text-muted text-center mb-4">

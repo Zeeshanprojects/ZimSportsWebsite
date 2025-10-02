@@ -120,10 +120,7 @@ export default function Signup() {
                   <option>Beach Volleyball</option>
                 </select>
               </div>
-              <div className="mb-3">
-                <label className="form-label">Position</label>
-                <input type="text" className="form-control" placeholder="e.g. Setter, Spiker, Libero" />
-              </div>
+            
               <button type="submit" className="btn btn-warning w-100">
                 Register as Player
               </button>

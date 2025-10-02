@@ -8,13 +8,10 @@
 /* Left side */
 .signup-left {
   flex: 1;
-  background-color: #1F8E4B;
+  background-color:black !important ;
 }
 
-.logo-size {
-  max-width: 300px;
-  max-height: 300px;
-}
+
 
 /* Right side */
 .signup-right {
