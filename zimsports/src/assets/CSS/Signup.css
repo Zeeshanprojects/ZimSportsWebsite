@@ -4,12 +4,14 @@
 
 .signup-left {
   background-color: black !important;
+  
 }
 
 .signup-right {
   padding: 40px;
   background-color: #f8f9fa;
   overflow-y: auto;
+  
 }
 .logo-size{
   object-fit: cover !important;

@@ -1,17 +1,22 @@
-// src/Components/ScrollToTopButton.jsx
-import React, { useEffect, useState } from "react";
-import '../assets/CSS/ScrollToTopButton.css'
+// ScrollToTopButton.js
+import React, { useState, useEffect } from "react";
+import "../assets/CSS/ScrollToTopButton.css";
 
 export default function ScrollToTopButton() {
-  const [visible, setVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
-  const toggleVisibility = () => {
-    if (window.pageYOffset > 300) {
-      setVisible(true);
-    } else {
-      setVisible(false);
-    }
-  };
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.scrollY > 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -20,20 +25,13 @@ export default function ScrollToTopButton() {
     });
   };
 
-  useEffect(() => {
-    window.addEventListener("scroll", toggleVisibility);
-    return () => window.removeEventListener("scroll", toggleVisibility);
-  }, []);
-
   return (
-    visible && (
-      <button
-        onClick={scrollToTop}
-        className="scroll-to-top"
-        aria-label="Scroll to top"
-      >
-        ↑
-      </button>
-    )
+    <>
+      {isVisible && (
+        <button className="scroll-to-top" onClick={scrollToTop}>
+          ⬆
+        </button>
+      )}
+    </>
   );
 }

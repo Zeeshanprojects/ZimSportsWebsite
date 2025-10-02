@@ -17,7 +17,7 @@ export default function Signup() {
 
 
         {/* Right Side */}
-        <div className="col-lg-6 col-md-7 col-sm-12 signup-right d-flex flex-column justify-content-center ">
+        <div className="col-lg-6 col-md-7 col-sm-12 signup-right d-flex flex-column j ">
            <div className="loginpage-logo-container">
           <Link to="/">
            <img
@@ -136,7 +136,14 @@ export default function Signup() {
                 </div>
                 <button type="submit" className="btn btn-warning w-100">
                   Register as Player
+                  
                 </button>
+                  <p className="text-center mt-4">
+                                Already have account?{" "}
+                                <Link to="/signin" className="text-success fw-semibold">
+                                  Sign in
+                                </Link>
+                              </p>
               </form>
             )}
           </div>

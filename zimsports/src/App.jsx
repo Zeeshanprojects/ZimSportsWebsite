@@ -22,7 +22,7 @@ function App() {
         <Route path='/Signup' element={<Signup/>}/>
       </Routes>
    
-      <ScrollToTopButton/>
+  
     </Router>
     </>
   )

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "../assets/CSS/Home.css";
 import Image from "../assets/Images/image";
 import { Link } from "react-router-dom";
+import ScrollToTopButton from "../Components/ScrollToTopButton";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 
@@ -763,6 +764,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+          <ScrollToTopButton/>
       <Footer/>
     </>
   );

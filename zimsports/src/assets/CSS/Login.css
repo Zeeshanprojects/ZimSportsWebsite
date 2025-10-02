@@ -11,7 +11,9 @@
   padding: 2rem;
 }
 
-
+a{
+  text-decoration: none !important;
+}
 /* Right side */
 .login-right {
   background-color: #f8f9fa;
