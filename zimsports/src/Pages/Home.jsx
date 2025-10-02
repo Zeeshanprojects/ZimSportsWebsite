@@ -12,7 +12,7 @@ export default function Home() {
   });
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <div className="space"></div>
       <div id="Home" className="section">
         <div className="container py-lg-5 mt-lg-5">
@@ -96,7 +96,6 @@ export default function Home() {
                 <div className="modal-dialog modal-dialog-centered modal-lg">
                   <div className="modal-content bg-dark">
                     <div className="modal-header border-0">
-                      
                       <h5
                         className="modal-title text-white"
                         id="videoModalLabel"
@@ -132,10 +131,10 @@ export default function Home() {
 
       <div className="watch-live-btn text-center">
         <Link to="/zimlive">
-         <button type="button" className="btn  btn-lg fw-bold">
-          🎥 GO TO ZIM TV
-        </button></Link>
-       
+          <button type="button" className="btn  btn-lg fw-bold">
+            🎥 GO TO ZIM TV
+          </button>
+        </Link>
       </div>
 
       <div id="Features" className="section">
@@ -243,18 +242,15 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-       
       </div>
 
       <div id="About" className="section">
-
-         <div class="text-center ">
+        <div class="text-center ">
           <button type="button" class="btn secondary-btn">
             About Zim Sports
           </button>
         </div>
-        
+
         <div className="container">
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
@@ -721,7 +717,6 @@ export default function Home() {
                       type="email"
                       id="email"
                       className="form-control border-dark rounded-3"
-                    
                       required
                     />
                   </div>
@@ -736,7 +731,6 @@ export default function Home() {
                       type="password"
                       id="password"
                       className="form-control border-dark rounded-3"
-                     
                       required
                     />
                   </div>
@@ -744,13 +738,12 @@ export default function Home() {
                     <label htmlFor="message" className="form-label fw-semibold">
                       Message
                     </label>
-                  <textarea
-  id="message"
-  className="form-control border-dark rounded-3"
-  style={{ minHeight: "150px" }}   // ✅ controls height
-  required
-></textarea>
-
+                    <textarea
+                      id="message"
+                      className="form-control border-dark rounded-3"
+                      style={{ minHeight: "150px" }} // ✅ controls height
+                      required
+                    ></textarea>
                   </div>
                   <button
                     type="submit"
@@ -764,8 +757,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-          <ScrollToTopButton/>
-      <Footer/>
+      <ScrollToTopButton />
+      <Footer />
     </>
   );
 }
