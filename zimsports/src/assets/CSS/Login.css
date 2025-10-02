@@ -24,10 +24,10 @@ a{
 /* Box */
 .login-box {
   width: 100%;
-  max-width: 400px;
+  max-width: 00px;
   
   border-radius: 20px;
-  padding: 20px;
+  padding: 150px !important;
   background: #edf7f1 !important;  
 }
 
