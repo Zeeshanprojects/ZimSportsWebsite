@@ -8,6 +8,9 @@ import ScrollToTopButton from './Components/ScrollToTopButton'
 import Zimlive from './Pages/Zimlive'
 import Login from './Pages/Login'
 import Signup from './Pages/Signup'
+import ParentDashboard from './Pages/ParentDashboard'
+import PlayerDashboard from './Pages/PlayerDashboard'
+import CoachesDashboard from './Pages/CoachesDashboard'
 
 function App() {
 
@@ -20,6 +23,9 @@ function App() {
         <Route path='/zimlive' element={<Zimlive/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/Signup' element={<Signup/>}/>
+        <Route path='/parentdashboard' element={<ParentDashboard/>}/>
+        <Route path='/playerdashboard' element={<PlayerDashboard/>}/>
+        <Route path='/Coachesdashboard' element={<CoachesDashboard/>}/>
       </Routes>
    
   
