@@ -17,7 +17,7 @@ export default function Signup() {
 
 
         {/* Right Side */}
-        <div className="col-lg-6 col-md-7 col-sm-12 signup-right d-flex flex-column j ">
+        <div className="col-lg-6 col-md-7 col-sm-12 signup-right d-flex flex-column  ">
            <div className="loginpage-logo-container">
           <Link to="/">
            <img

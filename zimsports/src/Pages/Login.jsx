@@ -15,7 +15,7 @@ export default function Login() {
 
 
         {/* Right Side Form */}
-        <div className="col-lg-6 col-md-7 col-sm-12 login-right d-flex align-items-center justify-content-center">
+        <div className="col-lg-6 col-md-7 col-sm-12 login-right d-flex align-items-center justify-content-center ">
           <div className="login-box shadow p-4 rounded-4 bg-white w-100" style={{ maxWidth: "400px" }}>
             <div className="loginpage-logo-container">
               <Link to="/">
