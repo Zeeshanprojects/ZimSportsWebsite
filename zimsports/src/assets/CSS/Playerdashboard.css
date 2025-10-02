@@ -1,0 +1,145 @@
+/* Layout */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background: linear-gradient(180deg, #1f1f1f, #333);
+  color: white;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid #1f8e4b;
+}
+
+.sidebar-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.player-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid #1f8e4b;
+  margin-bottom: 10px;
+}
+
+.player-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.player-role {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  margin: 15px 0;
+}
+
+.sidebar-menu a {
+  display: block;
+  padding: 10px 15px;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1.05rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu .active a {
+  background: #1f8e4b;
+  color: white;
+}
+
+.logout a {
+  color: #f44336;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 25px 40px;
+}
+
+/* Banner */
+.banner {
+  height: 30vh;
+  background: linear-gradient(135deg, #000, #1f8e4b);
+  border-radius: 15px;
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.banner-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.banner-subtitle {
+  font-size: 1.1rem;
+  margin-top: 8px;
+  opacity: 0.9;
+}
+
+.banner-img {
+  width: 220px;
+  object-fit: contain;
+}
+
+/* Matches */
+.section-title {
+  font-weight: bold;
+  color: #333;
+}
+
+.match-card {
+  background: white;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #eee;
+}
+
+.match-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+}
+
+.team-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+
+.match-time {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #1f8e4b;
+  text-align: center;
+}
+
+.vs {
+  font-weight: bold;
+  color: #555;
+  font-size: 1rem;
+  display: flex;
+justify-content: center !important;
+align-items: center !important;
+}
