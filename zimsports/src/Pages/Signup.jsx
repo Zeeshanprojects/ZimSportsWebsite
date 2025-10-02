@@ -80,7 +80,7 @@ export default function Signup() {
                 <button type="submit" className="btn btn-success w-100">
                   Register as Parent
                 </button>
-                <p className="text-center mt-4">
+                <p className="text-center mt-3 mb-0">
       Already have an account?{" "}
       <Link to="/login" className="text-success fw-semibold">
         Sign in
@@ -115,7 +115,7 @@ export default function Signup() {
                 <button type="submit" className="btn btn-primary w-100">
                   Register as Coach
                 </button>
-                <p className="text-center mt-4">
+                <p className="text-center mt-3 mb-0">
       Already have an account?{" "}
       <Link to="/login" className="text-success fw-semibold">
         Sign in
@@ -150,7 +150,7 @@ export default function Signup() {
                   Register as Player
                   
                 </button>
-               <p className="text-center mt-4">
+               <p className="text-center mt-3 mb-0">
       Already have an account?{" "}
       <Link to="/login" className="text-success fw-semibold">
         Sign in
