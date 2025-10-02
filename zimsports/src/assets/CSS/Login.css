@@ -1,10 +1,24 @@
-.login-container {
-  display: flex;
-  justify-content: center;   /* vertical center */
-  align-items: center;       /* horizontal center */
- height: 100vh !important;       /* remove scroll */
+/* Wrapper */
+.login-wrapper {
+  overflow: hidden;
 }
 
+/* Left side */
+.login-left {
+  background-color: #1F8E4B; /* Green background */
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+
+/* Right side */
+.login-right {
+  background-color: #f8f9fa;
+  padding: 2rem;
+}
+
+/* Box */
 .login-box {
   width: 100%;
   max-width: 400px;
@@ -13,12 +27,14 @@
   padding: 20px;
 }
 
-
+/* Logo */
 .loginpage-logo-container {
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
 }
-form input::placeholder{
+
+/* Input placeholder */
+form input::placeholder {
   color: gray !important;
 }
