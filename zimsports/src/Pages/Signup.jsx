@@ -17,7 +17,7 @@ export default function Signup() {
 
 
         {/* Right Side */}
-        <div className="col-lg-6 col-md-12 col-sm-12 signup-right d-flex flex-column  ">
+        <div className="col-lg-6 col-md-12 col-sm-12 signup-right  ">
            <div className="loginpage-logo-container">
           <Link to="/">
            <img
@@ -29,7 +29,7 @@ export default function Signup() {
          
         </div>
           {/* Tabs */}
-          <ul className="nav nav-pills justify-content-center mb-4">
+          <ul className="nav nav-pills justify-content-center  mb-3">
             <li className="nav-item">
               <button
                 className={`nav-link ${activeTab === "parent" ? "active" : ""}`}
@@ -80,6 +80,12 @@ export default function Signup() {
                 <button type="submit" className="btn btn-success w-100">
                   Register as Parent
                 </button>
+                <p className="text-center mt-4">
+      Already have an account?{" "}
+      <Link to="/login" className="text-success fw-semibold">
+        Sign in
+      </Link>
+    </p>  
               </form>
             )}
 
@@ -109,6 +115,12 @@ export default function Signup() {
                 <button type="submit" className="btn btn-primary w-100">
                   Register as Coach
                 </button>
+                <p className="text-center mt-4">
+      Already have an account?{" "}
+      <Link to="/login" className="text-success fw-semibold">
+        Sign in
+      </Link>
+    </p>  
               </form>
             )}
 
@@ -138,7 +150,12 @@ export default function Signup() {
                   Register as Player
                   
                 </button>
-               
+               <p className="text-center mt-4">
+      Already have an account?{" "}
+      <Link to="/login" className="text-success fw-semibold">
+        Sign in
+      </Link>
+    </p>  
               </form>
             )}
           </div>

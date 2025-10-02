@@ -14,11 +14,18 @@ width: 700px !important;
 
 }
 .signup-right {
-  padding: 40px;
-  background-color: #f8f9fa;
-  overflow-y: auto;
-  
+  min-height: 100vh;               /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;         /* Vertical center */
+  overflow: hidden;                /* Prevent scrollbar */
 }
+
+.signup-right .card {
+  max-height: 100vh;                /* Prevent card overflow */
+  overflow-y: auto;                /* Just in case form grows too big */
+}
+
 .logo-size{
   object-fit: cover !important;
 }
