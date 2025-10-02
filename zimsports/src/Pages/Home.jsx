@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import ScrollToTopButton from "../Components/ScrollToTopButton";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import {MonitorPlay  } from "lucide-react"
 
 export default function Home() {
   useEffect(() => {
@@ -129,13 +130,13 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="watch-live-btn text-center">
-        <Link to="/zimlive">
-          <button type="button" className="btn  btn-lg fw-bold">
-            🎥 GO TO ZIM TV
-          </button>
-        </Link>
-      </div>
+     <div className="watch-live-btn text-center">
+  <Link to="/zimlive">
+    <button type="button" className="btn btn-lg fw-bold">
+      <MonitorPlay size={22} className="me-2" /> GO TO ZIM TV
+    </button>
+  </Link>
+</div>
 
       <div id="Features" className="section">
         <div className="container-fluid  ps-3 pe-3 ps-lg-5 pe-lg-5  py-5  text-white">

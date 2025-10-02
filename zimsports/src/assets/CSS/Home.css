@@ -277,8 +277,23 @@ body.modal-open .watch-live-btn {
   .banner-right {
     width: 100%;
   }
+  
+
 }
 @media (max-width: 576px) {
+  .watch-live-btn button {
+  padding: 10px 30px;
+  font-size: 1rem !important;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  color: white;
+  background: linear-gradient(120deg, #0fb57f 30%, #0fb57f 50%, 70%);
+  background-size: 200% 100%;
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
   .text {
     font-size: 12px;
   }
