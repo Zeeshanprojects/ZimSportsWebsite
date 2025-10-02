@@ -18,15 +18,17 @@ a{
 .login-right {
  background: linear-gradient(135deg, #e8f5e9, #c8e6c9, #a5d6a7);
   padding: 2rem;
+
 }
 
 /* Box */
 .login-box {
   width: 100%;
   max-width: 400px;
-  background: #fff;
+  
   border-radius: 12px;
   padding: 20px;
+  background: #edf7f1 !important;  
 }
 
 /* Logo */
@@ -34,6 +36,7 @@ a{
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
+  
 }
 
 /* Input placeholder */

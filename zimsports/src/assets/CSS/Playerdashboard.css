@@ -109,8 +109,14 @@
   color: #333;
 }
 
-.match-card {
-  background: #f1f8f6; /* light green tint */
+
+  .match-card {
+  background: #edf7f1; /* very light green */
+  border-radius: 12px;
+  border: 1px solid #cfe9dc;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+/* light green tint */
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid #cde4da;

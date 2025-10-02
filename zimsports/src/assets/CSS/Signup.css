@@ -14,7 +14,7 @@ width: 700px !important;
 
 }
 .signup-right {
-   background: linear-gradient(135deg, #e8f5e9, #c8e6c9, #a5d6a7);
+   background: linear-gradient(135deg, #e8f5e9, #c8e6c9, #a5d6a7) !important;
   min-height: 100vh;               /* Full viewport height */
   display: flex;
   flex-direction: column;
@@ -24,8 +24,10 @@ width: 700px !important;
 
 .signup-right .card {
   max-height: 100vh;                /* Prevent card overflow */
-  overflow-y: auto;                /* Just in case form grows too big */
+  overflow-y: auto;  
+  
 }
+
 
 .logo-size{
   object-fit: cover !important;
