@@ -67,12 +67,13 @@
 .logout a {
   color: #f44336;
 }
-
-/* Main Content */
 .main-content {
   flex: 1;
-  padding: 25px 40px;
+  padding: 20px 40px;
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9, #a5d6a7);
 }
+
+
 
 /* Banner */
 .banner {
@@ -109,11 +110,13 @@
 }
 
 .match-card {
-  background: white;
+  background: #f1f8f6; /* light green tint */
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid #eee;
+  border: 1px solid #cde4da;
 }
+
+
 
 .match-card:hover {
   transform: translateY(-5px);
