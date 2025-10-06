@@ -279,7 +279,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="About" className="section">
+      <div id="About" className="section mt-3">
         <div class="text-center ">
           <button type="button" class="btn secondary-btn">
             About Zim Sports
