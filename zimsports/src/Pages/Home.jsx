@@ -452,12 +452,12 @@ export default function Home() {
                     </p>
                   </li>
                 </ul>
-                <button
+                {/* <button
                   className="btn  navbar-btn ps-5 pe-5 pt-2 pb-2"
                   type="submit"
                 >
                   Discover Management Feature
-                </button>
+                </button> */}
               </div>
             </div>
             <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5 d-flex">
@@ -509,12 +509,12 @@ export default function Home() {
                     </li>
                   </div>
                 </ul>
-                <button
+                {/* <button
                   className="btn  navbar-btn ps-5 pe-5 pt-2 pb-2"
                   type="submit"
                 >
                   Explore Analytics
-                </button>
+                </button> */}
               </div>
             </div>
             <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5 d-flex">
@@ -562,12 +562,12 @@ export default function Home() {
                     </li>
                   </div>
                 </ul>
-                <button
+                {/* <button
                   className="btn  navbar-btn ps-5 pe-5 pt-2 pb-2 "
                   type="submit"
                 >
                   See Fan Features
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
