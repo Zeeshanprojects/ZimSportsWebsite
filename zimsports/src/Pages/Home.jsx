@@ -665,7 +665,7 @@ export default function Home() {
         </div>
         <br />
         <div className="container text-center">
-          <button type="button" class="btn secondary-btn mb-5 ">
+          <button type="button" class="btn secondary-btn mb-3 ">
             Our Growing Community
           </button>
 
