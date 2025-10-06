@@ -4,54 +4,73 @@
 }
 
 /* Left side */
-.login-left {
-  background-color: #1F8E4B; /* Green background */
+.signup-left {
+  background-color: #1F8E4B;
   color: #fff;
   text-align: center;
   padding: 2rem;
 }
 
-a{
+a {
   text-decoration: none !important;
 }
+
 /* Right side */
 .login-right {
- background: linear-gradient(135deg, #e8f5e9, #c8e6c9, #a5d6a7);
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9, #a5d6a7);
   padding: 2rem;
-
 }
 
 /* Box */
 .login-box {
   width: 100%;
-  max-width: 00px;
-  
+  max-width: 480px;
   border-radius: 20px;
-  padding: 150px !important;
-  background: #edf7f1 !important;  
+  padding: 50px !important;
+  background: #edf7f1 !important;
 }
 
-/* Logo */
+/* Center logo */
 .loginpage-logo-container {
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
-  
 }
 
-/* Input placeholder */
+/* Placeholder style */
 form input::placeholder {
   color: gray !important;
 }
-@media (min-width:1024px) and (max-width:1299px) {
-  .position{
-    margin-right: 50px !important;
+
+/* ✅ Fix: prevent scroll on medium desktop (1024–1199px) */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .login-wrapper {
+    height: 100vh;
+  }
+
+  .signup-left img.position {
+    width: 90%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: contain;
+  }
+
+  .login-box {
+    padding: 40px !important;
+    max-width: 420px;
   }
 }
-@media (min-width:375px) and (max-width:576px) {
-  .position{
-    height: 500px !important;
-    width: 500px !important;
-        margin-right: 30px !important;
+
+/* ✅ Responsive image fix for small devices */
+@media (max-width: 576px) {
+  .signup-left img.position {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
+
+  .login-box {
+    padding: 30px !important;
   }
 }
+ 

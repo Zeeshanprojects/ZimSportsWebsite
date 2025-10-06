@@ -63,76 +63,78 @@ export default function Home() {
             </div>
 
             {/* Image Section */}
-            <div className=" col-sm-12 col-md-12 col-lg-6 col-xl-6 position-relative text-center">
-              {/* Banner Image */}
-              <img
-                src={Image.bannerright}
-                alt="banner-right"
-                className="banner-right img-fluid rounded"
-              />
+           <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 position-relative text-center">
+  {/* Banner Image */}
+  <img
+    src={Image.bannerright}
+    alt="banner-right"
+    className="banner-right img-fluid rounded"
+  />
 
-              <div
-                className="play-button-wrapper"
-                data-bs-toggle="modal"
-                data-bs-target="#videoModal"
-                onClick={() => {
-                  const iframe = document.getElementById("youtubePlayer");
-                  iframe.src =
-                    "https://www.youtube.com/embed/L_Z2721wfEU?autoplay=1";
-                }}
-              >
-                <div className="play-button-bg">
-                  <div className="play-icon">&#9658;</div>
-                </div>
-              </div>
+  <div
+    className="play-button-wrapper"
+    data-bs-toggle="modal"
+    data-bs-target="#videoModal"
+    onClick={() => {
+      const iframe = document.getElementById("youtubePlayer");
+      iframe.src =
+        "https://www.youtube.com/embed/L_Z2721wfEU?autoplay=1&modestbranding=1&controls=0&showinfo=0&rel=0&fs=0";
+    }}
+  >
+    <div className="play-button-bg">
+      <div className="play-icon">&#9658;</div>
+    </div>
+  </div>
 
-              {/* Modal */}
-              <div
-                className="modal fade"
-                id="videoModal"
-                tabIndex="-1"
-                aria-labelledby="videoModalLabel"
-                aria-hidden="true"
-              >
-                <div className="modal-dialog modal-dialog-centered modal-lg">
-                  <div className="modal-content bg-dark">
-                    <div className="modal-header border-0">
-                      <h5
-                        className="modal-title text-white"
-                        id="videoModalLabel"
-                      >
-                        Watch Match Live
-                      </h5>
-                      <button
-                        type="button"
-                        className="btn-close btn-close-white"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div className="modal-body p-0">
-                      <div className="ratio ratio-16x9">
-                        <iframe
-                          id="youtubePlayer"
-                          src=""
-                          title="YouTube video"
-                          frameBorder="0"
-                          allow="autoplay; encrypted-media"
-                          allowFullScreen
-                        ></iframe>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+  {/* Modal */}
+  <div
+    className="modal fade"
+    id="videoModal"
+    tabIndex="-1"
+    aria-labelledby="videoModalLabel"
+    aria-hidden="true"
+  >
+    <div className="modal-dialog modal-dialog-centered modal-lg">
+      <div className="modal-content bg-dark">
+        {/* <div className="modal-header border-0">
+          <h5 className="modal-title text-white" id="videoModalLabel">
+            Watch Match Live
+          </h5>
+          <button
+            type="button"
+            className="btn-close btn-close-white"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+            onClick={() => {
+              const iframe = document.getElementById("youtubePlayer");
+              iframe.src = "";
+            }}
+          ></button>
+        </div> */}
+        <div className="modal-body p-0">
+          <div className="ratio ratio-16x9">
+            <iframe
+              id="youtubePlayer"
+              src=""
+              title="YouTube video"
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
           </div>
         </div>
       </div>
 
      <div className="watch-live-btn text-center">
   <Link to="/zimlive">
-    <button type="button" className="btn btn-lg fw-bold">
+    <button type="button" className="btn btn-lg fw-bold mb-4">
       <MonitorPlay size={22} className="me-2" /> GO TO ZIM TV
     </button>
   </Link>

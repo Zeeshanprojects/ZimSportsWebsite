@@ -8,16 +8,13 @@ export default function Login() {
     <div className="container-fluid login-wrapper">
       <div className="row min-vh-100">
         {/* Left Side Image */}
-        <div className=" col-lg-6 col-md-12 col-sm-12 signup-left d-flex flex-column align-items-center justify-content-center text-center  ">
+        <div className="col-lg-6 col-md-12 col-sm-12 signup-left d-flex flex-column align-items-center justify-content-center text-center">
           <img src={Image.accountpage} alt="image" className="position" />
         </div>
 
         {/* Right Side Form */}
-        <div className="col-lg-6 col-md-12 col-sm-12 login-right d-flex align-items-center justify-content-center ">
-          <div
-            className="login-box shadow p-4 rounded-4 bg-white w-100 p-5"
-            style={{ maxWidth: "500px" }}
-          >
+        <div className="col-lg-6 col-md-12 col-sm-12 login-right d-flex align-items-center justify-content-center">
+          <div className="login-box shadow p-4 rounded-4 bg-white w-100">
             <div className="loginpage-logo-container">
               <Link to="/">
                 <img
