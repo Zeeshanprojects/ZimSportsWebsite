@@ -689,7 +689,14 @@ export default function Home() {
       </div>
 
       <div id="Contact" className="section">
-        <div className="container py-5">
+        <div className="container py-2 text-center">
+           <button type="button" class="btn secondary-btn mb-5 ">
+          Contact US
+          </button>
+        </div>
+        
+        <div className="container  ">
+           
           <div className="row align-items-center">
             {/* Left Column - Text */}
             <div className="col-lg-6 mb-4 mb-lg-0">
