@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import ScrollToTopButton from "../Components/ScrollToTopButton";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import {MonitorPlay  } from "lucide-react"
+import { MonitorPlay } from "lucide-react";
 
 export default function Home() {
   useEffect(() => {
@@ -63,40 +63,40 @@ export default function Home() {
             </div>
 
             {/* Image Section */}
-           <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 position-relative text-center">
-  {/* Banner Image */}
-  <img
-    src={Image.bannerright}
-    alt="banner-right"
-    className="banner-right img-fluid rounded"
-  />
+            <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 position-relative text-center">
+              {/* Banner Image */}
+              <img
+                src={Image.bannerright}
+                alt="banner-right"
+                className="banner-right img-fluid rounded"
+              />
 
-  <div
-    className="play-button-wrapper"
-    data-bs-toggle="modal"
-    data-bs-target="#videoModal"
-    onClick={() => {
-      const iframe = document.getElementById("youtubePlayer");
-      iframe.src =
-        "https://www.youtube.com/embed/L_Z2721wfEU?autoplay=1&modestbranding=1&controls=0&showinfo=0&rel=0&fs=0";
-    }}
-  >
-    <div className="play-button-bg">
-      <div className="play-icon">&#9658;</div>
-    </div>
-  </div>
+              <div
+                className="play-button-wrapper"
+                data-bs-toggle="modal"
+                data-bs-target="#videoModal"
+                onClick={() => {
+                  const iframe = document.getElementById("youtubePlayer");
+                  iframe.src =
+                    "https://www.youtube.com/embed/L_Z2721wfEU?autoplay=1&modestbranding=1&controls=0&showinfo=0&rel=0&fs=0";
+                }}
+              >
+                <div className="play-button-bg">
+                  <div className="play-icon">&#9658;</div>
+                </div>
+              </div>
 
-  {/* Modal */}
-  <div
-    className="modal fade"
-    id="videoModal"
-    tabIndex="-1"
-    aria-labelledby="videoModalLabel"
-    aria-hidden="true"
-  >
-    <div className="modal-dialog modal-dialog-centered modal-lg">
-      <div className="modal-content bg-dark">
-        {/* <div className="modal-header border-0">
+              {/* Modal */}
+              <div
+                className="modal fade"
+                id="videoModal"
+                tabIndex="-1"
+                aria-labelledby="videoModalLabel"
+                aria-hidden="true"
+              >
+                <div className="modal-dialog modal-dialog-centered modal-lg">
+                  <div className="modal-content bg-dark">
+                    {/* <div className="modal-header border-0">
           <h5 className="modal-title text-white" id="videoModalLabel">
             Watch Match Live
           </h5>
@@ -111,138 +111,170 @@ export default function Home() {
             }}
           ></button>
         </div> */}
-        <div className="modal-body p-0">
-          <div className="ratio ratio-16x9">
-            <iframe
-              id="youtubePlayer"
-              src=""
-              title="YouTube video"
-              frameBorder="0"
-              allow="autoplay; encrypted-media"
-              allowFullScreen
-            ></iframe>
+                    <div className="modal-body p-0">
+                      <div className="ratio ratio-16x9">
+                        <iframe
+                          id="youtubePlayer"
+                          src=""
+                          title="YouTube video"
+                          frameBorder="0"
+                          allow="autoplay; encrypted-media"
+                          allowFullScreen
+                        ></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
 
-          </div>
-        </div>
+      <div className="watch-live-btn text-center">
+        <Link to="/zimlive">
+          <button type="button" className="btn btn-lg fw-bold mb-4">
+            <MonitorPlay size={22} className="me-2" /> GO TO ZIM TV
+          </button>
+        </Link>
       </div>
-
-     <div className="watch-live-btn text-center">
-  <Link to="/zimlive">
-    <button type="button" className="btn btn-lg fw-bold mb-4">
-      <MonitorPlay size={22} className="me-2" /> GO TO ZIM TV
-    </button>
-  </Link>
-</div>
-
+      {/* Features*/}
       <div id="Features" className="section">
-        <div className="container-fluid  ps-3 pe-3 ps-lg-5 pe-lg-5  py-5  text-white">
-          <div className="background-color mb-5 ">
-            <div className="row align-items-center">
-              {/* Left Image */}
-              <div className="col-sm-12 col-md-6 mb-4 mb-md-0 text-center">
-                <img
-                  src={Image.image1}
-                  alt="image1"
-                  className="img-fluid rounded shadow image-size "
-                />
+        <div className="container  text-center">
+          <button type="button" class="btn secondary-btn  ">
+            Features
+          </button>
+        </div>
+        <div className="container-fluid ps-3 pe-3 ps-lg-5 pe-lg-5 py-3 text-white">
+          <div
+            id="featuresCarousel"
+            className="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="5000"
+          >
+            <div className="carousel-inner">
+              {/* ===== Slide 1 ===== */}
+              <div className="carousel-item active">
+                <div className="background-color">
+                  <div className="row align-items-center">
+                    <div className="col-sm-12 col-md-6 mb-4 mb-md-0 text-center">
+                      <img
+                        src={Image.image1}
+                        alt="image1"
+                        className="img-fluid rounded shadow image-size"
+                      />
+                    </div>
+                    <div className="col-sm-12 col-md-6">
+                      <button type="button" className="btn secondary-btn mb-5">
+                        For Coaches
+                      </button>
+                      <div className="icon d-flex align-items-center justify-content-center mb-3">
+                        <img src={Image.icon1} alt="icon1" />
+                      </div>
+                      <h1 className="color-white mb-3">
+                        Streamline Your Coaching with Zim Sports
+                      </h1>
+                      <p className="color-white">
+                        Zim Sports empowers coaches with advanced tools for
+                        video analysis, practice planning, and player
+                        development. From real-time stat tracking to intuitive
+                        communication features, manage your team effortlessly
+                        and focus on winning.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              {/* Right Content */}
-              <div className="col-sm-12 col-md-6">
-                <button type="button" class="btn secondary-btn mb-5 ">
-                  For Coaches
-                </button>
-                <div className="icon d-flex flex-direction-column align-items-center justify-content-center mb-3">
-                  <img src={Image.icon1} alt="icon" />
+              {/* ===== Slide 2 ===== */}
+              <div className="carousel-item">
+                <div className="background-color">
+                  <div className="row align-items-center">
+                    <div className="col-sm-12 col-md-6 mb-4 mb-md-0 text-center">
+                      <img
+                        src={Image.image2}
+                        alt="image2"
+                        className="img-fluid rounded shadow image-size"
+                      />
+                    </div>
+                    <div className="col-sm-12 col-md-6">
+                      <button type="button" className="btn secondary-btn mb-5">
+                        For Teams
+                      </button>
+                      <div className="icon d-flex align-items-center justify-content-center mb-3">
+                        <img src={Image.icon2} alt="icon2" />
+                      </div>
+                      <h1 className="color-white mb-3">
+                        United & Organized: Your Team's Hub
+                      </h1>
+                      <p className="color-white">
+                        Foster seamless collaboration and organization within
+                        your team. Zim Sports offers comprehensive features for
+                        scheduling games and practices, managing rosters,
+                        sharing updates, and handling team payments.
+                      </p>
+                    </div>
+                  </div>
                 </div>
+              </div>
 
-                <h1 className="color-white mb-3">
-                  Streamline Your Coaching with Zim Sports
-                </h1>
-                <p className="color-white">
-                  Zim Sports empowers coaches with advanced tools for video
-                  analysis, practice planning, and player development. From
-                  real-time stat tracking to intuitive communication features,
-                  manage your team effortlessly and focus on winning. Track
-                  player progress, assign drills, and share insights to elevate
-                  performance.
-                </p>
+              {/* ===== Slide 3 ===== */}
+              <div className="carousel-item">
+                <div className="background-color">
+                  <div className="row align-items-center">
+                    <div className="col-sm-12 col-md-6 mb-4 mb-md-0 text-center">
+                      <img
+                        src={Image.image3}
+                        alt="image3"
+                        className="img-fluid rounded shadow image-size"
+                      />
+                    </div>
+                    <div className="col-sm-12 col-md-6">
+                      <button type="button" className="btn secondary-btn mb-5">
+                        For Families & Fans
+                      </button>
+                      <div className="icon d-flex align-items-center justify-content-center mb-3">
+                        <img src={Image.icon3} alt="icon3" />
+                      </div>
+                      <h1 className="color-white mb-3">
+                        Stay Connected, Never Miss a Moment
+                      </h1>
+                      <p className="color-white">
+                        For sports families and devoted fans, Zim Sports
+                        provides live game updates, score tracking, and easy
+                        access to team schedules and communication.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="background-color mb-5">
-            <div className="row align-items-center">
-              {/* Left Image */}
-              <div className="col-sm-12 col-md-6 mb-4 mb-md-0 text-center">
-                <img
-                  src={Image.image2}
-                  alt="image2"
-                  className="img-fluid rounded shadow image-size"
-                />
-              </div>
-
-              {/* Right Content */}
-              <div className="col-sm-12 col-md-6">
-                <button type="button" class="btn secondary-btn mb-5 ">
-                  For Teams
-                </button>
-                <div className="icon d-flex align-items-center justify-content-center mb-3">
-                  <img src={Image.icon2} alt="icon" />
-                </div>
-                <h1 className="color-white mb-3 ">
-                  United & Organized: Your Team's Hub
-                </h1>
-                <p className="color-white">
-                  Foster seamless collaboration and organization within your
-                  team. Zim Sports offers comprehensive features for scheduling
-                  games and practices, managing rosters, sharing updates, and
-                  handling team payments. Keep everyone on the same page, from
-                  players to coaching staff, ensuring smooth operations on and
-                  off the field.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="background-color mb-5">
-            <div className="row align-items-center">
-              {/* Left Image */}
-              <div className="col-sm-12 col-md-6 mb-4 mb-md-0 text-center">
-                <img
-                  src={Image.image3}
-                  alt="image3"
-                  className="img-fluid rounded shadow image-size"
-                />
-              </div>
-
-              {/* Right Content */}
-              <div className="col-sm-12 col-md-6 ">
-                <button type="button" class="btn secondary-btn mb-5 ">
-                  For Families & Fans
-                </button>
-                <div className="icon d-flex align-items-center justify-content-center mb-3">
-                  <img src={Image.icon3} alt="icon" />
-                </div>
-                <h1 className="color-white mb-3 ">
-                  Stay Connected, Never Miss a Moment
-                </h1>
-                <p className="color-white">
-                  For sports families and devoted fans, Zim Sports provides live
-                  game updates, score tracking, and easy access to team
-                  schedules and communication. Receive instant notifications,
-                  view player statistics, and share in the excitement, ensuring
-                  you're always connected to the action, even when you can't be
-                  there in person.
-                </p>
-              </div>
-            </div>
+            {/* ===== Carousel Controls ===== */}
+            <button
+              className="carousel-control-prev"
+              type="button"
+              data-bs-target="#featuresCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                className="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button
+              className="carousel-control-next"
+              type="button"
+              data-bs-target="#featuresCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                className="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span className="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>
@@ -379,161 +411,165 @@ export default function Home() {
 
             <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5 d-flex ">
               <div className="feature-card d-flex flex-column justify-content-between w-100">
-              <p className="subparagraph"> Team & Player Management</p>
-              <h2>
-                <span>Effortless organization</span> for Coaches & Admins
-              </h2>
-              <p>
-                Streamline rosters, track attendance, manage team finances, and
-                organize all player information in one secure location. Zim
-                Sports simplifies administrative tasks, allowing you to focus on
-                the game.
-              </p>
-              <ul className="list-unstyled ">
-                <li>
-                  <div className="d-flex align-items-center gap-2">
-                    <img
-                      src={Image.checked}
-                      alt="checked-icon"
-                      className="checked-icon"
-                    />
-                    <h5 className="mb-0">Automated Rosters & Scheduling</h5>
-                  </div>
-                  <p className="ms-4">
-                    Quickly set up teams, create schedules, and manage player
-                    availability with automated tools.
-                  </p>
-                </li>
+                <p className="subparagraph"> Team & Player Management</p>
+                <h2>
+                  <span>Effortless organization</span> for Coaches & Admins
+                </h2>
+                <p>
+                  Streamline rosters, track attendance, manage team finances,
+                  and organize all player information in one secure location.
+                  Zim Sports simplifies administrative tasks, allowing you to
+                  focus on the game.
+                </p>
+                <ul className="list-unstyled ">
+                  <li>
+                    <div className="d-flex align-items-center gap-2">
+                      <img
+                        src={Image.checked}
+                        alt="checked-icon"
+                        className="checked-icon"
+                      />
+                      <h5 className="mb-0">Automated Rosters & Scheduling</h5>
+                    </div>
+                    <p className="ms-4">
+                      Quickly set up teams, create schedules, and manage player
+                      availability with automated tools.
+                    </p>
+                  </li>
 
-                <li>
-                  <div className="d-flex align-items-center gap-2">
-                    <img
-                      src={Image.checked}
-                      alt="checked-icon"
-                      className="checked-icon"
-                    />
-                    <h5 className="mb-0">Integrated Communication Hub</h5>
-                  </div>
-                  <p className="ms-4">
-                    Facilitate seamless communication with instant messaging,
-                    announcements, and direct chats.
-                  </p>
-                </li>
-              </ul>
-              <button
-                className="btn  navbar-btn ps-5 pe-5 pt-2 pb-2"
-                type="submit"
-              >
-                Discover Management Feature
-              </button>
+                  <li>
+                    <div className="d-flex align-items-center gap-2">
+                      <img
+                        src={Image.checked}
+                        alt="checked-icon"
+                        className="checked-icon"
+                      />
+                      <h5 className="mb-0">Integrated Communication Hub</h5>
+                    </div>
+                    <p className="ms-4">
+                      Facilitate seamless communication with instant messaging,
+                      announcements, and direct chats.
+                    </p>
+                  </li>
+                </ul>
+                <button
+                  className="btn  navbar-btn ps-5 pe-5 pt-2 pb-2"
+                  type="submit"
+                >
+                  Discover Management Feature
+                </button>
               </div>
             </div>
             <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5 d-flex">
               <div className="feature-card d-flex flex-column justify-content-between w-100">
-              <h2>
-                <p className="subparagraph"> Performance Analytics & Video</p>
-                <span>Unleash potential </span>with deep insights & video tools
-              </h2>
-              <p>
-                Harness the power of data and video to elevate player
-                performance. Analyze game footage, track key metrics, and
-                provide targeted feedback to help athletes improve and teams
-                strategize effectively.
-              </p>
-              <ul className="list-unstyled ">
-                <div className="d-flex align-items-center gap-2 pb-2">
-                  <img
-                    src={Image.greenchecked}
-                    alt="greenchecked"
-                    className="checked-icon mb-3"
-                  />
-                  <li>
-                    Advanced statistical tracking for individual and team
-                    performance
-                  </li>
-                </div>
-                <div className="d-flex align-items-center gap-2 pb-2">
-                  <img
-                    src={Image.greenchecked}
-                    alt="greenchecked"
-                    className="checked-icon mb-3"
-                  />
-                  <li>
-                    Intuitive video analysis tools for breakdown and highlight
-                    creation
-                  </li>
-                </div>
+                <h2>
+                  <p className="subparagraph"> Performance Analytics & Video</p>
+                  <span>Unleash potential </span>with deep insights & video
+                  tools
+                </h2>
+                <p>
+                  Harness the power of data and video to elevate player
+                  performance. Analyze game footage, track key metrics, and
+                  provide targeted feedback to help athletes improve and teams
+                  strategize effectively.
+                </p>
+                <ul className="list-unstyled ">
+                  <div className="d-flex align-items-center gap-2 pb-2">
+                    <img
+                      src={Image.greenchecked}
+                      alt="greenchecked"
+                      className="checked-icon mb-3"
+                    />
+                    <li>
+                      Advanced statistical tracking for individual and team
+                      performance
+                    </li>
+                  </div>
+                  <div className="d-flex align-items-center gap-2 pb-2">
+                    <img
+                      src={Image.greenchecked}
+                      alt="greenchecked"
+                      className="checked-icon mb-3"
+                    />
+                    <li>
+                      Intuitive video analysis tools for breakdown and highlight
+                      creation
+                    </li>
+                  </div>
 
-                <div className="d-flex align-items-center gap-2 pb-2">
-                  <img
-                    src={Image.greenchecked}
-                    alt="greenchecked"
-                    className="checked-icon mb-3"
-                  />
-                  <li>
-                    Customizable reports to identify strengths and areas for
-                    improvement
-                  </li>
-                </div>
-              </ul>
-              <button
-                className="btn  navbar-btn ps-5 pe-5 pt-2 pb-2"
-                type="submit"
-              >
-                Explore Analytics
-              </button>
-            </div>
+                  <div className="d-flex align-items-center gap-2 pb-2">
+                    <img
+                      src={Image.greenchecked}
+                      alt="greenchecked"
+                      className="checked-icon mb-3"
+                    />
+                    <li>
+                      Customizable reports to identify strengths and areas for
+                      improvement
+                    </li>
+                  </div>
+                </ul>
+                <button
+                  className="btn  navbar-btn ps-5 pe-5 pt-2 pb-2"
+                  type="submit"
+                >
+                  Explore Analytics
+                </button>
+              </div>
             </div>
             <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5 d-flex">
               <div className="feature-card d-flex flex-column justify-content-between w-100">
-              <h2>
-                <p className="subparagraph"> Live Tracking & Fan Engagement</p>
-                <span>Keep everyone connected </span>
-                and part of the action
-              </h2>
-              <p>
-                Engage your community with real-time updates, live scoring, and
-                secure communication channels. Zim Sports ensures families and
-                fans are always in the loop, celebrating every victory and
-                supporting their team.
-              </p>
-              <ul className="list-unstyled ">
-                <div className="d-flex align-items-center gap-2 pb-2">
-                  <img
-                    src={Image.greenchecked}
-                    alt="greenchecked"
-                    className="checked-icon"
-                  />
-                  <li>Real-time game updates and live scoreboards</li>
-                </div>
-                <div className="d-flex align-items-center gap-2 pb-2">
-                  <img
-                    src={Image.greenchecked}
-                    alt="greenchecked"
-                    className="checked-icon"
-                  />
-                  <li>Secure team messaging and announcement features</li>
-                </div>
+                <h2>
+                  <p className="subparagraph">
+                    {" "}
+                    Live Tracking & Fan Engagement
+                  </p>
+                  <span>Keep everyone connected </span>
+                  and part of the action
+                </h2>
+                <p>
+                  Engage your community with real-time updates, live scoring,
+                  and secure communication channels. Zim Sports ensures families
+                  and fans are always in the loop, celebrating every victory and
+                  supporting their team.
+                </p>
+                <ul className="list-unstyled ">
+                  <div className="d-flex align-items-center gap-2 pb-2">
+                    <img
+                      src={Image.greenchecked}
+                      alt="greenchecked"
+                      className="checked-icon"
+                    />
+                    <li>Real-time game updates and live scoreboards</li>
+                  </div>
+                  <div className="d-flex align-items-center gap-2 pb-2">
+                    <img
+                      src={Image.greenchecked}
+                      alt="greenchecked"
+                      className="checked-icon"
+                    />
+                    <li>Secure team messaging and announcement features</li>
+                  </div>
 
-                <div className="d-flex align-items-center gap-2 pb-2">
-                  <img
-                    src={Image.greenchecked}
-                    alt="greenchecked"
-                    className="checked-icon"
-                  />
-                  <li>
-                    Event reminders and calendar synchronization for families
-                  </li>
-                </div>
-              </ul>
-              <button
-                className="btn  navbar-btn ps-5 pe-5 pt-2 pb-2 "
-                type="submit"
-              >
-                See Fan Features
-              </button>
+                  <div className="d-flex align-items-center gap-2 pb-2">
+                    <img
+                      src={Image.greenchecked}
+                      alt="greenchecked"
+                      className="checked-icon"
+                    />
+                    <li>
+                      Event reminders and calendar synchronization for families
+                    </li>
+                  </div>
+                </ul>
+                <button
+                  className="btn  navbar-btn ps-5 pe-5 pt-2 pb-2 "
+                  type="submit"
+                >
+                  See Fan Features
+                </button>
+              </div>
             </div>
-          </div>
           </div>
         </div>
         <br />
@@ -690,13 +726,12 @@ export default function Home() {
 
       <div id="Contact" className="section">
         <div className="container py-2 text-center">
-           <button type="button" class="btn secondary-btn mb-5 ">
-          Contact US
+          <button type="button" class="btn secondary-btn mb-5 ">
+            Contact US
           </button>
         </div>
-        
+
         <div className="container  ">
-           
           <div className="row align-items-center">
             {/* Left Column - Text */}
             <div className="col-lg-6 mb-4 mb-lg-0">
