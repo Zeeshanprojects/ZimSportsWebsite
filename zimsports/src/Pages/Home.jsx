@@ -368,7 +368,7 @@ export default function Home() {
         </div>
         <div className="container ps-5 pe-5">
           <div className="row">
-            <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+            <div className="col-12 ">
               <h1 className="custom-para">
                 {" "}
                 Unlock the full potential of
@@ -377,7 +377,8 @@ export default function Home() {
               </h1>
             </div>
 
-            <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5 mb-5  ">
+            <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5 d-flex ">
+              <div className="feature-card d-flex flex-column justify-content-between w-100">
               <p className="subparagraph"> Team & Player Management</p>
               <h2>
                 <span>Effortless organization</span> for Coaches & Admins
@@ -425,8 +426,10 @@ export default function Home() {
               >
                 Discover Management Feature
               </button>
+              </div>
             </div>
-            <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5 offset-lg-2 mb-5">
+            <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5 d-flex">
+              <div className="feature-card d-flex flex-column justify-content-between w-100">
               <h2>
                 <p className="subparagraph"> Performance Analytics & Video</p>
                 <span>Unleash potential </span>with deep insights & video tools
@@ -480,7 +483,9 @@ export default function Home() {
                 Explore Analytics
               </button>
             </div>
-            <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5">
+            </div>
+            <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5 d-flex">
+              <div className="feature-card d-flex flex-column justify-content-between w-100">
               <h2>
                 <p className="subparagraph"> Live Tracking & Fan Engagement</p>
                 <span>Keep everyone connected </span>
@@ -522,12 +527,13 @@ export default function Home() {
                 </div>
               </ul>
               <button
-                className="btn  navbar-btn ps-5 pe-5 pt-2 pb-2"
+                className="btn  navbar-btn ps-5 pe-5 pt-2 pb-2 "
                 type="submit"
               >
                 See Fan Features
               </button>
             </div>
+          </div>
           </div>
         </div>
         <br />
