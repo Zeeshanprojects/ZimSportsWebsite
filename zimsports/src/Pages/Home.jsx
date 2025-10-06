@@ -44,7 +44,7 @@ export default function Home() {
                     Start Now
                   </button>
 
-                  <div className="d-flex gap-4 ms-2 mt-2">
+                  <div className="d-flex gap-3 ms-2 mt-2">
                     <img
                       src={Image.checked}
                       alt="checked-icon"
@@ -149,7 +149,7 @@ export default function Home() {
                 <img
                   src={Image.image1}
                   alt="image1"
-                  className="img-fluid rounded shadow image-size"
+                  className="img-fluid rounded shadow image-size "
                 />
               </div>
 
