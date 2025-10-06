@@ -4,7 +4,7 @@ import "../assets/CSS/Footer.css";
 export default function Footer() {
   return (
     <>
-    <div className="container-fluid"></div>
+    <div className="container-fluid mt-5"></div>
       <footer className="footer-section bg-dark text-white py-5">
         <div className="container">
           <div className="row align-items-center">
