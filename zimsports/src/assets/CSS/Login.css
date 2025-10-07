@@ -17,8 +17,7 @@ a {
 
 /* Right side */
 .login-right {
-background: linear-gradient(135deg, #f8fdf8, #e9f8ea, #d7f0d8);
-
+background: linear-gradient(135deg, #fcfefc, #f5fcf6, #edf9ee) !important;
   padding: 2rem;
 }
 

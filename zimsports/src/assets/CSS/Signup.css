@@ -4,34 +4,30 @@
 
 .signup-left {
   background-color: black !important;
-  
 }
-.position{
-margin-right: 80px !important;
+.position {
+  margin-right: 80px !important;
 
-height:700px !important;
-width: 700px !important;
-
+  height: 700px !important;
+  width: 700px !important;
 }
 .signup-right {
-   background: linear-gradient(135deg, #f8fdf8, #e9f8ea, #d7f0d8);
-
-  min-height: 100vh;               /* Full viewport height */
+background: linear-gradient(135deg, #fcfefc, #f5fcf6, #edf9ee) !important;
+  min-height: 100vh; /* Full viewport height */
   display: flex;
   flex-direction: column;
-  justify-content: center;         /* Vertical center */
-  overflow: hidden;   
-             /* Prevent scrollbar */
+  justify-content: center; /* Vertical center */
+  overflow: hidden;
+  /* Prevent scrollbar */
 }
 
 .signup-right .card {
-  max-height: 100vh;                /* Prevent card overflow */
-  overflow-y: auto;  
-    border-radius: 20px !important;
+  max-height: 100vh; /* Prevent card overflow */
+  overflow-y: auto;
+  border-radius: 20px !important;
 }
 
-
-.logo-size{
+.logo-size {
   object-fit: cover !important;
 }
 .card {
@@ -43,7 +39,7 @@ width: 700px !important;
   border-radius: 30px;
   font-weight: 500;
   padding: 10px 20px;
-  color: #1F8E4B !important;   /* Always green text */
+  color: #1f8e4b !important; /* Always green text */
   background: transparent;
   border: none;
   outline: none !important;
@@ -55,29 +51,29 @@ width: 700px !important;
 .nav-pills .nav-link:hover,
 .nav-pills .nav-link:focus,
 .nav-pills .nav-link:active {
-  color: #1F8E4B !important;     /* Stay green */
+  color: #1f8e4b !important; /* Stay green */
   background: rgba(31, 142, 75, 0.1); /* light green bg */
-  text-decoration: none !important;   /* remove underline */
+  text-decoration: none !important; /* remove underline */
   outline: none !important;
   box-shadow: none !important;
 }
 
 /* Active (selected tab) */
 .nav-pills .nav-link.active {
-  color: #fff !important;             /* white text */
-  background-color: #1F8E4B !important; /* green bg */
-  text-decoration: none !important; 
+  color: #fff !important; /* white text */
+  background-color: #1f8e4b !important; /* green bg */
+  text-decoration: none !important;
 }
 
-@media (min-width:1024px) and (max-width:1299px) {
-  .position{
+@media (min-width: 1024px) and (max-width: 1299px) {
+  .position {
     margin-right: 50px !important;
   }
 }
-@media (min-width:375px) and (max-width:576px) {
-  .position{
+@media (min-width: 375px) and (max-width: 576px) {
+  .position {
     height: 500px !important;
     width: 500px !important;
-        margin-right: 30px !important;
+    margin-right: 30px !important;
   }
 }
