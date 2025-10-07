@@ -15,106 +15,108 @@ export default function Home() {
     <>
       <Navbar />
       <div className="space"></div>
-      <div id="Home" className="section">
-        <div className="container py-lg-5 mt-lg-5">
-          <div className="row align-items-center">
-            {/* Text Section */}
-            <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-4 mb-lg-0">
-              <div className="text-content">
-                <h1>
-                  <strong>
-                    Zim Sports: Experience Every Single Game,
-                    <span> Anywhere, Anytime</span>
-                  </strong>
-                </h1>
-                <p>
-                  Live-stream, capture, and relive every moment of your clubʼs
-                  journey—powered by Zim Sports Technologies.
-                </p>
-                <div className="d-flex flex-wrap align-items-center mt-3">
-                  <input
-                    type="email"
-                    className="form-color "
-                    placeholder="Enter Your Email"
-                  />
-                  <button
-                    type="button"
-                    className="btn primary-btn ps-5 pe-5 ms-3 mt-2 mt-sm-0 start-btn"
-                  >
-                    Start Now
-                  </button>
+     <div id="Home" className="section">
+  <div className="container py-lg-5 mt-lg-5">
+    <div className="row align-items-center">
+      {/* Text Section */}
+      <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-4 mb-lg-0">
+        <div className="text-content">
+          <h1>
+            <strong>
+              Zim Sports: Experience Every Single Game,
+              <span> Anywhere, Anytime</span>
+            </strong>
+          </h1>
+          <p>
+            Live-stream, capture, and relive every moment of your clubʼs
+            journey—powered by Zim Sports Technologies.
+          </p>
+          <div className="d-flex flex-wrap align-items-center mt-3">
+            <input
+              type="email"
+              className="form-color"
+              placeholder="Enter Your Email"
+            />
+            <button
+              type="button"
+              className="btn primary-btn ps-5 pe-5 ms-3 mt-2 mt-sm-0 start-btn"
+            >
+              Start Now
+            </button>
 
-                  <div className="d-flex gap-3 ms-2 mt-2">
-                    <img
-                      src={Image.checked}
-                      alt="checked-icon"
-                      className="checked-icon"
-                    />
-                    <p className="text">Free for no</p>
-                    <img
-                      src={Image.checked}
-                      alt="checked-icon"
-                      className="checked-icon"
-                    />
-                    <p className="text">No credit card required</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Image Section */}
-            <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 position-relative text-center">
-              {/* Banner Image */}
+            <div className="d-flex gap-3 ms-2 mt-2">
               <img
-                src={Image.bannerright}
-                alt="banner-right"
-                className="banner-right img-fluid rounded"
+                src={Image.checked}
+                alt="checked-icon"
+                className="checked-icon"
               />
+              <p className="text">Free to join</p>
+              <img
+                src={Image.checked}
+                alt="checked-icon"
+                className="checked-icon"
+              />
+              <p className="text">No credit card required</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-              <div
-                className="play-button-wrapper"
-                data-bs-toggle="modal"
-                data-bs-target="#videoModal"
-                onClick={() => {
-                  const iframe = document.getElementById("youtubePlayer");
-                  iframe.src =
-                    "https://www.youtube.com/embed/L_Z2721wfEU?autoplay=1&modestbranding=1&controls=0&showinfo=0&rel=0&fs=0";
-                }}
-              >
-                <div className="play-button-bg">
-                  <div className="play-icon">&#9658;</div>
-                </div>
-              </div>
+      {/* Image Section */}
+      <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 position-relative text-center">
+        <div className="video-wrapper">
+          <div className="green-card"></div>
+          <img
+            src={Image.bannerright}
+            alt="banner-right"
+            className="banner-right img-fluid rounded"
+          />
 
-              {/* Modal */}
-              <div
-                className="modal fade"
-                id="videoModal"
-                tabIndex="-1"
-                aria-labelledby="videoModalLabel"
-                aria-hidden="true"
-              >
-                <div className="modal-dialog modal-dialog-centered modal-lg">
-                  <div className="modal-content bg-dark">
-                    <div className="modal-body p-0">
-                      <div className="ratio ratio-16x9">
-                        <iframe
-                          id="youtubePlayer"
-                         
-                          title="YouTube video"
-                          frameBorder="0"
-                          allow="autoplay; encrypted-media"
-                          allowFullScreen
-                        ></iframe>
-                      </div>
-                    </div>
-                  </div>
+          <div
+            className="play-button-wrapper"
+            data-bs-toggle="modal"
+            data-bs-target="#videoModal"
+            onClick={() => {
+              const iframe = document.getElementById("youtubePlayer");
+              iframe.src =
+                "https://www.youtube.com/embed/L_Z2721wfEU?autoplay=1&modestbranding=1&controls=0&showinfo=0&rel=0&fs=0";
+            }}
+          >
+            <div className="play-button-bg">
+              <div className="play-icon">&#9658;</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Modal */}
+        <div
+          className="modal fade"
+          id="videoModal"
+          tabIndex="-1"
+          aria-labelledby="videoModalLabel"
+          aria-hidden="true"
+        >
+          <div className="modal-dialog modal-dialog-centered modal-lg">
+            <div className="modal-content bg-dark">
+              <div className="modal-body p-0">
+                <div className="ratio ratio-16x9">
+                  <iframe
+                    id="youtubePlayer"
+                    title="YouTube video"
+                    frameBorder="0"
+                    allow="autoplay; encrypted-media"
+                    allowFullScreen
+                  ></iframe>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
 
       <div className="watch-live-btn text-center">
         <Link to="/zimlive">
