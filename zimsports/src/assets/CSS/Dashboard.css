@@ -375,6 +375,9 @@ body {
   .cards button {
     font-size: 12px !important;
   }
+  .light-gray-btn{
+font-size: 10px !important;
+  }
 }
 @media (max-width: 768px) {
   .sidebar {
