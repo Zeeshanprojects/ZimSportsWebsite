@@ -282,6 +282,21 @@ body {
   background-color: #ffe7f3;
   color: #ff4081;
 }
+.light-gray-btn {
+  background-color: #f0f0f0 !important; /* Light gray */
+  color: #000 !important; /* Black text */
+  border: 1px solid #d6d6d6 !important; /* Subtle border */
+  border-radius: 15px !important; /* Smooth edges */
+  padding: 8px 20px !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.light-gray-btn:hover {
+  background-color: #e0e0e0; /* Slightly darker on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
 
 /* Bottom cards */
 .bottom-section {
