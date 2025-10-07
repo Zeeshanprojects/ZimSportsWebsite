@@ -19,9 +19,9 @@ export default function Dashboard() {
       {/* Top Navbar */}
       <>
   {/* Navbar */}
-  <nav className="navbar navbar-expand-lg navbar-light bg-white ms-5 me-5 ">
+  <nav className="navbar navbar-expand-lg navbar-light bg-white p-3 ">
     {/* Container wrapper */}
-    <div className="container-fluid ">
+    <div className="container-fluid">
       {/* Toggle button */}
       <button
         data-mdb-collapse-init=""
@@ -84,15 +84,8 @@ export default function Dashboard() {
         </a>
        
         {/* Avatar */}
-        <div className="dropdown">
-          <a
-            data-mdb-dropdown-init=""
-            className="dropdown-toggle d-flex align-items-center hidden-arrow"
-            href="#"
-            id="navbarDropdownMenuAvatar"
-            role="button"
-            aria-expanded="false"
-          >
+       
+          
             <img
               src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
               className="rounded-circle"
@@ -100,31 +93,12 @@ export default function Dashboard() {
               alt="Black and White Portrait of a Man"
               loading="lazy"
             />
-          </a>
-          <ul
-            className="dropdown-menu dropdown-menu-end"
-            aria-labelledby="navbarDropdownMenuAvatar"
-          >
-            <li>
-              <a className="dropdown-item" href="#">
-                My profile
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                Settings
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                Logout
-              </a>
-            </li>
-          </ul>
+          
+         
         </div>
       </div>
       {/* Right elements */}
-    </div>
+    
     {/* Container wrapper */}
   </nav>
   {/* Navbar */}
@@ -197,13 +171,13 @@ export default function Dashboard() {
         {/* Bottom Sections */}
         <div className="bottom-section">
           <div className="bottom-card">
-            <h4>Upcoming Team Schedule</h4>
+            <h6>Upcoming Team Schedule</h6>
             <button>Manage Team Schedules</button>
             <p>No upcoming schedule events found for your teams.</p>
           </div>
 
           <div className="bottom-card">
-            <h4>Latest Registered Players</h4>
+            <h6>Latest Registered Players</h6>
             <button>View All Players</button>
             <div className="player-info">
               <div className="player-circle">E</div>
@@ -220,7 +194,7 @@ export default function Dashboard() {
         {/* Matches Section */}
         <div className="match-section">
           <div className="match-card">
-            <h4>Latest Completed Matches</h4>
+            <h6>Latest Completed Matches</h6>
             <button>View All Matches</button>
             <table>
               <thead>
@@ -249,7 +223,7 @@ export default function Dashboard() {
           </div>
 
           <div className="match-card">
-            <h4>Upcoming Matches</h4>
+            <h6>Upcoming Matches</h6>
             <button>View Full Schedule</button>
             <p>No upcoming matches found.</p>
           </div>
