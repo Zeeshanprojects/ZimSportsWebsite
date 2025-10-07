@@ -96,21 +96,6 @@ export default function Home() {
               >
                 <div className="modal-dialog modal-dialog-centered modal-lg">
                   <div className="modal-content bg-dark">
-                    {/* <div className="modal-header border-0">
-          <h5 className="modal-title text-white" id="videoModalLabel">
-            Watch Match Live
-          </h5>
-          <button
-            type="button"
-            className="btn-close btn-close-white"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-            onClick={() => {
-              const iframe = document.getElementById("youtubePlayer");
-              iframe.src = "";
-            }}
-          ></button>
-        </div> */}
                     <div className="modal-body p-0">
                       <div className="ratio ratio-16x9">
                         <iframe
@@ -168,7 +153,7 @@ export default function Home() {
                       <h1 className="color-white mb-3">
                         Streamline Your Coaching with Zim Sports
                       </h1>
-                      <p className="color-white pe-4">
+                      <p className="text-white pe-4">
                         Zim Sports empowers coaches with a complete suite of
                         advanced tools designed to simplify every aspect of team
                         management. Plan practices with precision, analyze
@@ -203,11 +188,11 @@ export default function Home() {
                         For Teams
                       </button>
 
-                      <h1 className="color-white mb-3">
+                      <h1 className="text-white mb-3">
                         United & Organized: Your Team's Hub
                       </h1>
                    
-                        <p className="color-white pe-4">
+                        <p className="text-white pe-4">
                           Foster seamless collaboration and a sense of unity
                           within your team. Zim Sports serves as your all-in-one
                           digital hub, empowering coaches, players, and managers
@@ -241,10 +226,10 @@ export default function Home() {
                         For Families & Fans
                       </button>
 
-                      <h1 className="color-white mb-3">
+                      <h1 className="text-white mb-3">
                         Stay Connected, Never Miss a Moment
                       </h1>
-                      <p className="color-white pe-4">
+                      <p className="text-white pe-4">
                         For sports families and devoted fans, Zim Sports keeps
                         you closer to the action than ever before. Follow live
                         game updates and score tracking in real time, stay
