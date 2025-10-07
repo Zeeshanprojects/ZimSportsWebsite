@@ -332,7 +332,10 @@ body.modal-open .watch-live-btn {
   color: black !important;
   opacity: 1;
 }
-
+.text-white{
+  text-align: justify !important;
+  hyphens: auto;
+}
 
 @keyframes shimmer {
   0% {
@@ -355,10 +358,22 @@ body.modal-open .watch-live-btn {
   .banner-right {
     width: 100%;
   }
-  
-
 }
 @media (max-width: 576px) {
+    .green-card {
+    top: 5px;
+    left: 5px;
+    width: 95%;
+    height: 96%;
+    border-radius: 15px;
+    transform: rotate(2deg);
+  }
+
+  .banner-right {
+    transform: rotate(-5deg);
+    border-radius: 15px !important;
+    width: 90%;
+  }
   .watch-live-btn button {
   padding: 10px 30px;
   font-size: 1rem !important;
