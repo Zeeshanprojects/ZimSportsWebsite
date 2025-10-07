@@ -14,7 +14,8 @@ width: 700px !important;
 
 }
 .signup-right {
-   background: linear-gradient(135deg, #e8f5e9, #c8e6c9, #a5d6a7) !important;
+   background: linear-gradient(135deg, #f8fdf8, #e9f8ea, #d7f0d8);
+
   min-height: 100vh;               /* Full viewport height */
   display: flex;
   flex-direction: column;

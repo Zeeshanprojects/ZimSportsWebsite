@@ -100,7 +100,7 @@ export default function Home() {
                       <div className="ratio ratio-16x9">
                         <iframe
                           id="youtubePlayer"
-                          src=""
+                         
                           title="YouTube video"
                           frameBorder="0"
                           allow="autoplay; encrypted-media"
