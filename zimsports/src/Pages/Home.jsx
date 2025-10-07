@@ -127,7 +127,7 @@ export default function Home() {
       </div>
       {/* Features*/}
       <div id="Features" className="section">
-        <div className="container-fluid mt-2 ps-3 pe-3 ps-lg-5 pe-lg-5 py-3 text-white">
+        <div className="container-fluid mt-3 ps-3 pe-3 ps-lg-5 pe-lg-5 py-3 text-white">
           <div
             id="featuresCarousel"
             className="carousel slide"
