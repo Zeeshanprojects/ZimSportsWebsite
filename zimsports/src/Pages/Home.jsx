@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "../assets/CSS/Home.css";
 import Image from "../assets/Images/image";
 import { Link } from "react-router-dom";
-import ScrollToTopButton from "../Components/ScrollToTopButton";
+
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import { MonitorPlay } from "lucide-react";
@@ -15,108 +15,107 @@ export default function Home() {
     <>
       <Navbar />
       <div className="space"></div>
-     <div id="Home" className="section">
-  <div className="container py-lg-5 mt-lg-5">
-    <div className="row align-items-center">
-      {/* Text Section */}
-      <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-4 mb-lg-0">
-        <div className="text-content">
-          <h1>
-            <strong>
-              Zim Sports: Experience Every Single Game,
-              <span> Anywhere, Anytime</span>
-            </strong>
-          </h1>
-          <p>
-            Live-stream, capture, and relive every moment of your clubʼs
-            journey—powered by Zim Sports Technologies.
-          </p>
-          <div className="d-flex flex-wrap align-items-center mt-3">
-            <input
-              type="email"
-              className="form-color"
-              placeholder="Enter Your Email"
-            />
-            <button
-              type="button"
-              className="btn primary-btn ps-5 pe-5 ms-3 mt-2 mt-sm-0 start-btn"
-            >
-              Start Now
-            </button>
+      <div id="Home" className="section">
+        <div className="container py-lg-5 mt-lg-5">
+          <div className="row align-items-center">
+            {/* Text Section */}
+            <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-4 mb-lg-0">
+              <div className="text-content">
+                <h1>
+                  <strong>
+                    Zim Sports: Experience Every Single Game,
+                    <span> Anywhere, Anytime</span>
+                  </strong>
+                </h1>
+                <p>
+                  Live-stream, capture, and relive every moment of your clubʼs
+                  journey—powered by Zim Sports Technologies.
+                </p>
+                <div className="d-flex flex-wrap align-items-center mt-3">
+                  <input
+                    type="email"
+                    className="form-color"
+                    placeholder="Enter Your Email"
+                  />
+                  <button
+                    type="button"
+                    className="btn primary-btn ps-5 pe-5 ms-3 mt-2 mt-sm-0 start-btn"
+                  >
+                    Start Now
+                  </button>
 
-            <div className="d-flex gap-3 ms-2 mt-2">
-              <img
-                src={Image.checked}
-                alt="checked-icon"
-                className="checked-icon"
-              />
-              <p className="text">Free to join</p>
-              <img
-                src={Image.checked}
-                alt="checked-icon"
-                className="checked-icon"
-              />
-              <p className="text">No credit card required</p>
+                  <div className="d-flex gap-3 ms-2 mt-2">
+                    <img
+                      src={Image.checked}
+                      alt="checked-icon"
+                      className="checked-icon"
+                    />
+                    <p className="text">Free to join</p>
+                    <img
+                      src={Image.checked}
+                      alt="checked-icon"
+                      className="checked-icon"
+                    />
+                    <p className="text">No credit card required</p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      {/* Image Section */}
-      <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 position-relative text-center">
-        <div className="video-wrapper">
-          <div className="green-card"></div>
-          <img
-            src={Image.bannerright}
-            alt="banner-right"
-            className="banner-right img-fluid rounded"
-          />
+            {/* Image Section */}
+            <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 position-relative text-center">
+              <div className="video-wrapper">
+                <div className="green-card"></div>
+                <img
+                  src={Image.bannerright}
+                  alt="banner-right"
+                  className="banner-right img-fluid rounded"
+                />
 
-          <div
-            className="play-button-wrapper"
-            data-bs-toggle="modal"
-            data-bs-target="#videoModal"
-            onClick={() => {
-              const iframe = document.getElementById("youtubePlayer");
-              iframe.src =
-                "https://www.youtube.com/embed/L_Z2721wfEU?autoplay=1&modestbranding=1&controls=0&showinfo=0&rel=0&fs=0";
-            }}
-          >
-            <div className="play-button-bg">
-              <div className="play-icon">&#9658;</div>
-            </div>
-          </div>
-        </div>
+                <div
+                  className="play-button-wrapper"
+                  data-bs-toggle="modal"
+                  data-bs-target="#videoModal"
+                  onClick={() => {
+                    const iframe = document.getElementById("youtubePlayer");
+                    iframe.src =
+                      "https://www.youtube.com/embed/L_Z2721wfEU?autoplay=1&modestbranding=1&controls=0&showinfo=0&rel=0&fs=0";
+                  }}
+                >
+                  <div className="play-button-bg">
+                    <div className="play-icon">&#9658;</div>
+                  </div>
+                </div>
+              </div>
 
-        {/* Modal */}
-        <div
-          className="modal fade"
-          id="videoModal"
-          tabIndex="-1"
-          aria-labelledby="videoModalLabel"
-          aria-hidden="true"
-        >
-          <div className="modal-dialog modal-dialog-centered modal-lg">
-            <div className="modal-content bg-dark">
-              <div className="modal-body p-0">
-                <div className="ratio ratio-16x9">
-                  <iframe
-                    id="youtubePlayer"
-                    title="YouTube video"
-                    frameBorder="0"
-                    allow="autoplay; encrypted-media"
-                    allowFullScreen
-                  ></iframe>
+              {/* Modal */}
+              <div
+                className="modal fade"
+                id="videoModal"
+                tabIndex="-1"
+                aria-labelledby="videoModalLabel"
+                aria-hidden="true"
+              >
+                <div className="modal-dialog modal-dialog-centered modal-lg">
+                  <div className="modal-content bg-dark">
+                    <div className="modal-body p-0">
+                      <div className="ratio ratio-16x9">
+                        <iframe
+                          id="youtubePlayer"
+                          title="YouTube video"
+                          frameBorder="0"
+                          allow="autoplay; encrypted-media"
+                          allowFullScreen
+                        ></iframe>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-
 
       <div className="watch-live-btn text-center">
         <Link to="/zimlive">
@@ -193,19 +192,18 @@ export default function Home() {
                       <h1 className="text-white mb-3">
                         United & Organized: Your Team's Hub
                       </h1>
-                   
-                        <p className="text-white pe-4">
-                          Foster seamless collaboration and a sense of unity
-                          within your team. Zim Sports serves as your all-in-one
-                          digital hub, empowering coaches, players, and managers
-                          to stay organized and connected. Easily schedule games
-                          and practices, manage rosters, share instant updates,
-                          and track performance insights — all from one
-                          intuitive platform. Simplify communication, eliminate
-                          confusion, and build a stronger, more efficient team
-                          with Zim Sports.
-                        </p>
-                      
+
+                      <p className="text-white pe-4">
+                        Foster seamless collaboration and a sense of unity
+                        within your team. Zim Sports serves as your all-in-one
+                        digital hub, empowering coaches, players, and managers
+                        to stay organized and connected. Easily schedule games
+                        and practices, manage rosters, share instant updates,
+                        and track performance insights — all from one intuitive
+                        platform. Simplify communication, eliminate confusion,
+                        and build a stronger, more efficient team with Zim
+                        Sports.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -806,7 +804,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <ScrollToTopButton />
+ 
       <Footer />
     </>
   );
