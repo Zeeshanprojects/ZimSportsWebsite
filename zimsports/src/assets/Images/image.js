@@ -1,5 +1,6 @@
 const Image = {
   logo: new URL("logo.webp", import.meta.url).href,
+  backgroundeffect: new URL ("./backgroundeffect.webp",import.meta.url).href,
   bannerright: new URL("banner-right.webp", import.meta.url).href,
   image1: new URL("Welcomeimage.webp", import.meta.url).href,
   image2: new URL("ZimSportsmobile1.webp", import.meta.url).href,
