@@ -1,27 +1,13 @@
-.navbar {
-  background: rgba(255, 255, 255, 0.2) !important; /* translucent background */
-  backdrop-filter: blur(10px) saturate(180%);
-  -webkit-backdrop-filter: blur(10px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 16px;
-  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
-  padding: 10px 20px;
-  margin: 10px 30px;
-  position: sticky;
-  top: 10px;
-  z-index: 1000;
-}
 
-/* Navbar links */
 .navbar-nav .nav-link {
   color: black !important;
   font-weight: 500;
-  margin: 0 10px;
+
   transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #00ff99 !important;
+  color: #3F9E64 !important;
 }
 
 /* Logo */
@@ -39,7 +25,7 @@
 
 .text-reset:hover i {
   transform: scale(1.2);
-  color: #00ff99;
+  color: #3F9E64 !important;
 }
 
 /* Avatar */
@@ -228,7 +214,7 @@ body {
 /* Main */
 .dashboard-main {
   margin-left: 100px;
-  margin-top: 30px;
+  margin-top: 20px;
   padding: 20px;
 }
 

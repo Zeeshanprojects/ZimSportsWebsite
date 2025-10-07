@@ -19,9 +19,9 @@ export default function Dashboard() {
       {/* Top Navbar */}
       <>
   {/* Navbar */}
-  <nav className="navbar navbar-expand-lg bg-body-tertiary">
+  <nav className="navbar navbar-expand-lg navbar-light bg-white ms-5 me-5 ">
     {/* Container wrapper */}
-    <div className="container">
+    <div className="container-fluid ">
       {/* Toggle button */}
       <button
         data-mdb-collapse-init=""
@@ -64,7 +64,7 @@ export default function Dashboard() {
           </li>
            <li className="nav-item">
             <a className="nav-link" href="#">
-          Plaers
+          Players
             </a>
           </li>
            <li className="nav-item">
@@ -82,42 +82,7 @@ export default function Dashboard() {
         <a className="text-reset me-3" href="#">
           <i className="fas fa-shopping-cart" />
         </a>
-        {/* Notifications */}
-        <div className="dropdown">
-          <a
-            data-mdb-dropdown-init=""
-            className="text-reset me-3 dropdown-toggle hidden-arrow"
-            href="#"
-            id="navbarDropdownMenuLink"
-            role="button"
-            aria-expanded="false"
-          >
-            <i className="fas fa-bell" />
-            <span className="badge rounded-pill badge-notification bg-danger">
-              1
-            </span>
-          </a>
-          <ul
-            className="dropdown-menu dropdown-menu-end"
-            aria-labelledby="navbarDropdownMenuLink"
-          >
-            <li>
-              <a className="dropdown-item" href="#">
-                Some news
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                Another news
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                Something else here
-              </a>
-            </li>
-          </ul>
-        </div>
+       
         {/* Avatar */}
         <div className="dropdown">
           <a
@@ -131,7 +96,7 @@ export default function Dashboard() {
             <img
               src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
               className="rounded-circle"
-              height={25}
+              height={50}
               alt="Black and White Portrait of a Man"
               loading="lazy"
             />
