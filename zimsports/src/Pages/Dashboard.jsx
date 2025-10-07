@@ -234,7 +234,18 @@ export default function Dashboard() {
                 <p>Outside on T Street 16/3 Nick team</p>
                 <span>Joined: 3 months ago</span>
               </div>
-              <a href="#">View Profile</a>
+              
+             
+            </div>
+            <div className="player-info">
+              <div className="player-circle">A</div>
+              <div>
+                <h6>abc Jumani (#6)</h6>
+                <p>Outside on T Street 16/3 Nick team</p>
+                <span>Joined: 1 months ago</span>
+              </div>
+              
+             
             </div>
           </div>
         </div>
