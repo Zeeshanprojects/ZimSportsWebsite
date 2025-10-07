@@ -122,22 +122,16 @@ input {
   background-color: white;
   height: 80px;
   width: 80px;
+ 
   border-radius: 20px;
-}
-
-.icon2 {
-  background-color: white;
-  height: 80px;
-  width: 80px;
-  border-radius: 20px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .icon img {
   height: 60px;
   width: 60px;
+  
+}
+.icons {
+  filter: invert(30%) sepia(90%) saturate(600%) hue-rotate(95deg) brightness(85%);
 }
 
 .color-white {
@@ -289,6 +283,7 @@ body.modal-open .watch-live-btn {
   color: black !important;
   opacity: 1;
 }
+
 
 @keyframes shimmer {
   0% {

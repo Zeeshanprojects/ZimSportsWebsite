@@ -140,12 +140,8 @@ export default function Home() {
       </div>
       {/* Features*/}
       <div id="Features" className="section">
-        <div className="container  text-center">
-          <button type="button" class="btn secondary-btn  ">
-            Features
-          </button>
-        </div>
-        <div className="container-fluid ps-3 pe-3 ps-lg-5 pe-lg-5 py-3 text-white">
+       
+        <div className="container-fluid mt-2 ps-3 pe-3 ps-lg-5 pe-lg-5 py-3 text-white">
           <div
             id="featuresCarousel"
             className="carousel slide"
@@ -166,11 +162,11 @@ export default function Home() {
                       />
                     </div>
                     <div className="col-sm-12 col-md-6">
-                      <button type="button" className="btn secondary-btn mb-5">
+                      <button type="button" className="btn secondary-btn mb-3">
                         For Coaches
                       </button>
-                      <div className="icon d-flex align-items-center justify-content-center mb-3">
-                        <img src={Image.icon1} alt="icon1" />
+                      <div className="icon d-flex align-items-center justify-content-center mb-2">
+                        <img src={Image.coaches} alt="icon1" className="icons" />
                       </div>
                       <h1 className="color-white mb-3">
                         Streamline Your Coaching with Zim Sports
@@ -200,11 +196,11 @@ export default function Home() {
                       />
                     </div>
                     <div className="col-sm-12 col-md-6">
-                      <button type="button" className="btn secondary-btn mb-5">
+                      <button type="button" className="btn secondary-btn mb-3">
                         For Teams
                       </button>
-                      <div className="icon d-flex align-items-center justify-content-center mb-3">
-                        <img src={Image.icon2} alt="icon2" />
+                      <div className="icon d-flex align-items-center justify-content-center mb-2">
+                        <img src={Image.teamplayer} alt="icon2" className="icons" />
                       </div>
                       <h1 className="color-white mb-3">
                         United & Organized: Your Team's Hub
@@ -233,11 +229,11 @@ export default function Home() {
                       />
                     </div>
                     <div className="col-sm-12 col-md-6">
-                      <button type="button" className="btn secondary-btn mb-5">
+                      <button type="button" className="btn secondary-btn mb-3">
                         For Families & Fans
                       </button>
-                      <div className="icon d-flex align-items-center justify-content-center mb-3">
-                        <img src={Image.icon3} alt="icon3" />
+                      <div className="icon d-flex align-items-center justify-content-center mb-2">
+                        <img src={Image.loyalty} alt="icon3" className="icons"/>
                       </div>
                       <h1 className="color-white mb-3">
                         Stay Connected, Never Miss a Moment
@@ -289,7 +285,7 @@ export default function Home() {
           </button>
         </div>
 
-        <div className="container">
+        <div className="container mt-4">
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
               <h1 className="custom-para">
@@ -554,7 +550,7 @@ export default function Home() {
                     <li>Secure team messaging and announcement features</li>
                   </div>
 
-                  <div className="d-flex align-items-center gap-2 pb-2">
+                  <div className="d-flex align-items-center gap-2 pb-2 ">
                     <img
                       src={Image.greenchecked}
                       alt="greenchecked"
