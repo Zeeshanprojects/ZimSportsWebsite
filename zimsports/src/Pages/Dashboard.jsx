@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../assets/CSS/Dashboard.css";
 import {
   Home,
@@ -40,14 +41,15 @@ export default function Dashboard() {
               id="navbarSupportedContent"
             >
               {/* Navbar brand */}
-              <a className="navbar-brand mt-2 mt-lg-0" href="#">
+             
+              <Link className="navbar-brand mt-2 mt-lg-0" to="/">
                 <img
                   src={Image.logo}
                   height={25}
                   alt="MDB Logo"
                   loading="lazy"
                 />
-              </a>
+              </Link>
               {/* Left links */}
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
