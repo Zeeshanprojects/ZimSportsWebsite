@@ -371,6 +371,11 @@ body {
 }
 
 /* Responsive */
+@media (min-width:1024px)and (max-width:1199px) {
+  .cards button {
+    font-size: 12px !important;
+  }
+}
 @media (max-width: 768px) {
   .sidebar {
     display: none;
@@ -381,4 +386,5 @@ body {
   .nav-links {
     display: none;
   }
+  
 }
