@@ -314,10 +314,7 @@ export default function Dashboard() {
 
       <footer className="dashboard-footer">
         <p>2025 © Zim Sports</p>
-        <div>
-          <a href="#">About Us</a> | <a href="#">Support</a> |{" "}
-          <a href="#">Contact</a>
-        </div>
+        
       </footer>
     </div>
   );

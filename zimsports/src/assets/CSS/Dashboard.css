@@ -289,6 +289,7 @@ body {
   border-radius: 15px !important; /* Smooth edges */
   padding: 8px 20px !important;
   font-weight: 500;
+  font-size: 12px !important;
   transition: all 0.3s ease;
 }
 
@@ -349,7 +350,8 @@ body {
 }
 .match-card th, .match-card td {
   padding: 10px;
-  font-size: 13px !important;
+  font-size: 13
+  px !important;
   border-bottom: 1px solid #eee;
 }
 .completed {
