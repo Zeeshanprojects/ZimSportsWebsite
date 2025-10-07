@@ -1,3 +1,60 @@
+.navbar {
+  background: rgba(255, 255, 255, 0.2) !important; /* translucent background */
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+  padding: 10px 20px;
+  margin: 10px 30px;
+  position: sticky;
+  top: 10px;
+  z-index: 1000;
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+  color: black !important;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #00ff99 !important;
+}
+
+/* Logo */
+.navbar-brand img {
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.4));
+}
+
+/* Icon Buttons */
+.text-reset i,
+.dropdown-toggle i {
+  color: #fff;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.text-reset:hover i {
+  transform: scale(1.2);
+  color: #00ff99;
+}
+
+/* Avatar */
+.dropdown img {
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+/* For dark backgrounds */
+body {
+  background: linear-gradient(135deg, #1f8e4b, #081c15);
+  min-height: 100vh;
+  color: white;
+}
+
 /* Container */
 .dashboard-container {
     margin: 0px ;padding: 0px ;
@@ -18,6 +75,61 @@
   padding: 12px 30px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   border-radius: 0 0 20px 20px;
+}
+/* Header section with buttons */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Buttons container */
+.dashboard-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Common button style */
+.dashboard-buttons .btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+/* Individual button colors */
+.blue-btn {
+  background-color: #007bff !important;
+}
+
+.green-btn {
+  background-color: #1f8e4b !important;
+}
+
+.purple-btn {
+  background-color: #6f42c1 !important;
+}
+
+/* Hover effects */
+.btn:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+/* Plus icon styling */
+.plus {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 0;
+  color:white !important;
 }
 
 .brand {
@@ -153,6 +265,7 @@
   padding: 6px 12px;
   border-radius: 8px;
   font-weight: 500;
+  width: 100% !important;
   cursor: pointer;
 }
 .lightgreen-card button {

@@ -49,7 +49,7 @@ export default function Dashboard() {
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
             <a className="nav-link" href="#">
-              Dashboard
+          Home
             </a>
           </li>
           <li className="nav-item">
@@ -59,7 +59,17 @@ export default function Dashboard() {
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">
-              Projects
+            Matches
+            </a>
+          </li>
+           <li className="nav-item">
+            <a className="nav-link" href="#">
+          Plaers
+            </a>
+          </li>
+           <li className="nav-item">
+            <a className="nav-link" href="#">
+        Coaches
             </a>
           </li>
         </ul>
@@ -169,7 +179,21 @@ export default function Dashboard() {
 
       {/* Main Dashboard */}
       <main className="dashboard-main">
-        <h5>Zim Sports Overview</h5>
+        <div className="dashboard-header">
+    <h5>Zim Sports Overview</h5>
+
+    <div className="dashboard-buttons">
+      <button className="btn blue-btn">
+        <span className="plus">+</span> Add Team
+      </button>
+      <button className="btn green-btn">
+        <span className="plus">+</span> Add Match
+      </button>
+      <button className="btn purple-btn">
+        <span className="plus">+</span> Add Player
+      </button>
+    </div>
+  </div>
         <h2>Hello, Admin David Jumani!</h2>
         <p>Your comprehensive sports management overview awaits.</p>
 
@@ -183,7 +207,7 @@ export default function Dashboard() {
            
           ].map((card, i) => (
             <div key={i} className={`cards ${card.color}-card`}>
-              <h3>{card.number}</h3>
+              <h2>{card.number}</h2>
               <p>{card.text}</p>
               <button>{card.btn}</button>
             </div>
@@ -198,7 +222,7 @@ export default function Dashboard() {
             { color: "pink", number: 0, text: "Total Active Matches", btn: "View Active Matches" },
           ].map((card, i) => (
             <div key={i} className={`cards ${card.color}-card`}>
-              <h3>{card.number}</h3>
+              <h2>{card.number}</h2>
               <p>{card.text}</p>
               <button>{card.btn}</button>
             </div>
