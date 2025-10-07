@@ -12,7 +12,26 @@ background: linear-gradient(135deg, #fcfefc, #f5fcf6, #edf9ee) !important;
 .space{
   margin-top: 120px;
 }
-.btn{
+.btn {
   background-color: #1F8E4B !important;
   color: white !important;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-25deg);
+  transition: left 0.5s ease;
+}
+
+.btn:hover::after {
+  left: 125%;
 }

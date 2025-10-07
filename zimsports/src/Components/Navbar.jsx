@@ -64,10 +64,10 @@ export default function Navbar() {
               </li>
             </ul>
 
-            <form className="d-flex">
+            <form className="d-flex ">
               <Link to="/login">
               <button
-                className="btn  navbar-btn ps-5 pe-5 pt-2 pb-2 shadow-lg"
+                className="btn navbar-btn ps-5 pe-5 pt-2 pb-2 shadow-lg"
                 type="submit"
               >
                 Login
