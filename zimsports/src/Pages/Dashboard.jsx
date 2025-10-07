@@ -173,13 +173,26 @@ export default function Dashboard() {
         <h2>Hello, Admin David Jumani!</h2>
         <p>Your comprehensive sports management overview awaits.</p>
 
-        {/* Stats Cards */}
-        <div className="stats-grid">
+        {/* Stats row1 */}
+        <div className="stats-grid1">
           {[
             { color: "lightgreen", number: 2, text: "Total Teams", btn: "View All Teams" },
             { color: "purple", number: 1, text: "Total Players", btn: "View All Players" },
             { color: "blue", number: 0, text: "Total Coaches", btn: "View All Coaches" },
             { color: "red", number: 0, text: "Total Family Profiles", btn: "View All Families" },
+           
+          ].map((card, i) => (
+            <div key={i} className={`cards ${card.color}-card`}>
+              <h3>{card.number}</h3>
+              <p>{card.text}</p>
+              <button>{card.btn}</button>
+            </div>
+          ))}
+        </div>
+     {/* Stats row2 */}
+          <div className="stats-grid2">
+          {[
+           
             { color: "yellow", number: 3, text: "Total Sports", btn: "View All Sports" },
             { color: "white", number: 11, text: "Total Completed Matches", btn: "View Completed Matches" },
             { color: "pink", number: 0, text: "Total Active Matches", btn: "View Active Matches" },

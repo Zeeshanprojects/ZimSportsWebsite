@@ -73,31 +73,41 @@
 .upgrade-btn:hover {
   box-shadow: 0 4px 12px rgba(31, 142, 75, 0.4);
 }
-
-/* Sidebar */
 .sidebar {
   position: fixed;
+  top: 50%;
+  left: 30px; /* adjust as needed */
+  transform: translateY(-50%); /* centers vertically */
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center !important;
-
+  align-items: center;
+  z-index: 1000;
 }
+
 .sidebar ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 25px;
+  padding: 0;
+  margin: 0;
 }
+
 .sidebar li {
   background: #fff;
   border-radius: 12px;
-  padding: 10px;
+  padding: 10px 15px;
   display: flex;
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s;
 }
+
+.sidebar li:hover {
+  background-color: #1f8e4b;
+  color: #fff;
+}
+
 .sidebar li:hover {
   background-color: #1f8e4b;
   color: #fff;
@@ -115,13 +125,19 @@
   color: #333;
 }
 
-.stats-grid {
+.stats-grid1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  gap: 30px;
   margin-top: 30px;
 }
 
+.stats-grid2{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
 /* Card styles */
 .cards {
   padding: 30px;
