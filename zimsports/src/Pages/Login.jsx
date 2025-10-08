@@ -1,9 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import Image from "../assets/Images/image";
 import "../assets/CSS/Login.css";
-import { Link } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Login() {
+  const navigate = useNavigate();
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  // Hardcoded admin credentials
+  const adminEmail = "test@gmail.com";
+  const adminPassword = "Zim12345";
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (email === adminEmail && password === adminPassword) {
+      toast.success("Login Successful!", {
+        position: "top-center",
+        autoClose: 1500,
+      });
+
+      setTimeout(() => {
+        navigate("/dashboard"); // Redirect to admin dashboard
+      }, 2000);
+    } else {
+      toast.error("Invalid email or password!", {
+        position: "top-center",
+        autoClose: 1500,
+      });
+    }
+  };
+
   return (
     <div className="container-fluid login-wrapper">
       <div className="row min-vh-100">
@@ -16,7 +47,7 @@ export default function Login() {
         <div className="col-lg-6 col-md-12 col-sm-12 login-right d-flex align-items-center justify-content-center">
           <div className="login-box shadow p-4 rounded-4 bg-white w-100">
             <div className="loginpage-logo-container">
-              <Link to="/">
+              <Link to="/" style={{ textDecoration: "none" }}>
                 <img
                   src={Image.loginpagelogo}
                   alt="logo"
@@ -31,17 +62,21 @@ export default function Login() {
               Access your Zim Sports account
             </p>
 
-            <form>
+            <form onSubmit={handleSubmit}>
               <input
                 type="email"
                 className="form-control mb-3"
                 placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 required
               />
               <input
                 type="password"
                 className="form-control mb-3"
                 placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
                 required
               />
 
@@ -62,6 +97,9 @@ export default function Login() {
           </div>
         </div>
       </div>
+
+      {/* Toast container */}
+      <ToastContainer />
     </div>
   );
 }
