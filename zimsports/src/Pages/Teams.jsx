@@ -5,7 +5,6 @@ import DashboardNavbar from "../Components/DashboardNavbar";
 import DashboardSidebar from "../Components/DashboardSidebar";
 
 export default function Teams() {
-  
   const teams = [
     {
       id: 1,
@@ -48,11 +47,13 @@ export default function Teams() {
 
       <main className="team-main">
         <div className="container-fluid">
-       <div className="d-flex justify-content-between align-items-center mb-4">
-        <h3 className="fw-bold ">Manage Teams</h3>
-        <button className="btn btn-success px-4 rounded-pill">+ Add Team</button>
-      </div>
-         
+          <div className="d-flex justify-content-between align-items-center mb-4">
+            <h3 className="fw-bold ">Manage Teams</h3>
+            <button className="btn btn-success px-4 rounded-pill">
+              + Add Team
+            </button>
+          </div>
+
           {/* Table */}
           <div className="team-card">
             <table className="team-table">
@@ -62,7 +63,7 @@ export default function Teams() {
                   <th>Team</th>
                   <th>Sport</th>
                   <th>Players</th>
-                  
+
                   <th>Actions</th>
                 </tr>
               </thead>
@@ -83,11 +84,30 @@ export default function Teams() {
                     <td>{team.sport}</td>
                     <td>{team.members}</td>
 
-                   
+                   <div className="dropdown">
+  <button
+    className="action-dropdown-btn"
+    type="button"
+    id="dropdownMenuButton2"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  >
+    Actions ▼
+  </button>
 
-                    <td>
-                      <button className="action-btn">Actions ▼</button>
-                    </td>
+  <ul
+    className="dropdown-menu custom-dropdown"
+    aria-labelledby="dropdownMenuButton2"
+  >
+    <li>
+      <button className="dropdown-item edit-item">✏️ Edit</button>
+    </li>
+    <li>
+      <button className="dropdown-item delete-item">🗑️ Delete</button>
+    </li>
+  </ul>
+</div>
+
                   </tr>
                 ))}
               </tbody>

@@ -54,12 +54,43 @@ export default function Coaches() {
                 <td>{coach.name}</td>
                 <td>{coach.team}</td>
                 <td className="position-relative">
-                  <button
-                    className="action-btn"
-                    onClick={() => handleToggleDropdown(coach.id)}
-                  >
-                    Actions ▼
-                  </button>
+                                     <div className="dropdown">
+                     <div className="dropdown">
+  <button
+    className="action-dropdown-btn"
+    type="button"
+    id="dropdownMenuButton2"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  >
+    Actions ▼
+  </button>
+
+  <ul
+    className="dropdown-menu custom-dropdown"
+    aria-labelledby="dropdownMenuButton2"
+  >
+    <li>
+      <button className="dropdown-item edit-item">✏️ Edit</button>
+    </li>
+    <li>
+      <button className="dropdown-item delete-item">🗑️ Delete</button>
+    </li>
+  </ul>
+</div>
+
+  <ul
+    className="dropdown-menu custom-dropdown"
+    aria-labelledby="dropdownMenuButton2"
+  >
+    <li>
+      <button className="dropdown-item edit-item">✏️ Edit</button>
+    </li>
+    <li>
+      <button className="dropdown-item delete-item">🗑️ Delete</button>
+    </li>
+  </ul>
+</div>
 
                   {openDropdown === coach.id && (
                     <ul className="dropdown-menu show position-absolute coach-dropdown">

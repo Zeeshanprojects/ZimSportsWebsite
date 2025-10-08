@@ -58,12 +58,29 @@ export default function Players() {
                 <td>{player.jersey}</td>
                 <td>{player.position}</td>
                 <td className="position-relative">
-                  <button
-                    className="action-btn"
-                    onClick={() => handleToggleDropdown(player.id)}
-                  >
-                    Actions ▼
-                  </button>
+                                     <div className="dropdown">
+  <button
+    className="action-dropdown-btn"
+    type="button"
+    id="dropdownMenuButton2"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  >
+    Actions ▼
+  </button>
+
+  <ul
+    className="dropdown-menu custom-dropdown"
+    aria-labelledby="dropdownMenuButton2"
+  >
+    <li>
+      <button className="dropdown-item edit-item">✏️ Edit</button>
+    </li>
+    <li>
+      <button className="dropdown-item delete-item">🗑️ Delete</button>
+    </li>
+  </ul>
+</div>
 
                   {openDropdown === player.id && (
                     <ul className="dropdown-menu show position-absolute player-dropdown">

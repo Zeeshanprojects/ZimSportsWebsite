@@ -93,11 +93,10 @@ export default function Matches() {
 
       <main className="matches-main">
         <div className="container-fluid">
-      <div className="d-flex justify-content-end align-items-center mb-4">
-       
-        <button className="btn btn-success px-4 rounded-pill">+ Add Matches</button>
+     <div className="d-flex justify-content-between align-items-center mb-4">
+        <h3 className="fw-bold ">Manage Matches</h3>
+        <button className="btn btn-success px-4 rounded-pill">+ Add </button>
       </div>
-        
           {/* Table */}
           <div className="matches-card">
             <table className="matches-table">
@@ -148,9 +147,29 @@ export default function Matches() {
                       </span>
                     </td>
 
-                    <td>
-                      <button className="action-btn">Actions ▼</button>
-                    </td>
+                                      <div className="dropdown">
+  <button
+    className="action-dropdown-btn"
+    type="button"
+    id="dropdownMenuButton2"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  >
+    Actions ▼
+  </button>
+
+  <ul
+    className="dropdown-menu custom-dropdown"
+    aria-labelledby="dropdownMenuButton2"
+  >
+    <li>
+      <button className="dropdown-item edit-item">✏️ Edit</button>
+    </li>
+    <li>
+      <button className="dropdown-item delete-item">🗑️ Delete</button>
+    </li>
+  </ul>
+</div>
                   </tr>
                 ))}
               </tbody>
