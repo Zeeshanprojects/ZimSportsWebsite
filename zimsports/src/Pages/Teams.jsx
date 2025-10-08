@@ -1,107 +1,97 @@
 import React from "react";
 import "../assets/CSS/Team.css";
-import Image from "../assets/Images/image"; // assuming you store logos here
+import Image from "../assets/Images/image";
 import DashboardNavbar from "../Components/DashboardNavbar";
 import DashboardSidebar from "../Components/DashboardSidebar";
 
 export default function Teams() {
+  
+  const teams = [
+    {
+      id: 1,
+      logo: Image.team1,
+      name: "Set 18 Black",
+      sport: "Volleyball",
+      members: 11,
+      status: "Active",
+    },
+    {
+      id: 2,
+      logo: Image.team2,
+      name: "Bulldogs",
+      sport: "Basketball",
+      members: 11,
+      status: "Active",
+    },
+    {
+      id: 3,
+      logo: Image.team3,
+      name: "HOYAAH A.C.",
+      sport: "Water Polo",
+      members: 11,
+      status: "Inactive",
+    },
+    {
+      id: 4,
+      logo: Image.team4,
+      name: "Thunder Strikers",
+      sport: "Volleyball",
+      members: 11,
+      status: "Active",
+    },
+  ];
+
   return (
     <>
-    <DashboardNavbar/>
-    <DashboardSidebar/>
-     <main className="dashboard-main">
-         <div className="team-section">
-      <div className="team-card">
-        {/* Header */}
-        <div className="d-flex justify-content-between align-items-center mb-3">
-          <h6>All Registered Teams</h6>
-          <button className="btn blue-btn">+ Add Team</button>
+      <DashboardNavbar />
+      <DashboardSidebar />
+
+      <main className="team-main">
+        <div className="container-fluid">
+          {/* Header */}
+         
+          {/* Table */}
+          <div className="team-card">
+            <table className="team-table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Team</th>
+                  <th>Sport</th>
+                  <th>Players</th>
+                  
+                  <th>Actions</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                {teams.map((team) => (
+                  <tr key={team.id}>
+                    <td className="id">{team.id}</td>
+
+                    <td className="team-cell">
+                      <img src={team.logo} alt="team" className="team-logo" />
+                      <div className="team-info">
+                        <span className="team-name">{team.name}</span>
+                        <span className="team-type">Team #{team.id}</span>
+                      </div>
+                    </td>
+
+                    <td>{team.sport}</td>
+                    <td>{team.members}</td>
+
+                   
+
+                    <td>
+                      <button className="action-btn">Actions ▼</button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
-
-        {/* Teams Table */}
-        <table className="table table-borderless align-middle">
-          <thead>
-            <tr>
-              <th>Logo</th>
-              <th>Team Name</th>
-              <th>Sport</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            {/* Row 1 */}
-            <tr>
-              <td>
-                <img
-                  src={Image.team1}
-                  alt="Team 1"
-                  className="team-logo"
-                />
-              </td>
-              <td>Set 18 Black</td>
-              <td>Volleyball</td>
-              <td>
-                <button className="btn btn-sm edit-btn me-2">Edit</button>
-                <button className="btn btn-sm delete-btn">Delete</button>
-              </td>
-            </tr>
-
-            {/* Row 2 */}
-            <tr>
-              <td>
-                <img
-                  src={Image.team2}
-                  alt="Team 2"
-                  className="team-logo"
-                />
-              </td>
-              <td>Bulldogs</td>
-              <td>Basketball</td>
-              <td>
-                <button className="btn btn-sm edit-btn me-2">Edit</button>
-                <button className="btn btn-sm delete-btn">Delete</button>
-              </td>
-            </tr>
-
-            {/* Row 3 */}
-            <tr>
-              <td>
-                <img
-                  src={Image.team3}
-                  alt="Team 3"
-                  className="team-logo"
-                />
-              </td>
-              <td>HOYAAH A.C.</td>
-              <td>Water Polo</td>
-              <td>
-                <button className="btn btn-sm edit-btn me-2">Edit</button>
-                <button className="btn btn-sm delete-btn">Delete</button>
-              </td>
-            </tr>
-
-            {/* Row 4 */}
-            <tr>
-              <td>
-                <img
-                  src={Image.team4}
-                  alt="Team 4"
-                  className="team-logo"
-                />
-              </td>
-              <td>Thunder Strikers</td>
-              <td>Volleyball</td>
-              <td>
-                <button className="btn btn-sm edit-btn me-2">Edit</button>
-                <button className="btn btn-sm delete-btn">Delete</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-     </main>
-   </>
-    
+      </main>
+    </>
   );
 }

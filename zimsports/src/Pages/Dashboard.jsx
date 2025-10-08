@@ -5,6 +5,7 @@ import DashboardNavbar from "../Components/DashboardNavbar";
 import { Home, Users, Trophy, UserCheck, Settings } from "lucide-react";
 import Image from "../assets/Images/image";
 import DashboardSidebar from "../Components/DashboardSidebar";
+import DashboardFooter from "../Components/DashboardFooter";
 
 export default function Dashboard() {
   return (
@@ -197,13 +198,7 @@ export default function Dashboard() {
                 <p>Outside on T Street 16/3 Nick team</p>
               </div>
             </div>
-            <div className="player-info">
-              <div className="player-circle">T</div>
-              <div>
-                <h6>Tembu Buvuma (#2)</h6>
-                <p>Outside on T Street 16/3 Nick team</p>
-              </div>
-            </div>
+           
           </div>
         </div>
 
@@ -271,9 +266,7 @@ export default function Dashboard() {
         </div>
       </main>
 
-      <footer className="dashboard-footer">
-        <p>2025 © Zim Sports</p>
-      </footer>
+    <DashboardFooter/>
     </div>
   );
 }

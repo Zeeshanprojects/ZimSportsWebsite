@@ -1,6 +1,6 @@
-.team-main {
+.matches-main {
   margin-left: 100px;
-  background-color: #fafbfc;
+  background-color: #F6FCF7 !important;
   min-height: 100vh;
   padding: 40px;
   font-family: "Inter", sans-serif;
@@ -27,7 +27,7 @@
 }
 
 /* Card */
-.team-card {
+.matches-card {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
@@ -35,12 +35,12 @@
 }
 
 /* Table */
-.team-table {
+.matches-table {
   width: 100%;
   border-collapse: collapse;
 }
 
-.team-table thead th {
+.matches-table thead th {
   font-size: 12px;
   font-weight: 600;
   color: #a0a4af;
@@ -49,7 +49,7 @@
   border-bottom: 1px solid #eef0f3;
 }
 
-.team-table tbody td {
+.matches-table tbody td {
   padding: 18px 20px;
   border-bottom: 1px solid #f3f3f3;
   vertical-align: middle;
@@ -58,7 +58,7 @@
 }
 
 /* Team Cell */
-.team-cell {
+.match-cell {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -72,16 +72,28 @@
   background: #f5f5f5;
 }
 
-.team-info {
+.match-info {
   display: flex;
   flex-direction: column;
 }
 
-.team-name {
+.match-name {
   font-weight: 500;
 }
 
-.team-type {
+.match-type {
+  font-size: 13px;
+  color: #8a8f9c;
+}
+
+/* Date & Time */
+.date-info strong {
+  display: block;
+  color: #222;
+  font-size: 14px;
+}
+.date-info p {
+  margin: 0;
   font-size: 13px;
   color: #8a8f9c;
 }
@@ -94,12 +106,12 @@
   font-weight: 500;
 }
 
-.status-badge.active {
+.status-badge.completed {
   background-color: #e0f1ff;
   color: #007bff;
 }
 
-.status-badge.inactive {
+.status-badge.scheduled {
   background-color: #fff4cc;
   color: #b58900;
 }

@@ -1,0 +1,73 @@
+.players-main {
+  margin-left: 100px;
+  background-color: #F6FCF7 !important;
+  min-height: 100vh;
+  padding: 40px;
+  font-family: "Inter", sans-serif;
+}
+
+/* Card */
+.players-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  padding: 10px 0;
+}
+
+/* Table */
+.players-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.players-table thead th {
+  font-size: 12px;
+  font-weight: 600;
+  color: #a0a4af;
+  text-transform: uppercase;
+  padding: 14px 20px;
+  border-bottom: 1px solid #eef0f3;
+}
+
+.players-table tbody td {
+  padding: 18px 20px;
+  border-bottom: 1px solid #f3f3f3;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Action Button */
+.action-btn {
+  background-color: #f2f4f7;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.action-btn:hover {
+  background-color: #e0e3e7;
+}
+
+/* Dropdown Styling */
+.player-dropdown {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  min-width: 120px;
+  padding: 5px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.player-dropdown .dropdown-item {
+  font-size: 13px;
+  padding: 8px 14px;
+  transition: background 0.2s;
+}
+
+.player-dropdown .dropdown-item:hover {
+  background-color: #f2f4f7;
+}

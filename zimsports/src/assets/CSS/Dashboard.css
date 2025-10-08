@@ -330,18 +330,6 @@ body {
   padding: 3px 10px;
   border-radius: 6px;
 }
-
-/* Footer */
-.dashboard-footer {
-
-  text-align: center;
-  font-size: 14px;
-
-  color: #777;
-}
-
-
-
 .light-gray-btn {
   background-color: #f0f0f0;
   color: #000;
