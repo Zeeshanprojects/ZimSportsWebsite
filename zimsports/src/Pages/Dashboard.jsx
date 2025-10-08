@@ -294,7 +294,21 @@ export default function Dashboard() {
             <div className="player-info">
               <div className="player-circle">A</div>
               <div>
-                <h6>abc Jumani (#6)</h6>
+                <h6>Adam Milne (#6)</h6>
+                <p>Outside on T Street 16/3 Nick team</p>
+              </div>
+            </div>
+               <div className="player-info">
+              <div className="player-circle">R</div>
+              <div>
+                <h6>Rose Taylore (#6)</h6>
+                <p>Outside on T Street 16/3 Nick team</p>
+              </div>
+            </div>
+            <div className="player-info">
+              <div className="player-circle">T</div>
+              <div>
+                <h6>Tembu Buvuma (#6)</h6>
                 <p>Outside on T Street 16/3 Nick team</p>
               </div>
             </div>
