@@ -1,38 +1,4 @@
 
-.navbar-nav .nav-link {
-  color: black !important;
-  font-weight: 500;
-
-  transition: color 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover {
-  color: #3F9E64 !important;
-}
-
-/* Logo */
-.navbar-brand img {
-  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.4));
-}
-
-/* Icon Buttons */
-.text-reset i,
-.dropdown-toggle i {
-  color: #fff;
-  font-size: 18px;
-  transition: transform 0.3s ease;
-}
-
-.text-reset:hover i {
-  transform: scale(1.2);
-  color: #3F9E64 !important;
-}
-
-/* Avatar */
-.dropdown img {
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
-}
 
 /* For dark backgrounds */
 body {
@@ -171,45 +137,7 @@ body {
 .upgrade-btn:hover {
   box-shadow: 0 4px 12px rgba(31, 142, 75, 0.4);
 }
-.sidebar {
-  position: fixed;
-  top: 50%;
-  left: 30px; /* adjust as needed */
-  transform: translateY(-50%); /* centers vertically */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 1000;
-}
 
-.sidebar ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  padding: 0;
-  margin: 0;
-}
-
-.sidebar li {
-  background: #fff;
-  border-radius: 12px;
-  padding: 10px 15px;
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.sidebar li:hover {
-  background-color: #1f8e4b;
-  color: #fff;
-}
-
-.sidebar li:hover {
-  background-color: #1f8e4b;
-  color: #fff;
-}
 
 /* Main */
 .dashboard-main {
