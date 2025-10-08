@@ -31,5 +31,9 @@ const Image = {
 coaches:new URL ("./mentoring.webp",import.meta.url).href,
 teamplayer: new URL("./team.webp",import.meta.url).href,
 loyalty: new URL("./loyalty.webp",import.meta.url).href,
+team1:new URL("./team1.webp",import.meta.url).href,
+team2:new URL("./team2.webp",import.meta.url).href,
+team3:new URL("./team3.webp",import.meta.url).href,
+team4:new URL("./team4.webp",import.meta.url).href,
 };
 export default Image;
