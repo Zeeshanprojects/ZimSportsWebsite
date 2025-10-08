@@ -9,7 +9,7 @@ export default function DashboardNavbar() {
       {/* Navbar */}
       <nav className="navbar navbar-expand-lg navbar-light bg-white p-3 ">
         {/* Container wrapper */}
-        <div className="container-fluid">
+        <div className="container">
           {/* Toggle button */}
           <button
             data-mdb-collapse-init=""
