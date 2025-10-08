@@ -1,0 +1,65 @@
+.team-section {
+  padding: 25px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.team-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.team-card h6 {
+  font-weight: 600;
+  margin: 0;
+}
+
+.team-logo {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.table th {
+  color: #555;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.table td {
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.edit-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.edit-btn:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}
+
+.delete-btn:hover {
+  background-color: #b02a37;
+}
+
+.blue-btn {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 500;
+}
+
+.blue-btn:hover {
+  background-color: #0056b3;
+}
