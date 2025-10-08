@@ -230,7 +230,6 @@ export default function Dashboard() {
               <div className="match-info text-center">
                 <p className="mb-1 small text-muted">Sat, Oct 12, 2025</p>
                 <p className="mb-1 small">Time: 7:30 PM</p>
-           
               </div>
 
               <div className="team d-flex align-items-center justify-content-end">
@@ -249,7 +248,6 @@ export default function Dashboard() {
               <div className="match-info text-center">
                 <p className="mb-1 small text-muted">Sun, Oct 19, 2025</p>
                 <p className="mb-1 small">Time: 6:00 PM</p>
- 
               </div>
 
               <div className="team d-flex align-items-center justify-content-end">
@@ -268,7 +266,6 @@ export default function Dashboard() {
               <div className="match-info text-center">
                 <p className="mb-1 small text-muted">Fri, Oct 25, 2025</p>
                 <p className="mb-1 small">Time: 8:00 PM</p>
-            
               </div>
 
               <div className="team d-flex align-items-center justify-content-end">
@@ -294,21 +291,21 @@ export default function Dashboard() {
             <div className="player-info">
               <div className="player-circle">A</div>
               <div>
-                <h6>Adam Milne (#6)</h6>
+                <h6>Adam Milne (#63)</h6>
                 <p>Outside on T Street 16/3 Nick team</p>
               </div>
             </div>
-               <div className="player-info">
+            <div className="player-info">
               <div className="player-circle">R</div>
               <div>
-                <h6>Rose Taylore (#6)</h6>
+                <h6>Rose Taylore (#000)</h6>
                 <p>Outside on T Street 16/3 Nick team</p>
               </div>
             </div>
             <div className="player-info">
               <div className="player-circle">T</div>
               <div>
-                <h6>Tembu Buvuma (#6)</h6>
+                <h6>Tembu Buvuma (#2)</h6>
                 <p>Outside on T Street 16/3 Nick team</p>
               </div>
             </div>
