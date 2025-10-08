@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { Home, Users, Trophy, UserCheck, User } from "lucide-react";
 import "../assets/CSS/DashboardSidebar.css";
 export default function DashboardSidebar() {
@@ -8,6 +9,7 @@ export default function DashboardSidebar() {
      <aside className="sidebar">
       <ul>
         <li data-tooltip="Home">
+          <Link></Link>
           <Home size={20} />
         </li>
         <li data-tooltip="Teams">
