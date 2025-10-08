@@ -149,13 +149,13 @@ export default function Dashboard() {
             },
             {
               color: "purple",
-              number: 1,
+              number: 22,
               text: "Total Players",
               btn: "View All Players",
             },
             {
               color: "blue",
-              number: 0,
+              number: 1,
               text: "Total Coaches",
               btn: "View All Coaches",
             },
