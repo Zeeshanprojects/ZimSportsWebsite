@@ -40,5 +40,6 @@ team4:new URL("./team4.webp",import.meta.url).href,
 team5:new URL("./team5.webp",import.meta.url).href,
 team6:new URL("./team6.webp",import.meta.url).href,
 cao:new URL("./Davidjumani.webp",import.meta.url).href,
+downarrow:new URL("./downarrow.png",import.meta.url).href,
 };
 export default Image;

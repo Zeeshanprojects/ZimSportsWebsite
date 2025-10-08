@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../assets/CSS/Player.css";
+import Image from "../assets/Images/image";
 import "bootstrap/dist/css/bootstrap.min.css";
 import DashboardNavbar from "../Components/DashboardNavbar";
 import DashboardSidebar from "../Components/DashboardSidebar";
@@ -66,7 +67,7 @@ export default function Players() {
     data-bs-toggle="dropdown"
     aria-expanded="false"
   >
-    Actions ▼
+     Actions <img src={Image.downarrow}alt="downarrow"height={10}/>
   </button>
 
   <ul

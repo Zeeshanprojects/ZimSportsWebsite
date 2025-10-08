@@ -155,7 +155,7 @@ export default function Matches() {
     data-bs-toggle="dropdown"
     aria-expanded="false"
   >
-    Actions ▼
+     Actions <img src={Image.downarrow}alt="downarrow"height={10}/>
   </button>
 
   <ul
