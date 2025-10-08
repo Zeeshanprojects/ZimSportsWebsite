@@ -10,6 +10,7 @@ import Dashboard from "./Pages/Dashboard";
 import Teams from "./Pages/Teams";
 import Matches from "./Pages/Matches";
 import Players from "./Pages/Players";
+import Coaches from "./Pages/Coaches";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/team" element={<Teams />} />
           <Route path="/matches" element={<Matches />} />
           <Route path="/players" element={<Players />} />
+          <Route path="/coaches" element={<Coaches/>}/>
         </Routes>
       </Router>
     </>

@@ -93,7 +93,10 @@ export default function Matches() {
 
       <main className="matches-main">
         <div className="container-fluid">
-          {/* Header */}
+      <div className="d-flex justify-content-end align-items-center mb-4">
+       
+        <button className="btn btn-success px-4 rounded-pill">+ Add Matches</button>
+      </div>
         
           {/* Table */}
           <div className="matches-card">
