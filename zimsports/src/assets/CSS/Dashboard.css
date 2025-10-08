@@ -257,31 +257,73 @@ body {
 .lightgreen-card button {
   background-color: #d7f8e2;
   color: green;
+  transition: all 0.3s ease;
 }
+.lightgreen-card button:hover {
+  background-color: #bff0cd;
+  color: #0b6623;
+}
+
 .purple-card button {
   background-color: #eee6ff;
   color: #6b4ce6;
+  transition: all 0.3s ease;
 }
+.purple-card button:hover {
+  background-color: #d6c8ff;
+  color: #4b2cd9;
+}
+
 .blue-card button {
   background-color: #e3f0ff;
   color: #007bff;
+  transition: all 0.3s ease;
 }
+.blue-card button:hover {
+  background-color: #cde2ff;
+  color: #0056b3;
+}
+
 .red-card button {
   background-color: #ffe6e6;
   color: #e74c3c;
+  transition: all 0.3s ease;
 }
+.red-card button:hover {
+  background-color: #ffcccc;
+  color: #c0392b;
+}
+
 .yellow-card button {
   background-color: #fff8e0;
   color: #f1b600;
+  transition: all 0.3s ease;
 }
+.yellow-card button:hover {
+  background-color: #ffefb3;
+  color: #cba000;
+}
+
 .white-card button {
   background-color: #f8f8f8;
   color: #333;
+  transition: all 0.3s ease;
 }
+.white-card button:hover {
+  background-color: #e6e6e6;
+  color: #000;
+}
+
 .pink-card button {
   background-color: #ffe7f3;
   color: #ff4081;
+  transition: all 0.3s ease;
 }
+.pink-card button:hover {
+  background-color: #ffcce7;
+  color: #d81b60;
+}
+
 .light-gray-btn {
   background-color: #f0f0f0 !important; /* Light gray */
   color: #000 !important; /* Black text */
@@ -363,10 +405,10 @@ body {
 
 /* Footer */
 .dashboard-footer {
-  margin-top: 40px;
+
   text-align: center;
   font-size: 14px;
-  padding: 20px;
+
   color: #777;
 }
 
