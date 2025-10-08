@@ -1,3 +1,5 @@
+import Dashboard from "../../Pages/Dashboard";
+
 const Image = {
   logo: new URL("logo.webp", import.meta.url).href,
   backgroundeffect: new URL ("./backgroundeffect.webp",import.meta.url).href,
@@ -37,5 +39,6 @@ team3:new URL("./team3.webp",import.meta.url).href,
 team4:new URL("./team4.webp",import.meta.url).href,
 team5:new URL("./team5.webp",import.meta.url).href,
 team6:new URL("./team6.webp",import.meta.url).href,
+cao:new URL("./Davidjumani.webp",import.meta.url).href,
 };
 export default Image;
