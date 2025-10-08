@@ -230,7 +230,7 @@ export default function Dashboard() {
               <div className="match-info text-center">
                 <p className="mb-1 small text-muted">Sat, Oct 12, 2025</p>
                 <p className="mb-1 small">Time: 7:30 PM</p>
-                <p className="mb-0 small">Venue: Columbus Arena</p>
+           
               </div>
 
               <div className="team d-flex align-items-center justify-content-end">
@@ -249,7 +249,7 @@ export default function Dashboard() {
               <div className="match-info text-center">
                 <p className="mb-1 small text-muted">Sun, Oct 19, 2025</p>
                 <p className="mb-1 small">Time: 6:00 PM</p>
-                <p className="mb-0 small">Venue: Atlanta Dome</p>
+ 
               </div>
 
               <div className="team d-flex align-items-center justify-content-end">
@@ -268,7 +268,7 @@ export default function Dashboard() {
               <div className="match-info text-center">
                 <p className="mb-1 small text-muted">Fri, Oct 25, 2025</p>
                 <p className="mb-1 small">Time: 8:00 PM</p>
-                <p className="mb-0 small">Venue: Chicago Stadium</p>
+            
               </div>
 
               <div className="team d-flex align-items-center justify-content-end">
