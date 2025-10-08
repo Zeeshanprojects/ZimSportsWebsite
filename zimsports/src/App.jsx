@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./Components/Navbar";
@@ -11,23 +11,37 @@ import Teams from "./Pages/Teams";
 import Matches from "./Pages/Matches";
 import Players from "./Pages/Players";
 import Coaches from "./Pages/Coaches";
+import Preloader from "./Components/Preloader"; // ✅ Import your preloader
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Show preloader for 3 seconds (you can adjust time)
+    const timer = setTimeout(() => setLoading(false), 5000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/zimlive" element={<Zimlive />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/Signup" element={<Signup />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/team" element={<Teams />} />
-          <Route path="/matches" element={<Matches />} />
-          <Route path="/players" element={<Players />} />
-          <Route path="/coaches" element={<Coaches/>}/>
-        </Routes>
-      </Router>
+      {loading ? (
+        <Preloader /> // ✅ Show preloader while loading
+      ) : (
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/zimlive" element={<Zimlive />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/team" element={<Teams />} />
+            <Route path="/matches" element={<Matches />} />
+            <Route path="/players" element={<Players />} />
+            <Route path="/coaches" element={<Coaches />} />
+          </Routes>
+        </Router>
+      )}
     </>
   );
 }

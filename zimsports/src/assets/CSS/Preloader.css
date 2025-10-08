@@ -1,61 +1,38 @@
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
+.preloader-container {
+  height: 100vh;
   width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.6); /* semi-white */
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
-  backdrop-filter: transparent !important;
-
+background: linear-gradient(135deg, #fcfefc, #f5fcf6, #edf9ee) !important;
+  animation: fadeIn 0.5s ease-in;
 }
 
-
-/* Outer Ring */
-.outer-ring,
-.middle-ring,
-.inner-ring {
-  border-style: solid;
-  border-radius: 50%;
-  border-color: transparent;
-  border-top-color: #1f8e4b; /* Default green */
-  animation: spin 1s linear infinite;
-  position: absolute;
+.preloader-logo {
+  height: 80px;
+  width: auto;
+  animation: pulse 1.5s infinite ease-in-out;
 }
 
-/* Specific Ring Sizes and Colors */
-.outer-ring {
-  width: 150px;
-  height: 150px;
-  border-width: 6px;
-  border-top-color: #1f8e4b;
+/* Smooth fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.middle-ring {
-  width: 120px;
-  height: 120px;
-  border-width: 5px;
-  border-top-color: #000000;
-  animation-delay: -0.2s;
-}
-
-.inner-ring {
-  width: 80px;
-  height:80px;
-  border-width: 4px;
-  border-top-color: gray;
-  animation-delay: -0.4s;
-}
-
-/* Animation */
-@keyframes spin {
+/* Subtle breathing effect on the logo */
+@keyframes pulse {
   0% {
-    transform: rotate(0deg);
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
   }
   100% {
-    transform: rotate(360deg);
+    transform: scale(1);
   }
 }
