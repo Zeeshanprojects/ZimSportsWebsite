@@ -32,8 +32,8 @@ export default function Players() {
     <DashboardNavbar/>
     <DashboardSidebar/>
     <div className="players-main">
-      <div className="d-flex justify-content-end align-items-center mb-4">
-       
+      <div className="d-flex justify-content-between align-items-center mb-4">
+        <h3 className="fw-bold ">Manage Player Profile</h3>
         <button className="btn btn-success px-4 rounded-pill">+ Add Player</button>
       </div>
 
