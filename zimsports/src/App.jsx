@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Navbar from "./Components/Navbar";
+
 import Home from "./Pages/Home";
 import Zimlive from "./Pages/Zimlive";
 import Login from "./Pages/Login";
@@ -28,7 +28,7 @@ function App() {
         <Preloader /> // ✅ Show preloader while loading
       ) : (
         <Router>
-          <Navbar />
+  
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/zimlive" element={<Zimlive />} />
