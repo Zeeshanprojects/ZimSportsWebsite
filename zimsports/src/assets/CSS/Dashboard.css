@@ -357,7 +357,7 @@ body {
 }
 .player-info {
   display: flex;
-  align-items: center;
+
   gap: 15px;
   margin-top: 10px;
 }

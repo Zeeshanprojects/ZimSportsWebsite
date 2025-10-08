@@ -1,14 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../assets/CSS/Dashboard.css";
-import {
-  Home,
-  Users,
-  Trophy,
-  UserCheck,
-  Settings,
-
-} from "lucide-react";
+import { Home, Users, Trophy, UserCheck, Settings } from "lucide-react";
 import Image from "../assets/Images/image";
 
 export default function Dashboard() {
@@ -38,7 +31,7 @@ export default function Dashboard() {
               id="navbarSupportedContent"
             >
               {/* Navbar brand */}
-             
+
               <Link className="navbar-brand mt-2 mt-lg-0" to="/">
                 <img
                   src={Image.logo}
@@ -220,96 +213,90 @@ export default function Dashboard() {
             
             <p className="mt-3">No upcoming schedule events found for your teams.</p>
           </div> */}
-          
-      <div className="match-card p-3">
-  <div className="d-flex justify-content-between align-items-center mb-3">
-    <h6 className="mb-0">Upcoming Matches</h6>
-    <button className="btn light-gray-btn">View Full Schedule</button>
-  </div>
 
-  {/* Match 1 */}
-  <div className="match-item d-flex justify-content-between align-items-center mb-3 p-2 rounded">
-    <div className="team d-flex align-items-center">
-      <img src={Image.team1} alt="team1" className="team-logo me-2" />
-      <h6 className="mb-0">Columbus Fury</h6>
-    </div>
+          <div className="match-card p-3">
+            <div className="d-flex justify-content-between align-items-center mb-3">
+              <h6 className="mb-0">Upcoming Matches</h6>
+              <button className="btn light-gray-btn">View Full Schedule</button>
+            </div>
 
-    <div className="match-info text-center">
-      <p className="mb-1 small text-muted">Sat, Oct 12, 2025</p>
-      <p className="mb-1 small">Time: 7:30 PM</p>
-      <p className="mb-0 small">Venue: Columbus Arena</p>
-    </div>
+            {/* Match 1 */}
+            <div className="match-item d-flex justify-content-between align-items-center mb-3 p-2 rounded">
+              <div className="team d-flex align-items-center">
+                <img src={Image.team1} alt="team1" className="team-logo me-2" />
+                <h6 className="mb-0">Columbus Fury</h6>
+              </div>
 
-    <div className="team d-flex align-items-center justify-content-end">
-      <h6 className="mb-0 me-2">Orlando Valkyries</h6>
-      <img src={Image.team2} alt="team2" className="team-logo" />
-    </div>
-  </div>
+              <div className="match-info text-center">
+                <p className="mb-1 small text-muted">Sat, Oct 12, 2025</p>
+                <p className="mb-1 small">Time: 7:30 PM</p>
+                <p className="mb-0 small">Venue: Columbus Arena</p>
+              </div>
 
-  {/* Match 2 */}
-  <div className="match-item d-flex justify-content-between align-items-center mb-3 p-2 rounded">
-    <div className="team d-flex align-items-center">
-      <img src={Image.team3} alt="team3" className="team-logo me-2" />
-      <h6 className="mb-0">Atlanta Aces</h6>
-    </div>
+              <div className="team d-flex align-items-center justify-content-end">
+                <h6 className="mb-0 me-2">Orlando Valkyries</h6>
+                <img src={Image.team2} alt="team2" className="team-logo" />
+              </div>
+            </div>
 
-    <div className="match-info text-center">
-      <p className="mb-1 small text-muted">Sun, Oct 19, 2025</p>
-      <p className="mb-1 small">Time: 6:00 PM</p>
-      <p className="mb-0 small">Venue: Atlanta Dome</p>
-    </div>
+            {/* Match 2 */}
+            <div className="match-item d-flex justify-content-between align-items-center mb-3 p-2 rounded">
+              <div className="team d-flex align-items-center">
+                <img src={Image.team3} alt="team3" className="team-logo me-2" />
+                <h6 className="mb-0">Atlanta Aces</h6>
+              </div>
 
-    <div className="team d-flex align-items-center justify-content-end">
-      <h6 className="mb-0 me-2">Denver Dazzle</h6>
-      <img src={Image.team4} alt="team4" className="team-logo" />
-    </div>
-  </div>
+              <div className="match-info text-center">
+                <p className="mb-1 small text-muted">Sun, Oct 19, 2025</p>
+                <p className="mb-1 small">Time: 6:00 PM</p>
+                <p className="mb-0 small">Venue: Atlanta Dome</p>
+              </div>
 
-  {/* Match 3 */}
-  <div className="match-item d-flex justify-content-between align-items-center p-2 rounded">
-    <div className="team d-flex align-items-center">
-      <img src={Image.team5} alt="team5" className="team-logo me-2" />
-      <h6 className="mb-0">Grand Rapids Rise</h6>
-    </div>
+              <div className="team d-flex align-items-center justify-content-end">
+                <h6 className="mb-0 me-2">Denver Dazzle</h6>
+                <img src={Image.team4} alt="team4" className="team-logo" />
+              </div>
+            </div>
 
-    <div className="match-info text-center">
-      <p className="mb-1 small text-muted">Fri, Oct 25, 2025</p>
-      <p className="mb-1 small">Time: 8:00 PM</p>
-      <p className="mb-0 small">Venue: Chicago Stadium</p>
-    </div>
+            {/* Match 3 */}
+            <div className="match-item d-flex justify-content-between align-items-center p-2 rounded">
+              <div className="team d-flex align-items-center">
+                <img src={Image.team5} alt="team5" className="team-logo me-2" />
+                <h6 className="mb-0">Grand Rapids Rise</h6>
+              </div>
 
-    <div className="team d-flex align-items-center justify-content-end">
-      <h6 className="mb-0 me-2">Omaha Supernovas</h6>
-      <img src={Image.team6} alt="team6" className="team-logo" />
-    </div>
-  </div>
-</div>
+              <div className="match-info text-center">
+                <p className="mb-1 small text-muted">Fri, Oct 25, 2025</p>
+                <p className="mb-1 small">Time: 8:00 PM</p>
+                <p className="mb-0 small">Venue: Chicago Stadium</p>
+              </div>
+
+              <div className="team d-flex align-items-center justify-content-end">
+                <h6 className="mb-0 me-2">Omaha Supernovas</h6>
+                <img src={Image.team6} alt="team6" className="team-logo" />
+              </div>
+            </div>
+          </div>
 
           <div className="bottom-card">
             <div className="d-flex justify-content-between align-items-center">
-                 <h6>Latest Registered Players</h6>
-            <button className="btn light-gray-btn">View All Players</button>
+              <h6>Latest Registered Players</h6>
+              <button className="btn light-gray-btn">View All Players</button>
             </div>
-           
+
             <div className="player-info">
               <div className="player-circle">E</div>
               <div>
                 <h6>Ellie Jumani (#6)</h6>
                 <p>Outside on T Street 16/3 Nick team</p>
-                <span>Joined: 3 months ago</span>
               </div>
-              
-             
             </div>
             <div className="player-info">
               <div className="player-circle">A</div>
               <div>
                 <h6>abc Jumani (#6)</h6>
                 <p>Outside on T Street 16/3 Nick team</p>
-                <span>Joined: 1 months ago</span>
               </div>
-              
-             
             </div>
           </div>
         </div>
@@ -318,10 +305,10 @@ export default function Dashboard() {
         <div className="match-section">
           <div className="match-card">
             <div className="d-flex justify-content-between align-items-center">
-                <h6>Latest Completed Matches</h6>
-            <button className="btn light-gray-btn">View All Matches</button>
+              <h6>Latest Completed Matches</h6>
+              <button className="btn light-gray-btn">View All Matches</button>
             </div>
-            
+
             <table>
               <thead>
                 <tr>
@@ -375,14 +362,11 @@ export default function Dashboard() {
               </tbody>
             </table>
           </div>
-
-
         </div>
       </main>
 
       <footer className="dashboard-footer">
         <p>2025 © Zim Sports</p>
-        
       </footer>
     </div>
   );
