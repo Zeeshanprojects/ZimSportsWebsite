@@ -51,7 +51,7 @@ export default function Dashboard() {
             },
             {
               color: "blue",
-              number: 1,
+              number: 4,
               text: "Total Coaches",
               btn: "View All Coaches",
             },
