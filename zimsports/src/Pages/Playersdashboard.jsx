@@ -86,7 +86,7 @@ export default function Playersdashboard() { const matches = [
   return (
 <>
 <Navbar2/>
-<Sidebar2/>
+
 <div className='dashboard-main'>
        <h2>Hello, Player!</h2>
         <p>Your comprehensive sports management overview awaits.</p>

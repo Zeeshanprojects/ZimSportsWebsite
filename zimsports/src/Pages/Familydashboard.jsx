@@ -68,7 +68,7 @@ export default function Familydashboard() {
   return (
     <>
       <Navbar2 />
-      <Sidebar2 />
+    
 
       <div className="dashboard-main">
         <h2>Hello, Family Member!</h2>
