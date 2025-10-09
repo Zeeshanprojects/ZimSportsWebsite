@@ -22,13 +22,13 @@ export default function Navbar2() {
           </button>
           {/* Collapsible wrapper */}
          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            {/* Navbar brand */}
+      
 
             <Link className="navbar-brand mt-2 mt-lg-0" to="/">
-              <img src={Image.logo} height={25} alt="MDB Logo" loading="lazy" />
+              <img src={Image.logo} height={35} alt="MDB Logo" loading="lazy" />
             </Link>
-            {/* Left links */}
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+           
+            {/* <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link className="nav-link" to="#">
                   Home
@@ -54,8 +54,8 @@ export default function Navbar2() {
                   Coaches
                 </Link>
               </li>
-            </ul>
-            {/* Left links */}
+            </ul> */}
+    
           </div>
           {/* Collapsible wrapper */}
   

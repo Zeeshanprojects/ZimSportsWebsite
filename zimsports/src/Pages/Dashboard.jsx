@@ -223,7 +223,7 @@ export default function Dashboard() {
                 <tr>
                   <td>Set 18 Black vs. Bulldogs</td>
                   <td>Jul 24, 2025 - 03:00 PM</td>
-                  <td>N/A</td>
+                  <td>3-2</td>
                   <td>
                     <span className="completed">Completed</span>
                   </td>
@@ -231,7 +231,7 @@ export default function Dashboard() {
                 <tr>
                   <td>T Street 16/3 Nick vs. HOYAAH A.C.</td>
                   <td>Jun 29, 2025 - 03:00 PM</td>
-                  <td>N/A</td>
+                  <td>8-5</td>
                   <td>
                     <span className="completed">Completed</span>
                   </td>
@@ -239,7 +239,7 @@ export default function Dashboard() {
                 <tr>
                   <td>T Street 16/3 Nick vs. HOYAAH A.C.</td>
                   <td>Jun 29, 2025 - 03:00 PM</td>
-                  <td>N/A</td>
+                  <td>3-3</td>
                   <td>
                     <span className="completed">Completed</span>
                   </td>
@@ -247,7 +247,7 @@ export default function Dashboard() {
                 <tr>
                   <td>T Street 16/3 Nick vs. HOYAAH A.C.</td>
                   <td>Jun 29, 2025 - 03:00 PM</td>
-                  <td>N/A</td>
+                  <td>5-5</td>
                   <td>
                     <span className="completed">Completed</span>
                   </td>
@@ -255,7 +255,7 @@ export default function Dashboard() {
                 <tr>
                   <td>T Street 16/3 Nick vs. HOYAAH A.C.</td>
                   <td>Jun 29, 2025 - 03:00 PM</td>
-                  <td>N/A</td>
+                  <td>6-2</td>
                   <td>
                     <span className="completed">Completed</span>
                   </td>
