@@ -80,7 +80,7 @@ export default function Coachesdashboard() {
     <>
       <Navbar2 />
 
-      <div className="dashboard-main">
+      <div className="container-fluid p-5">
         <h2>Hello, Coach!</h2>
         <p>Here’s a quick overview of your team’s performance and schedule.</p>
 
@@ -118,9 +118,8 @@ export default function Coachesdashboard() {
             </div>
           ))}
         </div>
-      </div>
-
-      <main className="matches-main p-2">
+        
+      <main className="mt-3">
         <div className="container-fluid">
           <div className="d-flex justify-content-between align-items-center mb-4">
             <h3 className=" ">Team Match Records</h3>
@@ -217,6 +216,8 @@ export default function Coachesdashboard() {
           </div>
         </div>
       </main>
+      </div>
+
     </>
   );
 }

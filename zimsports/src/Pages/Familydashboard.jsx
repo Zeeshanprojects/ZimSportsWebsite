@@ -70,7 +70,7 @@ export default function Familydashboard() {
       <Navbar2 />
     
 
-      <div className="dashboard-main">
+      <div className="container-fluid p-5">
         <h2>Hello, Family Member!</h2>
         <p>Here’s an overview of your family’s linked players and activities.</p>
 
@@ -83,9 +83,7 @@ export default function Familydashboard() {
             </div>
           ))}
         </div>
-      </div>
-
-      <main className="matches-main p-2">
+         <main className="mt-3">
         <div className="container-fluid">
           <div className="d-flex justify-content-between align-items-center mb-4">
             <h3>Family Match Records</h3>
@@ -184,6 +182,9 @@ export default function Familydashboard() {
           </div>
         </div>
       </main>
+      </div>
+
+     
     </>
   );
 }
