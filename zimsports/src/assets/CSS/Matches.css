@@ -110,11 +110,21 @@
   background-color: #e0f1ff;
   color: #007bff;
 }
-
 .status-badge.scheduled {
   background-color: #fff4cc;
   color: #b58900;
 }
+
+.status-badge.win {
+  background-color: #d4f8d4 !important; /* light green */
+  color: #1b5e20 !important; /* dark green text */
+}
+
+.status-badge.loss {
+  background-color: #f8d4d4; /* light red */
+  color: #b71c1c; /* dark red text */
+}
+
 
 /* Actions Button */
 .action-btn {
