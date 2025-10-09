@@ -3,15 +3,6 @@
   overflow-y: hidden !important;
 }
 
-/* Left side */
-.signup-left {
-  background-color: #1f8e4b;
-  color: #fff;
-  text-align: center;
-  height: auto !important;
-  padding: 2rem;
-}
-
 a {
   text-decoration: none !important;
 }

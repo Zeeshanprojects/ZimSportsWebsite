@@ -1,5 +1,6 @@
 .signup-container {
   height: 100vh !important;
+
 }
 
 .signup-left {
@@ -13,7 +14,7 @@
 }
 .signup-right {
   background: linear-gradient(135deg, #fcfefc, #f5fcf6, #edf9ee) !important;
-  min-height: 100vh; /* Full viewport height */
+
   display: flex;
   flex-direction: column;
   justify-content: center; /* Vertical center */
@@ -23,6 +24,7 @@
 
 .signup-right .card {
   max-height: 100vh; /* Prevent card overflow */
+  width: 100% !important;
   overflow-y: auto;
   border-radius: 20px !important;
 }
