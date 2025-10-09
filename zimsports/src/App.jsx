@@ -12,6 +12,7 @@ import Matches from "./Pages/Matches";
 import Players from "./Pages/Players";
 import Coaches from "./Pages/Coaches";
 import Preloader from "./Components/Preloader"; // ✅ Import your preloader
+import Playersdashboard from "./Pages/Playersdashboard";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -39,6 +40,7 @@ function App() {
             <Route path="/matches" element={<Matches />} />
             <Route path="/players" element={<Players />} />
             <Route path="/coaches" element={<Coaches />} />
+            <Route path="/playerdashboard" element={<Playersdashboard/>}/>
           </Routes>
         </Router>
       )}
