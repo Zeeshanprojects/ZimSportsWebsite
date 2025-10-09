@@ -35,8 +35,12 @@
 .card {
   border-radius: 12px;
 }
-
-/* Reset Bootstrap defaults */
+input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #198754 !important; /* optional: green border to match theme */
+  background-color: white !important; /* ensures no blue bg appears */
+}
 .nav-pills .nav-link {
   border-radius: 30px;
   font-weight: 500;

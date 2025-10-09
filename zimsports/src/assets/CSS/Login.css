@@ -7,7 +7,6 @@ a {
   text-decoration: none !important;
 }
 
-/* Right side */
 .login-right {
   background: linear-gradient(135deg, #fcfefc, #f5fcf6, #edf9ee) !important;
   padding: 2rem;
@@ -33,8 +32,13 @@ a {
 form input::placeholder {
   color: gray !important;
 }
+input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #198754 !important; /* optional: green border to match theme */
+  background-color: white !important; /* ensures no blue bg appears */
+}
 
-/* ✅ Fix: prevent scroll on medium desktop (1024–1199px) */
 @media (min-width: 1024px) and (max-width: 1199px) {
   .login-wrapper {
     height: 100vh;
