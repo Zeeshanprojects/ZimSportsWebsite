@@ -37,7 +37,7 @@ export default function Login() {
 
   return (
     <div className="container-fluid login-wrapper">
-      <div className="row ">
+      <div className="row min-vh-100">
         {/* Left Side Image */}
         <div className="col-lg-6 col-md-12 col-sm-12 signup-left d-flex flex-column align-items-center justify-content-center text-center">
           <img src={Image.accountpage} alt="image" className="position" />
