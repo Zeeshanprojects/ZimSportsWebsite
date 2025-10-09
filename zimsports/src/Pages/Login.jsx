@@ -14,26 +14,60 @@ export default function Login() {
   // Hardcoded admin credentials
   const adminEmail = "test@gmail.com";
   const adminPassword = "Zim12345";
+  const playerEmail = "Player@gmail.com"
+  const playerPassword = "Zim12345";
+  const coachEmail = "Coach@gmail.com";
+  const coachPassword = "Zim12345";
+  const parentEmail = "Parent@gmail.com"
+  const parentPassword = "Zim12345";
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+ const handleSubmit = (e) => {
+  e.preventDefault();
 
-    if (email === adminEmail && password === adminPassword) {
-      toast.success("Login Successful!", {
-        position: "top-center",
-        autoClose: 1500,
-      });
+  if (email === adminEmail && password === adminPassword) {
+    toast.success("Admin Login Successful!", {
+      position: "top-center",
+      autoClose: 1500,
+    });
+    setTimeout(() => {
+      navigate("/dashboard"); // Admin dashboard
+    }, 2000);
+  } 
+  else if (email === playerEmail && password === playerPassword) {
+    toast.success("Player Login Successful!", {
+      position: "top-center",
+      autoClose: 1500,
+    });
+    setTimeout(() => {
+      navigate("/playerdashboard"); // Player dashboard
+    }, 2000);
+  } 
+  else if (email === coachEmail && password === coachPassword) {
+    toast.success("Coach Login Successful!", {
+      position: "top-center",
+      autoClose: 1500,
+    });
+    setTimeout(() => {
+      navigate("/coachesdashboard"); // Coach dashboard
+    }, 2000);
+  } 
+  else if (email === parentEmail && password === parentPassword) {
+    toast.success("Parent Login Successful!", {
+      position: "top-center",
+      autoClose: 1500,
+    });
+    setTimeout(() => {
+      navigate("/familydashboard"); // Parent dashboard
+    }, 2000);
+  } 
+  else {
+    toast.error("Invalid email or password!", {
+      position: "top-center",
+      autoClose: 1500,
+    });
+  }
+};
 
-      setTimeout(() => {
-        navigate("/dashboard"); // Redirect to admin dashboard
-      }, 2000);
-    } else {
-      toast.error("Invalid email or password!", {
-        position: "top-center",
-        autoClose: 1500,
-      });
-    }
-  };
 
   return (
     <div className="container-fluid login-wrapper">
