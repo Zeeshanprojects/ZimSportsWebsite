@@ -124,10 +124,10 @@ export default function Playersdashboard() {
             </div>
           ))}
         </div>
-        <main className="mt-3">
+        <main className="mt-5">
           <div className="container-fluid">
             <div className="d-flex justify-content-between align-items-center mb-4">
-              <h3 className=" ">Matches History</h3>
+              <h3 className=" ">Matches Records</h3>
               <button className="btn btn-success px-4 rounded-pill">
                 + Add{" "}
               </button>
