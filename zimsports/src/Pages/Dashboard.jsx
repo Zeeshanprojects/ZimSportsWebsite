@@ -100,23 +100,15 @@ export default function Dashboard() {
         </div>
 
         {/* Bottom Sections */}
-        <div className="bottom-section">
-          {/* <div className="bottom-card ">
-            <div className="d-flex justify-content-between align-items-center">
-                <h6>Upcoming Team Schedule</h6>
-            <button className="btn light-gray-btn">Manage Team Schedules</button>
-            </div>
-            
-            <p className="mt-3">No upcoming schedule events found for your teams.</p>
-          </div> */}
-
+        {/* <div className="bottom-section">
+        
           <div className="match-card p-3">
             <div className="d-flex justify-content-between align-items-center mb-3">
               <h6 className="mb-0">Upcoming Matches</h6>
               <button className="btn light-gray-btn">View Full Schedule</button>
             </div>
 
-            {/* Match 1 */}
+          
             <div className="match-item d-flex justify-content-between align-items-center mb-3 p-2 rounded">
               <div className="team d-flex align-items-center">
                 <img src={Image.team1} alt="team1" className="team-logo me-2" />
@@ -134,7 +126,7 @@ export default function Dashboard() {
               </div>
             </div>
 
-            {/* Match 2 */}
+        
             <div className="match-item d-flex justify-content-between align-items-center mb-3 p-2 rounded">
               <div className="team d-flex align-items-center">
                 <img src={Image.team3} alt="team3" className="team-logo me-2" />
@@ -152,7 +144,7 @@ export default function Dashboard() {
               </div>
             </div>
 
-            {/* Match 3 */}
+    
             <div className="match-item d-flex justify-content-between align-items-center p-2 rounded">
               <div className="team d-flex align-items-center">
                 <img src={Image.team5} alt="team5" className="team-logo me-2" />
@@ -200,10 +192,10 @@ export default function Dashboard() {
             </div>
            
           </div>
-        </div>
+        </div> */}
 
-        {/* Matches Section */}
-        <div className="match-section">
+     
+        {/* <div className="match-section">
           <div className="match-card">
             <div className="d-flex justify-content-between align-items-center">
               <h6>Latest Completed Matches</h6>
@@ -263,10 +255,10 @@ export default function Dashboard() {
               </tbody>
             </table>
           </div>
-        </div>
+        </div> */}
       </main>
-
-    <DashboardFooter/>
+{/* 
+    <DashboardFooter/> */}
     </div>
   );
 }

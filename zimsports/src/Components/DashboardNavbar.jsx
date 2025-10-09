@@ -7,7 +7,7 @@ export default function DashboardNavbar() {
   return (
     <>
       {/* Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-white p-3 ">
+      <nav className="navbar navbar-expand-lg navbar-light bg-white ps-5 pe-3 ">
         {/* Container wrapper */}
         <div className="container">
           {/* Toggle button */}
