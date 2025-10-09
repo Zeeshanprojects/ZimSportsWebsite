@@ -27,35 +27,7 @@ export default function Navbar2() {
             <Link className="navbar-brand mt-2 mt-lg-0" to="/">
               <img src={Image.logo} height={25} alt="MDB Logo" loading="lazy" />
             </Link>
-            {/* Left links */}
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link className="nav-link" to="#">
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="#">
-                  Team
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="#">
-                  Matches
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="#">
-                  Players
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="#">
-                  Coaches
-                </Link>
-              </li>
-            </ul>
-            {/* Left links */}
+          
           </div>
           {/* Collapsible wrapper */}
           {/* Right elements */}
