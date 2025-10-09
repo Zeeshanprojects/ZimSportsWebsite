@@ -1,5 +1,5 @@
 import Navbar2 from "../Components/Navbar2";
-import Sidebar2 from "../Components/Sidebar2";
+
 import Image from "../assets/Images/image";
 
 export default function Familydashboard() {

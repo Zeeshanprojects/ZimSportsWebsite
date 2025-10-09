@@ -1,5 +1,5 @@
 import Navbar2 from "../Components/Navbar2";
-import Sidebar2 from "../Components/Sidebar2";
+
 import Image from "../assets/Images/image";
 
 export default function Coachesdashboard() {
@@ -79,7 +79,7 @@ export default function Coachesdashboard() {
   return (
     <>
       <Navbar2 />
-      <Sidebar2 />
+
       <div className="dashboard-main">
         <h2>Hello, Coach!</h2>
         <p>Here’s a quick overview of your team’s performance and schedule.</p>

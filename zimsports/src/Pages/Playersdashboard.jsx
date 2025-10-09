@@ -1,9 +1,9 @@
+import Navbar2 from "../Components/Navbar2";
 
-import Navbar2 from '../Components/Navbar2'
-import Sidebar2 from '../Components/Sidebar2'
-import Image from '../assets/Images/image';
+import Image from "../assets/Images/image";
 
-export default function Playersdashboard() { const matches = [
+export default function Playersdashboard() {
+  const matches = [
     {
       id: 10,
 
@@ -82,15 +82,15 @@ export default function Playersdashboard() { const matches = [
       status: "Completed",
     },
   ];
-    
-  return (
-<>
-<Navbar2/>
 
-<div className='dashboard-main'>
-       <h2>Hello, Player!</h2>
+  return (
+    <>
+      <Navbar2 />
+
+      <div className="containe-fluid p-5">
+        <h2>Hello, Player!</h2>
         <p>Your comprehensive sports management overview awaits.</p>
-          <div className="stats-grid1">
+        <div className="stats-grid1">
           {[
             {
               color: "lightgreen",
@@ -124,108 +124,107 @@ export default function Playersdashboard() { const matches = [
             </div>
           ))}
         </div>
-</div>
-  <main className="matches-main p-2">
-        <div className="container-fluid">
-          <div className="d-flex justify-content-between align-items-center mb-4">
-            <h3 className=" ">Matches History</h3>
-            <button className="btn btn-success px-4 rounded-pill">
-              + Add{" "}
-            </button>
-          </div>
-          {/* Table */}
-          <div className="matches-card">
-            <table className="matches-table">
-              <thead>
-                <tr>
-                  <th>ID</th>
-                  <th>Match</th>
-                  <th>Date & Time</th>
-                  <th>Venue</th>
-                  <th>Score</th>
-                  <th>Status</th>
-                  <th>Actions</th>
-                </tr>
-              </thead>
-
-              <tbody>
-                {matches.map((m) => (
-                  <tr key={m.id}>
-                    <td className="id">{m.id}</td>
-
-                    <td className="match-cell">
-                      <div className="match-info">
-                        <span className="match-name">{m.match}</span>
-                        <span className="match-type">{m.type}</span>
-                      </div>
-                    </td>
-
-                    <td>
-                      <div className="date-info">
-                        <strong>{m.date}</strong>
-                        <p>{m.time}</p>
-                      </div>
-                    </td>
-
-                    <td>{m.venue}</td>
-                    <td>{m.score}</td>
-
-                    <td>
-                    <span
-  className={`status-badge ${
-    m.status === "Completed"
-      ? "completed"
-      : m.status === "Win"
-      ? "win"
-      : m.status === "Loss"
-      ? "loss"
-      : "scheduled"
-  }`}
->
-  {m.status}
-</span>
-
-                    </td>
-
-                    <div className="dropdown">
-                      <button
-                        className="action-dropdown-btn"
-                        type="button"
-                        id="dropdownMenuButton2"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Actions{" "}
-                        <img
-                          src={Image.downarrow}
-                          alt="downarrow"
-                          height={10}
-                        />
-                      </button>
-
-                      <ul
-                        className="dropdown-menu custom-dropdown"
-                        aria-labelledby="dropdownMenuButton2"
-                      >
-                        <li>
-                          <button className="dropdown-item edit-item">
-                            ✏️ Edit
-                          </button>
-                        </li>
-                        <li>
-                          <button className="dropdown-item delete-item">
-                            🗑️ Delete
-                          </button>
-                        </li>
-                      </ul>
-                    </div>
+        <main className="mt-3">
+          <div className="container-fluid">
+            <div className="d-flex justify-content-between align-items-center mb-4">
+              <h3 className=" ">Matches History</h3>
+              <button className="btn btn-success px-4 rounded-pill">
+                + Add{" "}
+              </button>
+            </div>
+            {/* Table */}
+            <div className="matches-card">
+              <table className="matches-table">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Match</th>
+                    <th>Date & Time</th>
+                    <th>Venue</th>
+                    <th>Score</th>
+                    <th>Status</th>
+                    <th>Actions</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+
+                <tbody>
+                  {matches.map((m) => (
+                    <tr key={m.id}>
+                      <td className="id">{m.id}</td>
+
+                      <td className="match-cell">
+                        <div className="match-info">
+                          <span className="match-name">{m.match}</span>
+                          <span className="match-type">{m.type}</span>
+                        </div>
+                      </td>
+
+                      <td>
+                        <div className="date-info">
+                          <strong>{m.date}</strong>
+                          <p>{m.time}</p>
+                        </div>
+                      </td>
+
+                      <td>{m.venue}</td>
+                      <td>{m.score}</td>
+
+                      <td>
+                        <span
+                          className={`status-badge ${
+                            m.status === "Completed"
+                              ? "completed"
+                              : m.status === "Win"
+                              ? "win"
+                              : m.status === "Loss"
+                              ? "loss"
+                              : "scheduled"
+                          }`}
+                        >
+                          {m.status}
+                        </span>
+                      </td>
+
+                      <div className="dropdown">
+                        <button
+                          className="action-dropdown-btn"
+                          type="button"
+                          id="dropdownMenuButton2"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Actions{" "}
+                          <img
+                            src={Image.downarrow}
+                            alt="downarrow"
+                            height={10}
+                          />
+                        </button>
+
+                        <ul
+                          className="dropdown-menu custom-dropdown"
+                          aria-labelledby="dropdownMenuButton2"
+                        >
+                          <li>
+                            <button className="dropdown-item edit-item">
+                              ✏️ Edit
+                            </button>
+                          </li>
+                          <li>
+                            <button className="dropdown-item delete-item">
+                              🗑️ Delete
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
-        </div>
-      </main>
-</>
-  )
+        </main>
+      </div>
+    </>
+  );
 }
