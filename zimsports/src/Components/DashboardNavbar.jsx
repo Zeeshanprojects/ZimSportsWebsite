@@ -56,11 +56,15 @@ export default function DashboardNavbar() {
                   Coaches
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/coaches">
+               Families
+                </Link>
+              </li>
             </ul>
-            {/* Left links */}
+     
           </div>
-          {/* Collapsible wrapper */}
-          {/* Right elements */}
+
           <div className="d-flex align-items-center">
             {/* Icon */}
             <a className="text-reset me-3" href="#">
