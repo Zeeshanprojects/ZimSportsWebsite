@@ -59,7 +59,7 @@ export default function Signup() {
 
           {/* Forms */}
           <div
-            className="card shadow p-4 mx-auto w-100"
+            className="card shadow p-4 mx-auto w-100 "
             style={{ maxWidth: "600px" }}
           >
             {activeTab === "parent" && (

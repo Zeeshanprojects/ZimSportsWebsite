@@ -1,6 +1,6 @@
 /* Wrapper */
 .login-wrapper {
-  overflow: hidden;
+  overflow-y: hidden !important;
 }
 
 /* Left side */
@@ -8,6 +8,7 @@
   background-color: #1f8e4b;
   color: #fff;
   text-align: center;
+  height: auto !important;
   padding: 2rem;
 }
 
@@ -51,7 +52,7 @@ form input::placeholder {
   .signup-left img.position {
     width: 90%;
     height: auto;
-    max-height: 80vh;
+    max-height: 50vh !important;
     object-fit: contain;
   }
 
