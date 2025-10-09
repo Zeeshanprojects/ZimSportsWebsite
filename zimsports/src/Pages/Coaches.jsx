@@ -10,6 +10,7 @@ export default function Coaches() {
     { id: 1, name: "Michael Johnson", team: "Eagles" },
     { id: 2, name: "Ahmed Raza", team: "Warriors" },
     { id: 3, name: "Robert Green", team: "Titans" },
+    { id: 4, name: "John Smith", team: "Blues" },
   ]);
 
   const [openDropdown, setOpenDropdown] = useState(null);

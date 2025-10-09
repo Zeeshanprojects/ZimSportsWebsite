@@ -57,12 +57,11 @@ export default function DashboardNavbar() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/coaches">
-               Families
+                <Link className="nav-link" to="/families">
+                  Families
                 </Link>
               </li>
             </ul>
-     
           </div>
 
           <div className="d-flex align-items-center">
