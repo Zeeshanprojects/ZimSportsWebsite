@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Home, Users, Trophy, UserCheck, User } from "lucide-react";
+import { Home, Users, Trophy, UserCheck, User,UsersRound } from "lucide-react";
 import "../assets/CSS/DashboardSidebar.css";
 export default function DashboardSidebar() {
   return (
@@ -33,6 +33,11 @@ export default function DashboardSidebar() {
               <UserCheck size={20} />
             </Link>
           </li>
+          <li data-tooltip="Families">
+  <Link to="/families" style={{ color: "white", textDecoration: "none" }}>
+    <UsersRound size={20} />
+  </Link>
+</li>
         </ul>
       </aside>
     </>
