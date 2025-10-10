@@ -2,17 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../assets/CSS/Dashboard.css";
 import DashboardNavbar from "../Components/DashboardNavbar";
-import { Home, Users, Trophy, UserCheck, Settings } from "lucide-react";
-import Image from "../assets/Images/image";
 import DashboardSidebar from "../Components/DashboardSidebar";
-import DashboardFooter from "../Components/DashboardFooter";
+import { UserPlus, Trophy, UserCheck, Users, Activity } from "lucide-react";
 
 export default function Dashboard() {
   return (
     <div className="dashboard-container">
-     <DashboardNavbar/>
-
-     <DashboardSidebar/>
+      <DashboardNavbar />
+      <DashboardSidebar />
 
       {/* Main Dashboard */}
       <main className="dashboard-main">
@@ -31,6 +28,7 @@ export default function Dashboard() {
             </button>
           </div>
         </div>
+
         <h2>Hello, Admin David Jumani!</h2>
         <p>Your comprehensive sports management overview awaits.</p>
 
@@ -39,10 +37,10 @@ export default function Dashboard() {
           {[
             {
               color: "lightgreen",
-              number:4,
+              number: 4,
               text: "Total Teams",
               btn: "View All Teams",
-                path: "/team",
+              path: "/team",
             },
             {
               color: "purple",
@@ -63,19 +61,19 @@ export default function Dashboard() {
               number: 4,
               text: "Total Family Profiles",
               btn: "View All Families",
-              path: "/families"
+              path: "/families",
             },
           ].map((card, i) => (
             <div key={i} className={`cards ${card.color}-card`}>
               <h2>{card.number}</h2>
-            
               <p>{card.text}</p>
-                <Link to={card.path}>
-                  <button>{card.btn}</button></Link>
-            
+              <Link to={card.path}>
+                <button>{card.btn}</button>
+              </Link>
             </div>
           ))}
         </div>
+
         {/* Stats row2 */}
         <div className="stats-grid2">
           {[
@@ -84,38 +82,79 @@ export default function Dashboard() {
               number: 5,
               text: "Total Sports",
               btn: "View All Sports",
-              path: "/sports"
+              path: "/sports",
             },
             {
               color: "white",
               number: 11,
               text: "Total Matches",
               btn: "View All Matches",
-              path: "/matches"
+              path: "/matches",
             },
             {
               color: "pink",
               number: 1,
               text: "Total Tournaments",
               btn: "View All Tournaments",
-              path: "/tournaments"
+              path: "/tournaments",
             },
           ].map((card, i) => (
             <div key={i} className={`cards ${card.color}-card`}>
               <h2>{card.number}</h2>
               <p>{card.text}</p>
-              <button>{card.btn}</button>
+              <Link to={card.path}>
+                <button>{card.btn}</button>
+              </Link>
             </div>
           ))}
         </div>
 
-   
-
-     
-       
+        {/* Recent Activity Section */}
+        <div className="recent-activity-section">
+          <h4>Recent Activity</h4>
+          <div className="activity-list">
+            {[
+              {
+                icon: <UserPlus className="activity-icon add" />,
+                text: "New player <strong>John Smith</strong> added to team Eagles.",
+                time: "2 hours ago",
+              },
+              {
+                icon: <Trophy className="activity-icon win" />,
+                text: "Team <strong>Falcons</strong> won against Hawks (3-1).",
+                time: "4 hours ago",
+              },
+              {
+                icon: <UserCheck className="activity-icon coach" />,
+                text: "Coach <strong>Mark Wilson</strong> registered successfully.",
+                time: "6 hours ago",
+              },
+              {
+                icon: <Users className="activity-icon team" />,
+                text: "New team <strong>Lions</strong> created under Division A.",
+                time: "1 day ago",
+              },
+              {
+                icon: <Activity className="activity-icon loss" />,
+                text: "Team <strong>Hawks</strong> lost their recent match (1-3).",
+                time: "1 day ago",
+              },
+            ].map((activity, i) => (
+              <div key={i} className="activity-card">
+                <div className="activity-left">{activity.icon}</div>
+                <div className="activity-right">
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: activity.text,
+                    }}
+                  ></p>
+                  <span>{activity.time}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </main>
-{/* 
-    <DashboardFooter/> */}
     </div>
   );
 }
