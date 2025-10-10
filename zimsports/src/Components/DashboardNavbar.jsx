@@ -66,6 +66,11 @@ export default function DashboardNavbar() {
                   Families
                 </Link>
               </li>
+               <li className="nav-item">
+                <Link className="nav-link" to="/">
+                  Tournments
+                </Link>
+              </li>
             </ul>
           </div>
 

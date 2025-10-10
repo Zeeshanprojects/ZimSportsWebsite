@@ -17,6 +17,7 @@ import Coachesdashboard from "./Pages/Coachesdashboard";
 import Familydashboard from "./Pages/Familydashboard";
 import Sports from "./Pages/Sports";
 import Families from "./Pages/Families";
+import Tournaments from "./Pages/Tournaments";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -43,9 +44,10 @@ function App() {
             <Route path="/team" element={<Teams />} />
             <Route path="/matches" element={<Matches />} />
             <Route path="/players" element={<Players />} />
-                        <Route path="/sports" element={<Sports/>}/>
+            <Route path="/sports" element={<Sports/>}/>
             <Route path="/coaches" element={<Coaches />} />
-              <Route path="/families" element={<Families/>}/>
+            <Route path="/families" element={<Families/>}/>
+            <Route path="/tournments" element={<Tournaments/>}/>
             <Route path="/playerdashboard" element={<Playersdashboard/>}/>
             <Route path="/coachesdashboard" element={<Coachesdashboard/>}/>
             <Route path="/familydashboard" element={<Familydashboard/>}/>
