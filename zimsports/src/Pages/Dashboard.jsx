@@ -39,7 +39,7 @@ export default function Dashboard() {
           {[
             {
               color: "lightgreen",
-              number: 2,
+              number:4,
               text: "Total Teams",
               btn: "View All Teams",
             },
@@ -57,7 +57,7 @@ export default function Dashboard() {
             },
             {
               color: "red",
-              number: 0,
+              number: 4,
               text: "Total Family Profiles",
               btn: "View All Families",
             },
@@ -74,21 +74,21 @@ export default function Dashboard() {
           {[
             {
               color: "yellow",
-              number: 3,
+              number: 5,
               text: "Total Sports",
               btn: "View All Sports",
             },
             {
               color: "white",
               number: 11,
-              text: "Total Completed Matches",
-              btn: "View Completed Matches",
+              text: "Total Matches",
+              btn: "View All Matches",
             },
             {
               color: "pink",
-              number: 0,
-              text: "Total Active Matches",
-              btn: "View Active Matches",
+              number: 1,
+              text: "Total Tournaments",
+              btn: "View All Tournaments",
             },
           ].map((card, i) => (
             <div key={i} className={`cards ${card.color}-card`}>
