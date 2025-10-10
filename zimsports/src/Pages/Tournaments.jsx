@@ -1,17 +1,57 @@
 import React, { useState } from "react";
-import "../assets/CSS/Player.css"; // using same theme style
+import "../assets/CSS/Player.css"; // keeping same theme style
 import Image from "../assets/Images/image";
 import "bootstrap/dist/css/bootstrap.min.css";
 import DashboardNavbar from "../Components/DashboardNavbar";
 import DashboardSidebar from "../Components/DashboardSidebar";
 
 export default function Tournaments() {
-  const [sports, setSports] = useState([
-    { id: 1, name: "Volleyball", category: "Indoor", teamType: "6 Players", coach: "Michael Johnson" },
-    { id: 2, name: "Beach Volleyball", category: "Outdoor", teamType: "2 Players", coach: "Ali Khan" },
-    { id: 3, name: "Water Polo", category: "Aquatic", teamType: "7 Players", coach: "David Lee" },
-    { id: 4, name: "Basketball", category: "Indoor", teamType: "5 Players", coach: "John Smith" },
-    { id: 5, name: "Football", category: "Outdoor", teamType: "11 Players", coach: "Robert Green" },
+  const [tournaments, setTournaments] = useState([
+    {
+      id: 1,
+      name: "Summer Championship",
+      category: "Outdoor",
+      sport: "Football",
+      teams: 8,
+      startDate: "2025-06-10",
+      endDate: "2025-06-25",
+    },
+    {
+      id: 2,
+      name: "Winter Cup",
+      category: "Indoor",
+      sport: "Basketball",
+      teams: 6,
+      startDate: "2025-01-05",
+      endDate: "2025-01-20",
+    },
+    {
+      id: 3,
+      name: "Beach Showdown",
+      category: "Outdoor",
+      sport: "Volleyball",
+      teams: 10,
+      startDate: "2025-08-12",
+      endDate: "2025-08-28",
+    },
+    {
+      id: 4,
+      name: "Aqua Series",
+      category: "Aquatic",
+      sport: "Water Polo",
+      teams: 5,
+      startDate: "2025-03-15",
+      endDate: "2025-03-30",
+    },
+    {
+      id: 5,
+      name: "Junior League",
+      category: "Outdoor",
+      sport: "Cricket",
+      teams: 12,
+      startDate: "2025-09-01",
+      endDate: "2025-09-20",
+    },
   ]);
 
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -20,13 +60,13 @@ export default function Tournaments() {
     setOpenDropdown(openDropdown === id ? null : id);
   };
 
-  const handleEdit = (sport) => {
-    alert(`Editing sport: ${sport.name}`);
+  const handleEdit = (tournament) => {
+    alert(`Editing tournament: ${tournament.name}`);
   };
 
   const handleDelete = (id) => {
-    if (window.confirm("Are you sure you want to delete this sport?")) {
-      setSports(sports.filter((s) => s.id !== id));
+    if (window.confirm("Are you sure you want to delete this tournament?")) {
+      setTournaments(tournaments.filter((t) => t.id !== id));
     }
   };
 
@@ -37,37 +77,43 @@ export default function Tournaments() {
       <div className="players-main">
         {/* Header */}
         <div className="d-flex justify-content-between align-items-center mb-4">
-          <h3 className="fw-bold">Manage Sports</h3>
-          <button className="btn btn-success px-4 rounded-pill">+ Add Sport</button>
+          <h3 className="fw-bold">Manage Tournaments</h3>
+          <button className="btn btn-success px-4 rounded-pill">
+            + Add Tournament
+          </button>
         </div>
 
-        {/* Sports Table */}
+        {/* Tournaments Table */}
         <div className="players-card">
           <table className="players-table w-100 text-center align-middle">
             <thead>
               <tr>
                 <th>#</th>
-                <th>Sport Name</th>
+                <th>Tournament Name</th>
                 <th>Category</th>
-                <th>Team Type</th>
-                <th>Coach Name</th>
+                <th>Sport</th>
+                <th>Total Teams</th>
+                <th>Start Date</th>
+                <th>End Date</th>
                 <th>Actions</th>
               </tr>
             </thead>
             <tbody>
-              {sports.map((sport, index) => (
-                <tr key={sport.id}>
+              {tournaments.map((tournament, index) => (
+                <tr key={tournament.id}>
                   <td>{index + 1}</td>
-                  <td>{sport.name}</td>
-                  <td>{sport.category}</td>
-                  <td>{sport.teamType}</td>
-                  <td>{sport.coach}</td>
+                  <td>{tournament.name}</td>
+                  <td>{tournament.category}</td>
+                  <td>{tournament.sport}</td>
+                  <td>{tournament.teams}</td>
+                  <td>{tournament.startDate}</td>
+                  <td>{tournament.endDate}</td>
                   <td className="position-relative">
                     <div className="dropdown d-inline-block">
                       <button
                         className="action-dropdown-btn d-flex align-items-center justify-content-center"
                         type="button"
-                        onClick={() => handleToggleDropdown(sport.id)}
+                        onClick={() => handleToggleDropdown(tournament.id)}
                       >
                         Actions
                         <img
@@ -78,12 +124,12 @@ export default function Tournaments() {
                         />
                       </button>
 
-                      {openDropdown === sport.id && (
+                      {openDropdown === tournament.id && (
                         <ul className="dropdown-menu show position-absolute custom-dropdown">
                           <li>
                             <button
                               className="dropdown-item edit-item"
-                              onClick={() => handleEdit(sport)}
+                              onClick={() => handleEdit(tournament)}
                             >
                               ✏️ Edit
                             </button>
@@ -91,7 +137,7 @@ export default function Tournaments() {
                           <li>
                             <button
                               className="dropdown-item delete-item"
-                              onClick={() => handleDelete(sport.id)}
+                              onClick={() => handleDelete(tournament.id)}
                             >
                               🗑️ Delete
                             </button>
