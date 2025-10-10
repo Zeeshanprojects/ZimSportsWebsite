@@ -67,7 +67,7 @@ export default function DashboardNavbar() {
                 </Link>
               </li>
                <li className="nav-item">
-                <Link className="nav-link" to="/tournments">
+                <Link className="nav-link" to="/tournaments">
                   Tournments
                 </Link>
               </li>
