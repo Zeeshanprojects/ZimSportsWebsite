@@ -1,10 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Home, Users, Trophy, UserCheck, User,UsersRound,Medal  } from "lucide-react";
+import {
+  Home,
+  Users,
+  Trophy,
+ ClipboardCheck,
+  User,
+ HeartHandshake,
+  Medal,
+} from "lucide-react";
 import "../assets/CSS/DashboardSidebar.css";
 
 export default function DashboardSidebar() {
-   const matches = [
+  const matches = [
     {
       id: 10,
 
@@ -89,41 +97,61 @@ export default function DashboardSidebar() {
       <aside className="sidebar">
         <ul>
           <li data-tooltip="Home">
-            <Link to="/dashboard" style={{ color: "inherit", textDecoration: "none" }}>
+            <Link
+              to="/dashboard"
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
               <Home size={20} />
             </Link>
           </li>
           <li data-tooltip="Teams">
-            <Link to="/team" style={{ color: "inherit", textDecoration: "none" }}>
+            <Link
+              to="/team"
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
               <Users size={20} />
             </Link>
           </li>
           <li data-tooltip="Matches">
-            <Link to="/matches" style={{ color: "inherit", textDecoration: "none" }}>
+            <Link
+              to="/matches"
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
               <Trophy size={20} />
             </Link>
           </li>
           <li data-tooltip="Players">
-            <Link to="/players" style={{ color: "inherit", textDecoration: "none" }}>
+            <Link
+              to="/players"
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
               <User size={20} />
             </Link>
           </li>
           <li data-tooltip="Coaches">
-            <Link to="/coaches" style={{ color: "inherit", textDecoration: "none" }}>
-              <UserCheck size={20} />
+            <Link
+              to="/coaches"
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
+              <ClipboardCheck size={20} />
             </Link>
           </li>
           <li data-tooltip="Families">
-  <Link to="/families" style={{ color: "white", textDecoration: "none" }}>
-    <UsersRound size={20} />
-  </Link>
-</li>
-<li data-tooltip="Tournament">
-  <Link to="/tournaments" style={{ color: "white", textDecoration: "none" }}>
-    <Medal size={20} />
-  </Link>
-</li>
-
+            <Link
+              to="/families"
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              <HeartHandshake size={20} />
+            </Link>
+          </li>
+          <li data-tooltip="Tournament">
+            <Link
+              to="/tournaments"
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              <Medal size={20} />
+            </Link>
+          </li>
         </ul>
       </aside>
     </>
