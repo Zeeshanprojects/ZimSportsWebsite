@@ -7,7 +7,7 @@ export default function DashboardNavbar() {
   return (
     <>
       {/* Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-white ps-5 pe-3 ">
+      <nav className="navbar navbar-expand-lg navbar-light bg-white ps-5 pe-5 ">
         {/* Container wrapper */}
         <div className="container">
           {/* Toggle button */}
@@ -30,7 +30,7 @@ export default function DashboardNavbar() {
               <img src={Image.logo} height={25} alt="MDB Logo" loading="lazy" />
             </Link>
             {/* Left links */}
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            {/* <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link className="nav-link" to="/dashboard">
                   Home
@@ -71,7 +71,7 @@ export default function DashboardNavbar() {
                   Tournments
                 </Link>
               </li>
-            </ul>
+            </ul> */}
           </div>
 
           <div className="d-flex align-items-center">

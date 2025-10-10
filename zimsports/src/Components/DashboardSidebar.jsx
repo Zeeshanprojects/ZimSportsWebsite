@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Home, Users, Trophy, UserCheck, User,UsersRound } from "lucide-react";
+import { Home, Users, Trophy, UserCheck, User,UsersRound,Medal  } from "lucide-react";
 import "../assets/CSS/DashboardSidebar.css";
 
 export default function DashboardSidebar() {
@@ -118,6 +118,12 @@ export default function DashboardSidebar() {
     <UsersRound size={20} />
   </Link>
 </li>
+<li data-tooltip="Tournament">
+  <Link to="/tournaments" style={{ color: "white", textDecoration: "none" }}>
+    <Medal size={20} />
+  </Link>
+</li>
+
         </ul>
       </aside>
     </>

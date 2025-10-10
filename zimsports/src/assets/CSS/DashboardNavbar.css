@@ -1,5 +1,5 @@
 
-.navbar-nav .nav-link {
+/* .navbar-nav .nav-link {
   color: black !important;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -9,10 +9,10 @@
   color: #3F9E64 !important;
 }
 
-/* Logo */
+
 .navbar-brand img {
   filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.4));
-}
+} */
 
 /* Icon Buttons */
 .text-reset i,
