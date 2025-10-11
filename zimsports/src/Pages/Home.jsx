@@ -117,7 +117,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="watch-live-btn text-center mb-3">
+      <div className="watch-live-btn text-center ">
         <Link to="/zimlive">
           <button type="button" className="btn btn-lg fw-bold ">
             <MonitorPlay size={22} className="me-2 " /> GO TO ZIM TV
