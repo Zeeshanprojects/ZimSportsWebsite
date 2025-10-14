@@ -7,13 +7,14 @@ import DashboardSidebar from "../Components/DashboardSidebar";
 
 export default function FamilyPage() {
   const [family, setFamily] = useState([
-    { id: 1, Fname: "Michael Johnson", Mname: "Tessa",Cname:"Chris", Sport: "Volley Ball" },
-    { id: 2, Fname: "Ahmed Raza", Mname: "Bella", Cname:"Tim David",Sport: "Water Polo" },
-    { id: 3, Fname: "Robert Green", Mname: "Elisa Robert", Cname:"Southee",Sport: "Basket Ball" },
-    { id: 4, Fname: "John Smith", Mname: "Machnorin", Cname:"Brock Lesner",Sport: "Volley Ball" },
+    { id: 1, Fname: "Michael Johnson", Mname: "Tessa", Cname: "Chris", Sport: "Volley Ball" },
+    { id: 2, Fname: "Ahmed Raza", Mname: "Bella", Cname: "Tim David", Sport: "Water Polo" },
+    { id: 3, Fname: "Robert Green", Mname: "Elisa Robert", Cname: "Southee", Sport: "Basket Ball" },
+    { id: 4, Fname: "John Smith", Mname: "Machnorin", Cname: "Brock Lesner", Sport: "Volley Ball" },
   ]);
 
   const [openDropdown, setOpenDropdown] = useState(null);
+  const [showModal, setShowModal] = useState(false);
 
   const handleToggleDropdown = (id) => {
     setOpenDropdown(openDropdown === id ? null : id);
@@ -33,11 +34,17 @@ export default function FamilyPage() {
     <>
       <DashboardNavbar />
       <DashboardSidebar />
+
       <div className="coaches-main">
         {/* Header */}
         <div className="d-flex justify-content-between align-items-center mb-4">
           <h3 className="fw-bold">Manage Family Profile</h3>
-          <button className="btn btn-success px-4 rounded-pill">+ Add Family</button>
+          <button
+            className="btn btn-success px-4 rounded-pill"
+            onClick={() => setShowModal(true)}
+          >
+            + Add Family
+          </button>
         </div>
 
         {/* Table Section */}
@@ -110,6 +117,76 @@ export default function FamilyPage() {
           </table>
         </div>
       </div>
+
+      {/* Add Family Modal */}
+      {showModal && (
+        <div className="modal show fade d-block" tabIndex="-1">
+          <div className="modal-dialog modal-dialog-centered">
+            <div className="modal-content shadow-lg border-0">
+              <div className="modal-header border-0">
+                <h5 className="modal-title fw-bold text-success w-100 text-center">
+                  Add New Family
+                </h5>
+                <button
+                  type="button"
+                  className="btn-close"
+                  onClick={() => setShowModal(false)}
+                ></button>
+              </div>
+
+              <div className="modal-body px-4 pb-4">
+                <form>
+                  <div className="mb-3">
+                    <label className="form-label fw-semibold">Father Name</label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Enter father's name"
+                    />
+                  </div>
+
+                  <div className="mb-3">
+                    <label className="form-label fw-semibold">Mother Name</label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Enter mother's name"
+                    />
+                  </div>
+
+                  <div className="mb-3">
+                    <label className="form-label fw-semibold">Child Name</label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Enter child's name"
+                    />
+                  </div>
+
+                  <div className="mb-4">
+                    <label className="form-label fw-semibold">Sport</label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Enter sport"
+                    />
+                  </div>
+
+                  <div className="text-center">
+                    <button
+                      type="button"
+                      className="btn btn-success px-4"
+                      onClick={() => setShowModal(false)}
+                    >
+                      Add Family
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }
