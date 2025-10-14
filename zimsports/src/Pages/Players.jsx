@@ -7,37 +7,34 @@ import DashboardSidebar from "../Components/DashboardSidebar";
 
 export default function Players() {
   const [players, setPlayers] = useState([
-    {
-      id: 1,
-      name: "John Smith",
-      team: "Eagles",
-      jersey: 10,
-      position: "Forward",
-    },
-    {
-      id: 2,
-      name: "Ali Khan",
-      team: "Warriors",
-      jersey: 7,
-      position: "Defender",
-    },
-    {
-      id: 3,
-      name: "David Lee",
-      team: "Titans",
-      jersey: 4,
-      position: "Goalkeeper",
-    },
+    { id: 1, name: "John Smith", team: "Eagles", jersey: 10, position: "Forward" },
+    { id: 2, name: "Ali Khan", team: "Warriors", jersey: 7, position: "Defender" },
+    { id: 3, name: "David Lee", team: "Titans", jersey: 4, position: "Goalkeeper" },
   ]);
 
-  const [openDropdown, setOpenDropdown] = useState(null);
+  const [showModal, setShowModal] = useState(false);
+  const [newPlayer, setNewPlayer] = useState({
+    name: "",
+    team: "",
+    jersey: "",
+    position: "",
+  });
 
-  const handleToggleDropdown = (id) => {
-    setOpenDropdown(openDropdown === id ? null : id);
-  };
+  // Add player function
+  const handleAddPlayer = (e) => {
+    e.preventDefault();
 
-  const handleEdit = (player) => {
-    alert(`Editing player: ${player.name}`);
+    const newEntry = {
+      id: players.length > 0 ? players[players.length - 1].id + 1 : 1, // auto-increment ID
+      name: newPlayer.name,
+      team: newPlayer.team,
+      jersey: newPlayer.jersey,
+      position: newPlayer.position,
+    };
+
+    setPlayers([...players, newEntry]);
+    setNewPlayer({ name: "", team: "", jersey: "", position: "" });
+    setShowModal(false);
   };
 
   const handleDelete = (id) => {
@@ -50,95 +47,158 @@ export default function Players() {
     <>
       <DashboardNavbar />
       <DashboardSidebar />
-      <div className="players-main">
-        <div className="d-flex justify-content-between align-items-center mb-4">
-          <h3 className="fw-bold ">Manage Player Profile</h3>
-          <button className="btn btn-success px-4 rounded-pill">
-            + Add Player
-          </button>
-        </div>
 
-        <div className="players-card">
-          <table className="players-table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Player Name</th>
-                <th>Team Name</th>
-                <th>Jersey Number</th>
-                <th>Position</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              {players.map((player, index) => (
-                <tr key={player.id}>
-                  <td>{index + 1}</td>
-                  <td>{player.name}</td>
-                  <td>{player.team}</td>
-                  <td>{player.jersey}</td>
-                  <td>{player.position}</td>
-                  <td className="position-relative">
-                    <div className="dropdown">
-                      <button
-                        className="action-dropdown-btn"
-                        type="button"
-                        id="dropdownMenuButton2"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Actions{" "}
-                        <img
-                          src={Image.downarrow}
-                          alt="downarrow"
-                          height={10}
-                        />
-                      </button>
+      <main className="players-main">
+        <div className="container-fluid">
+          <div className="d-flex justify-content-between align-items-center mb-4">
+            <h3 className="fw-bold">Manage Player Profile</h3>
+            <button
+              className="btn btn-success px-4 rounded-pill"
+              onClick={() => setShowModal(true)}
+            >
+              + Add Player
+            </button>
+          </div>
 
-                      <ul
-                        className="dropdown-menu custom-dropdown"
-                        aria-labelledby="dropdownMenuButton2"
-                      >
-                        <li>
-                          <button className="dropdown-item edit-item">
-                            ✏️ Edit
-                          </button>
-                        </li>
-                        <li>
-                          <button className="dropdown-item delete-item">
-                            🗑️ Delete
-                          </button>
-                        </li>
-                      </ul>
-                    </div>
-
-                    {openDropdown === player.id && (
-                      <ul className="dropdown-menu show position-absolute player-dropdown">
-                        <li>
-                          <button
-                            className="dropdown-item"
-                            onClick={() => handleEdit(player)}
-                          >
-                            ✏️ Edit
-                          </button>
-                        </li>
-                        <li>
-                          <button
-                            className="dropdown-item text-danger"
-                            onClick={() => handleDelete(player.id)}
-                          >
-                            🗑️ Delete
-                          </button>
-                        </li>
-                      </ul>
-                    )}
-                  </td>
+          <div className="players-card">
+            <table className="players-table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Player Name</th>
+                  <th>Team Name</th>
+                  <th>Jersey Number</th>
+                  <th>Position</th>
+                  <th>Actions</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+
+              <tbody>
+                {players.map((player) => (
+                  <tr key={player.id}>
+                    <td>{player.id}</td>
+                    <td>{player.name}</td>
+                    <td>{player.team}</td>
+                    <td>{player.jersey}</td>
+                    <td>{player.position}</td>
+
+                    <td>
+                      <div className="dropdown">
+                        <button
+                          className="action-dropdown-btn"
+                          type="button"
+                          id={`dropdownMenuButton-${player.id}`}
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Actions{" "}
+                          <img src={Image.downarrow} alt="downarrow" height={10} />
+                        </button>
+
+                        <ul
+                          className="dropdown-menu custom-dropdown"
+                          aria-labelledby={`dropdownMenuButton-${player.id}`}
+                        >
+                          <li>
+                            <button
+                              className="dropdown-item delete-item text-danger"
+                              onClick={() => handleDelete(player.id)}
+                            >
+                              🗑️ Delete
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
-      </div>
+      </main>
+
+      {/* Modal */}
+      {showModal && (
+        <div className="modal show d-block" tabIndex="-1">
+          <div className="modal-dialog modal-dialog-centered">
+            <div className="modal-content p-3">
+              <div className="modal-header border-0">
+                <h5 className="modal-title fw-bold text-success w-100 text-center">
+                  Add New Player
+                </h5>
+                <button
+                  type="button"
+                  className="btn-close"
+                  onClick={() => setShowModal(false)}
+                ></button>
+              </div>
+
+              <div className="modal-body">
+                <form onSubmit={handleAddPlayer}>
+                  <div className="mb-3">
+                    <label className="form-label">Player Name</label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      value={newPlayer.name}
+                      onChange={(e) =>
+                        setNewPlayer({ ...newPlayer, name: e.target.value })
+                      }
+                      required
+                    />
+                  </div>
+
+                  <div className="mb-3">
+                    <label className="form-label">Team Name</label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      value={newPlayer.team}
+                      onChange={(e) =>
+                        setNewPlayer({ ...newPlayer, team: e.target.value })
+                      }
+                      required
+                    />
+                  </div>
+
+                  <div className="mb-3">
+                    <label className="form-label">Jersey Number</label>
+                    <input
+                      type="number"
+                      className="form-control"
+                      value={newPlayer.jersey}
+                      onChange={(e) =>
+                        setNewPlayer({ ...newPlayer, jersey: e.target.value })
+                      }
+                      required
+                    />
+                  </div>
+
+                  <div className="mb-3">
+                    <label className="form-label">Position</label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      value={newPlayer.position}
+                      onChange={(e) =>
+                        setNewPlayer({ ...newPlayer, position: e.target.value })
+                      }
+                      required
+                    />
+                  </div>
+
+                  <div className="d-flex justify-content-center">
+                    <button type="submit" className="btn btn-success px-4 rounded-pill">
+                      Add Player
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }
