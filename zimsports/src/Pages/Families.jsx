@@ -38,7 +38,7 @@ export default function FamilyPage() {
       <div className="coaches-main mt-5">
         {/* Header */}
         <div className="d-flex justify-content-between align-items-center mb-4">
-          <h3 className="fw-bold">Manage Family Profile</h3>
+          <h3 className="fw-bold text-success">Manage Family Profile</h3>
           <button
             className="btn btn-success px-4 rounded-pill"
             onClick={() => setShowModal(true)}

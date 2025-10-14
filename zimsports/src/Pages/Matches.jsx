@@ -48,7 +48,7 @@ export default function Matches() {
       <main className="matches-main mt-5">
         <div className="container-fluid">
           <div className="d-flex justify-content-between align-items-center mb-4">
-            <h3 className="fw-bold">Manage Matches</h3>
+            <h3 className="fw-bold text-success">Manage Matches</h3>
             <button
               className="btn btn-success px-4 rounded-pill"
               onClick={() => setShowModal(true)}

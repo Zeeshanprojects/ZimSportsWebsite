@@ -18,6 +18,7 @@ import Familydashboard from "./Pages/Familydashboard";
 import Sports from "./Pages/Sports";
 import Families from "./Pages/Families";
 import Tournaments from "./Pages/Tournaments";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -34,7 +35,7 @@ function App() {
         <Preloader /> // ✅ Show preloader while loading
       ) : (
         <Router>
-  
+  <ScrollToTop/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/zimlive" element={<Zimlive />} />

@@ -6,7 +6,7 @@ import "../assets/CSS/Dashboard.css";
 export default function DashboardNavbar() {
   return (
     <>
-      <nav className="navbar navbar-light bg-white shadow-sm py-2 fixed-top">
+      <nav className="navbar navbar-light bg-white shadow-sm py-2 fixed-top ">
         <div className="container-fluid d-flex justify-content-between align-items-center">
           
           {/* ✅ Logo / Brand */}
