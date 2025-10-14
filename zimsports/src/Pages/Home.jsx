@@ -29,35 +29,20 @@ export default function Home() {
                 </h1>
                 <p>
                   Live-stream, capture, and relive every moment of your clubʼs
-                  journey—powered by Zim Sports Technologies.
+                  journey powered by Zim Sports Technologies.
                 </p>
-                <div className="d-flex flex-wrap align-items-center mt-3">
-                  <input
-                    type="email"
-                    className="form-color"
-                    placeholder="Enter Your Email"
-                  />
-                  <button
+                <div className="d-flex flex-wrap align-items-center">
+                 
+                  <Link to="/signup">
+                   <button
                     type="button"
-                    className="btn primary-btn ps-5 pe-5 ms-3 mt-2 mt-sm-0 start-btn"
+                    className="btn primary-btn ps-5 pe-5  mt-sm-0 start-btn"
                   >
                     Start Now
                   </button>
-
-                  <div className="d-flex gap-3 ms-2 mt-2">
-                    <img
-                      src={Image.checked}
-                      alt="checked-icon"
-                      className="checked-icon"
-                    />
-                    <p className="text">Free to join</p>
-                    <img
-                      src={Image.checked}
-                      alt="checked-icon"
-                      className="checked-icon"
-                    />
-                    <p className="text">No credit card required</p>
-                  </div>
+</Link>
+                 
+                 
                 </div>
               </div>
             </div>
@@ -152,7 +137,7 @@ export default function Home() {
                       </button>
 
                       <h1 className="color-white mb-3">
-                        Streamline Your Coaching with Zim Sports
+                        Streamline Coaching with Zim Sports
                       </h1>
                       <p className="text-white pe-4">
                         Zim Sports empowers coaches with a complete suite of

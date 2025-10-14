@@ -36,3 +36,8 @@ background: linear-gradient(135deg, #fcfefc, #f5fcf6, #edf9ee) !important;
     transform: scale(1);
   }
 }
+@media (max-width:576px) {
+ .preloader-logo{
+  height: 50px;
+ } 
+}
