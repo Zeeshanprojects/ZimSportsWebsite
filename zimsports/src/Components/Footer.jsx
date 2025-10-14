@@ -16,26 +16,26 @@ export default function Footer() {
                 style={{ width: "120px" }}
                 className="mb-3"
               />
-              <h4 className="fw-bold">Subscribe newsletter</h4>
+              {/* <h4 className="fw-bold">Subscribe newsletter</h4>
               <p className="color-white">
                 Be the first to receive all latest post in your inbox
-              </p>
+              </p> */}
 
               {/* Email Input */}
-              <div className="input-group mb-2 mt-3">
+              {/* <div className="input-group mb-2 mt-3">
                 <input
                   type="email"
                   className="form-control bg-dark text-white border border-secondary"
                   placeholder="Enter your email"
                 />
-                <button className="btn btn-success ms-3">
+                <button className="btn btn-success ">
                   <img src={Image.sendemailicon} alt="send" style={{ width: '20px' , filter: 'invert(1'}} />
                 </button>
-              </div>
+              </div> */}
 
-              <small>
+              {/* <small>
                 By clicking send link you agree to receive message.
-              </small>
+              </small> */}
 
               <div className="mt-3 ">
                 <a

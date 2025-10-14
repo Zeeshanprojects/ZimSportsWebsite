@@ -9,7 +9,7 @@ export default function DashboardNavbar() {
       {/* Navbar */}
       <nav className="navbar navbar-expand-lg navbar-light bg-white ps-5 pe-5 ">
         {/* Container wrapper */}
-        <div className="container">
+        <div className="container ps-5">
           {/* Toggle button */}
           <button
             data-mdb-collapse-init=""
@@ -27,7 +27,7 @@ export default function DashboardNavbar() {
             {/* Navbar brand */}
 
             <Link className="navbar-brand mt-2 mt-lg-0" to="/">
-              <img src={Image.logo} height={25} alt="MDB Logo" loading="lazy" />
+              <img src={Image.logo} height={30} alt="MDB Logo" loading="lazy" />
             </Link>
             {/* Left links */}
             {/* <ul className="navbar-nav me-auto mb-2 mb-lg-0">
