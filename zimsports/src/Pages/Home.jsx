@@ -108,7 +108,7 @@ export default function Home() {
       </div>
       {/* Features*/}
       <div id="Features" className="section">
-        <div className="container-fluid mt-3 ps-3 pe-3 ps-lg-5 pe-lg-5 py-3 text-white">
+        <div className="container-fluid mt-3  p-0 py-3 text-white">
           <div
             id="featuresCarousel"
             className="carousel slide"
@@ -551,7 +551,7 @@ export default function Home() {
           </div>
         </div>
         <br />
-        <div className="container">
+        <div className="container-fluid ">
           <div className="row">
             {" "}
             <div className="background-color">
@@ -564,7 +564,7 @@ export default function Home() {
                 Get Started with Zim Sports in 3 Simple Steps
               </h1>
               <br />
-              <div className="container ">
+              <div className="container-fluid ">
                 <div className="row">
                   <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center text-white">
                     <div className="icon d-flex align-items-center justify-content-center mb-3 mx-auto">
