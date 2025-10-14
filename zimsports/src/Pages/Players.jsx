@@ -122,8 +122,8 @@ export default function Players() {
       {showModal && (
         <div className="modal show d-block" tabIndex="-1">
           <div className="modal-dialog modal-dialog-centered">
-            <div className="modal-content p-3">
-              <div className="modal-header border-0">
+            <div className="modal-content modal-content shadow-lg border-0 rounded-4 p-3">
+              <div className="modal-header border-0 text-cente">
                 <h5 className="modal-title fw-bold text-success w-100 text-center">
                   Add New Player
                 </h5>

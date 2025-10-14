@@ -134,7 +134,7 @@ export default function Coaches() {
       {showModal && (
         <div className="modal show fade d-block" tabIndex="-1">
           <div className="modal-dialog modal-dialog-centered">
-            <div className="modal-content">
+            <div className="modal-content p-4 shadow-lg border-0 rounded-4">
               <div className="modal-header border-0">
                 <h5 className="modal-title fw-bold text-success w-100 text-center">
                   {isEditing ? "Edit Coach" : "Add New Coach"}
