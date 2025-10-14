@@ -567,8 +567,8 @@ export default function Home() {
               <div className="container-fluid ">
                 <div className="row">
                   <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center text-white">
-                    <div className="icon d-flex align-items-center justify-content-center mb-3 mx-auto">
-                      <img src={Image.icon4} alt="icon" />
+                    <div className="icon d-flex align-items-center justify-content-center mb-3 mx-auto bg">
+                      <img src={Image.icon4} alt="icon"className="icon-color" />
                     </div>
 
                     <h5>Download App</h5>
@@ -588,8 +588,8 @@ export default function Home() {
                   </div>
 
                   <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 color-white text-center ">
-                    <div className="icon d-flex align-items-center justify-content-center mb-3 mx-auto">
-                      <img src={Image.icon5} alt="icon" />
+                    <div className="icon d-flex align-items-center justify-content-center mb-3 mx-auto bg">
+                      <img src={Image.icon5} alt="icon" className="icon-color" />
                     </div>
 
                     <h5>Create Account</h5>
@@ -601,8 +601,8 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 color-white text-center">
-                    <div className="icon d-flex align-items-center justify-content-center mb-3 text-center mx-auto">
-                      <img src={Image.icon6} alt="icon" />
+                    <div className="icon d-flex align-items-center justify-content-center mb-3 text-center mx-auto bg">
+                      <img src={Image.icon6} alt="icon" className="icon-color" />
                     </div>
 
                     <h5 className="color-white">Enjoy the app</h5>

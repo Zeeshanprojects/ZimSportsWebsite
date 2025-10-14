@@ -15,7 +15,13 @@
   position: relative;
   display: inline-block;
 }
-
+.bg{
+  background-color: #3F9E64 !important;
+}
+.icon-color{
+filter: invert(1) !important;
+padding: 6px ;
+}
 .green-card {
   position: absolute;
   top: 0px;
