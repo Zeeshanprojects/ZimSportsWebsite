@@ -295,10 +295,17 @@ body {
   color: #777;
   margin-top: 5px;
 }
+@media (min-width:993px) and (max-width:1024px) {
+  /* Stats grid */
+.stats-grid1,
+.stats-grid2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+  gap: 30px;
+  margin-top: 30px;
+}
+}
 
-/* ===========================================
-   RESPONSIVE STYLES
-=========================================== */
 
 /* Tablets (below 992px) */
 @media (max-width: 992px) {
@@ -371,13 +378,3 @@ body {
   }
 }
 
-/* Hide sidebar and extra nav-links on small screens */
-@media (max-width:992px) {
-  .sidebar,
-  .nav-links {
-    display: none;
-  }
-  .dashboard-main {
-    margin-left: 0;
-  }
-}
