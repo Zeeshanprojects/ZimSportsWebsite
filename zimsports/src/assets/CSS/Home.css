@@ -69,11 +69,7 @@
   transition: transform 1s ease-in-out;
 }
 
-.background-color {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 20px;
-  padding: 2rem;
-}
+
 
 .carousel-control-prev {
     left: 0;
@@ -208,7 +204,7 @@ input {
 .background-color {
   background-color: #181a22 !important;
   padding: 50px;
-  border-radius: 30px;
+
 }
 .smallicon {
   height: 30px;

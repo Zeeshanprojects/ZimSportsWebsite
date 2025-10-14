@@ -32,17 +32,14 @@ export default function Home() {
                   journey powered by Zim Sports Technologies.
                 </p>
                 <div className="d-flex flex-wrap align-items-center">
-                 
                   <Link to="/signup">
-                   <button
-                    type="button"
-                    className="btn primary-btn ps-5 pe-5  mt-sm-0 start-btn"
-                  >
-                    Start Now
-                  </button>
-</Link>
-                 
-                 
+                    <button
+                      type="button"
+                      className="btn primary-btn ps-5 pe-5  mt-sm-0 start-btn"
+                    >
+                      Start Now
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -120,10 +117,10 @@ export default function Home() {
           >
             <div className="carousel-inner">
               {/* ===== Slide 1 ===== */}
-              <div className="carousel-item active">
-                <div className="background-color">
+              <div className="carousel-item active h-100">
+                <div className="background-color h-100">
                   <div className="row align-items-center">
-                    <div className="col-sm-12 col-md-12 col-lg-4 mb-4 mb-md-0 text-center">
+                    <div className="col-sm-12 col-md-12 col-lg-4 mb-4 mb-md-0 text-center h-100">
                       <img
                         src={Image.image1}
                         alt="image1"
@@ -158,10 +155,10 @@ export default function Home() {
               </div>
 
               {/* ===== Slide 2 ===== */}
-              <div className="carousel-item">
+              <div className="carousel-item h-100">
                 <div className="background-color">
                   <div className="row align-items-center">
-                    <div className="col-sm-12 col-md-12  col-lg-4 mb-4 mb-md-0 text-center">
+                    <div className="col-sm-12 col-md-12  col-lg-4 mb-4 mb-md-0 text-center h-100">
                       <img
                         src={Image.image2}
                         alt="image2"
@@ -195,10 +192,10 @@ export default function Home() {
               </div>
 
               {/* ===== Slide 3 ===== */}
-              <div className="carousel-item">
+              <div className="carousel-item h-100">
                 <div className="background-color">
                   <div className="row align-items-center">
-                    <div className="col-sm-12 col-md-12 col-lg-4 mb-4 mb-md-0 text-center">
+                    <div className="col-sm-12 col-md-12 col-lg-4 mb-4 mb-md-0 text-center h-100">
                       <img
                         src={Image.image3}
                         alt="image3"
@@ -789,7 +786,7 @@ export default function Home() {
           </div>
         </div>
       </div>
- 
+
       <Footer />
     </>
   );

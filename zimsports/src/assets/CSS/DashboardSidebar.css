@@ -69,7 +69,6 @@
 .sidebar li svg {
   transition: transform 0.25s ease;
 }
-
 .sidebar li:hover svg {
   transform: scale(1.1);
 }
