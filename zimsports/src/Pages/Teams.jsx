@@ -172,8 +172,8 @@ export default function Teams() {
           <div className="modal show fade d-block" tabIndex="-1">
             <div className="modal-dialog modal-dialog-centered">
               <div className="modal-content p-4 shadow-lg border-0 rounded-4">
-                <div className="modal-header border-0 text-center">
-                  <h5 className="modal-title fw-bold text-success ">
+                <div className="modal-header border-0 position-relative">
+                  <h5 className="modal-title fw-bold text-success w-100 text-center">
                     Add New Team
                   </h5>
                   <button
