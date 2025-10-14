@@ -7,7 +7,7 @@
   background-color: #1f8e4b;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* centers vertically */
+  justify-content: center !important; 
   align-items: center;
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
   z-index: 10;
@@ -19,7 +19,7 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 35px; /* evenly spaced */
+  gap: 25px; /* evenly spaced */
 }
 
 .sidebar li {

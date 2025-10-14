@@ -45,7 +45,7 @@ export default function Matches() {
       <DashboardNavbar />
       <DashboardSidebar />
 
-      <main className="matches-main">
+      <main className="matches-main mt-5">
         <div className="container-fluid">
           <div className="d-flex justify-content-between align-items-center mb-4">
             <h3 className="fw-bold">Manage Matches</h3>

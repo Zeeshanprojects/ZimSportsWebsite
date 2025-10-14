@@ -6,11 +6,11 @@ import "../assets/CSS/Dashboard.css";
 export default function DashboardNavbar() {
   return (
     <>
-      <nav className="navbar navbar-light bg-white shadow-sm px-4 py-2">
+      <nav className="navbar navbar-light bg-white shadow-sm py-2 fixed-top">
         <div className="container-fluid d-flex justify-content-between align-items-center">
           
           {/* ✅ Logo / Brand */}
-          <Link className="navbar-brand d-flex align-items-center ms-lg-5" to="/">
+          <Link className="navbar-brand d-flex align-items-center " to="/">
             <img
               src={Image.logo}
               height={35}

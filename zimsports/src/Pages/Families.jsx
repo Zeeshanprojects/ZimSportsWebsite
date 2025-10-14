@@ -35,7 +35,7 @@ export default function FamilyPage() {
       <DashboardNavbar />
       <DashboardSidebar />
 
-      <div className="coaches-main">
+      <div className="coaches-main mt-5">
         {/* Header */}
         <div className="d-flex justify-content-between align-items-center mb-4">
           <h3 className="fw-bold">Manage Family Profile</h3>

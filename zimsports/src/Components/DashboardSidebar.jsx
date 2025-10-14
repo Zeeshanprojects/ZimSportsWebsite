@@ -94,7 +94,7 @@ export default function DashboardSidebar() {
   return (
     <>
       {/* Sidebar */}
-      <aside className="sidebar">
+      <aside className="sidebar mt-4">
         <ul>
           <li data-tooltip="Home">
             <Link

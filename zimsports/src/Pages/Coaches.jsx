@@ -56,7 +56,7 @@ export default function Coaches() {
       <DashboardNavbar />
       <DashboardSidebar />
 
-      <div className="coaches-main">
+      <div className="coaches-main mt-5">
         <div className="d-flex justify-content-between align-items-center mb-4">
           <h3 className="fw-bold">Manage Coach Profile</h3>
           <button

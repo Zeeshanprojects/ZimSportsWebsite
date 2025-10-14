@@ -7,7 +7,7 @@ import { UserPlus, Trophy, UserCheck, Users, Activity } from "lucide-react";
 
 export default function Dashboard() {
   return (
-    <div className="dashboard-container">
+    <div className="dashboard-container mt-5">
       <DashboardNavbar />
       <DashboardSidebar />
 

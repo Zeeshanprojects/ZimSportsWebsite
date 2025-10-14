@@ -94,7 +94,7 @@ export default function Tournaments() {
     <>
       <DashboardNavbar />
       <DashboardSidebar />
-      <div className="players-main">
+      <div className="players-main mt-5">
         {/* Header */}
         <div className="d-flex justify-content-between align-items-center mb-4">
           <h3 className="fw-bold">Manage Tournaments</h3>
