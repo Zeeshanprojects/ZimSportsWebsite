@@ -6,97 +6,34 @@ import "../assets/CSS/Dashboard.css";
 export default function DashboardNavbar() {
   return (
     <>
-      {/* Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-white ps-5 pe-5 ">
-        {/* Container wrapper */}
-        <div className="container ps-5">
-          {/* Toggle button */}
-          <button
-            data-mdb-collapse-init=""
-            className="navbar-toggler"
-            type="button"
-            data-mdb-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i className="fas fa-bars" />
-          </button>
-          {/* Collapsible wrapper */}
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            {/* Navbar brand */}
-
-            <Link className="navbar-brand mt-2 mt-lg-0" to="/">
-              <img src={Image.logo} height={30} alt="MDB Logo" loading="lazy" />
-            </Link>
-            {/* Left links */}
-            {/* <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link className="nav-link" to="/dashboard">
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/team">
-                  Team
-                </Link>
-              </li>
-               <li className="nav-item">
-                <Link className="nav-link" to="/sports">
-             Sports
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/matches">
-                  Matches
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/players">
-                  Players
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/coaches">
-                  Coaches
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/families">
-                  Families
-                </Link>
-              </li>
-               <li className="nav-item">
-                <Link className="nav-link" to="/tournaments">
-                  Tournments
-                </Link>
-              </li>
-            </ul> */}
-          </div>
-
-          <div className="d-flex align-items-center">
-            {/* Icon */}
-            <a className="text-reset me-3" href="#">
-              <i className="fas fa-shopping-cart" />
-            </a>
-
-            {/* Avatar */}
-
+      <nav className="navbar navbar-light bg-white shadow-sm px-4 py-2">
+        <div className="container-fluid d-flex justify-content-between align-items-center">
+          
+          {/* ✅ Logo / Brand */}
+          <Link className="navbar-brand d-flex align-items-center ms-lg-5" to="/">
             <img
-              // src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-              src={Image.cao}
-              className="rounded-circle"
-              height={50}
-              alt="Black and White Portrait of a Man"
+              src={Image.logo}
+              height={35}
+              alt="Company Logo"
               loading="lazy"
             />
-          </div>
-        </div>
-        {/* Right elements */}
+          </Link>
 
-        {/* Container wrapper */}
+          {/* ✅ Right Side Avatar */}
+          <div className="d-flex align-items-center">
+            <img
+              src={Image.cao}
+              className="rounded-circle border border-light shadow-sm"
+              height={45}
+              width={45}
+              alt="C.A.O"
+              loading="lazy"
+              style={{ objectFit: "cover" }}
+            />
+          </div>
+
+        </div>
       </nav>
-      {/* Navbar */}
     </>
   );
 }
