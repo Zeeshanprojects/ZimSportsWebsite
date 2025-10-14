@@ -172,16 +172,16 @@ export default function Teams() {
           <div className="modal show fade d-block" tabIndex="-1">
             <div className="modal-dialog modal-dialog-centered">
               <div className="modal-content p-4 shadow-lg border-0 rounded-4">
-              <div className="modal-header border-0">
-  <h5 className="modal-title fw-bold text-success w-100 text-center">
-    Add New Team
-  </h5>
-  <button
-    type="button"
-    className="btn-close position-absolute end-0 me-3"
-    onClick={() => setShowModal(false)}
-  ></button>
-</div>
+                <div className="modal-header border-0 text-center">
+                  <h5 className="modal-title fw-bold text-success ">
+                    Add New Team
+                  </h5>
+                  <button
+                    type="button"
+                    className="btn-close"
+                    onClick={() => setShowModal(false)}
+                  ></button>
+                </div>
 
                 <div className="modal-body">
                   <form onSubmit={handleAddTeam}>
