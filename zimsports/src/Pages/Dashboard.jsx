@@ -16,17 +16,26 @@ export default function Dashboard() {
         <div className="dashboard-header">
           <h5>Zim Sports Overview</h5>
 
-          <div className="dashboard-buttons">
-            <button className="btn blue-btn">
-              <span className="plus">+</span> Add Team
-            </button>
-            <button className="btn green-btn">
-              <span className="plus">+</span> Add Match
-            </button>
-            <button className="btn purple-btn">
-              <span className="plus">+</span> Add Player
-            </button>
-          </div>
+         <div className="dashboard-buttons">
+  <Link to="/team">
+    <button className="btn blue-btn">
+      <span className="plus">+</span> Add Team
+    </button>
+  </Link>
+
+  <Link to="/matches">
+    <button className="btn green-btn">
+      <span className="plus">+</span> Add Match
+    </button>
+  </Link>
+
+  <Link to="/players">
+    <button className="btn purple-btn">
+      <span className="plus">+</span> Add Player
+    </button>
+  </Link>
+</div>
+
         </div>
 
         <h2>Hello, Admin David Jumani!</h2>
