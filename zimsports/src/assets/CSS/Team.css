@@ -166,3 +166,80 @@
   color: #e74c3c;
   font-weight: 500;
 }
+/* ===== Responsive Table Design ===== */
+@media (max-width: 992px) {
+  .team-card {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .team-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .team-table thead {
+    display: none; /* Hide table headers */
+  }
+
+  .team-table tbody,
+  .team-table tr,
+  .team-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .team-table tr {
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+  }
+
+  .team-table td {
+    text-align: left;
+    padding: 10px 15px;
+    border: none;
+    position: relative;
+  }
+
+  /* Label each cell with its heading using data-label */
+  .team-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #999;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+
+  /* Team cell alignment */
+  .team-cell {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .team-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Make buttons full-width for mobile comfort */
+  .action-dropdown-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Reduce main padding */
+  .team-main {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
