@@ -58,7 +58,7 @@ export default function Coaches() {
 
       <div className="coaches-main mt-5">
         <div className="d-flex justify-content-between align-items-center mb-4">
-          <h3 className="fw-bold text-success">Manage Coach Profile</h3>
+          <h3 className="fw-bold">Manage Coach Profile</h3>
           <button
             className="btn btn-success px-4 rounded-pill"
             onClick={() => setShowModal(true)}

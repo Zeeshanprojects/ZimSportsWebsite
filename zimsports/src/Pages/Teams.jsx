@@ -91,7 +91,7 @@ export default function Teams() {
       <main className="team-main mt-5">
         <div className="container-fluid">
           <div className="d-flex justify-content-between align-items-center mb-4">
-            <h3 className="fw-bold text-success">Manage Teams</h3>
+            <h3 className="fw-bold">Manage Teams</h3>
             <button
               className="btn btn-success px-4 rounded-pill"
               onClick={() => setShowModal(true)}

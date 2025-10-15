@@ -97,7 +97,7 @@ export default function Tournaments() {
       <div className="players-main mt-5">
         {/* Header */}
         <div className="d-flex justify-content-between align-items-center mb-4">
-          <h3 className="fw-bold text-success">Manage Tournaments</h3>
+          <h3 className="fw-bold ">Manage Tournaments</h3>
           <button
             className="btn btn-success px-4 rounded-pill"
             onClick={() => setShowModal(true)}
