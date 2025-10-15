@@ -140,3 +140,103 @@
 .action-btn:hover {
   background-color: #e0e3e7;
 }
+/* ===== Responsive Matches Table Design ===== */
+@media (max-width: 992px) {
+  .matches-main {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .matches-card {
+    overflow-x: hidden;
+    border-radius: 12px;
+    padding: 10px;
+    background: #fff;
+  }
+
+  .matches-table {
+    display: block;
+    width: 100%;
+    border: none;
+  }
+
+  .matches-table thead {
+    display: none; /* Hide table headers */
+  }
+
+  .matches-table tbody,
+  .matches-table tr,
+  .matches-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .matches-table tr {
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    background: #fff;
+    padding: 15px 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+
+  .matches-table td {
+    padding: 10px 0;
+    border: none;
+    position: relative;
+  }
+
+  /* Display column titles before each value */
+  .matches-table td::before {
+    content: attr(data-label);
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #888;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  /* Match info layout fix */
+  .match-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .team-logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  .match-name {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .match-type {
+    font-size: 12px;
+    color: #8a8f9c;
+  }
+
+  .date-info strong {
+    font-size: 13px;
+  }
+
+  .date-info p {
+    font-size: 12px;
+  }
+
+  .status-badge {
+    font-size: 11px;
+    padding: 5px 8px;
+  }
+
+  .action-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    padding: 7px 10px;
+    margin-top: 8px;
+  }
+}

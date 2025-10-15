@@ -71,3 +71,82 @@
 .coach-dropdown .dropdown-item:hover {
   background-color: #f2f4f7;
 }
+/* ===== Responsive Coaches Table Design ===== */
+@media (max-width: 992px) {
+  .coaches-main {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .coaches-card {
+    overflow-x: hidden;
+    border-radius: 12px;
+    padding: 10px;
+    background: #fff;
+  }
+
+  .coaches-table {
+    display: block;
+    width: 100%;
+    border: none;
+  }
+
+  .coaches-table thead {
+    display: none; /* Hide table headers */
+  }
+
+  .coaches-table tbody,
+  .coaches-table tr,
+  .coaches-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .coaches-table tr {
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    background: #fff;
+    padding: 15px 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .coaches-table tr:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  }
+
+  .coaches-table td {
+    padding: 10px 0;
+    border: none;
+    position: relative;
+  }
+
+  /* Display column labels before each cell value */
+  .coaches-table td::before {
+    content: attr(data-label);
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #888;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  /* Action button full-width */
+  .action-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    padding: 8px 10px;
+    margin-top: 8px;
+    border-radius: 25px;
+  }
+
+  /* Dropdown inside card */
+  .coach-dropdown {
+    min-width: 100%;
+    border-radius: 8px;
+  }
+}
