@@ -7,10 +7,34 @@ import DashboardSidebar from "../Components/DashboardSidebar";
 
 export default function FamilyPage() {
   const [family, setFamily] = useState([
-    { id: 1, Fname: "Michael Johnson", Mname: "Tessa", Cname: "Chris", Sport: "Volley Ball" },
-    { id: 2, Fname: "Ahmed Raza", Mname: "Bella", Cname: "Tim David", Sport: "Water Polo" },
-    { id: 3, Fname: "Robert Green", Mname: "Elisa Robert", Cname: "Southee", Sport: "Basket Ball" },
-    { id: 4, Fname: "John Smith", Mname: "Machnorin", Cname: "Brock Lesner", Sport: "Volley Ball" },
+    {
+      id: 1,
+      Fname: "Michael Johnson",
+      Mname: "Tessa",
+      Cname: "Chris",
+      Sport: "Volley Ball",
+    },
+    {
+      id: 2,
+      Fname: "Ahmed Raza",
+      Mname: "Bella",
+      Cname: "Tim David",
+      Sport: "Water Polo",
+    },
+    {
+      id: 3,
+      Fname: "Robert Green",
+      Mname: "Elisa Robert",
+      Cname: "Southee",
+      Sport: "Basket Ball",
+    },
+    {
+      id: 4,
+      Fname: "John Smith",
+      Mname: "Machnorin",
+      Cname: "Brock Lesner",
+      Sport: "Volley Ball",
+    },
   ]);
 
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -137,7 +161,9 @@ export default function FamilyPage() {
               <div className="modal-body px-4 pb-4">
                 <form>
                   <div className="mb-3">
-                    <label className="form-label fw-semibold">Father Name</label>
+                    <label className="form-label fw-semibold">
+                      Father Name
+                    </label>
                     <input
                       type="text"
                       className="form-control"
@@ -146,7 +172,9 @@ export default function FamilyPage() {
                   </div>
 
                   <div className="mb-3">
-                    <label className="form-label fw-semibold">Mother Name</label>
+                    <label className="form-label fw-semibold">
+                      Mother Name
+                    </label>
                     <input
                       type="text"
                       className="form-control"

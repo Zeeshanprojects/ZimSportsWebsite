@@ -79,7 +79,13 @@ export default function Teams() {
 
     setTeams([...teams, newEntry]);
     setShowModal(false);
-    setNewTeam({ name: "", sport: "", members: "", logo: "", status: "Active" });
+    setNewTeam({
+      name: "",
+      sport: "",
+      members: "",
+      logo: "",
+      status: "Active",
+    });
     setPreview(null);
   };
 
@@ -187,7 +193,9 @@ export default function Teams() {
                   <form onSubmit={handleAddTeam}>
                     {/* Image Upload */}
                     <div className="mb-3 text-start">
-                      <label className="form-label fw-semibold">Team Logo</label>
+                      <label className="form-label fw-semibold">
+                        Team Logo
+                      </label>
                       <div className="d-flex flex-column align-items-">
                         {preview ? (
                           <img
@@ -247,9 +255,7 @@ export default function Teams() {
 
                     {/* Members */}
                     <div className="mb-3">
-                      <label className="form-label ">
-                        Number of Members
-                      </label>
+                      <label className="form-label ">Number of Members</label>
                       <input
                         type="number"
                         className="form-control"

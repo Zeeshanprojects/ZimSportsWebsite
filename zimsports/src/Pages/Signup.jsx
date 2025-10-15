@@ -9,8 +9,6 @@ export default function Signup() {
   return (
     <div className="container-fluid signup-container">
       <div className="row h-100">
-     
-
         {/* Right Side */}
         <div className="col-lg-12 col-md-12 col-sm-12 signup-right  ">
           <div className="loginpage-logo-container">

@@ -21,16 +21,18 @@ export default function Home() {
             {/* Text Section */}
             <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-4 mb-lg-0">
               <div className="text-content">
-             <h1>
-  <strong>
-    Zim Sports: Experience Every Single Game,
-    <span> Anywhere, Anytime</span>
-  </strong>
-</h1>
-<p>
-  Live-stream, capture, and relive every moment of your clubʼs journey powered by Zim Sports Technologies.  
-  Stay connected with your team’s highlights, stats, and unforgettable performances — all in one place.
-</p>
+                <h1>
+                  <strong>
+                    Zim Sports: Experience Every Single Game,
+                    <span> Anywhere, Anytime</span>
+                  </strong>
+                </h1>
+                <p>
+                  Live-stream, capture, and relive every moment of your clubʼs
+                  journey powered by Zim Sports Technologies. Stay connected
+                  with your team’s highlights, stats, and unforgettable
+                  performances — all in one place.
+                </p>
 
                 <div className="d-flex flex-wrap align-items-center">
                   <Link to="/signup">
@@ -569,7 +571,11 @@ export default function Home() {
                 <div className="row">
                   <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center text-white">
                     <div className="icon d-flex align-items-center justify-content-center mb-3 mx-auto bg">
-                      <img src={Image.icon4} alt="icon"className="icon-color" />
+                      <img
+                        src={Image.icon4}
+                        alt="icon"
+                        className="icon-color"
+                      />
                     </div>
 
                     <h5>Download App</h5>
@@ -590,7 +596,11 @@ export default function Home() {
 
                   <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 color-white text-center ">
                     <div className="icon d-flex align-items-center justify-content-center mb-3 mx-auto bg">
-                      <img src={Image.icon5} alt="icon" className="icon-color" />
+                      <img
+                        src={Image.icon5}
+                        alt="icon"
+                        className="icon-color"
+                      />
                     </div>
 
                     <h5>Create Account</h5>
@@ -603,7 +613,11 @@ export default function Home() {
                   </div>
                   <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 color-white text-center">
                     <div className="icon d-flex align-items-center justify-content-center mb-3 text-center mx-auto bg">
-                      <img src={Image.icon6} alt="icon" className="icon-color" />
+                      <img
+                        src={Image.icon6}
+                        alt="icon"
+                        className="icon-color"
+                      />
                     </div>
 
                     <h5 className="color-white">Enjoy the app</h5>

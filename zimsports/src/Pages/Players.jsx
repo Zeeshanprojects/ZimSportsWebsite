@@ -7,9 +7,27 @@ import DashboardSidebar from "../Components/DashboardSidebar";
 
 export default function Players() {
   const [players, setPlayers] = useState([
-    { id: 1, name: "John Smith", team: "Eagles", jersey: 10, position: "Forward" },
-    { id: 2, name: "Ali Khan", team: "Warriors", jersey: 7, position: "Defender" },
-    { id: 3, name: "David Lee", team: "Titans", jersey: 4, position: "Goalkeeper" },
+    {
+      id: 1,
+      name: "John Smith",
+      team: "Eagles",
+      jersey: 10,
+      position: "Forward",
+    },
+    {
+      id: 2,
+      name: "Ali Khan",
+      team: "Warriors",
+      jersey: 7,
+      position: "Defender",
+    },
+    {
+      id: 3,
+      name: "David Lee",
+      team: "Titans",
+      jersey: 4,
+      position: "Goalkeeper",
+    },
   ]);
 
   const [showModal, setShowModal] = useState(false);
@@ -92,7 +110,11 @@ export default function Players() {
                           aria-expanded="false"
                         >
                           Actions{" "}
-                          <img src={Image.downarrow} alt="downarrow" height={10} />
+                          <img
+                            src={Image.downarrow}
+                            alt="downarrow"
+                            height={10}
+                          />
                         </button>
 
                         <ul
@@ -189,7 +211,10 @@ export default function Players() {
                   </div>
 
                   <div className="d-flex justify-content-center">
-                    <button type="submit" className="btn btn-success px-4 rounded-pill">
+                    <button
+                      type="submit"
+                      className="btn btn-success px-4 rounded-pill"
+                    >
                       Add Player
                     </button>
                   </div>

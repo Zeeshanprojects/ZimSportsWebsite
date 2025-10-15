@@ -4,9 +4,9 @@ import Navbar2 from "../Components/Navbar2";
 import Image from "../assets/Images/image";
 
 export default function Playersdashboard() {
-  useEffect(()=>{
-    document.title="Player-Dashboard | Zim Sports"
-  })
+  useEffect(() => {
+    document.title = "Player-Dashboard | Zim Sports";
+  });
   const matches = [
     {
       id: 10,

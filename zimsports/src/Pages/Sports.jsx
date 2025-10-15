@@ -7,11 +7,41 @@ import DashboardSidebar from "../Components/DashboardSidebar";
 
 export default function Sports() {
   const [sports, setSports] = useState([
-    { id: 1, name: "Volleyball", category: "Indoor", teamType: "6 Players", coach: "Michael Johnson" },
-    { id: 2, name: "Beach Volleyball", category: "Outdoor", teamType: "2 Players", coach: "Ali Khan" },
-    { id: 3, name: "Water Polo", category: "Aquatic", teamType: "7 Players", coach: "David Lee" },
-    { id: 4, name: "Basketball", category: "Indoor", teamType: "5 Players", coach: "John Smith" },
-    { id: 5, name: "Football", category: "Outdoor", teamType: "11 Players", coach: "Robert Green" },
+    {
+      id: 1,
+      name: "Volleyball",
+      category: "Indoor",
+      teamType: "6 Players",
+      coach: "Michael Johnson",
+    },
+    {
+      id: 2,
+      name: "Beach Volleyball",
+      category: "Outdoor",
+      teamType: "2 Players",
+      coach: "Ali Khan",
+    },
+    {
+      id: 3,
+      name: "Water Polo",
+      category: "Aquatic",
+      teamType: "7 Players",
+      coach: "David Lee",
+    },
+    {
+      id: 4,
+      name: "Basketball",
+      category: "Indoor",
+      teamType: "5 Players",
+      coach: "John Smith",
+    },
+    {
+      id: 5,
+      name: "Football",
+      category: "Outdoor",
+      teamType: "11 Players",
+      coach: "Robert Green",
+    },
   ]);
 
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -38,7 +68,9 @@ export default function Sports() {
         {/* Header */}
         <div className="d-flex justify-content-between align-items-center mb-4">
           <h3 className="fw-bold">Manage Sports</h3>
-          <button className="btn btn-success px-4 rounded-pill">+ Add Sport</button>
+          <button className="btn btn-success px-4 rounded-pill">
+            + Add Sport
+          </button>
         </div>
 
         {/* Sports Table */}

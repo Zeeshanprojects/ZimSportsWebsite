@@ -3,9 +3,9 @@ import Navbar2 from "../Components/Navbar2";
 import Image from "../assets/Images/image";
 
 export default function Familydashboard() {
-    useEffect(()=>{
-      document.title="Family-Dashboard | Zim Sports"
-    })
+  useEffect(() => {
+    document.title = "Family-Dashboard | Zim Sports";
+  });
   // ✅ Dashboard summary cards
   const stats = [
     {
@@ -71,11 +71,12 @@ export default function Familydashboard() {
   return (
     <>
       <Navbar2 />
-    
 
       <div className="container-fluid p-5">
         <h2>Hello, Family Member!</h2>
-        <p>Here’s an overview of your family’s linked players and activities.</p>
+        <p>
+          Here’s an overview of your family’s linked players and activities.
+        </p>
 
         <div className="stats-grid1">
           {stats.map((card, i) => (
@@ -86,108 +87,110 @@ export default function Familydashboard() {
             </div>
           ))}
         </div>
-         <main className="mt-5">
-        <div className="container-fluid">
-          <div className="d-flex justify-content-between align-items-center mb-4">
-            <h3>Family Match Records</h3>
-            <button className="btn btn-success px-4 rounded-pill">
-              + Add Match
-            </button>
-          </div>
+        <main className="mt-5">
+          <div className="container-fluid">
+            <div className="d-flex justify-content-between align-items-center mb-4">
+              <h3>Family Match Records</h3>
+              <button className="btn btn-success px-4 rounded-pill">
+                + Add Match
+              </button>
+            </div>
 
-          {/* ✅ Table */}
-          <div className="matches-card">
-            <table className="matches-table">
-              <thead>
-                <tr>
-                  <th>ID</th>
-                  <th>Match</th>
-                  <th>Date & Time</th>
-                  <th>Venue</th>
-                  <th>Score</th>
-                  <th>Status</th>
-                  <th>Actions</th>
-                </tr>
-              </thead>
-
-              <tbody>
-                {matches.map((m) => (
-                  <tr key={m.id}>
-                    <td className="id">{m.id}</td>
-
-                    <td className="match-cell">
-                      <div className="match-info">
-                        <span className="match-name">{m.match}</span>
-                        <span className="match-type">{m.type}</span>
-                      </div>
-                    </td>
-
-                    <td>
-                      <div className="date-info">
-                        <strong>{m.date}</strong>
-                        <p>{m.time}</p>
-                      </div>
-                    </td>
-
-                    <td>{m.venue}</td>
-                    <td>{m.score}</td>
-
-                    <td>
-                      <span
-                        className={`status-badge ${
-                          m.status === "Completed"
-                            ? "completed"
-                            : m.status === "Win"
-                            ? "win"
-                            : m.status === "Loss"
-                            ? "loss"
-                            : "scheduled"
-                        }`}
-                      >
-                        {m.status}
-                      </span>
-                    </td>
-
-                    <td>
-                      <div className="dropdown">
-                        <button
-                          className="action-dropdown-btn"
-                          type="button"
-                          id="dropdownMenuButton2"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          Actions{" "}
-                          <img src={Image.downarrow} alt="downarrow" height={10} />
-                        </button>
-
-                        <ul
-                          className="dropdown-menu custom-dropdown"
-                          aria-labelledby="dropdownMenuButton2"
-                        >
-                          <li>
-                            <button className="dropdown-item edit-item">
-                              ✏️ Edit
-                            </button>
-                          </li>
-                          <li>
-                            <button className="dropdown-item delete-item">
-                              🗑️ Delete
-                            </button>
-                          </li>
-                        </ul>
-                      </div>
-                    </td>
+            {/* ✅ Table */}
+            <div className="matches-card">
+              <table className="matches-table">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Match</th>
+                    <th>Date & Time</th>
+                    <th>Venue</th>
+                    <th>Score</th>
+                    <th>Status</th>
+                    <th>Actions</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </main>
-      </div>
+                </thead>
 
-     
+                <tbody>
+                  {matches.map((m) => (
+                    <tr key={m.id}>
+                      <td className="id">{m.id}</td>
+
+                      <td className="match-cell">
+                        <div className="match-info">
+                          <span className="match-name">{m.match}</span>
+                          <span className="match-type">{m.type}</span>
+                        </div>
+                      </td>
+
+                      <td>
+                        <div className="date-info">
+                          <strong>{m.date}</strong>
+                          <p>{m.time}</p>
+                        </div>
+                      </td>
+
+                      <td>{m.venue}</td>
+                      <td>{m.score}</td>
+
+                      <td>
+                        <span
+                          className={`status-badge ${
+                            m.status === "Completed"
+                              ? "completed"
+                              : m.status === "Win"
+                              ? "win"
+                              : m.status === "Loss"
+                              ? "loss"
+                              : "scheduled"
+                          }`}
+                        >
+                          {m.status}
+                        </span>
+                      </td>
+
+                      <td>
+                        <div className="dropdown">
+                          <button
+                            className="action-dropdown-btn"
+                            type="button"
+                            id="dropdownMenuButton2"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Actions{" "}
+                            <img
+                              src={Image.downarrow}
+                              alt="downarrow"
+                              height={10}
+                            />
+                          </button>
+
+                          <ul
+                            className="dropdown-menu custom-dropdown"
+                            aria-labelledby="dropdownMenuButton2"
+                          >
+                            <li>
+                              <button className="dropdown-item edit-item">
+                                ✏️ Edit
+                              </button>
+                            </li>
+                            <li>
+                              <button className="dropdown-item delete-item">
+                                🗑️ Delete
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </main>
+      </div>
     </>
   );
 }

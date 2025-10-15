@@ -195,13 +195,18 @@ export default function Tournaments() {
               <div className="modal-body">
                 <form onSubmit={handleAddOrUpdateTournament}>
                   <div className="mb-3">
-                    <label className="form-label fw-bold">Tournament Name</label>
+                    <label className="form-label fw-bold">
+                      Tournament Name
+                    </label>
                     <input
                       type="text"
                       className="form-control"
                       value={newTournament.name}
                       onChange={(e) =>
-                        setNewTournament({ ...newTournament, name: e.target.value })
+                        setNewTournament({
+                          ...newTournament,
+                          name: e.target.value,
+                        })
                       }
                       required
                     />
@@ -214,7 +219,10 @@ export default function Tournaments() {
                       className="form-control"
                       value={newTournament.category}
                       onChange={(e) =>
-                        setNewTournament({ ...newTournament, category: e.target.value })
+                        setNewTournament({
+                          ...newTournament,
+                          category: e.target.value,
+                        })
                       }
                       required
                     />
@@ -227,7 +235,10 @@ export default function Tournaments() {
                       className="form-control"
                       value={newTournament.sport}
                       onChange={(e) =>
-                        setNewTournament({ ...newTournament, sport: e.target.value })
+                        setNewTournament({
+                          ...newTournament,
+                          sport: e.target.value,
+                        })
                       }
                       required
                     />
@@ -240,7 +251,10 @@ export default function Tournaments() {
                       className="form-control"
                       value={newTournament.teams}
                       onChange={(e) =>
-                        setNewTournament({ ...newTournament, teams: e.target.value })
+                        setNewTournament({
+                          ...newTournament,
+                          teams: e.target.value,
+                        })
                       }
                       required
                     />
@@ -254,7 +268,10 @@ export default function Tournaments() {
                         className="form-control"
                         value={newTournament.startDate}
                         onChange={(e) =>
-                          setNewTournament({ ...newTournament, startDate: e.target.value })
+                          setNewTournament({
+                            ...newTournament,
+                            startDate: e.target.value,
+                          })
                         }
                         required
                       />
@@ -266,7 +283,10 @@ export default function Tournaments() {
                         className="form-control"
                         value={newTournament.endDate}
                         onChange={(e) =>
-                          setNewTournament({ ...newTournament, endDate: e.target.value })
+                          setNewTournament({
+                            ...newTournament,
+                            endDate: e.target.value,
+                          })
                         }
                         required
                       />
@@ -274,7 +294,10 @@ export default function Tournaments() {
                   </div>
 
                   <div className="text-center">
-                    <button type="submit" className="btn btn-success px-4 rounded-pill">
+                    <button
+                      type="submit"
+                      className="btn btn-success px-4 rounded-pill"
+                    >
                       {isEditing ? "Update Tournament" : "Add Tournament"}
                     </button>
                   </div>

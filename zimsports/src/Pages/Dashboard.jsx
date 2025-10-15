@@ -6,9 +6,9 @@ import DashboardSidebar from "../Components/DashboardSidebar";
 import { UserPlus, Trophy, UserCheck, Users, Activity } from "lucide-react";
 
 export default function Dashboard() {
-  useEffect(()=>{
-    document.title="Admin-Dashboard - Zim Sports"
-  })
+  useEffect(() => {
+    document.title = "Admin-Dashboard - Zim Sports";
+  });
   return (
     <div className="dashboard-container mt-5">
       <DashboardNavbar />
@@ -19,26 +19,25 @@ export default function Dashboard() {
         <div className="dashboard-header">
           <h5>Zim Sports Overview</h5>
 
-         <div className="dashboard-buttons">
-  <Link to="/team">
-    <button className="btn blue-btn">
-      <span className="plus">+</span> Add Team
-    </button>
-  </Link>
+          <div className="dashboard-buttons">
+            <Link to="/team">
+              <button className="btn blue-btn">
+                <span className="plus">+</span> Add Team
+              </button>
+            </Link>
 
-  <Link to="/matches">
-    <button className="btn green-btn">
-      <span className="plus">+</span> Add Match
-    </button>
-  </Link>
+            <Link to="/matches">
+              <button className="btn green-btn">
+                <span className="plus">+</span> Add Match
+              </button>
+            </Link>
 
-  <Link to="/players">
-    <button className="btn purple-btn">
-      <span className="plus">+</span> Add Player
-    </button>
-  </Link>
-</div>
-
+            <Link to="/players">
+              <button className="btn purple-btn">
+                <span className="plus">+</span> Add Player
+              </button>
+            </Link>
+          </div>
         </div>
 
         <h2>Hello, Admin David Jumani!</h2>

@@ -6,7 +6,6 @@ import DashboardNavbar from "../Components/DashboardNavbar";
 import DashboardSidebar from "../Components/DashboardSidebar";
 
 export default function Coaches() {
-
   const [coaches, setCoaches] = useState([
     { id: 1, name: "Michael Johnson", team: "Eagles" },
     { id: 2, name: "Ahmed Raza", team: "Warriors" },
