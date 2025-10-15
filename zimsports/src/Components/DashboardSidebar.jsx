@@ -18,7 +18,7 @@ export default function DashboardSidebar() {
 
       match: "Set 18 Black vs SoCal",
       type: "Water Polo",
-      date: "Jul 25, 2025",
+      date: "Jul 25, 2225",
       time: "10:00 AM",
       venue: "TBD",
       score: "N/A",
@@ -29,7 +29,7 @@ export default function DashboardSidebar() {
 
       match: "Set 18 Black vs Bulldogs",
       type: "Water Polo",
-      date: "Jul 24, 2025",
+      date: "Jul 24, 2225",
       time: "03:00 PM",
       venue: "TBD",
       score: "N/A",
@@ -40,7 +40,7 @@ export default function DashboardSidebar() {
 
       match: "T Street 16/3 Nick vs HO'OKAHI A.C. (Game 3)",
       type: "Volleyball",
-      date: "Jun 29, 2025",
+      date: "Jun 29, 2225",
       time: "03:00 PM",
       venue: "TBD",
       score: "N/A",
@@ -51,7 +51,7 @@ export default function DashboardSidebar() {
 
       match: "T Street 16/3 Nick vs Opponent Game 2",
       type: "Volleyball",
-      date: "Jun 29, 2025",
+      date: "Jun 29, 2225",
       time: "02:00 PM",
       venue: "TBD",
       score: "N/A",
@@ -62,7 +62,7 @@ export default function DashboardSidebar() {
 
       match: "T Street 16/3 Nick vs Sunshine 16 Valley",
       type: "Volleyball",
-      date: "Jun 29, 2025",
+      date: "Jun 29, 2225",
       time: "12:00 PM",
       venue: "TBD",
       score: "N/A",
@@ -73,7 +73,7 @@ export default function DashboardSidebar() {
 
       match: "T Street 16/3 Nick vs Prime 16 Adidas",
       type: "Volleyball",
-      date: "Jun 29, 2025",
+      date: "Jun 29, 2225",
       time: "2:00 PM",
       venue: "TBD",
       score: "N/A",
@@ -84,7 +84,7 @@ export default function DashboardSidebar() {
 
       match: "T Street 16/3 Nick vs  CV Starlings 16",
       type: "Volleyball",
-      date: "Jun 29, 2025",
+      date: "Jun 29, 2225",
       time: "4:00 PM",
       venue: "TBD",
       score: "N/A",
@@ -101,7 +101,7 @@ export default function DashboardSidebar() {
               to="/dashboard"
               style={{ color: "inherit", textDecoration: "none" }}
             >
-              <Home size={20} />
+              <Home size={22} />
             </Link>
           </li>
           <li data-tooltip="Teams">
@@ -109,7 +109,7 @@ export default function DashboardSidebar() {
               to="/team"
               style={{ color: "inherit", textDecoration: "none" }}
             >
-              <Users size={20} />
+              <Users size={22} />
             </Link>
           </li>
           <li data-tooltip="Matches">
@@ -117,7 +117,7 @@ export default function DashboardSidebar() {
               to="/matches"
               style={{ color: "inherit", textDecoration: "none" }}
             >
-              <Trophy size={20} />
+              <Trophy size={22} />
             </Link>
           </li>
           <li data-tooltip="Players">
@@ -125,7 +125,7 @@ export default function DashboardSidebar() {
               to="/players"
               style={{ color: "inherit", textDecoration: "none" }}
             >
-              <User size={20} />
+              <User size={22} />
             </Link>
           </li>
           <li data-tooltip="Coaches">
@@ -133,7 +133,7 @@ export default function DashboardSidebar() {
               to="/coaches"
               style={{ color: "inherit", textDecoration: "none" }}
             >
-              <ClipboardCheck size={20} />
+              <ClipboardCheck size={22} />
             </Link>
           </li>
           <li data-tooltip="Families">
@@ -141,7 +141,7 @@ export default function DashboardSidebar() {
               to="/families"
               style={{ color: "white", textDecoration: "none" }}
             >
-              <HeartHandshake size={20} />
+              <HeartHandshake size={22} />
             </Link>
           </li>
           <li data-tooltip="Tournament">
@@ -149,7 +149,7 @@ export default function DashboardSidebar() {
               to="/tournaments"
               style={{ color: "white", textDecoration: "none" }}
             >
-              <Medal size={20} />
+              <Medal size={22} />
             </Link>
           </li>
         </ul>
