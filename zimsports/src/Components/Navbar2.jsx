@@ -1,87 +1,39 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import Image from '../assets/Images/image'
+import React from "react";
+import "../assets/CSS/Navbar2.css"
+import { Link } from "react-router-dom";
+import Image from "../assets/Images/image";
+
 export default function Navbar2() {
   return (
-<>
-    {/* Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-white p-3 ">
-        {/* Container wrapper */}
-        <div className="container-fluid">
-          {/* Toggle button */}
-          <button
-            data-mdb-collapse-init=""
-            className="navbar-toggler"
-            type="button"
-            data-mdb-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i className="fas fa-bars" />
-          </button>
-          {/* Collapsible wrapper */}
-         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      
-
-            <Link className="navbar-brand mt-2 mt-lg-0" to="/">
-              <img src={Image.logo} height={35} alt="MDB Logo" loading="lazy" />
-            </Link>
-           
-            {/* <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link className="nav-link" to="#">
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="#">
-                  Team
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="#">
-                  Matches
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="#">
-                  Players
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="#">
-                  Coaches
-                </Link>
-              </li>
-            </ul> */}
-    
-          </div>
-          {/* Collapsible wrapper */}
-  
-          <div className="d-flex align-items-center">
-            {/* Icon */}
-            <a className="text-reset me-3" href="#">
-              <i className="fas fa-shopping-cart" />
-            </a>
-
-            {/* Avatar */}
-
+    <>
+      <nav className="navbar navbar-light bg-white shadow-sm py-2 fixed-top ">
+        <div className="container-fluid d-flex justify-content-between align-items-center">
+          
+          {/* ✅ Logo / Brand */}
+          <Link className="navbar-brand d-flex align-items-center " to="/">
             <img
-              src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-            //   src={Image.cao}
-              className="rounded-circle"
-              height={50}
-              alt="Black and White Portrait of a Man"
+              src={Image.logo}
+              height={35}
+              alt="Company Logo"
               loading="lazy"
             />
-          </div>
-        </div>
-        {/* Right elements */}
+          </Link>
 
-        {/* Container wrapper */}
+          {/* ✅ Right Side Avatar */}
+          <div className="d-flex align-items-center">
+            <img
+              src="https://randomuser.me/api/portraits/men/32.jpg" 
+              className="rounded-circle border border-light shadow-sm"
+              height={45}
+              width={45}
+              alt="player"
+              loading="lazy"
+              style={{ objectFit: "cover" }}
+            />
+          </div>
+
+        </div>
       </nav>
-      {/* Navbar */}
-</>
-  )
+    </>
+  );
 }

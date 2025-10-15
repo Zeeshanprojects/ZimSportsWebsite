@@ -91,7 +91,7 @@ export default function Playersdashboard() {
     <>
       <Navbar2 />
 
-      <div className="containe-fluid p-5">
+      <div className="containe-fluid p-5 mt-5">
         <h2>Hello, Player!</h2>
         <p>Your comprehensive sports management overview awaits.</p>
         <div className="stats-grid1">

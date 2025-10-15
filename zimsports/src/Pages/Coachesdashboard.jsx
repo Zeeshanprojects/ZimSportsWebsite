@@ -84,7 +84,7 @@ export default function Coachesdashboard() {
     <>
       <Navbar2 />
 
-      <div className="container-fluid p-5">
+      <div className="container-fluid p-5 mt-5">
         <h2>Hello, Coach!</h2>
         <p>Here’s a quick overview of your team’s performance and schedule.</p>
 

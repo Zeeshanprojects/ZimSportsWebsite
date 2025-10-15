@@ -1,0 +1,18 @@
+
+.text-reset i,
+.dropdown-toggle i {
+  color: #fff;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.text-reset:hover i {
+  transform: scale(1.2);
+  color: #3F9E64 !important;
+}
+
+/* Avatar */
+.dropdown img {
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+}

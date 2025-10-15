@@ -72,7 +72,7 @@ export default function Familydashboard() {
     <>
       <Navbar2 />
 
-      <div className="container-fluid p-5">
+      <div className="container-fluid p-5 mt-5">
         <h2>Hello, Family Member!</h2>
         <p>
           Here’s an overview of your family’s linked players and activities.
