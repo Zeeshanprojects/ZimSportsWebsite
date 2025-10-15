@@ -21,16 +21,17 @@ export default function Home() {
             {/* Text Section */}
             <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-4 mb-lg-0">
               <div className="text-content">
-                <h1>
-                  <strong>
-                    Zim Sports: Experience Every Single Game,
-                    <span> Anywhere, Anytime</span>
-                  </strong>
-                </h1>
-                <p>
-                  Live-stream, capture, and relive every moment of your clubʼs
-                  journey powered by Zim Sports Technologies.
-                </p>
+             <h1>
+  <strong>
+    Zim Sports: Experience Every Single Game,
+    <span> Anywhere, Anytime</span>
+  </strong>
+</h1>
+<p>
+  Live-stream, capture, and relive every moment of your clubʼs journey powered by Zim Sports Technologies.  
+  Stay connected with your team’s highlights, stats, and unforgettable performances — all in one place.
+</p>
+
                 <div className="d-flex flex-wrap align-items-center">
                   <Link to="/signup">
                     <button

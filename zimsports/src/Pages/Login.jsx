@@ -112,7 +112,7 @@ export default function Login() {
                 <button
                   type="button"
                   onClick={() => setShowPassword((s) => !s)}
-                  className="btn password-toggle"
+                  className=" password-toggle"
                   aria-label={showPassword ? "Hide password" : "Show password"}
                   style={{
                     position: "absolute",

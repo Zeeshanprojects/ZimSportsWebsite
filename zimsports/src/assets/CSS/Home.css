@@ -348,8 +348,12 @@ body.modal-open .watch-live-btn {
     background-position: -200% 0;
   }
 }
-
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1024px) and (max-width: 1299px){
+.text-content h1{
+  font-size: 46px !important;
+}
+}
+@media (min-width: 992px) and (max-width: 1023px) {
   .primary-btn {
     padding: 10px 18px !important;
   }
