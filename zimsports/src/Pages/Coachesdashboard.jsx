@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import Navbar2 from "../Components/Navbar2";
 
 import Image from "../assets/Images/image";
 
 export default function Coachesdashboard() {
+    useEffect(()=>{
+      document.title="Coach-Dashboard | Zim Sports"
+    })
   const matches = [
     {
       id: 10,

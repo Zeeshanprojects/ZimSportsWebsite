@@ -1,8 +1,11 @@
+import { useEffect } from "react";
 import Navbar2 from "../Components/Navbar2";
-
 import Image from "../assets/Images/image";
 
 export default function Familydashboard() {
+    useEffect(()=>{
+      document.title="Family-Dashboard | Zim Sports"
+    })
   // ✅ Dashboard summary cards
   const stats = [
     {

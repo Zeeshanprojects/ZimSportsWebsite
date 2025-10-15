@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../assets/CSS/Dashboard.css";
 import DashboardNavbar from "../Components/DashboardNavbar";
@@ -6,6 +6,9 @@ import DashboardSidebar from "../Components/DashboardSidebar";
 import { UserPlus, Trophy, UserCheck, Users, Activity } from "lucide-react";
 
 export default function Dashboard() {
+  useEffect(()=>{
+    document.title="Admin-Dashboard - Zim Sports"
+  })
   return (
     <div className="dashboard-container mt-5">
       <DashboardNavbar />
