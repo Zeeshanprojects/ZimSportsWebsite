@@ -339,7 +339,9 @@ body.modal-open .watch-live-btn {
   text-align: justify !important;
   hyphens: auto;
 }
-
+.carousel-control-prev-icon ,.carousel-control-next-icon{
+  background-color: #0fb57f !important;
+}
 @keyframes shimmer {
   0% {
     background-position: 200% 0;
