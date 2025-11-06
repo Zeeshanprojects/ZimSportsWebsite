@@ -308,11 +308,7 @@ input {
   color: black !important;
 }
 
-.image-size {
-  height: 600px !important;
-  border-radius: 100px !important;
-  width: 270px !important;
-}
+
 
 @keyframes scroll-left {
   0% {

@@ -110,69 +110,13 @@ export default function Home() {
 
       {/* Features Section */}
       <div id="Features" className="section">
-        <div className="container mt-5 text-white">
-          <div className="row g-4 text-center">
-            {/* Feature 1 */}
-            <div className="col-sm-12 col-md-6 col-lg-4">
-              <img
-                src={Image.image1}
-                alt="image1"
-                className="img-fluid rounded shadow image-size mb-3"
-                loading="lazy"
-              />
-              <button type="button" className="btn secondary-btn mb-2">
-                For Coaches
-              </button>
-              <h3 className="text-white mb-3">
-                Streamline Coaching with Zim Sports
-              </h3>
-              <p className="text-white small-description">
-                Zim Sports empowers coaches with smart tools to simplify team
-                management, boost performance, and focus on athlete success.
-              </p>
-            </div>
-
-            {/* Feature 2 */}
-            <div className="col-sm-12 col-md-6 col-lg-4">
-              <img
-                src={Image.image2}
-                alt="image2"
-                className="img-fluid rounded shadow image-size mb-3"
-                loading="lazy"
-              />
-              <button type="button" className="btn secondary-btn mb-2">
-                For Teams Member
-              </button>
-              {/* <button type="button" className="btn secondary-btn mb-2">
-          For Teams
-        </button> */}
-              <h3 className="text-white mb-3">
-                United & Organized: Your Team's Hub
-              </h3>
-              <p className="text-white small-description">
-                Keep rosters, schedules, communication, and performance insights
-                all connected in one powerful platform.
-              </p>
-            </div>
-
-            {/* Feature 3 */}
-            <div className="col-sm-12 col-md-6 col-lg-4 ">
-              <img
-                src={Image.image3}
-                alt="image3"
-                className="img-fluid rounded shadow image-size mb-3"
-                loading="lazy"
-              />
-              <button type="button" className="btn secondary-btn mb-2">
-                For Families & Fans
-              </button>
-              <h3 className="text-white mb-3">
-                Stay Connected, Never Miss a Moment
-              </h3>
-              <p className="text-white small-description">
-                Stay updated with real-time scores, highlights, and upcoming
-                matches — anytime, anywhere.
-              </p>
+   <div class="text-center ">
+          <button type="button" class="btn secondary-btn">
+       Features
+          </button>
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-12 col-md-6"></div>
             </div>
           </div>
         </div>
@@ -577,64 +521,9 @@ export default function Home() {
           </div>
         </div>
         <br />
-        <div className="container text-center">
-          <button type="button" class="btn secondary-btn mb-3 ">
-            Our Growing Community
-          </button>
-
-          <h1 className="main-heading text-white">
-            <span>All-in-one solution</span>
-            <br />
-            for your Club Sports
-          </h1>
-        </div>
-
+       
         <br />
-        <div className="container-fluid py-4 p-0">
-          <div className="marquee-wrapper">
-            <div className="marquee-container">
-              <div className="marquee-track">
-                {/* Duplicate Content */}
-                <div className="marquee-content">
-                  <span>
-                    <img src={Image.dot} alt="dot" className="dot" /> Download{" "}
-                    <img src={Image.dot} alt="dot" className="dot" />
-                  </span>
-                  <span>
-                    <img src={Image.dot} alt="dot" className="dot" /> Download{" "}
-                    <img src={Image.dot} alt="dot" className="dot" />
-                  </span>
-                  <span>
-                    <img src={Image.dot} alt="dot" className="dot" /> Download{" "}
-                    <img src={Image.dot} alt="dot" className="dot" />
-                  </span>
-                  <span>
-                    <img src={Image.dot} alt="dot" className="dot" /> Download{" "}
-                    <img src={Image.dot} alt="dot" className="dot" />
-                  </span>
-                </div>
-                <div className="marquee-content">
-                  <span>
-                    <img src={Image.dot} alt="dot" className="dot" /> Download{" "}
-                    <img src={Image.dot} alt="dot" className="dot" />
-                  </span>
-                  <span>
-                    <img src={Image.dot} alt="dot" className="dot" /> Download{" "}
-                    <img src={Image.dot} alt="dot" className="dot" />
-                  </span>
-                  <span>
-                    <img src={Image.dot} alt="dot" className="dot" /> Download{" "}
-                    <img src={Image.dot} alt="dot" className="dot" />
-                  </span>
-                  <span>
-                    <img src={Image.dot} alt="dot" className="dot" /> Download{" "}
-                    <img src={Image.dot} alt="dot" className="dot" />
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+       
       </div>
 
       <div id="Contact" className="section">
