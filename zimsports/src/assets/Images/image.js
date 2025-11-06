@@ -2,6 +2,7 @@ import Dashboard from "../../Pages/Dashboard";
 
 const Image = {
   logo: new URL("logo.webp", import.meta.url).href,
+  banner:new URL("./bannerimage.webp",import.meta.url).href,
   backgroundeffect: new URL("./backgroundeffect.webp", import.meta.url).href,
   bannerright: new URL("banner-right.webp", import.meta.url).href,
   image1: new URL("Welcomeimage.webp", import.meta.url).href,
@@ -19,7 +20,7 @@ const Image = {
   usericon: new URL("usericon.webp", import.meta.url).href,
   magnent: new URL("magnet.webp", import.meta.url).href,
   loginpagelogo: new URL("./loginpage-logo.webp", import.meta.url).href,
-  dot: new URL("dot.webp", import.meta.url).href,
+  dot: new URL("stars.png", import.meta.url).href,
   footerlogo: new URL("footerlogo.webp", import.meta.url).href,
   sendemailicon: new URL("send.svg", import.meta.url).href,
   googleplay: new URL("play-button.svg", import.meta.url).href,

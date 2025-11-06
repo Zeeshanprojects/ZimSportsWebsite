@@ -1,6 +1,8 @@
-
+.navbar{
+  height: 80px;
+}
 .navbar-brand-image {
-  height: 50px;
+  height: 60px;
 }
 .nav-item .nav-link {
   font-family: Manrope, sans-serif;

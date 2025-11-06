@@ -19,10 +19,10 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-white pt-3 fixed-top mb-5">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark pt-3">
         <div className="container">
           <a className="navbar-brand" href="/">
-            <img src={Image.logo} alt="logo" className="navbar-brand-image" />
+            <img src={Image.footerlogo} alt="logo" className="navbar-brand-image" />
           </a>
           <button
             className="navbar-toggler"

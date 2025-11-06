@@ -14,33 +14,39 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="space"></div>
+
+      <div className="container-fluid p-0">
+  <img src={Image.banner} alt="banner" className="banner-img" />
+
+  {/* <div className="content">
+    <h2>Zimsports Experience Every Single Game Anywhere, Anytime</h2>
+    <p>Watch volleyball, waterpolo, football, basketball and more.</p>
+  </div> */}
+</div>
+
       <div id="Home" className="section">
         <div className="container py-lg-5 mt-lg-5">
           <div className="row align-items-center">
             {/* Text Section */}
             <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-4 mb-lg-0">
-              <div className="text-content">
+              <div className="text-content ">
                 <h1>
                   <strong>
                     Zim Sports: Experience Every Single Game,
                     <span> Anywhere, Anytime</span>
                   </strong>
                 </h1>
-                <p>
+                <p className="text-white">
                   Live-stream, capture, and relive every moment of your clubʼs
                   journey powered by Zim Sports Technologies. Stay connected
                   with your team’s highlights, stats, and unforgettable
                   performances — all in one place.
                 </p>
 
-                <div className="d-flex flex-wrap align-items-center">
-                  <Link to="/signup">
-                    <button
-                      type="button"
-                      className="btn primary-btn ps-5 pe-5  mt-sm-0 start-btn"
-                    >
-                      Start Now
+                <div className="watch-live-btn text-center ">
+                  <Link to="/zimlive">
+                    <button type="button" className="btn btn-lg fw-bold ">
+                      <MonitorPlay size={22} className="me-2 " /> GO TO ZIM TV
                     </button>
                   </Link>
                 </div>
@@ -102,160 +108,72 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="watch-live-btn text-center ">
-        <Link to="/zimlive">
-          <button type="button" className="btn btn-lg fw-bold ">
-            <MonitorPlay size={22} className="me-2 " /> GO TO ZIM TV
-          </button>
-        </Link>
-      </div>
-      {/* Features*/}
+      {/* Features Section */}
       <div id="Features" className="section">
-        <div className="container-fluid mt-3  p-0 py-3 text-white">
-          <div
-            id="featuresCarousel"
-            className="carousel slide"
-            data-bs-ride="carousel"
-            data-bs-interval="5000"
-          >
-            <div className="carousel-inner">
-              {/* ===== Slide 1 ===== */}
-              <div className="carousel-item active h-100">
-                <div className="background-color h-100">
-                  <div className="row align-items-center">
-                    <div className="col-sm-12 col-md-12 col-lg-4 mb-4 mb-md-0 text-center h-100">
-                      <img
-                        src={Image.image1}
-                        alt="image1"
-                        className="img-fluid rounded shadow image-size"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div className="col-sm-12 col-md-12 col-lg-8">
-                      <button type="button" className="btn secondary-btn mb-3">
-                        For Coaches
-                      </button>
-
-                      <h1 className="color-white mb-3">
-                        Streamline Coaching with Zim Sports
-                      </h1>
-                      <p className="text-white pe-4">
-                        Zim Sports empowers coaches with a complete suite of
-                        advanced tools designed to simplify every aspect of team
-                        management. Plan practices with precision, analyze
-                        player performance through detailed video insights, and
-                        make data-driven decisions that elevate your team’s
-                        potential. With real-time stat tracking, seamless
-                        communication channels, and smart scheduling features,
-                        you can stay organized and focused on what truly matters
-                        — coaching your players to victory. Zim Sports helps you
-                        save time, boost efficiency, and bring out the best in
-                        every athlete.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* ===== Slide 2 ===== */}
-              <div className="carousel-item h-100">
-                <div className="background-color">
-                  <div className="row align-items-center">
-                    <div className="col-sm-12 col-md-12  col-lg-4 mb-4 mb-md-0 text-center h-100">
-                      <img
-                        src={Image.image2}
-                        alt="image2"
-                        className="img-fluid rounded shadow image-size"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div className="col-sm-12 col-md-12 col-lg-8">
-                      <button type="button" className="btn secondary-btn mb-3">
-                        For Teams
-                      </button>
-
-                      <h1 className="text-white mb-3">
-                        United & Organized: Your Team's Hub
-                      </h1>
-
-                      <p className="text-white pe-4">
-                        Foster seamless collaboration and a sense of unity
-                        within your team. Zim Sports serves as your all-in-one
-                        digital hub, empowering coaches, players, and managers
-                        to stay organized and connected. Easily schedule games
-                        and practices, manage rosters, share instant updates,
-                        and track performance insights — all from one intuitive
-                        platform. Simplify communication, eliminate confusion,
-                        and build a stronger, more efficient team with Zim
-                        Sports.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* ===== Slide 3 ===== */}
-              <div className="carousel-item h-100">
-                <div className="background-color">
-                  <div className="row align-items-center">
-                    <div className="col-sm-12 col-md-12 col-lg-4 mb-4 mb-md-0 text-center h-100">
-                      <img
-                        src={Image.image3}
-                        alt="image3"
-                        className="img-fluid rounded shadow image-size"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div className="col-sm-12 col-md-12 col-lg-8">
-                      <button type="button" className="btn secondary-btn mb-3">
-                        For Families & Fans
-                      </button>
-
-                      <h1 className="text-white mb-3">
-                        Stay Connected, Never Miss a Moment
-                      </h1>
-                      <p className="text-white pe-4">
-                        For sports families and devoted fans, Zim Sports keeps
-                        you closer to the action than ever before. Follow live
-                        game updates and score tracking in real time, stay
-                        informed about upcoming matches, and never miss an
-                        important moment. Access detailed team schedules,
-                        announcements, and highlights effortlessly — all in one
-                        place. Whether you're cheering from the stands or from
-                        home, Zim Sports ensures you’re always connected to your
-                        favorite team’s journey.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div className="container mt-5 text-white">
+          <div className="row g-4 text-center">
+            {/* Feature 1 */}
+            <div className="col-sm-12 col-md-6 col-lg-4">
+              <img
+                src={Image.image1}
+                alt="image1"
+                className="img-fluid rounded shadow image-size mb-3"
+                loading="lazy"
+              />
+              <button type="button" className="btn secondary-btn mb-2">
+                For Coaches
+              </button>
+              <h3 className="text-white mb-3">
+                Streamline Coaching with Zim Sports
+              </h3>
+              <p className="text-white small-description">
+                Zim Sports empowers coaches with smart tools to simplify team
+                management, boost performance, and focus on athlete success.
+              </p>
             </div>
 
-            {/* ===== Carousel Controls ===== */}
-            <button
-              className="carousel-control-prev"
-              type="button"
-              data-bs-target="#featuresCarousel"
-              data-bs-slide="prev"
-            >
-              <span
-                className="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button
-              className="carousel-control-next"
-              type="button"
-              data-bs-target="#featuresCarousel"
-              data-bs-slide="next"
-            >
-              <span
-                className="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Next</span>
-            </button>
+            {/* Feature 2 */}
+            <div className="col-sm-12 col-md-6 col-lg-4">
+              <img
+                src={Image.image2}
+                alt="image2"
+                className="img-fluid rounded shadow image-size mb-3"
+                loading="lazy"
+              />
+              <button type="button" className="btn secondary-btn mb-2">
+                For Teams Member
+              </button>
+              {/* <button type="button" className="btn secondary-btn mb-2">
+          For Teams
+        </button> */}
+              <h3 className="text-white mb-3">
+                United & Organized: Your Team's Hub
+              </h3>
+              <p className="text-white small-description">
+                Keep rosters, schedules, communication, and performance insights
+                all connected in one powerful platform.
+              </p>
+            </div>
+
+            {/* Feature 3 */}
+            <div className="col-sm-12 col-md-6 col-lg-4 ">
+              <img
+                src={Image.image3}
+                alt="image3"
+                className="img-fluid rounded shadow image-size mb-3"
+                loading="lazy"
+              />
+              <button type="button" className="btn secondary-btn mb-2">
+                For Families & Fans
+              </button>
+              <h3 className="text-white mb-3">
+                Stay Connected, Never Miss a Moment
+              </h3>
+              <p className="text-white small-description">
+                Stay updated with real-time scores, highlights, and upcoming
+                matches — anytime, anywhere.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -393,26 +311,26 @@ export default function Home() {
             <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5 d-flex ">
               <div className="feature-card d-flex flex-column justify-content-between w-100">
                 <p className="subparagraph"> Team & Player Management</p>
-                <h2>
+                <h2 className="text-white">
                   <span>Effortless organization</span> for Coaches & Admins
                 </h2>
-                <p>
+                <p className="text-white">
                   Streamline rosters, track attendance, manage team finances,
                   and organize all player information in one secure location.
                   Zim Sports simplifies administrative tasks, allowing you to
                   focus on the game.
                 </p>
-                <ul className="list-unstyled ">
+                <ul className="list-unstyled text-white">
                   <li>
                     <div className="d-flex align-items-center gap-2">
                       <img
-                        src={Image.checked}
-                        alt="checked-icon"
-                        className="checked-icon"
+                        src={Image.greenchecked}
+                        alt="greenchecked"
+                        className="checked-icon mb-3"
                       />
-                      <h5 className="mb-0">Automated Rosters & Scheduling</h5>
+                      <h5 className="mb-0 ">Automated Rosters & Scheduling</h5>
                     </div>
-                    <p className="ms-4">
+                    <p className="ms-4 text-white">
                       Quickly set up teams, create schedules, and manage player
                       availability with automated tools.
                     </p>
@@ -421,13 +339,13 @@ export default function Home() {
                   <li>
                     <div className="d-flex align-items-center gap-2">
                       <img
-                        src={Image.checked}
-                        alt="checked-icon"
-                        className="checked-icon"
+                        src={Image.greenchecked}
+                        alt="greenchecked"
+                        className="checked-icon mb-3"
                       />
                       <h5 className="mb-0">Integrated Communication Hub</h5>
                     </div>
-                    <p className="ms-4">
+                    <p className="ms-4 text-white">
                       Facilitate seamless communication with instant messaging,
                       announcements, and direct chats.
                     </p>
@@ -443,18 +361,20 @@ export default function Home() {
             </div>
             <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5 d-flex">
               <div className="feature-card d-flex flex-column justify-content-between w-100">
-                <h2>
-                  <p className="subparagraph"> Performance Analytics & Video</p>
-                  <span>Unleash potential </span>with deep insights & video
-                  tools
+                <h2 className="text-white">
+                  <p className="subparagraph ">
+                    {" "}
+                    Performance Analytics & Video
+                  </p>
+                  <span>Unleash potential </span>with deep insights & video tool
                 </h2>
-                <p>
+                <p className="text-white">
                   Harness the power of data and video to elevate player
                   performance. Analyze game footage, track key metrics, and
                   provide targeted feedback to help athletes improve and teams
                   strategize effectively.
                 </p>
-                <ul className="list-unstyled ">
+                <ul className="list-unstyled text-white">
                   <div className="d-flex align-items-center gap-2 pb-2">
                     <img
                       src={Image.greenchecked}
@@ -500,7 +420,7 @@ export default function Home() {
             </div>
             <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5 d-flex">
               <div className="feature-card d-flex flex-column justify-content-between w-100">
-                <h2>
+                <h2 className="text-white">
                   <p className="subparagraph">
                     {" "}
                     Live Tracking & Fan Engagement
@@ -508,13 +428,13 @@ export default function Home() {
                   <span>Keep everyone connected </span>
                   and part of the action
                 </h2>
-                <p>
+                <p className="text-white">
                   Engage your community with real-time updates, live scoring,
                   and secure communication channels. Zim Sports ensures families
                   and fans are always in the loop, celebrating every victory and
                   supporting their team.
                 </p>
-                <ul className="list-unstyled ">
+                <ul className="list-unstyled text-white">
                   <div className="d-flex align-items-center gap-2 pb-2">
                     <img
                       src={Image.greenchecked}
@@ -662,7 +582,7 @@ export default function Home() {
             Our Growing Community
           </button>
 
-          <h1 className="main-heading">
+          <h1 className="main-heading text-white">
             <span>All-in-one solution</span>
             <br />
             for your Club Sports
@@ -728,15 +648,15 @@ export default function Home() {
           <div className="row align-items-center">
             {/* Left Column - Text */}
             <div className="col-lg-6 mb-4 mb-lg-0">
-              <h1 className="fw-bold mb-3">
+              <h1 className="fw-bold mb-3 text-white">
                 Let's <span>Talk</span>
               </h1>
-              <p className="text-muted">
+              <p className="text-white">
                 Feel free to reach out to us with any questions, feedback, or
                 suggestions. We’re here to help and look forward to hearing from
                 you.
               </p>
-              <ul className="list-unstyled mt-4 ">
+              <ul className="list-unstyled mt-4 text-white">
                 <li>
                   <strong>Email:</strong> support@zimsports.com
                 </li>
@@ -754,7 +674,10 @@ export default function Home() {
               <div className="p-4 border border-dark rounded-4 shadow-sm p-5">
                 <form>
                   <div className="mb-3">
-                    <label htmlFor="email" className="form-label fw-semibold">
+                    <label
+                      htmlFor="email"
+                      className="form-label fw-semibold text-white"
+                    >
                       Email address
                     </label>
                     <input
@@ -767,7 +690,7 @@ export default function Home() {
                   <div className="mb-3">
                     <label
                       htmlFor="password"
-                      className="form-label fw-semibold"
+                      className="form-label fw-semibold text-white"
                     >
                       Password
                     </label>
@@ -779,7 +702,10 @@ export default function Home() {
                     />
                   </div>
                   <div className="mb-3">
-                    <label htmlFor="message" className="form-label fw-semibold">
+                    <label
+                      htmlFor="message"
+                      className="form-label fw-semibold text-white"
+                    >
                       Message
                     </label>
                     <textarea
