@@ -45,7 +45,7 @@ export default function Navbar() {
             id="navbarSupportedContent"
           >
             <ul className="navbar-nav ms-auto">
-              {["Home", "Categories", "About", "Services", "FAQ"].map(
+              {["Home", "Categories", "About", "Services", "Contact"].map(
                 (item) => (
                   <li className="nav-item" key={item}>
                     <a

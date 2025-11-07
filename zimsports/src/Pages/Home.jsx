@@ -577,8 +577,8 @@ export default function Home() {
           <h5 class="title-underline fw-bold">Contact US</h5>
         </div>
         <h1 className="color-white text-center fw-bold mb-5">
-             Questions? Our team has the answers.
-              </h1>
+          Questions? Our team has the answers.
+        </h1>
         <div className="container  ">
           <div className="row align-items-center">
             {/* Left Column - Text */}
@@ -604,56 +604,57 @@ export default function Home() {
               </ul>
             </div>
 
-         {/* Right Column - FAQ Section */}
-<div className="col-sm-12 col-md-6">
-  <div className="faq-container">
-    <h4 className="faq-title">Frequently Asked Questions</h4>
+            {/* Right Column - FAQ Section */}
+            <div className="col-sm-12 col-md-6">
+              <div className="faq-container">
+                <h4 className="faq-title">Frequently Asked Questions</h4>
 
-    <div className="accordion modern-accordion" id="accordionFAQ">
+                <div className="accordion modern-accordion" id="accordionFAQ">
+                  {[
+                    {
+                      q: "How can I watch live sports?",
+                      a: "Just sign up, choose your favorite sport, and start watching instantly — anytime, anywhere.",
+                    },
+                    {
+                      q: "Do I need a subscription?",
+                      a: "Some content is free. For premium matches and tournaments, a subscription unlocks full access.",
+                    },
+                    {
+                      q: "Can I stream on multiple devices?",
+                      a: "Yes! Your account supports seamless streaming across mobiles, tablets, and smart TVs.",
+                    },
+                  ].map((item, index) => (
+                    <div className="accordion-item" key={index}>
+                      <h2 className="accordion-header" id={`heading${index}`}>
+                        <button
+                          className={`accordion-button ${
+                            index !== 0 && "collapsed"
+                          }`}
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target={`#collapse${index}`}
+                          aria-expanded={index === 0 ? "true" : "false"}
+                          aria-controls={`collapse${index}`}
+                        >
+                          {item.q}
+                        </button>
+                      </h2>
 
-      {[
-        {
-          q: "How can I watch live sports?",
-          a: "Just sign up, choose your favorite sport, and start watching instantly — anytime, anywhere."
-        },
-        {
-          q: "Do I need a subscription?",
-          a: "Some content is free. For premium matches and tournaments, a subscription unlocks full access."
-        },
-        {
-          q: "Can I stream on multiple devices?",
-          a: "Yes! Your account supports seamless streaming across mobiles, tablets, and smart TVs."
-        }
-      ].map((item, index) => (
-        <div className="accordion-item" key={index}>
-          <h2 className="accordion-header" id={`heading${index}`}>
-            <button
-              className={`accordion-button ${index !== 0 && "collapsed"}`}
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target={`#collapse${index}`}
-              aria-expanded={index === 0 ? "true" : "false"}
-              aria-controls={`collapse${index}`}
-            >
-              {item.q}
-            </button>
-          </h2>
-
-          <div
-            id={`collapse${index}`}
-            className={`accordion-collapse collapse ${index === 0 && "show"}`}
-            aria-labelledby={`heading${index}`}
-            data-bs-parent="#accordionFAQ"
-          >
-            <div className="accordion-body">{item.a}</div>
-          </div>
-        </div>
-      ))}
-
-    </div>
-  </div>
-</div>
-
+                      <div
+                        id={`collapse${index}`}
+                        className={`accordion-collapse collapse ${
+                          index === 0 && "show"
+                        }`}
+                        aria-labelledby={`heading${index}`}
+                        data-bs-parent="#accordionFAQ"
+                      >
+                        <div className="accordion-body">{item.a}</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
