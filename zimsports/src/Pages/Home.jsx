@@ -14,10 +14,10 @@ export default function Home() {
   const sportsData = [
   { img: Image.sport1, name: "Water Polo" },
   { img: Image.sport2, name: "Volleyball" },
-  { img: Image.sport3, name: "Rugby" },
+  { img: Image.sport3, name: "Beach Vollyball" },
   { img: Image.sport4, name: "Basketball" },
-  { img: Image.sport5, name: "Football" },
-  { img: Image.sport6, name: "Swimming" },
+  { img: Image.sport5, name: "Rugby" },
+  { img: Image.sport6, name: "Football" },
 ];
 
   return (
@@ -324,6 +324,7 @@ export default function Home() {
                 <h2 className="text-white">
                   <span>Effortless organization</span> for Coaches & Admins
                 </h2>
+                <br/>
                 <p className="text-white">
                   Streamline rosters, track attendance, manage team finances,
                   and organize all player information in one secure location.
@@ -332,7 +333,7 @@ export default function Home() {
                 </p>
                 <ul className="list-unstyled text-white">
                   <li>
-                    <div className="d-flex align-items-center gap-2">
+                    <div className="d-flex align-items-center gap-2 ">
                       <img
                         src={Image.greenchecked}
                         alt="greenchecked"
@@ -347,7 +348,7 @@ export default function Home() {
                   </li>
 
                   <li>
-                    <div className="d-flex align-items-center gap-2">
+                    <div className="d-flex align-items-center gap-2 ">
                       <img
                         src={Image.greenchecked}
                         alt="greenchecked"

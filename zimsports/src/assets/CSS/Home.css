@@ -439,13 +439,11 @@ input:focus{
   left: 16px;
 }
 
-
-
 .watch-btn {
   background: #1f8e4b;
   border: none;
-  padding: 6px 16px;
-  border-radius: 20px;
+  padding: 10px 20px;
+border-radius: 10px;
   font-size: 0.9rem;
   font-weight: 600;
   color: white;
