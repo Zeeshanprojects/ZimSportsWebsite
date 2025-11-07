@@ -5,7 +5,7 @@ import "../assets/CSS/Preloader.css";
 export default function Preloader() {
   return (
     <div className="preloader-container">
-      <img src={Image.logo} alt="logo" className="preloader-logo" />
+      <img src={Image.footerlogo} alt="logo" className="preloader-logo" />
     </div>
   );
 }
