@@ -53,22 +53,22 @@ export default function Home() {
 
             {/* ✅ Stats Rows */}
             <div className="row text-center">
-              <div className="col-6 col-md-3 stat-box">
+              <div className="col-12 col-sm-12 col-md-3 stat-box">
                 <h2 className="stat-number">100+</h2>
                 <p className="stat-title">Live Events</p>
               </div>
 
-              <div className="col-6 col-md-3 stat-box">
+              <div className="col-12 col-sm-12 col-md-3 stat-box">
                 <h2 className="stat-number">50+</h2>
                 <p className="stat-title">Sports Clubs</p>
               </div>
 
-              <div className="col-6 col-md-3 stat-box">
+              <div className="col-12 col-sm-12 col-md-3 stat-box">
                 <h2 className="stat-number">24/7</h2>
                 <p className="stat-title">Streaming</p>
               </div>
 
-              <div className="col-6 col-md-3 stat-box">
+              <div className="col-12 col-sm-12 col-md-3 stat-box">
                 <h2 className="stat-number">HD</h2>
                 <p className="stat-title">Quality</p>
               </div>
