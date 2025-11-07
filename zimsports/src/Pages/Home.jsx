@@ -28,7 +28,7 @@ export default function Home() {
           <img src={Image.banner} alt="banner" className="banner-img" />
 
           <div className="overlay-text">
-            <h1>Stream Your Favorite Club Sports Live</h1>
+            <h1>Stream Your Favourite Club Sports Live</h1>
             <p>
               Stream Liveleyball, water polo, football, basketball, and more
               <br /> never miss a moment!
