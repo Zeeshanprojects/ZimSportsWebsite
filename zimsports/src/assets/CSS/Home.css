@@ -22,8 +22,8 @@
 }
 
 .overlay-text h1 {
-  font-size: 4.5rem; /* ✅ Bigger */
-  font-weight: 800;
+  font-size: 5rem; /* ✅ Bigger */
+  font-weight:900;
   margin-bottom: 18px;
   line-height: 1.2;
   text-transform: capitalize;
@@ -223,6 +223,11 @@ input {
   padding: 10px;
   width: 60%;
   border: 1px solid #ccc;
+}
+
+input:focus{
+  background: transparent !important;
+  color: white;
 }
 
 .primary-btn {
@@ -457,7 +462,7 @@ input {
 }
 
 .subparagraph {
-  color: #1f8e4b;
+  color: white;
 }
 .watch-live-btn {
   bottom: 20px;
