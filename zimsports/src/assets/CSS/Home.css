@@ -22,11 +22,11 @@
 }
 
 .overlay-text h1 {
-  font-size: 4.5rem; /* ✅ Bigger */
-  font-weight:900;
-  margin-bottom: 18px;
-  line-height: 1.2;
-  text-transform: capitalize;
+  font-size: 4.8rem;
+  font-weight: 900;
+  line-height: 1.15;
+  text-align: center;
+  color: #fff;
 }
 
 .overlay-text p {
