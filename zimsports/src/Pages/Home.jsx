@@ -15,10 +15,61 @@ export default function Home() {
     <>
       <Navbar />
 
-      <div className="container-fluid p-0">
+      <div className="container-fluid p-0 hero-section">
         <img src={Image.banner} alt="banner" className="banner-img" />
+
+        <div className="overlay-text">
+          <h1>Stream Your Favorite Club Sports Live</h1>
+          <p>
+            Watch volleyball, water polo, football, basketball, and more
+            <br /> never miss a moment!
+          </p>
+          <button className="hero-btn">
+            {" "}
+            <MonitorPlay size={22} className="me-2 " /> GO TO ZIM TV
+          </button>
+        </div>
       </div>
 
+      <div className="background-color">
+      
+
+     <div className="container stats-section">
+
+  {/* ✅ Heading + Subtitle */}
+  
+  <div className="text-center stats-heading mb-5">
+    <h2>Everything You Want, All in One Stream</h2>
+    <p>The best sports experience ever </p>
+  </div>
+
+  {/* ✅ Stats Rows */}
+  <div className="row text-center">
+    <div className="col-6 col-md-3 stat-box">
+      <h2 className="stat-number">100+</h2>
+      <p className="stat-title">Live Events</p>
+    </div>
+
+    <div className="col-6 col-md-3 stat-box">
+      <h2 className="stat-number">50+</h2>
+      <p className="stat-title">Sports Clubs</p>
+    </div>
+
+    <div className="col-6 col-md-3 stat-box">
+      <h2 className="stat-number">24/7</h2>
+      <p className="stat-title">Streaming</p>
+    </div>
+
+    <div className="col-6 col-md-3 stat-box">
+      <h2 className="stat-number">HD</h2>
+      <p className="stat-title">Quality</p>
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    
       <div id="Home" className="section">
         <div className="container py-lg-5 mt-lg-5">
           <div className="row align-items-center">
@@ -27,7 +78,7 @@ export default function Home() {
               <div className="text-content ">
                 <h1>
                   <strong>
-                    Zim Sports: Experience Every Single Game,
+                    Experience Every Single Game,
                     <span> Anywhere, Anytime</span>
                   </strong>
                 </h1>
@@ -38,10 +89,10 @@ export default function Home() {
                   performances — all in one place.
                 </p>
 
-                <div className="watch-live-btn text-center ">
-                  <Link to="/zimlive">
+                <div className="text-start ">
+                  <Link to="/signup">
                     <button type="button" className="btn btn-lg fw-bold ">
-                      <MonitorPlay size={22} className="me-2 " /> GO TO ZIM TV
+                      Get Started
                     </button>
                   </Link>
                 </div>
@@ -104,7 +155,7 @@ export default function Home() {
       </div>
 
       {/* Features Section */}
-      <div id="Features" className="section">
+      {/* <div id="Features" className="section">
         <div class="text-center ">
           <button type="button" class="btn secondary-btn">
             Features
@@ -115,7 +166,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div id="About" className="section mt-3">
         <div class="text-center ">
