@@ -2,15 +2,21 @@ import React, { useEffect } from "react";
 import "../assets/CSS/Home.css";
 import Image from "../assets/Images/image";
 import { Link } from "react-router-dom";
-
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import { MonitorPlay } from "lucide-react";
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 export default function Home() {
   useEffect(() => {
     document.title = "Zim Sports -  Experience Every Game, Anywhere, Anytime";
+     AOS.init({
+    duration: 1200, // animation speed
+    once: true,     // animation happens only once
   });
+  },[]);
+  
   const sportsData = [
     { img: Image.sport1 },
     { img: Image.sport2 },
@@ -23,7 +29,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div id="Home" className="section">
+      <div  className="section" data-aos="zoom-in">
         <div className="container-fluid p-0 hero-section">
           <img src={Image.banner} alt="banner" className="banner-img" fetchPriority="high"/>
 
@@ -37,9 +43,9 @@ export default function Home() {
               <MonitorPlay size={22} className="me-2 " /> Get Staretd Free            </button>
           </div>
         </div>
-
-        <div className="background-color">
-          <div className="container stats-section">
+<div className="section"></div>
+        <div className="background-color ">
+          <div className="container stats-section ">
             <div className="text-center mb-4">
               <h5 class="title-underline fw-bold">Why Choose US</h5>
             </div>
