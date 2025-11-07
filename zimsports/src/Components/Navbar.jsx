@@ -19,7 +19,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark pt-3">
+      <nav className="navbar navbar-expand-lg navbar-dark  pt-3">
         <div className="container">
           <a className="navbar-brand" href="/">
             <img src={Image.footerlogo} alt="logo" className="navbar-brand-image" />
