@@ -16,13 +16,8 @@ export default function Home() {
       <Navbar />
 
       <div className="container-fluid p-0">
-  <img src={Image.banner} alt="banner" className="banner-img" />
-
-  {/* <div className="content">
-    <h2>Zimsports Experience Every Single Game Anywhere, Anytime</h2>
-    <p>Watch volleyball, waterpolo, football, basketball and more.</p>
-  </div> */}
-</div>
+        <img src={Image.banner} alt="banner" className="banner-img" />
+      </div>
 
       <div id="Home" className="section">
         <div className="container py-lg-5 mt-lg-5">
@@ -110,9 +105,9 @@ export default function Home() {
 
       {/* Features Section */}
       <div id="Features" className="section">
-   <div class="text-center ">
+        <div class="text-center ">
           <button type="button" class="btn secondary-btn">
-       Features
+            Features
           </button>
           <div className="container">
             <div className="row">
@@ -521,9 +516,8 @@ export default function Home() {
           </div>
         </div>
         <br />
-       
+
         <br />
-       
       </div>
 
       <div id="Contact" className="section">
