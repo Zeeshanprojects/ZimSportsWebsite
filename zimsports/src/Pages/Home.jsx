@@ -25,18 +25,16 @@ export default function Home() {
       <Navbar />
       <div id="Home" className="section">
         <div className="container-fluid p-0 hero-section">
-          <img src={Image.banner} alt="banner" className="banner-img" />
+          <img src={Image.banner} alt="banner" className="banner-img" fetchPriority="high"/>
 
           <div className="overlay-text">
-            <h1>Stream Your Favourite Club Sports Live</h1>
+            <h1>Power Your Team Stream Every Splash</h1>
             <p>
-              Stream Liveleyball, water polo, football, basketball, and more
-              <br /> never miss a moment!
+           Zim Sports is the alli-in-one platform for club teams live broadcast, manage and elevate your game from
             </p>
             <button className="hero-btn">
               {" "}
-              <MonitorPlay size={22} className="me-2 " /> GO TO ZIM TV
-            </button>
+              <MonitorPlay size={22} className="me-2 " /> Get Staretd Free            </button>
           </div>
         </div>
 
@@ -159,7 +157,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="Categories" className="section py-5">
+      <div  className="section py-5">
         <div className="background-color">
           <div className="text-center mb-4">
             <h5 class="title-underline fw-bold">Categories</h5>
@@ -180,6 +178,7 @@ export default function Home() {
                       src={sport.img}
                       className="card-img"
                       alt={sport.name}
+                      loading="lazy"
                     />
                     <div className="card-overlay">
                       <button className="watch-btn">Stream Live →</button>
@@ -192,7 +191,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="About" className="section mt-3">
+      <div  className="section mt-3">
         <div class="text-center ">
           <h5 class="title-underline fw-bold">About Zim Sports</h5>
         </div>
@@ -303,7 +302,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="Services" className="section">
+      <div className="section">
         <div class="text-center my-4">
           <h5 class="title-underline fw-bold">Core Services</h5>
         </div>
@@ -572,7 +571,7 @@ export default function Home() {
         <br />
       </div>
 
-      <div id="Contact" className="section">
+      <div  className="section">
         <div className="container py-2 text-center">
           <h5 class="title-underline fw-bold">Contact US</h5>
         </div>

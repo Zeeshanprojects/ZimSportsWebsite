@@ -45,7 +45,7 @@ export default function Navbar() {
             id="navbarSupportedContent"
           >
             <ul className="navbar-nav ms-auto">
-              {["Home", "Categories", "About", "Services", "Contact"].map(
+              {["Home", "Features", "Pricing", "Watch Demo", ].map(
                 (item) => (
                   <li className="nav-item" key={item}>
                     <a
@@ -62,7 +62,7 @@ export default function Navbar() {
 
             <div className="d-flex mt-3 mt-lg-0">
               <Link to="/login">
-                <button className="btn navbar-btn shadow-lg">Login</button>
+                <button className="btn navbar-btn shadow-lg">Get Started Free</button>
               </Link>
             </div>
           </div>
