@@ -32,44 +32,39 @@ export default function Home() {
       </div>
 
       <div className="background-color">
-      
+        <div className="container stats-section">
+          {/* ✅ Heading + Subtitle */}
 
-     <div className="container stats-section">
+          <div className="text-center stats-heading mb-5">
+            <h2>Everything You Want, All in One Stream</h2>
+            <p>The best sports experience ever </p>
+          </div>
 
-  {/* ✅ Heading + Subtitle */}
-  
-  <div className="text-center stats-heading mb-5">
-    <h2>Everything You Want, All in One Stream</h2>
-    <p>The best sports experience ever </p>
-  </div>
+          {/* ✅ Stats Rows */}
+          <div className="row text-center">
+            <div className="col-6 col-md-3 stat-box">
+              <h2 className="stat-number">100+</h2>
+              <p className="stat-title">Live Events</p>
+            </div>
 
-  {/* ✅ Stats Rows */}
-  <div className="row text-center">
-    <div className="col-6 col-md-3 stat-box">
-      <h2 className="stat-number">100+</h2>
-      <p className="stat-title">Live Events</p>
-    </div>
+            <div className="col-6 col-md-3 stat-box">
+              <h2 className="stat-number">50+</h2>
+              <p className="stat-title">Sports Clubs</p>
+            </div>
 
-    <div className="col-6 col-md-3 stat-box">
-      <h2 className="stat-number">50+</h2>
-      <p className="stat-title">Sports Clubs</p>
-    </div>
+            <div className="col-6 col-md-3 stat-box">
+              <h2 className="stat-number">24/7</h2>
+              <p className="stat-title">Streaming</p>
+            </div>
 
-    <div className="col-6 col-md-3 stat-box">
-      <h2 className="stat-number">24/7</h2>
-      <p className="stat-title">Streaming</p>
-    </div>
-
-    <div className="col-6 col-md-3 stat-box">
-      <h2 className="stat-number">HD</h2>
-      <p className="stat-title">Quality</p>
-    </div>
-  </div>
-
-</div>
-
+            <div className="col-6 col-md-3 stat-box">
+              <h2 className="stat-number">HD</h2>
+              <p className="stat-title">Quality</p>
+            </div>
+          </div>
+        </div>
       </div>
-    
+
       <div id="Home" className="section">
         <div className="container py-lg-5 mt-lg-5">
           <div className="row align-items-center">
@@ -154,19 +149,42 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Features Section */}
-      {/* <div id="Features" className="section">
-        <div class="text-center ">
+      <div id="Features" className="section py-5">
+        <div className="text-center mb-4">
           <button type="button" class="btn secondary-btn">
-            Features
+            Categories
           </button>
-          <div className="container">
-            <div className="row">
-              <div className="col-sm-12 col-md-6"></div>
-            </div>
+          <h2 className="section-heading mt-3">
+            Everything You Want, All in One Stream
+          </h2>
+          <p className="section-subtitle">
+            Explore the best sports from around the world
+          </p>
+        </div>
+
+        <div className="container-fluid p-3">
+          <div className="row g-4">
+            {[
+              Image.sport1,
+              Image.sport2,
+              Image.sport3,
+              Image.sport4,
+              Image.sport5,
+              Image.sport6,
+            ].map((sport, index) => (
+              <div className="col-sm-12 col-md-6" key={index}>
+                <div className="sport-card">
+                  <img src={sport} className="card-img" alt="Sport" />
+                  <div className="card-overlay">
+                    <h2 className="text-white">Sport Name</h2>
+                    <button className="watch-btn">Watch Now →</button>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      </div> */}
+      </div>
 
       <div id="About" className="section mt-3">
         <div class="text-center ">
@@ -605,7 +623,7 @@ export default function Home() {
 
             {/* Right Column - Form */}
             <div className="col-lg-6">
-              <div className="p-4 border border-dark rounded-4 shadow-sm p-5">
+              <div className="p-4 border border rounded-4 shadow-sm p-5">
                 <form>
                   <div className="mb-3">
                     <label

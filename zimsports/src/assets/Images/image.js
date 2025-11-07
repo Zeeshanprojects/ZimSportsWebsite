@@ -2,7 +2,7 @@ import Dashboard from "../../Pages/Dashboard";
 
 const Image = {
   logo: new URL("logo.webp", import.meta.url).href,
-  banner:new URL("./sports-banner.webp",import.meta.url).href,
+  banner: new URL("./sports-banner.webp", import.meta.url).href,
   backgroundeffect: new URL("./backgroundeffect.webp", import.meta.url).href,
   bannerright: new URL("banner-right.webp", import.meta.url).href,
   image1: new URL("Welcomeimage.webp", import.meta.url).href,
@@ -42,5 +42,11 @@ const Image = {
   team6: new URL("./team6.webp", import.meta.url).href,
   cao: new URL("./Davidjumani.webp", import.meta.url).href,
   downarrow: new URL("./downarrow.png", import.meta.url).href,
+  sport1: new URL("./sport1.webp", import.meta.url).href,
+  sport2: new URL("./sport2.webp", import.meta.url).href,
+  sport3: new URL("./sport3.webp", import.meta.url).href,
+  sport4: new URL("./sport4.webp", import.meta.url).href,
+  sport5: new URL("./sport5.webp", import.meta.url).href,
+  sport6: new URL("./sport6.webp", import.meta.url).href,
 };
 export default Image;
