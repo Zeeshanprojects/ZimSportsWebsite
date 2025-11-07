@@ -12,71 +12,70 @@ export default function Home() {
     document.title = "Zim Sports -  Experience Every Game, Anywhere, Anytime";
   });
   const sportsData = [
-  { img: Image.sport1, name: "Water Polo" },
-  { img: Image.sport2, name: "Volleyball" },
-  { img: Image.sport3, name: "Beach Vollyball" },
-  { img: Image.sport4, name: "Basketball" },
-  { img: Image.sport5, name: "Rugby" },
-  { img: Image.sport6, name: "Football" },
-];
+    { img: Image.sport1 },
+    { img: Image.sport2 },
+    { img: Image.sport3 },
+    { img: Image.sport4 },
+    { img: Image.sport5 },
+    { img: Image.sport6 },
+  ];
 
   return (
     <>
       <Navbar />
-  <div id="Home" className="section">
-      <div className="container-fluid p-0 hero-section">
-        <img src={Image.banner} alt="banner" className="banner-img" />
+      <div id="Home" className="section">
+        <div className="container-fluid p-0 hero-section">
+          <img src={Image.banner} alt="banner" className="banner-img" />
 
-        <div className="overlay-text">
-          <h1>Stream Your Favorite Club Sports Live</h1>
-          <p>
-            Watch volleyball, water polo, football, basketball, and more
-            <br /> never miss a moment!
-          </p>
-          <button className="hero-btn">
-            {" "}
-            <MonitorPlay size={22} className="me-2 " /> GO TO ZIM TV
-          </button>
-        </div>
-      </div>
-
-      <div className="background-color">
-        <div className="container stats-section">
-   <div className="text-center mb-4">
-       <h5 class="title-underline fw-bold">Why Choose US</h5>
-   </div>
-
-          <div className="text-center stats-heading mb-5">
-            <h2>Everything You Want, All in One Stream</h2>
-            <p>The best sports experience ever </p>
-          </div>
-
-          {/* ✅ Stats Rows */}
-          <div className="row text-center">
-            <div className="col-6 col-md-3 stat-box">
-              <h2 className="stat-number">100+</h2>
-              <p className="stat-title">Live Events</p>
-            </div>
-
-            <div className="col-6 col-md-3 stat-box">
-              <h2 className="stat-number">50+</h2>
-              <p className="stat-title">Sports Clubs</p>
-            </div>
-
-            <div className="col-6 col-md-3 stat-box">
-              <h2 className="stat-number">24/7</h2>
-              <p className="stat-title">Streaming</p>
-            </div>
-
-            <div className="col-6 col-md-3 stat-box">
-              <h2 className="stat-number">HD</h2>
-              <p className="stat-title">Quality</p>
-            </div>
+          <div className="overlay-text">
+            <h1>Stream Your Favorite Club Sports Live</h1>
+            <p>
+              Watch volleyball, water polo, football, basketball, and more
+              <br /> never miss a moment!
+            </p>
+            <button className="hero-btn">
+              {" "}
+              <MonitorPlay size={22} className="me-2 " /> GO TO ZIM TV
+            </button>
           </div>
         </div>
-      </div>
 
-    
+        <div className="background-color">
+          <div className="container stats-section">
+            <div className="text-center mb-4">
+              <h5 class="title-underline fw-bold">Why Choose US</h5>
+            </div>
+
+            <div className="text-center stats-heading mb-5">
+              <h2>Everything You Want, All in One Stream</h2>
+              <p>The best sports experience ever </p>
+            </div>
+
+            {/* ✅ Stats Rows */}
+            <div className="row text-center">
+              <div className="col-6 col-md-3 stat-box">
+                <h2 className="stat-number">100+</h2>
+                <p className="stat-title">Live Events</p>
+              </div>
+
+              <div className="col-6 col-md-3 stat-box">
+                <h2 className="stat-number">50+</h2>
+                <p className="stat-title">Sports Clubs</p>
+              </div>
+
+              <div className="col-6 col-md-3 stat-box">
+                <h2 className="stat-number">24/7</h2>
+                <p className="stat-title">Streaming</p>
+              </div>
+
+              <div className="col-6 col-md-3 stat-box">
+                <h2 className="stat-number">HD</h2>
+                <p className="stat-title">Quality</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="container py-lg-5 mt-lg-5">
           <div className="row align-items-center">
             {/* Text Section */}
@@ -97,7 +96,7 @@ export default function Home() {
 
                 <div className="text-start ">
                   <Link to="/signup">
-                    <button type="button" className="btn btn-lg fw-bold ">
+                    <button type="button" className="btn  fw-bold ">
                       Get Started
                     </button>
                   </Link>
@@ -162,39 +161,40 @@ export default function Home() {
 
       <div id="Categories" className="section py-5">
         <div className="background-color">
-           <div className="text-center mb-4">
-      <h5 class="title-underline fw-bold">Categories</h5>
-          <h2 className="section-heading mt-3">
-            Everything You Want, All in One Stream
-          </h2>
-          <p className="section-subtitle">
-            Explore the best sports from around the world
-          </p>
-        </div>
+          <div className="text-center mb-4">
+            <h5 class="title-underline fw-bold">Categories</h5>
+            <h2 className="section-heading mt-3">
+              Everything You Want, All in One Stream
+            </h2>
+            <p className="section-subtitle">
+              Explore the best sports from around the world
+            </p>
+          </div>
 
-       <div className="container-fluid ">
-  <div className="row g-4">
-    {sportsData.map((sport, index) => (
-      <div className="col-sm-12 col-md-6" key={index}>
-        <div className="sport-card">
-          <img src={sport.img} className="card-img" alt={sport.name} />
-          <div className="card-overlay">
-            <h2 className="text-white fw-bold mb-2">{sport.name}</h2>
-            <button className="watch-btn">Watch Now →</button>
+          <div className="container-fluid ">
+            <div className="row g-4">
+              {sportsData.map((sport, index) => (
+                <div className="col-sm-12 col-md-6" key={index}>
+                  <div className="sport-card">
+                    <img
+                      src={sport.img}
+                      className="card-img"
+                      alt={sport.name}
+                    />
+                    <div className="card-overlay">
+                      <button className="watch-btn">Watch Now →</button>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-    ))}
-  </div>
-</div>
-        </div>
-       
-
       </div>
 
       <div id="About" className="section mt-3">
         <div class="text-center ">
-            <h5 class="title-underline fw-bold">About Zim Sports</h5>
+          <h5 class="title-underline fw-bold">About Zim Sports</h5>
         </div>
 
         <div className="container mt-4">
@@ -305,7 +305,7 @@ export default function Home() {
 
       <div id="Services" className="section">
         <div class="text-center my-4">
-             <h5 class="title-underline fw-bold">Core Services</h5>
+          <h5 class="title-underline fw-bold">Core Services</h5>
         </div>
         <div className="container ps-5 pe-5">
           <div className="row">
@@ -324,7 +324,7 @@ export default function Home() {
                 <h2 className="text-white">
                   <span>Effortless organization</span> for Coaches & Admins
                 </h2>
-                <br/>
+                <br />
                 <p className="text-white">
                   Streamline rosters, track attendance, manage team finances,
                   and organize all player information in one secure location.
@@ -362,7 +362,6 @@ export default function Home() {
                     </p>
                   </li>
                 </ul>
-             
               </div>
             </div>
             <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5 d-flex">
@@ -416,7 +415,6 @@ export default function Home() {
                     </li>
                   </div>
                 </ul>
-              
               </div>
             </div>
             <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5 d-flex">
@@ -424,7 +422,7 @@ export default function Home() {
                 <h2 className="text-white">
                   <p className="subparagraph">
                     {" "}
-                    Live Tracking & Fan Engagement
+                    Live Tracking & Fan Engagemental time
                   </p>
                   <span>Keep everyone connected </span>
                   and part of the action
@@ -464,7 +462,6 @@ export default function Home() {
                     </li>
                   </div>
                 </ul>
-              
               </div>
             </div>
           </div>
@@ -475,7 +472,7 @@ export default function Home() {
             {" "}
             <div className="background-color">
               <div class="text-center my-4">
-                  <h5 class="title-underline fw-bold">Quick & Easy Setup</h5>
+                <h5 class="title-underline fw-bold">Quick & Easy Setup</h5>
               </div>
               <h1 className="color-white text-center fw-bold mb-5">
                 Get Started with Zim Sports in 3 Simple Steps
@@ -577,7 +574,7 @@ export default function Home() {
 
       <div id="Contact" className="section">
         <div className="container py-2 text-center">
-            <h5 class="title-underline fw-bold">Contact US</h5>
+          <h5 class="title-underline fw-bold">Contact US</h5>
         </div>
 
         <div className="container  ">
