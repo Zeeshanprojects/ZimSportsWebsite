@@ -331,15 +331,15 @@ export default function Home() {
                   Zim Sports simplifies administrative tasks, allowing you to
                   focus on the game.
                 </p>
-                <ul className="list-unstyled text-white">
+                <ul className="list-unstyled text-white mb-1">
                   <li>
                     <div className="d-flex align-items-center gap-2 ">
                       <img
                         src={Image.greenchecked}
                         alt="greenchecked"
-                        className="checked-icon mb-3"
+                        className="checked-icon "
                       />
-                      <h5 className="mb-0 ">Automated Rosters & Scheduling</h5>
+                      <h5 className="mb-0">Automated Rosters & Scheduling</h5>
                     </div>
                     <p className="ms-4 text-white">
                       Quickly set up teams, create schedules, and manage player
@@ -416,12 +416,7 @@ export default function Home() {
                     </li>
                   </div>
                 </ul>
-                {/* <button
-                  className="btn  navbar-btn ps-5 pe-5 pt-2 pb-2"
-                  type="submit"
-                >
-                  Explore Analytics
-                </button> */}
+              
               </div>
             </div>
             <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5 d-flex">
@@ -469,12 +464,7 @@ export default function Home() {
                     </li>
                   </div>
                 </ul>
-                {/* <button
-                  className="btn  navbar-btn ps-5 pe-5 pt-2 pb-2 "
-                  type="submit"
-                >
-                  See Fan Features
-                </button> */}
+              
               </div>
             </div>
           </div>
