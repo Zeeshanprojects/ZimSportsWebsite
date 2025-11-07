@@ -43,8 +43,8 @@ export default function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="#Features" onClick={closeNavbar}>
-                  Features
+                <a className="nav-link active" href="#Categories" onClick={closeNavbar}>
+           Categories
                 </a>
               </li>
               <li className="nav-item">

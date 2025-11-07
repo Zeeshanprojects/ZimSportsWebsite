@@ -72,7 +72,7 @@
 
 .stats-heading p {
   font-size: 1.1rem;
-  color: #1f8e4b;
+  color:white;
   opacity: 0.9;
   margin-top: 8px;
 }
@@ -111,7 +111,7 @@
 }
 
 .section {
-  scroll-margin-top: 100px; /* adjust to your navbar height */
+  scroll-margin-top: 20px !important; /* adjust to your navbar height */
 }
 .text-content {
   display: flex;
@@ -236,7 +236,12 @@ input:focus{
   color: white !important;
   padding: 12px 20px !important;
 }
-
+.title-underline {
+  display: inline-block;
+  color: #1F8E4B; /* Bootstrap green */
+  border-bottom: 2px solid #198754;
+  padding-bottom: 4px;
+}
 .banner-right {
   object-fit: cover;
   max-width: 100%;

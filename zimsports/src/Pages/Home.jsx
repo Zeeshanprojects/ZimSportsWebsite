@@ -11,10 +11,19 @@ export default function Home() {
   useEffect(() => {
     document.title = "Zim Sports -  Experience Every Game, Anywhere, Anytime";
   });
+  const sportsData = [
+  { img: Image.sport1, name: "Water Polo" },
+  { img: Image.sport2, name: "Volleyball" },
+  { img: Image.sport3, name: "Rugby" },
+  { img: Image.sport4, name: "Basketball" },
+  { img: Image.sport5, name: "Football" },
+  { img: Image.sport6, name: "Swimming" },
+];
+
   return (
     <>
       <Navbar />
-
+  <div id="Home" className="section">
       <div className="container-fluid p-0 hero-section">
         <img src={Image.banner} alt="banner" className="banner-img" />
 
@@ -33,7 +42,9 @@ export default function Home() {
 
       <div className="background-color">
         <div className="container stats-section">
-          {/* ✅ Heading + Subtitle */}
+   <div className="text-center mb-4">
+       <h5 class="title-underline fw-bold">Why Choose US</h5>
+   </div>
 
           <div className="text-center stats-heading mb-5">
             <h2>Everything You Want, All in One Stream</h2>
@@ -65,7 +76,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="Home" className="section">
+    
         <div className="container py-lg-5 mt-lg-5">
           <div className="row align-items-center">
             {/* Text Section */}
@@ -149,11 +160,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="Features" className="section py-5">
-        <div className="text-center mb-4">
-          <button type="button" class="btn secondary-btn">
-            Categories
-          </button>
+      <div id="Categories" className="section py-5">
+        <div className="background-color">
+           <div className="text-center mb-4">
+      <h5 class="title-underline fw-bold">Categories</h5>
           <h2 className="section-heading mt-3">
             Everything You Want, All in One Stream
           </h2>
@@ -162,35 +172,29 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="container-fluid p-3">
-          <div className="row g-4">
-            {[
-              Image.sport1,
-              Image.sport2,
-              Image.sport3,
-              Image.sport4,
-              Image.sport5,
-              Image.sport6,
-            ].map((sport, index) => (
-              <div className="col-sm-12 col-md-6" key={index}>
-                <div className="sport-card">
-                  <img src={sport} className="card-img" alt="Sport" />
-                  <div className="card-overlay">
-                    <h2 className="text-white">Sport Name</h2>
-                    <button className="watch-btn">Watch Now →</button>
-                  </div>
-                </div>
-              </div>
-            ))}
+       <div className="container-fluid ">
+  <div className="row g-4">
+    {sportsData.map((sport, index) => (
+      <div className="col-sm-12 col-md-6" key={index}>
+        <div className="sport-card">
+          <img src={sport.img} className="card-img" alt={sport.name} />
+          <div className="card-overlay">
+            <h2 className="text-white fw-bold mb-2">{sport.name}</h2>
+            <button className="watch-btn">Watch Now →</button>
           </div>
         </div>
+      </div>
+    ))}
+  </div>
+</div>
+        </div>
+       
+
       </div>
 
       <div id="About" className="section mt-3">
         <div class="text-center ">
-          <button type="button" class="btn secondary-btn">
-            About Zim Sports
-          </button>
+            <h5 class="title-underline fw-bold">About Zim Sports</h5>
         </div>
 
         <div className="container mt-4">
@@ -301,9 +305,7 @@ export default function Home() {
 
       <div id="Services" className="section">
         <div class="text-center my-4">
-          <button type="button" class="btn secondary-btn">
-            Core Services
-          </button>
+             <h5 class="title-underline fw-bold">Core Services</h5>
         </div>
         <div className="container ps-5 pe-5">
           <div className="row">
@@ -359,12 +361,7 @@ export default function Home() {
                     </p>
                   </li>
                 </ul>
-                {/* <button
-                  className="btn  navbar-btn ps-5 pe-5 pt-2 pb-2"
-                  type="submit"
-                >
-                  Discover Management Feature
-                </button> */}
+             
               </div>
             </div>
             <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5 d-flex">
@@ -487,9 +484,7 @@ export default function Home() {
             {" "}
             <div className="background-color">
               <div class="text-center my-4">
-                <button type="button" class="btn secondary-btn">
-                  Quick & Easy Setup
-                </button>
+                  <h5 class="title-underline fw-bold">Quick & Easy Setup</h5>
               </div>
               <h1 className="color-white text-center fw-bold mb-5">
                 Get Started with Zim Sports in 3 Simple Steps
@@ -591,9 +586,7 @@ export default function Home() {
 
       <div id="Contact" className="section">
         <div className="container py-2 text-center">
-          <button type="button" class="btn secondary-btn mb-5 ">
-            Contact US
-          </button>
+            <h5 class="title-underline fw-bold">Contact US</h5>
         </div>
 
         <div className="container  ">
