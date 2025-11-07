@@ -30,7 +30,7 @@ export default function Home() {
           <div className="overlay-text">
             <h1>Stream Your Favorite Club Sports Live</h1>
             <p>
-              Watch volleyball, water polo, football, basketball, and more
+              Stream Liveleyball, water polo, football, basketball, and more
               <br /> never miss a moment!
             </p>
             <button className="hero-btn">
@@ -182,7 +182,7 @@ export default function Home() {
                       alt={sport.name}
                     />
                     <div className="card-overlay">
-                      <button className="watch-btn">Watch Now →</button>
+                      <button className="watch-btn">Stream Live →</button>
                     </div>
                   </div>
                 </div>
@@ -202,7 +202,7 @@ export default function Home() {
             <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
               <h1 className="custom-para">
                 {" "}
-                Your comprehensive sports ecosystem <br /> designed to
+                Your comprehensive sports ecosystem designed to
                 <br />
                 transform how you experience{" "}
                 <img
@@ -576,7 +576,9 @@ export default function Home() {
         <div className="container py-2 text-center">
           <h5 class="title-underline fw-bold">Contact US</h5>
         </div>
-
+        <h1 className="color-white text-center fw-bold mb-5">
+             Questions? Our team has the answers.
+              </h1>
         <div className="container  ">
           <div className="row align-items-center">
             {/* Left Column - Text */}
@@ -602,61 +604,56 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* Right Column - Form */}
-            <div className="col-lg-6">
-              <div className="p-4 border border rounded-4 shadow-sm p-5">
-                <form>
-                  <div className="mb-3">
-                    <label
-                      htmlFor="email"
-                      className="form-label fw-semibold text-white"
-                    >
-                      Email address
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      className="form-control border-dark rounded-3"
-                      required
-                    />
-                  </div>
-                  <div className="mb-3">
-                    <label
-                      htmlFor="password"
-                      className="form-label fw-semibold text-white"
-                    >
-                      Password
-                    </label>
-                    <input
-                      type="password"
-                      id="password"
-                      className="form-control border-dark rounded-3"
-                      required
-                    />
-                  </div>
-                  <div className="mb-3">
-                    <label
-                      htmlFor="message"
-                      className="form-label fw-semibold text-white"
-                    >
-                      Message
-                    </label>
-                    <textarea
-                      id="message"
-                      className="form-control border-dark rounded-3"
-                      style={{ minHeight: "150px" }} // ✅ controls height
-                      required
-                    ></textarea>
-                  </div>
-                  <button
-                    type="submit"
-                    className="btn  w-100 py-2 rounded-3 fw-bold"
-                  >
-                    Send Message
-                  </button>
-                </form>
-              </div>
-            </div>
+         {/* Right Column - FAQ Section */}
+<div className="col-sm-12 col-md-6">
+  <div className="faq-container">
+    <h4 className="faq-title">Frequently Asked Questions</h4>
+
+    <div className="accordion modern-accordion" id="accordionFAQ">
+
+      {[
+        {
+          q: "How can I watch live sports?",
+          a: "Just sign up, choose your favorite sport, and start watching instantly — anytime, anywhere."
+        },
+        {
+          q: "Do I need a subscription?",
+          a: "Some content is free. For premium matches and tournaments, a subscription unlocks full access."
+        },
+        {
+          q: "Can I stream on multiple devices?",
+          a: "Yes! Your account supports seamless streaming across mobiles, tablets, and smart TVs."
+        }
+      ].map((item, index) => (
+        <div className="accordion-item" key={index}>
+          <h2 className="accordion-header" id={`heading${index}`}>
+            <button
+              className={`accordion-button ${index !== 0 && "collapsed"}`}
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target={`#collapse${index}`}
+              aria-expanded={index === 0 ? "true" : "false"}
+              aria-controls={`collapse${index}`}
+            >
+              {item.q}
+            </button>
+          </h2>
+
+          <div
+            id={`collapse${index}`}
+            className={`accordion-collapse collapse ${index === 0 && "show"}`}
+            aria-labelledby={`heading${index}`}
+            data-bs-parent="#accordionFAQ"
+          >
+            <div className="accordion-body">{item.a}</div>
+          </div>
+        </div>
+      ))}
+
+    </div>
+  </div>
+</div>
+
           </div>
         </div>
       </div>
