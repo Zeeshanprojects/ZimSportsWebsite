@@ -40,7 +40,7 @@ export default function Home() {
             </p>
             <button className="hero-btn">
               {" "}
-              <MonitorPlay size={22} className="me-2 " /> Get Staretd Free            </button>
+              <MonitorPlay size={22} className="me-2 " /> Get Started Free            </button>
           </div>
         </div>
 <div className="section"></div>
