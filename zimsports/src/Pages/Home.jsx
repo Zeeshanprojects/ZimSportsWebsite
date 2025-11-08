@@ -5,18 +5,13 @@ import { Link } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import { MonitorPlay } from "lucide-react";
-import AOS from "aos"
-import "aos/dist/aos.css"
+
 
 export default function Home() {
   useEffect(() => {
-    document.title = "Zim Sports -  Experience Every Game, Anywhere, Anytime";
-     AOS.init({
-    duration: 1200, // animation speed
-    once: true,     // animation happens only once
-  });
-  },[]);
-  
+    document.title = "Zim Sports - Experience Every Game, Anywhere, Anytime";
+  }, []);
+
   const sportsData = [
     { img: Image.sport1 },
     { img: Image.sport2 },
@@ -29,21 +24,28 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div  className="section" data-aos="zoom-in">
+      <div className="section">
         <div className="container-fluid p-0 hero-section">
-          <img src={Image.banner} alt="banner" className="banner-img" fetchPriority="high"/>
+          <img
+            src={Image.banner}
+            alt="banner"
+            className="banner-img"
+            fetchPriority="high"
+          />
 
           <div className="overlay-text">
             <h1>Power Your Team Stream Every Splash</h1>
             <p>
-           Zim Sports is the alli-in-one platform for club teams live broadcast, manage and elevate your game from
+              Zim Sports is the alli-in-one platform for club teams live
+              broadcast, manage and elevate your game from
             </p>
             <button className="hero-btn">
               {" "}
-              <MonitorPlay size={22} className="me-2 " /> Get Started Free            </button>
+              <MonitorPlay size={22} className="me-2 " /> Get Started Free{" "}
+            </button>
           </div>
         </div>
-<div className="section"></div>
+
         <div className="background-color ">
           <div className="container stats-section ">
             <div className="text-center mb-4">
@@ -57,7 +59,7 @@ export default function Home() {
 
             {/* ✅ Stats Rows */}
             <div className="row text-center">
-              <div className="col-12 col-sm-12 col-md-3 stat-box">
+              <div className="col-12 col-sm-12 col-md-3 stat-box ">
                 <h2 className="stat-number">100+</h2>
                 <p className="stat-title">Live Events</p>
               </div>
@@ -163,7 +165,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div  className="section py-5">
+      <div className="section py-5">
         <div className="background-color">
           <div className="text-center mb-4">
             <h5 class="title-underline fw-bold">Categories</h5>
@@ -197,7 +199,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div  className="section mt-3">
+      <div className="section mt-3">
         <div class="text-center ">
           <h5 class="title-underline fw-bold">About Zim Sports</h5>
         </div>
@@ -577,7 +579,7 @@ export default function Home() {
         <br />
       </div>
 
-      <div  className="section">
+      <div className="section">
         <div className="container py-2 text-center">
           <h5 class="title-underline fw-bold">Contact US</h5>
         </div>
