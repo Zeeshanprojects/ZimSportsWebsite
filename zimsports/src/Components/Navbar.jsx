@@ -22,7 +22,7 @@ export default function Navbar() {
         <div className="container">
           <a className="navbar-brand" href="/">
             <img
-              src={Image.footerlogo}
+              src={Image.logo}
               alt="logo"
               className="navbar-brand-image"
             />
@@ -62,7 +62,7 @@ export default function Navbar() {
 
             <div className="d-flex mt-3 mt-lg-0">
               <Link to="/login">
-                <button className="btn navbar-btn shadow-lg">Get Started Free</button>
+                <button className="btn btn-success shadow-lg">Get Started Free</button>
               </Link>
             </div>
           </div>

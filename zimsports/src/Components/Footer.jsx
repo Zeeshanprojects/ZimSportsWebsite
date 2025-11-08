@@ -1,89 +1,71 @@
 import React from "react";
 import Image from "../assets/Images/image";
 import "../assets/CSS/Footer.css";
+
 export default function Footer() {
   return (
-    <>
-    <div className="container-fluid mt-5"></div>
-      <footer className="footer-section bg-dark text-white py-5">
-        <div className="container">
-          <div className="row align-items-center">
-            {/* Left Side */}
-            <div className="col-md-6 mb-4 mb-md-0">
-              <img
-                src={Image.footerlogo}
-                alt="zim sports logo"
-                style={{ width: "120px" }}
-                className="mb-3"
-              />
-              {/* <h4 className="fw-bold">Subscribe newsletter</h4>
-              <p className="color-white">
-                Be the first to receive all latest post in your inbox
-              </p> */}
+    <footer className="footer text-white">
+      <div className="container mt-5 py-5">
+        <div className="row gy-4">
+          {/* Left Column */}
+          <div className="col-sm-12 col-md-6">
+            <img src={Image.logo} alt="footer logo" className="footer-logo mb-3" />
+            <p className="footer-text text-white">
+              ZimSports brings you the ultimate experience to enjoy every single game —
+              anywhere, anytime. Stay connected with the latest sports updates and
+              live events.
+            </p>
+          </div>
 
-              {/* Email Input */}
-              {/* <div className="input-group mb-2 mt-3">
-                <input
-                  type="email"
-                  className="form-control bg-dark text-white border border-secondary"
-                  placeholder="Enter your email"
+          {/* Useful Links */}
+          <div className="col-sm-6 col-md-3">
+            <h6 className="fw-bold text-uppercase">Useful Links</h6>
+            <hr className="footer-line" />
+            <ul className="list-unstyled">
+              <li><a href="#!" className="footer-link">About Zim</a></li>
+              <li><a href="#!" className="footer-link">Support</a></li>
+              <li><a href="#!" className="footer-link">Privacy Policy</a></li>
+              <li><a href="#!" className="footer-link">Terms of Service</a></li>
+            </ul>
+          </div>
+
+          {/* App Download Section */}
+          <div className="col-sm-6 col-md-3">
+           <h6 className="fw-bold text-uppercase">Download App</h6>
+            <hr className="footer-line" />
+            <div className="d-flex flex-wrap gap-3">
+              <a href="#" className="store-btn">
+                <img
+                  src={Image.googleplay}
+                  alt="Google Play"
+                  className="footericons me-2"
                 />
-                <button className="btn btn-success ">
-                  <img src={Image.sendemailicon} alt="send" style={{ width: '20px' , filter: 'invert(1'}} />
-                </button>
-              </div> */}
+                <div>
+                  <large>Get it on </large>
+                  <div className="fw-bold">Google Play</div>
+                </div>
+              </a>
 
-              {/* <small>
-                By clicking send link you agree to receive message.
-              </small> */}
-
-              <div className="mt-3 ">
-                <a
-                  href="mailto:support@zimsports.com "
-                  className="text-white me-3"
-                  style={{ textDecoration: "none" }}
-                >
-                  support@zimsports.com
-                </a>{" "}
-                |
-                <a
-                  href="mailto:sales@zimsports.com"
-                  className="text-white ms-3"
-                  style={{ textDecoration: "none" }} 
-                >
-                  sales@zimsports.com
-                </a>
-              </div>
-            </div>
-
-            {/* Right Side */}
-            <div className="col-md-6 text-md-end text-center">
-              <h5 className="fw-bold mb-4">Download app</h5>
-              <div className="d-flex justify-content-md-end justify-content-center gap-3 flex-wrap">
-                <a href="#" className="store-btn google-play-btn">
-                  <i className="fab fa-google-play me-2"></i>
-                  <img
-                    src={Image.googleplay}
-                    alt="applestrore"
-                    className="footericons me-2"
-                  />{" "}
-                  Get it on <strong className="ms-1">Google Play</strong>
-                </a>
-
-                <a href="#" className="store-btn app-store-btn">
-                  <i className="fab fa-apple me-2"></i>
-                  <img
-                    src={Image.appstorebtn}
-                    alt="applestrore"
-                    className="footericons me-2"
-                  />{" "}
-                  Download on <strong className="ms-1">App Store</strong>
-                </a>
-              </div>
+              <a href="#" className="store-btn">
+                <img
+                  src={Image.appstorebtn}
+                  alt="App Store"
+                  className="footericons me-2"
+                />
+                <div>
+                  <small>Download on</small>
+                  <div className="fw-bold">App Store</div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
-      </footer>
-    </>
+      </div>
+
+      {/* Footer Bottom */}
+      <div className="footer-bottom text-center py-3">
+        © {new Date().getFullYear()} ZimSports. All rights reserved.
+      </div>
+    </footer>
   );
 }

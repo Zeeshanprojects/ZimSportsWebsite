@@ -39,10 +39,17 @@ export default function Home() {
               Zim Sports is the alli-in-one platform for club teams live
               broadcast, manage and elevate your game from
             </p>
-            <button className="hero-btn">
+            <div className="d-flex">
+                 <button className="btn btn-success">
               {" "}
-              <MonitorPlay size={22} className="me-2 " /> Get Started Free{" "}
+              Get Started Free{" "}
             </button>
+                <button className="btn btn-success">
+              {" "}
+                Get Started Free{" "}
+            </button>
+            </div>
+         
           </div>
         </div>
 
@@ -102,7 +109,7 @@ export default function Home() {
 
                 <div className="text-start ">
                   <Link to="/signup">
-                    <button type="button" className="btn  fw-bold ">
+                    <button type="button" className="btn btn-success fw-bold ">
                       Get Started
                     </button>
                   </Link>
@@ -189,7 +196,7 @@ export default function Home() {
                       loading="lazy"
                     />
                     <div className="card-overlay">
-                      <button className="watch-btn">Stream Live →</button>
+                      <button className="btn btn-success">Stream Live →</button>
                     </div>
                   </div>
                 </div>
