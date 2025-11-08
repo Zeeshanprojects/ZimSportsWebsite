@@ -93,10 +93,10 @@ export default function Home() {
                   </strong>
                 </h1>
                 <p className="text-white">
-                  Live-stream, capture, and relive every moment of your clubʼs
-                  journey powered by Zim Sports Technologies. Stay connected
-                  with your team’s highlights, stats, and unforgettable
-                  performances — all in one place.
+                  Live-stream, capture, and relive every moment of your club’s
+                  journey with Zim Sports Technologies. Follow your team’s
+                  highlights and track stats effortlessly. Experience every
+                  unforgettable performance in one place.
                 </p>
 
                 <div className="text-start ">
@@ -374,13 +374,10 @@ export default function Home() {
                 Your sports journey with Zim Sports <span>services</span>
               </h1>
             </div>
-<div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5 d-flex">
+            <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5 d-flex">
               <div className="feature-card d-flex flex-column justify-content-between w-100">
                 <h2 className="text-white">
-                  <p className="subparagraph ">
-                    {" "}
-        Team & Player Management
-                  </p>
+                  <p className="subparagraph "> Team & Player Management</p>
                   <span>Effortless Organization </span>for Coaches & Admins
                 </h2>
                 <p className="text-white">
@@ -397,8 +394,8 @@ export default function Home() {
                       className="checked-icon mb-3"
                     />
                     <li>
-                       Quickly set up teams, create schedules, and manage player
-                      availability with automated tools.
+                      Quickly set up teams, create schedules, and manage player
+                      availability
                     </li>
                   </div>
                   <div className="d-flex align-items-center gap-2 pb-2">
@@ -408,8 +405,8 @@ export default function Home() {
                       className="checked-icon mb-3"
                     />
                     <li>
-                       Facilitate seamless communication with instant messaging,
-                      announcements, and direct chats.
+                      Facilitate seamless communication with instant messaging,
+                      announcements
                     </li>
                   </div>
 
@@ -420,8 +417,9 @@ export default function Home() {
                       className="checked-icon mb-3"
                     />
                     <li>
-    Generate detailed performance reports and track player progress over time.
-  </li>
+                      Generate detailed performance reports and track player
+                      progress over time.
+                    </li>
                   </div>
                 </ul>
               </div>

@@ -20,7 +20,6 @@
   max-width: 900px;
   padding: 0 20px;
 }
-
 .overlay-text h1 {
   font-size: 4.8rem;
   font-weight: 900;
@@ -28,7 +27,6 @@
   text-align: center;
   color: #fff;
 }
-
 .overlay-text p {
   font-size: 1.4rem;
   color: white;
@@ -36,8 +34,6 @@
   opacity: 0.95;
   margin-bottom: 30px;
 }
-
-/* ✅ Better Button (Green + Glow) */
 .hero-btn {
   background-color: #1f8e4b;
   color: #fff;
@@ -50,7 +46,6 @@
   transition: 0.4s ease-in-out;
 }
 
-/* ✅ Make mobile responsive */
 @media (max-width: 768px) {
   .overlay-text h1 {
     font-size: 2.5rem;
@@ -77,7 +72,6 @@
   margin-top: 8px;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .stats-heading h2 {
     font-size: 1.8rem;
@@ -87,7 +81,6 @@
   }
 }
 
-
 .feature-box {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 15px;
@@ -95,24 +88,20 @@
   transition: all 0.4s ease;
   height: 100%;
 }
-
 .feature-box:hover {
   background: rgba(255, 255, 255, 0.1);
   transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-
 .icons {
   height: 80px;
   width: 80px;
   filter: invert(38%) sepia(63%) saturate(400%) hue-rotate(95deg) brightness(90%);
   transition: transform 0.4s ease;
 }
-
 .feature-box:hover .icons {
   transform: scale(1.1);
 }
-
 .feature-title {
   font-size: 20px;
   font-weight: 700;

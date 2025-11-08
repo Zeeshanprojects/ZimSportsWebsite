@@ -62,15 +62,16 @@
 
 /* ✅ Mobile Fix: Full background on collapse */
 @media (max-width: 991px) {
+  .navbar-brand-image {
+  margin-left: 10px;
+}
   #navbarSupportedContent {
-    
     padding: 1%;
     margin-top: 15px;
   }
 
   .navbar-nav .nav-link {
     margin: 8px 0;
-   
   }
 
   .navbar-btn {
