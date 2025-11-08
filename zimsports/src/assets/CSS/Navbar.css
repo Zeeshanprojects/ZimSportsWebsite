@@ -1,7 +1,6 @@
 /* ✅ Navbar Style */
 .custom-navbar {
   background-color: #0b0b0c !important;
-
   z-index: 999 !important; /* Fix layering */
 }
 
