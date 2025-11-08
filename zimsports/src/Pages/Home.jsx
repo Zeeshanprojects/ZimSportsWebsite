@@ -161,6 +161,47 @@ export default function Home() {
           </div>
         </div>
       </div>
+    <div className="container features-section text-center py-5">
+  <div className="row gy-4">
+    {/* Feature 1 */}
+    <div className="col-sm-12 col-md-4">
+      <div className="feature-box">
+        <img src={Image.icon1} alt="Stream Every Moment" className="icons mb-3" />
+        <h4 className="feature-title">Stream Every Moment</h4>
+        <p className="feature-text">
+          Broadcast games in HD with one tap. Share the action with families,
+          fans, and recruiters live or on demand.
+        </p>
+      </div>
+    </div>
+
+    {/* Feature 2 */}
+    <div className="col-sm-12 col-md-4">
+      <div className="feature-box">
+        <img src={Image.icon2} alt="Simplify Coaching" className="icons mb-3" />
+        <h4 className="feature-title">Simplify Coaching</h4>
+        <p className="feature-text">
+          Schedules, rosters, messaging, and stats all in one place —
+          Zim makes coaching effortless.
+        </p>
+      </div>
+    </div>
+
+    {/* Feature 3 */}
+    <div className="col-sm-12 col-md-4">
+      <div className="feature-box">
+        <img src={Image.icon3} alt="Train Smarter" className="icons mb-3" />
+        <h4 className="feature-title">Train Smarter</h4>
+        <p className="feature-text">
+          Instant cloud storage for every game. Review plays, build highlights,
+          and coach with precision.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
 
       <div className="section py-5">
         <div className="background-color">

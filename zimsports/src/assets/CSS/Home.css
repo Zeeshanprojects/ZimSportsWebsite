@@ -87,6 +87,62 @@
   }
 }
 
+
+.feature-box {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 30px 20px;
+  transition: all 0.4s ease;
+  height: 100%;
+}
+
+.feature-box:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.icons {
+  height: 80px;
+  width: 80px;
+  filter: invert(1) hue-rotate(90deg); /* 90deg shifts the color toward green */
+  transition: transform 0.4s ease;
+}
+
+
+.feature-box:hover .icons {
+  transform: scale(1.1);
+}
+
+.feature-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1F8E4B; /* sporty green accent */
+}
+
+.feature-text {
+  font-size: 15px;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .feature-box {
+    padding: 25px 15px;
+  }
+
+  .feature-title {
+    font-size: 18px;
+  }
+
+  .icons {
+    height: 70px;
+    width: 70px;
+  }
+}
+
 .stat-number {
   font-size: 3.8rem;
   font-weight: 900;
@@ -289,10 +345,10 @@ p {
   height: 60px;
   width: 60px;
 }
-.icons {
+/* .icons {
   filter: invert(30%) sepia(90%) saturate(600%) hue-rotate(95deg)
     brightness(85%);
-}
+} */
 
 .color-white {
   color: white;
