@@ -39,7 +39,10 @@ export default function Home() {
               broadcast, manage and elevate your game from
             </p>
 
-            <button className="btn btn-success ps-5 pe-5 fw-bold"> Get Started Free </button>
+            <button className="btn btn-success ps-5 pe-5 fw-bold">
+              {" "}
+              Get Started Free{" "}
+            </button>
           </div>
         </div>
 
@@ -86,8 +89,7 @@ export default function Home() {
               <div className="text-content ">
                 <h1>
                   <strong>
-                    Experience Every Single Game,
-                    Anywhere, Anytime
+                    Experience Every Single Game, Anywhere, Anytime
                   </strong>
                 </h1>
                 <p className="text-white">
@@ -161,47 +163,57 @@ export default function Home() {
           </div>
         </div>
       </div>
-    <div className="container features-section text-center py-5">
-  <div className="row gy-4">
-    {/* Feature 1 */}
-    <div className="col-sm-12 col-md-4">
-      <div className="feature-box">
-        <img src={Image.icon1} alt="Stream Every Moment" className="icons mb-3" />
-        <h4 className="feature-title">Stream Every Moment</h4>
-        <p className="feature-text">
-          Broadcast games in HD with one tap. Share the action with families,
-          fans, and recruiters live or on demand.
-        </p>
-      </div>
-    </div>
+      <div className="container features-section text-center py-5">
+        <div className="row gy-4">
+          {/* Feature 1 */}
+          <div className="col-sm-12 col-md-4">
+            <div className="feature-box">
+              <img
+                src={Image.icon1}
+                alt="Stream Every Moment"
+                className="icons mb-3"
+              />
+              <h4 className="feature-title">Stream Every Moment</h4>
+              <p className="feature-text">
+                Broadcast games in HD with one tap. Share the action with
+                families, fans, and recruiters live or on demand.
+              </p>
+            </div>
+          </div>
 
-    {/* Feature 2 */}
-    <div className="col-sm-12 col-md-4">
-      <div className="feature-box">
-        <img src={Image.icon2} alt="Simplify Coaching" className="icons mb-3" />
-        <h4 className="feature-title">Simplify Coaching</h4>
-        <p className="feature-text">
-          Schedules, rosters, messaging, and stats all in one place —
-          Zim makes coaching effortless.
-        </p>
-      </div>
-    </div>
+          {/* Feature 2 */}
+          <div className="col-sm-12 col-md-4">
+            <div className="feature-box">
+              <img
+                src={Image.icon2}
+                alt="Simplify Coaching"
+                className="icons mb-3"
+              />
+              <h4 className="feature-title">Simplify Coaching</h4>
+              <p className="feature-text">
+                Schedules, rosters, messaging, and stats all in one place — Zim
+                makes coaching effortless.
+              </p>
+            </div>
+          </div>
 
-    {/* Feature 3 */}
-    <div className="col-sm-12 col-md-4">
-      <div className="feature-box">
-        <img src={Image.icon3} alt="Train Smarter" className="icons mb-3" />
-        <h4 className="feature-title">Train Smarter</h4>
-        <p className="feature-text">
-          Instant cloud storage for every game. Review plays, build highlights,
-          and coach with precision.
-        </p>
+          {/* Feature 3 */}
+          <div className="col-sm-12 col-md-4">
+            <div className="feature-box">
+              <img
+                src={Image.icon3}
+                alt="Train Smarter"
+                className="icons mb-3"
+              />
+              <h4 className="feature-title">Train Smarter</h4>
+              <p className="feature-text">
+                Instant cloud storage for every game. Review plays, build
+                highlights, and coach with precision.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
-
-      
 
       <div className="section py-5">
         <div className="background-color">
@@ -362,50 +374,55 @@ export default function Home() {
                 Your sports journey with Zim Sports <span>services</span>
               </h1>
             </div>
-
-            <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5 d-flex ">
+<div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5 d-flex">
               <div className="feature-card d-flex flex-column justify-content-between w-100">
-                <p className="subparagraph"> Team & Player Management</p>
                 <h2 className="text-white">
-                  <span>Effortless organization</span> for Coaches & Admins
+                  <p className="subparagraph ">
+                    {" "}
+        Team & Player Management
+                  </p>
+                  <span>Effortless Organization </span>for Coaches & Admins
                 </h2>
-                <br />
                 <p className="text-white">
                   Streamline rosters, track attendance, manage team finances,
                   and organize all player information in one secure location.
                   Zim Sports simplifies administrative tasks, allowing you to
                   focus on the game.
                 </p>
-                <ul className="list-unstyled text-white mb-1">
-                  <li>
-                    <div className="d-flex align-items-center gap-2 ">
-                      <img
-                        src={Image.greenchecked}
-                        alt="greenchecked"
-                        className="checked-icon "
-                      />
-                      <h5 className="mb-0">Automated Rosters & Scheduling</h5>
-                    </div>
-                    <p className="ms-4 text-white">
-                      Quickly set up teams, create schedules, and manage player
+                <ul className="list-unstyled text-white">
+                  <div className="d-flex align-items-center gap-2 pb-2">
+                    <img
+                      src={Image.greenchecked}
+                      alt="greenchecked"
+                      className="checked-icon mb-3"
+                    />
+                    <li>
+                       Quickly set up teams, create schedules, and manage player
                       availability with automated tools.
-                    </p>
-                  </li>
-
-                  <li>
-                    <div className="d-flex align-items-center gap-2 ">
-                      <img
-                        src={Image.greenchecked}
-                        alt="greenchecked"
-                        className="checked-icon mb-3"
-                      />
-                      <h5 className="mb-0">Integrated Communication Hub</h5>
-                    </div>
-                    <p className="ms-4 text-white">
-                      Facilitate seamless communication with instant messaging,
+                    </li>
+                  </div>
+                  <div className="d-flex align-items-center gap-2 pb-2">
+                    <img
+                      src={Image.greenchecked}
+                      alt="greenchecked"
+                      className="checked-icon mb-3"
+                    />
+                    <li>
+                       Facilitate seamless communication with instant messaging,
                       announcements, and direct chats.
-                    </p>
-                  </li>
+                    </li>
+                  </div>
+
+                  <div className="d-flex align-items-center gap-2 pb-2">
+                    <img
+                      src={Image.greenchecked}
+                      alt="greenchecked"
+                      className="checked-icon mb-3"
+                    />
+                    <li>
+    Generate detailed performance reports and track player progress over time.
+  </li>
+                  </div>
                 </ul>
               </div>
             </div>
@@ -626,7 +643,6 @@ export default function Home() {
         </h1>
         <div className="container  ">
           <div className="row align-items-center">
-       
             <div className="col-lg-6 mb-4 mb-lg-0">
               <h1 className="fw-bold mb-3 text-white">
                 Let's <span>Talk</span>
