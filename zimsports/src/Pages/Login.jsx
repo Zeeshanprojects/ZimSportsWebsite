@@ -67,7 +67,7 @@ export default function Login() {
   };
 
   return (
-    <div className="container-fluid login-wrapper">
+    <div className="container-fluid login-wrapper" >
       <div className="row min-vh-100">
         {/* Right Side Form */}
         <div className="col-lg-12 col-md-12 col-sm-12 login-right d-flex align-items-center justify-content-center">

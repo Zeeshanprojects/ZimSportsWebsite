@@ -6,7 +6,6 @@ import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import { MonitorPlay } from "lucide-react";
 
-
 export default function Home() {
   useEffect(() => {
     document.title = "Zim Sports - Experience Every Game, Anywhere, Anytime";
@@ -39,17 +38,8 @@ export default function Home() {
               Zim Sports is the alli-in-one platform for club teams live
               broadcast, manage and elevate your game from
             </p>
-            <div className="d-flex">
-                 <button className="btn btn-success">
-              {" "}
-              Get Started Free{" "}
-            </button>
-                <button className="btn btn-success">
-              {" "}
-                Get Started Free{" "}
-            </button>
-            </div>
-         
+
+            <button className="btn btn-success ps-5 pe-5 fw-bold"> Get Started Free </button>
           </div>
         </div>
 

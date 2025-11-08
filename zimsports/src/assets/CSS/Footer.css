@@ -64,7 +64,31 @@
   font-size: 14px;
 }
 
-/* Responsive */
+.fs{
+  font-size: 15px;
+}
+/* Social Icons */
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #fff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #7c4dff; /* Accent color */
+  transform: translateY(-3px);
+}
+
+.lucide-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
 @media (max-width: 767px) {
   .footer {
     text-align: center;
