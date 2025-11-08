@@ -49,8 +49,8 @@ const Image = {
   sport4: new URL("./sport4.webp", import.meta.url).href,
   sport5: new URL("./sport5.webp", import.meta.url).href,
   sport6: new URL("./sport6.webp", import.meta.url).href,
-  icon1:new URL ("./award.png",import.meta.url).href,
+  icon1:new URL ("./play-button.png",import.meta.url).href,
   icon2:new URL ("./leadership.png",import.meta.url).href,
-  icon3:new URL ("./play-button.png",import.meta.url).href
+  icon3:new URL ("./award.png",import.meta.url).href
 };
 export default Image;
