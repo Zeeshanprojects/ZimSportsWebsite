@@ -30,9 +30,7 @@
   transition: color 0.3s ease;
 }
 
-.footer-link:hover {
-  color: #7c4dff;
-}
+
 
 /* App Store Buttons */
 .store-btn {
@@ -79,10 +77,6 @@
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.social-icons a:hover {
-  color: #7c4dff; /* Accent color */
-  transform: translateY(-3px);
-}
 
 .lucide-icon svg {
   width: 24px;
@@ -93,8 +87,18 @@
   .footer {
     text-align: center;
   }
-
   .store-btn {
     justify-content: center;
   }
+.social-icons{
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+.flex-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 }

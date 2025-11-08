@@ -1,6 +1,6 @@
 /* ✅ Navbar Style */
 .custom-navbar {
-  background-color: #0b0b0c !important;
+  background-color: #1C2331 !important;
   z-index: 999 !important; /* Fix layering */
 }
 
@@ -63,9 +63,8 @@
 /* ✅ Mobile Fix: Full background on collapse */
 @media (max-width: 991px) {
   #navbarSupportedContent {
-    background: #0b0b0c;
-    padding: 20px;
-    border-radius: 10px;
+    
+    padding: 1%;
     margin-top: 15px;
   }
 

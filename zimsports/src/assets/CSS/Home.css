@@ -637,6 +637,7 @@ body.modal-open .watch-live-btn {
   }
 }
 @media (max-width: 576px) {
+
   .sm-position {
     left: 10% !important;
   }
