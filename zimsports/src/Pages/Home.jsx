@@ -38,11 +38,12 @@ export default function Home() {
               Zim Sports is the alli-in-one platform for club teams live
               broadcast, manage and elevate your game from
             </p>
-
-            <button className="btn btn-success ps-5 pe-5 pt-2 pb-2 fw-bold">
+<Link to="./login">
+<button className="btn btn-success ps-5 pe-5 pt-2 pb-2 fw-bold">
               {" "}
-              Get Started Free{" "}
-            </button>
+              Get Started Today{" "}
+            </button></Link>
+            
           </div>
         </div>
 
@@ -102,7 +103,7 @@ export default function Home() {
                 <div className="text-start ">
                   <Link to="/signup">
                     <button type="button" className="btn btn-success fw-bold ">
-                      Get Started
+                      DIscover More
                     </button>
                   </Link>
                 </div>
