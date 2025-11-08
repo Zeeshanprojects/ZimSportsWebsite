@@ -39,7 +39,7 @@ export default function Home() {
               broadcast, manage and elevate your game from
             </p>
 
-            <button className="btn btn-success ps-5 pe-5 fw-bold">
+            <button className="btn btn-success ps-5 pe-5 pt-2 pb-2 fw-bold">
               {" "}
               Get Started Free{" "}
             </button>
