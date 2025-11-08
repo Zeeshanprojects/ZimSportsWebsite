@@ -626,7 +626,7 @@ export default function Home() {
         </h1>
         <div className="container  ">
           <div className="row align-items-center">
-            {/* Left Column - Text */}
+       
             <div className="col-lg-6 mb-4 mb-lg-0">
               <h1 className="fw-bold mb-3 text-white">
                 Let's <span>Talk</span>
