@@ -106,12 +106,13 @@ export default function Footer() {
             </ul>
           </div>
         </div>
+          <div className="footer-bottom text-center ">
+        © {new Date().getFullYear()} ZimSports. All rights reserved.
+      </div>
       </div>
 
       {/* Footer Bottom */}
-      <div className="footer-bottom text-center py-3">
-        © {new Date().getFullYear()} ZimSports. All rights reserved.
-      </div>
+    
     </footer>
   );
 }
