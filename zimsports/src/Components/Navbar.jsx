@@ -21,11 +21,7 @@ export default function Navbar() {
       <nav className="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
         <div className="container">
           <a className="navbar-brand" href="/">
-            <img
-              src={Image.logo}
-              alt="logo"
-              className="navbar-brand-image"
-            />
+            <img src={Image.logo} alt="logo" className="navbar-brand-image" />
           </a>
 
           <button
@@ -40,29 +36,26 @@ export default function Navbar() {
             <span className="navbar-toggler-icon" />
           </button>
 
-          <div
-            className="collapse navbar-collapse"
-            id="navbarSupportedContent"
-          >
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto">
-              {["Home", "Features", "Pricing", "Watch Demo", ].map(
-                (item) => (
-                  <li className="nav-item" key={item}>
-                    <a
-                      className="nav-link"
-                      href={`#${item}`}
-                      onClick={closeNavbar}
-                    >
-                      {item}
-                    </a>
-                  </li>
-                )
-              )}
+              {["Home", "Features", "Pricing", "Watch Demo"].map((item) => (
+                <li className="nav-item" key={item}>
+                  <a
+                    className="nav-link"
+                    href={`#${item}`}
+                    onClick={closeNavbar}
+                  >
+                    {item}
+                  </a>
+                </li>
+              ))}
             </ul>
 
             <div className="d-flex mt-3 mt-lg-0">
               <Link to="/login">
-                <button className="btn btn-success shadow-lg">Get Started Free</button>
+                <button className="btn btn-success shadow-lg">
+                  Get Started 
+                </button>
               </Link>
             </div>
           </div>

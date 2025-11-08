@@ -41,7 +41,7 @@ export default function Home() {
 <Link to="./login">
 <button className="btn btn-success ps-5 pe-5 pt-2 pb-2 fw-bold">
               {" "}
-              Get Started Today{" "}
+              Get Started Free{" "}
             </button></Link>
             
           </div>
