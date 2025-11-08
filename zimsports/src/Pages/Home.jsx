@@ -87,7 +87,7 @@ export default function Home() {
                 <h1>
                   <strong>
                     Experience Every Single Game,
-                    <span> Anywhere, Anytime</span>
+                    Anywhere, Anytime
                   </strong>
                 </h1>
                 <p className="text-white">

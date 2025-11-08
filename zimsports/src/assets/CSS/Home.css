@@ -641,7 +641,13 @@ body.modal-open .watch-live-btn {
   }
 }
 @media (max-width: 576px) {
-
+  
+.text-content h1{
+  font-size: 40px !important;
+}
+.custom-para{
+  font-size:40px;
+}
   .sm-position {
     left: 10% !important;
   }
