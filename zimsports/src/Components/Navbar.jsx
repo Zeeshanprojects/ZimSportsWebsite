@@ -62,7 +62,6 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Add spacing to avoid content under navbar */}
       <div style={{ height: "100px" }} />
     </>
   );
