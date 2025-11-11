@@ -7,7 +7,6 @@
   width: 100% !important;
   height:100vh;
   margin: 0px !important;
- 
   object-fit: cover;
   filter: brightness(70%); /* ✅ dims the background */
 }
@@ -632,6 +631,13 @@ body.modal-open .watch-live-btn {
   height: 30px;
   width:260px;
   filter: brightness(3);
+}
+.banner-img {
+  width: 100% !important;
+  height:88vh;
+  margin: 0px !important;
+  object-fit: cover;
+  filter: brightness(70%); /* ✅ dims the background */
 }
 .text-content h1{
   font-size: 40px !important;
