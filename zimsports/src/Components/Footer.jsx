@@ -5,11 +5,12 @@ import "../assets/CSS/Footer.css";
 export default function Footer() {
   return (
     <footer className="footer text-white">
-      <div className="container py-5">
+      <div className="container pt-5 ">
         <div className="row gy-4">
           {/* Left Column */}
        <div className="col-sm-12 col-md-6 mb-5">
-  <img src={Image.logo} alt="footer logo" className="footer-logo mb-3" />
+  {/* <img src={Image.logo} alt="footer logo" className="footer-logo mb-3" /> */}
+   <h5 className="fw-bold text-uppercase text-primary">Zim Sports</h5>
   <p className="footer-text text-white">
     ZimSports brings you the ultimate experience to enjoy every single game —
     anywhere, anytime. Stay connected with the latest sports updates and
@@ -85,7 +86,7 @@ export default function Footer() {
 
           {/* Useful Links */}
           <div className="col-sm-6 col-md-3">
-            <h5 className="fw-bold text-uppercase">Useful Links</h5>
+            <h5 className="fw-bold text-uppercase text-primary">Useful Links</h5>
            
             <ul className="list-unstyled mt-3">
               <li><a href="#!" className="footer-link">About Zim</a></li>
@@ -97,7 +98,7 @@ export default function Footer() {
 
           {/* App Download Section */}
           <div className="col-sm-6 col-md-3 mb-5">
-              <h5 className="fw-bold text-uppercase">Contact</h5>
+              <h5 className="fw-bold text-uppercase text-primary">Contact</h5>
            <ul className="list-unstyled mt-3">
               <li><a href="#!" className="footer-link">support@zimsports.com</a></li>
               <li><a href="#!" className="footer-link">+1 213 555 1234</a></li>
@@ -106,7 +107,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-          <div className="footer-bottom text-center ">
+          <div className="footer-bottom text-center pb-3">
         © {new Date().getFullYear()} ZimSports. All rights reserved.
       </div>
       </div>
