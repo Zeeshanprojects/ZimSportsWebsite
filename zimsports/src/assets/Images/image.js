@@ -3,7 +3,7 @@ import Dashboard from "../../Pages/Dashboard";
 const Image = {
   // logo: new URL("logo.webp", import.meta.url).href,
   logo: new URL("logo.webp", import.meta.url).href,
-  banner: new URL("./banner.webp", import.meta.url).href,
+  banner: new URL("./background.webp", import.meta.url).href,
   backgroundeffect: new URL("./backgroundeffect.webp", import.meta.url).href,
   bannerright: new URL("banner-right.webp", import.meta.url).href,
   image1: new URL("Welcomeimage.webp", import.meta.url).href,
