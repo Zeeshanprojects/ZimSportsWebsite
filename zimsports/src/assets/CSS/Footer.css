@@ -6,6 +6,7 @@
 
 .footer-logo {
   height: 60px;
+  filter:brightness(3) ;
 }
 
 .footer-text {

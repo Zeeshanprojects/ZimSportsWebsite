@@ -12,6 +12,7 @@
   height: 120px;
   width: auto;
   animation: pulse 1.5s infinite ease-in-out;
+  filter: brightness(3);
 }
 
 /* Smooth fade-in effect */

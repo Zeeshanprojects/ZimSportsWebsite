@@ -3,7 +3,7 @@ import Dashboard from "../../Pages/Dashboard";
 const Image = {
   // logo: new URL("logo.webp", import.meta.url).href,
   logo: new URL("logo.webp", import.meta.url).href,
-  banner: new URL("./sports-banner.webp", import.meta.url).href,
+  banner: new URL("./banner.webp", import.meta.url).href,
   backgroundeffect: new URL("./backgroundeffect.webp", import.meta.url).href,
   bannerright: new URL("banner-right.webp", import.meta.url).href,
   image1: new URL("Welcomeimage.webp", import.meta.url).href,
@@ -16,7 +16,7 @@ const Image = {
   icon5: new URL("user-icon.png", import.meta.url).href,
   icon6: new URL("like-icon.png", import.meta.url).href,
   checked: new URL("checked.svg", import.meta.url).href,
-  greenchecked: new URL("accept.svg", import.meta.url).href,
+  greenchecked: new URL("check.webp", import.meta.url).href,
   github: new URL("github.svg", import.meta.url).href,
   usericon: new URL("usericon.webp", import.meta.url).href,
   magnent: new URL("magnet.webp", import.meta.url).href,
