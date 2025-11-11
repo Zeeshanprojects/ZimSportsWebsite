@@ -96,9 +96,10 @@ background: rgba(255, 255, 255, 0.1);
 .icons {
   height: 80px;
   width: 80px;
-  filter: invert(38%) sepia(63%) saturate(400%) hue-rotate(95deg) brightness(90%);
+  filter: invert(32%) sepia(100%) saturate(1700%) hue-rotate(200deg) brightness(98%) contrast(90%);
   transition: transform 0.4s ease;
 }
+
 .feature-box:hover .icons {
   transform: scale(1.1);
 }
