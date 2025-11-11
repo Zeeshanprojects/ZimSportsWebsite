@@ -38,14 +38,14 @@ background: #181A22 !important;
 input:focus {
   outline: none !important;
   box-shadow: none !important;
-  border-color: #198754 !important; /* optional: green border to match theme */
+  border-color: #2F76DD !important; /* optional: green border to match theme */
   background-color: white !important; /* ensures no blue bg appears */
 }
 .nav-pills .nav-link {
   border-radius: 30px;
   font-weight: 500;
   padding: 10px 20px;
-  color: #1f8e4b !important; /* Always green text */
+  color: #2F76DD !important; /* Always green text */
   background: transparent;
   border: none;
   outline: none !important;
@@ -57,7 +57,7 @@ input:focus {
 .nav-pills .nav-link:hover,
 .nav-pills .nav-link:focus,
 .nav-pills .nav-link:active {
-  color: #1f8e4b !important; /* Stay green */
+  color: #2F76DD !important; /* Stay green */
   background: rgba(31, 142, 75, 0.1); /* light green bg */
   text-decoration: none !important; /* remove underline */
   outline: none !important;
@@ -67,7 +67,7 @@ input:focus {
 /* Active (selected tab) */
 .nav-pills .nav-link.active {
   color: #fff !important; /* white text */
-  background-color: #1f8e4b !important; /* green bg */
+  background-color: #2F76DD !important; /* green bg */
   text-decoration: none !important;
 }
 

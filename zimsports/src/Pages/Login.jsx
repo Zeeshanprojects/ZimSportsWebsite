@@ -75,7 +75,7 @@ export default function Login() {
             <div className="loginpage-logo-container">
               <Link to="/" style={{ textDecoration: "none" }}>
                 <img
-                  src={Image.loginpagelogo}
+                  src={Image.logo}
                   alt="logo"
                   className="loginpage-logo"
                   height={60}
@@ -134,14 +134,14 @@ export default function Login() {
 
               <button
                 type="submit"
-                className="btn btn-success w-100 rounded-pill py-2 fw-bold"
+                className="btn btn-primary w-100 rounded-pill py-2 fw-bold"
               >
                 Sign In
               </button>
 
               <p className="text-center mt-4">
                 Not a Member yet?{" "}
-                <Link to="/signup" className="text-success fw-semibold">
+                <Link to="/signup" className="text-primary fw-semibold">
                   Sign up
                 </Link>
               </p>

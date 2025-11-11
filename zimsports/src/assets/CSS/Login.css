@@ -22,6 +22,9 @@ a {
   justify-content: center;
   margin-bottom: 1rem;
 }
+.loginpage-logo{
+  filter: brightness(2);
+}
 
 /* Placeholder style */
 form input::placeholder {

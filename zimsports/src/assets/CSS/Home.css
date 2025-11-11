@@ -628,7 +628,11 @@ body.modal-open .watch-live-btn {
   }
 }
 @media (max-width: 576px) {
-  
+  .navbar-brand-image {
+  height: 30px;
+  width:260px;
+  filter: brightness(3);
+}
 .text-content h1{
   font-size: 40px !important;
 }

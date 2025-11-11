@@ -14,7 +14,7 @@ export default function Signup() {
           <div className="loginpage-logo-container">
             <Link to="/">
               <img
-                src={Image.loginpagelogo}
+                src={Image.logo}
                 alt="logo"
                 className="loginpage-logo"
                 height={60}
@@ -89,12 +89,12 @@ export default function Signup() {
                     placeholder="Enter child name"
                   />
                 </div>
-                <button type="submit" className="btn btn-success w-100">
+                <button type="submit" className="btn btn-primary w-100">
                   Register as Parent
                 </button>
                 <p className="text-center mt-3 mb-0">
                   Already have an account?{" "}
-                  <Link to="/login" className="text-success fw-semibold">
+                  <Link to="/login" className="text-primary fw-semibold">
                     Sign in
                   </Link>
                 </p>
@@ -141,7 +141,7 @@ export default function Signup() {
                 </button>
                 <p className="text-center mt-3 mb-0">
                   Already have an account?{" "}
-                  <Link to="/login" className="text-success fw-semibold">
+                  <Link to="/login" className="text-primary fw-semibold">
                     Sign in
                   </Link>
                 </p>
@@ -182,12 +182,12 @@ export default function Signup() {
                     <option>Beach Volleyball</option>
                   </select>
                 </div>
-                <button type="submit" className="btn btn-warning w-100">
+                <button type="submit" className="btn btn-primary w-100">
                   Register as Player
                 </button>
                 <p className="text-center mt-3 mb-0">
                   Already have an account?{" "}
-                  <Link to="/login" className="text-success fw-semibold">
+                  <Link to="/login" className="text-primary fw-semibold">
                     Sign in
                   </Link>
                 </p>
