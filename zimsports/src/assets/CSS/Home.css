@@ -35,7 +35,7 @@
   margin-bottom: 30px;
 }
 .hero-btn {
-  background-color: #1f8e4b;
+  background-color: #097bea;
   color: #fff;
   border: none;
   padding: 10px 40px;
@@ -134,7 +134,7 @@ background: rgba(255, 255, 255, 0.1);
 .stat-number {
   font-size: 3.8rem;
   font-weight: 900;
-  color: #1f8e4b;
+  color: #097bea;
 }
 
 .stat-title {
@@ -171,7 +171,7 @@ background: rgba(255, 255, 255, 0.1);
   display: inline-block;
 }
 .bg {
-  background-color: #3f9e64 !important;
+  background-color: #097bea !important;
 }
 .icon-color {
   filter: invert(1) !important;
@@ -183,7 +183,7 @@ background: rgba(255, 255, 255, 0.1);
   left: 5px;
   width: 100%;
   height: 100%;
-  background-color: #1f8e4b;
+  background-color: #097bea;
   border-radius: 20px;
   transform: rotate(4deg);
   z-index: 1;
@@ -217,7 +217,7 @@ background: rgba(255, 255, 255, 0.1);
 
 .play-icon {
   font-size: 35px;
-  color: #1f8e4b;
+  color: #097bea;
   margin-left: 5px;
 }
 
@@ -254,7 +254,7 @@ background: rgba(255, 255, 255, 0.1);
   transition: opacity 0.15s ease;
 }
 span {
-  color: #1f8e4b;
+  color: #097bea;
 }
 
 p {
@@ -262,17 +262,16 @@ p {
   color: #4e4e4e;
 }
 
-
 .primary-btn {
-  background-color: #1f8e4b !important;
+  background-color: #097bea !important;
   border-radius: 50px !important;
   color: white !important;
   padding: 12px 20px !important;
 }
 .title-underline {
   display: inline-block;
-  color: #1F8E4B; /* Bootstrap green */
-  border-bottom: 2px solid #198754;
+  color: #097bea; /* Bootstrap green */
+  border-bottom: 2px solid #097bea;
   padding-bottom: 4px;
 }
 .banner-right {
@@ -302,7 +301,7 @@ p {
 }
 
 .play-icon {
-  color: #1f8e4b;
+  color: #097bea;
   font-size: 50px; /* adjust icon size */
   margin-left: 3px; /* optional: center triangle better */
 }
@@ -353,7 +352,7 @@ p {
 }
 
 .secondary-btn {
-  background-color: #1f8e4b !important;
+  background-color: #097bea !important;
   color: white !important;
   border-radius: 20px !important;
   padding: 5px 30px !important;
@@ -473,7 +472,7 @@ p {
 }
 
 .watch-btn {
-  background: #1f8e4b;
+  background: #097bea;
   border: none;
   padding: 10px 20px;
 border-radius: 10px;
@@ -537,7 +536,7 @@ body.modal-open .watch-live-btn {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #0fb57f !important;
+  background-color: #097bea !important;
 }
 .image-size{
   height: auto;
@@ -554,7 +553,7 @@ body.modal-open .watch-live-btn {
 .faq-title {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #1f8e4b;
+  color: #097bea;
   margin-bottom: 18px;
 }
 
@@ -576,12 +575,12 @@ body.modal-open .watch-live-btn {
 }
 
 .modern-accordion .accordion-button:hover {
-  background: #3F9E64;
+  background: #097bea;
   color: #ffffff;
 }
 
 .modern-accordion .accordion-button:not(.collapsed) {
-  background: #3F9E64;
+  background: #097bea;
   color: #000;
 }
 
@@ -593,7 +592,7 @@ body.modal-open .watch-live-btn {
   background: #111;
   color: #bbb;
   font-size: 0.95rem;
-  border-left: 3px solid #3F9E64;
+  border-left: 3px solid #097bea;
   border-radius: 0 0 10px 10px;
   padding: 15px;
 }

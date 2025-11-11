@@ -53,7 +53,7 @@ export default function Navbar() {
 
             <div className="d-flex mt-3 mt-lg-0">
               <Link to="/login">
-                <button className="btn btn-success shadow-lg">
+                <button className="btn btn-primary shadow-lg">
                   Get Started 
                 </button>
               </Link>

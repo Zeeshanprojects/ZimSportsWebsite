@@ -2,7 +2,7 @@ import Dashboard from "../../Pages/Dashboard";
 
 const Image = {
   // logo: new URL("logo.webp", import.meta.url).href,
-  logo: new URL("zimsportslogo.png", import.meta.url).href,
+  logo: new URL("logo.webp", import.meta.url).href,
   banner: new URL("./sports-banner.webp", import.meta.url).href,
   backgroundeffect: new URL("./backgroundeffect.webp", import.meta.url).href,
   bannerright: new URL("banner-right.webp", import.meta.url).href,

@@ -39,7 +39,7 @@ export default function Home() {
               broadcast, manage and elevate your game from
             </p>
 <Link to="./login">
-<button className="btn btn-success ps-5 pe-5 pt-2 pb-2 fw-bold">
+<button className="btn btn-primary ps-5 pe-5 pt-2 pb-2 fw-bold">
               {" "}
               Get Started Free{" "}
             </button></Link>
@@ -102,7 +102,7 @@ export default function Home() {
 
                 <div className="text-start ">
                   <Link to="/signup">
-                    <button type="button" className="btn btn-success fw-bold ">
+                    <button type="button" className="btn btn-primary fw-bold ">
                       DIscover More
                     </button>
                   </Link>
@@ -240,7 +240,7 @@ export default function Home() {
                       loading="lazy"
                     />
                     <div className="card-overlay">
-                      <button className="btn btn-success">Stream Live →</button>
+                      <button className="btn btn-primary">Stream Live →</button>
                     </div>
                   </div>
                 </div>
