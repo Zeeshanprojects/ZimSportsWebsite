@@ -24,11 +24,11 @@ export default function Home() {
     <>
       <Navbar />
       <div className="section">
-        <div className="container-fluid p-0 hero-section ">
+        <div className="container-fluid p-0 m-0 hero-section ">
           <img
             src={Image.banner}
             alt="banner"
-            className="banner-img mt-2 "
+            className="banner-img"
             fetchPriority="high"
           />
 

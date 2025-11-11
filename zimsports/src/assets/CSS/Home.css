@@ -634,7 +634,7 @@ body.modal-open .watch-live-btn {
 }
 .banner-img {
   width: 100% !important;
-  height:88vh;
+  height:70vh;
   margin: 0px !important;
   object-fit: cover;
   filter: brightness(70%); /* ✅ dims the background */
