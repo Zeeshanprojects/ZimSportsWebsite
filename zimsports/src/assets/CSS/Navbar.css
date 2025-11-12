@@ -6,7 +6,8 @@
 
 /* ✅ Logo */
 .navbar-brand-image {
-  height:80px;
+
+  height: 80px;
   filter: brightness(2);
 }
 

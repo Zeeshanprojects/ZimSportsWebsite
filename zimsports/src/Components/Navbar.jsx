@@ -21,7 +21,7 @@ export default function Navbar() {
       <nav className="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
         <div className="container">
           <a className="navbar-brand" href="/">
-            <img src={Image.logo} alt="logo" className="navbar-brand-image" />Zim Sports
+            <img src={Image.logo} alt="logo" className="navbar-brand-image" />
           </a>
 
           <button
