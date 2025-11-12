@@ -2,10 +2,9 @@
   position: relative;
   width: 100%;
 }
-
 .banner-img {
   width: 100% !important;
-  height:80vh;
+  height:85vh;
   margin: 0px !important;
   object-fit: cover;
   filter: brightness(70%); /* ✅ dims the background */

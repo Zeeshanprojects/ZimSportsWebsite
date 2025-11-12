@@ -6,8 +6,8 @@
 
 /* ✅ Logo */
 .navbar-brand-image {
-  height: 70px;
-  filter: brightness(3);
+  height:80px;
+  filter: brightness(2);
 }
 
 /* ✅ Nav Links */
